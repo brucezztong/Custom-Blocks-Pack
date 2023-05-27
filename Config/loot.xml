@@ -1,0 +1,228 @@
+﻿<lootcontainers>
+	<append xpath="/lootcontainers">
+        <!-- **********************************************************
+            Base List - Empty, but other modlets can slip in harmless
+            junk into this list if they want using XSLT.
+        *********************************************************** -->
+
+        <lootcontainer name="cbpJunk" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="1"/>
+        </lootcontainer>
+
+        <!-- **********************************************************
+            Bathroom Cabinest and Cupboards
+        *********************************************************** -->
+
+        <lootcontainer name="cbpBathroom" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" prob="1" count="1"/>
+            <item name="resourcePaper" prob="1" count="1"/>
+            <item name="resourceScrapPolymers" prob="1" count="1"/>
+            <item name="resourceCloth" prob="1" count="1"/>
+            <item name="medicalBandage" prob="1" count="1"/>
+            <item name="medicalAloeCream" prob="1" count="1"/>
+            <item name="candle" prob="0.2" count="1"/>
+            <item name="medicalFirstAidBandage" prob="0.2" count="1"/>
+            <item name="drinkJarGoldenRodTea" prob="0.2" count="1"/>
+            <item name="drugPainkillers" prob="0.1" count="1"/>
+            <item name="drugVitamins" prob="0.1" count="1"/>
+            <item name="resourceSewingKit" prob="0.1" count="1"/>
+            <item name="medicalSplint" prob="0.1" count="1"/>
+            <item name="drugHerbalAntibiotics" prob="0.1" count="1"/>
+            <item name="resourceAcid" prob="0.1" count="1"/>
+            <item name="toolBeaker" prob="0.1" count="1"/>
+        </lootcontainer>
+
+        <!-- **********************************************************
+            Bookless Bookcases
+        *********************************************************** -->
+
+        <lootcontainer name="cbpBookcaseNoBooks" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourcePaper" prob="1" count="1,10"/>
+            <item name="resourcePaper" prob="0.4" count="10,20"/>
+            <item name="resourceLeather" prob="0.8" count="1"/>
+            <item name="resourceTrophy1" prob="0.6" count="1"/>
+            <item name="resourceTrophy2" prob="0.6" count="1"/>
+            <item name="resourceCandleStick" prob="0.6" count="1,2"/>
+            <item name="oldCash" prob="0.4" count="1,5"/>
+            <item name="resourceBrokenGlass" prob="0.2" count="1,2"/>
+            <item name="resourceGlue" prob="0.2" count="1"/>
+            <item name="resourceFeather" prob="0.2" count="1"/>
+            <item name="resourceBone" prob="0.2" count="1,2"/>
+            <item name="candle" prob="0.2" count="1,2"/>
+            <item name="resourceLockPick" prob="0.1" count="1,4"/>
+            <item group="dyes" prob="0.1" count="1"/>
+            <item name="armorSantaHat" prob="0.1" count="1"/>
+        </lootcontainer>
+
+        <!-- **********************************************************
+            Delos (Westworld) Loot Lists
+        *********************************************************** -->
+
+        <lootcontainer name="cbpDelosAndroid" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceScrapIron" count="5,10"/>
+            <item name="resourceScrapBrass" count="5,10"/>
+            <item name="resourceScrapLead" count="5,10"/>
+            <item name="resourceScrapPolymers" count="1,3"/>
+            <item name="resourceCloth" prob="1" count="1,3"/>
+            <item name="resourceMechanicalParts" count="1,2"/>
+            <item name="resourceElectricParts" count="1,2"/>
+            <item name="resourceMetalPipe" prob="1" count="1,2"/>
+            <item name="resourceSpring" count="1,2"/>
+            <item name="resourceOil" count="1,2"/>
+            <item name="resourceAcid" count="1,2"/>
+            <item name="apparelCoatLeatherPoncho"/>
+            <item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
+            <item name="apparelBandana" mods="dye" mod_chance="0"/>
+            <item name="apparelCowboyBoots"/>
+            <item name="apparelFlannelShirt" mods="dye" mod_chance="0"/>
+            <item name="apparelDenimPants" mods="dye" mod_chance="0"/>
+            <item name="gunBowT0PrimitiveBow" loot_prob_template="veryLow"/>
+            <item name="gunHandgunT0PipePistol" loot_prob_template="veryLow"/>
+            <item name="resourceSilverNugget" count="1,2" loot_prob_template="veryLow"/>
+            <item name="resourceGoldNugget" count="1,2" loot_prob_template="veryLow"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateDelos" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourcePaint" count="10,20"/>
+            <item name="resourceRepairKit" count="1,2" loot_prob_template="veryLow"/>
+            <item name="resourceScrapIron" count="10,30"/>
+            <item name="resourceScrapBrass" count="10,30"/>
+            <item name="resourceScrapLead" count="10,30"/>
+            <item name="resourceScrapPolymers" count="1,3"/>
+            <item name="resourceForgedIron" count="1,2"/>
+            <item name="resourceForgedSteel" count="1,2"/>
+            <item name="resourceMechanicalParts" count="1,2"/>
+            <item name="resourceElectricParts" count="1,2"/>
+            <item name="resourceSpring" count="1,2"/>
+            <item name="resourceOil" count="1,2"/>
+            <item name="resourceAcid" count="1,2"/>
+            <item name="apparelCoatLeatherPoncho"/>
+            <item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
+            <item name="apparelBandana" mods="dye" mod_chance="0"/>
+            <item name="apparelCowboyBoots"/>
+            <item name="apparelFlannelShirt" mods="dye" mod_chance="0"/>
+            <item name="apparelDenimPants" mods="dye" mod_chance="0"/>
+        </lootcontainer>
+
+        <!-- **********************************************************
+            Storage Crates - Kind of 1/2 a ShippingCrate
+        *********************************************************** -->
+
+        <lootcontainer name="cbpStorageCrateAmmo" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="ammo9mmBulletBall" prob="1" count="4,8"/>
+            <item name="ammoShotgunShell" prob="1" count="1,2"/>
+            <item name="ammo762mmBulletBall" prob="1" count="3,6"/>
+            <item name="ammo44MagnumBulletBall" prob="0.4" count="3,6"/>
+            <item name="ammoArrowIron" prob="0.4" count="2,4"/>
+            <item name="ammoCrossbowBoltIron" prob="0.4" count="1,3"/>
+            <item name="resourcePotassiumNitratePowder" prob="0.4" count="10,20"/>
+            <item name="resourceCoal" prob="0.4" count="5,10"/>
+            <item name="resourceScrapLead" prob="0.4" count="25,50"/>
+            <item name="resourceScrapBrass" prob="0.4" count="50,150"/>
+            <item name="resourceBulletCasing" prob="0.4" count="5,10"/>
+            <item name="resourceBulletTip" prob="0.4" count="5,10"/>
+            <item name="resourceGunPowder" prob="0.4" count="5,10"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateBldg" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceClayLump" prob="1" count="10,50"/>
+            <item name="resourceCrushedSand" prob="1" count="10,50"/>
+            <item name="resourceRockSmall" prob="1" count="10,50"/>
+            <item name="resourceWood" prob="1" count="10,50"/>
+            <item name="resourceCobblestones" prob="0.4" count="10,50"/>
+            <item name="resourceCement" prob="0.4" count="10,50"/>
+            <item name="resourceConcreteMix" prob="0.1" count="10,40"/>
+            <item name="resourceScrapIron" prob="1" count="1,15"/>
+            <item name="resourceForgedIron" prob="0.4" count="1,3"/>
+            <item name="resourceForgedSteel" prob="0.1" count="1,2"/>
+            <item name="resourceMetalPipe" prob="0.2" count="1,2"/>
+            <item name="resourceNail" prob="0.2" count="10"/>
+            <item name="resourceMechanicalParts" prob="0.2" count="1"/>
+            <item name="resourceElectricParts" prob="0.2" count="1"/>
+            <item name="resourceDuctTape" prob="0.2" count="1"/>
+            <item name="resourceGlue" prob="0.2" count="1"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateExplo" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceGunPowder" prob="1" count="10,20"/>
+            <item name="thrownAmmoMolotovCocktail" prob="0.8" count="1,3"/>
+            <item name="thrownAmmoPipeBomb" prob="0.8" count="2,3"/>
+            <item name="thrownDynamite" prob="0.4" count="1,2"/>
+            <item name="thrownGrenade" prob="0.2" count="1,2"/>
+            <item name="thrownGrenadeContact" prob="0.1" count="1,2"/>
+            <item name="thrownTimedCharge" prob="0.1" count="1"/>
+            <item name="mineCandyTin" prob="0.1" count="1"/>
+            <item name="mineHubcap" prob="0.1" count="1"/>
+            <item name="mineAirFilter" prob="0.1" count="1"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateFood" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupFoodCommon" prob="1"/>
+            <item group="groupDrinksCommon" prob="1"/>
+            <item group="groupIngredientsCommon" prob="1"/>
+            <item name="foodHoney" prob="0.4" count="1"/>
+            <item group="foodCandy" prob="0.2" count="1"/>
+            <item name="toolCookingGrill" prob="0.1" count="1"/>
+            <item name="toolCookingPot" prob="0.1" count="1"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateMeds" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="medicalBandage" prob="1" count="1,5"/>
+            <item name="medicalAloeCream" prob="1" count="1,2"/>
+            <item name="medicalFirstAidBandage" prob="0.8" count="1"/>
+            <item name="drugPainkillers" prob="0.6" count="1"/>
+            <item name="drugVitamins" prob="0.6" count="1"/>
+            <item name="resourceSewingKit" prob="0.4" count="1"/>
+            <item name="medicalSplint" prob="0.4" count="1"/>
+            <item name="medicalPlasterCast" prob="0.2" count="1"/>
+            <item name="drugHerbalAntibiotics" prob="0.4" count="1"/>
+            <item name="drugAntibiotics" prob="0.2" count="1"/>
+        </lootcontainer>
+
+        <lootcontainer name="cbpStorageCrateWeaps" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="gunMGT1AK47Parts" prob="1" count="1,2"/>
+            <item name="gunHandgunT1PistolParts" prob="1" count="1,2"/>
+            <item name="gunBowT1WoodenBowParts" prob="1" count="1,2"/>
+            <item name="gunRifleT1HuntingRifleParts" prob="1" count="1,2"/>
+            <item name="gunShotgunT1DoubleBarrelParts" prob="1" count="1,2"/>
+            <item name="gunBotRoboticsParts" prob="0.4" count="1,2"/>
+            <item name="meleeWpnBatonT2StunBatonParts" prob="0.4" count="1,2"/>
+            <item name="gunExplosivesT3RocketLauncherParts" prob="0.2" count="1,2"/>
+            <item name="meleeWpnBladeT3MacheteParts" prob="0.2" count="1,2"/>
+            <item name="meleeWpnSpearT3SteelSpearParts" prob="0.2" count="1,2"/>
+            <item name="meleeWpnClubT3SteelClubParts" prob="0.2" count="1,2"/>
+            <item name="meleeWpnSledgeT3SteelSledgehammerParts" prob="0.2" count="1,2"/>
+            <item name="meleeWpnKnucklesT3SteelKnucklesParts" prob="0.2" count="1,2"/>
+            <item name="armorMilitarySetParts" prob="0.2" count="1,2"/>
+            <item name="armorSteelSetParts" prob="0.2" count="1,2"/>
+            <item name="resourceRepairKit" prob="0.2" count="1,2"/>
+            <item name="gunHandgunT1Pistol" prob="0.1" count="1"/>
+            <item name="meleeWpnBladeT1HuntingKnife" prob="0.1" count="1"/>
+        </lootcontainer>
+
+        <!-- **********************************************************
+            Survivor Chest; Low Level Loot
+        *********************************************************** -->
+
+        <lootcontainer name="cbpSurvivorLoot" count="1,3" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceCloth" prob="1" count="1,3"/>
+            <item name="resourceMetalPipe" prob="1" count="1,2"/>
+            <item name="resourceGlue" prob="0.4" count="1"/>
+            <item name="foodCharredMeat" prob="1" count="1,2"/>
+            <item name="foodGrilledMeat" prob="1" count="1,2"/>
+            <item name="drinkJarRiverWater" prob="1" count="1,2"/>
+            <item name="drinkJarBoiledWater" prob="1" count="1"/>
+            <item name="toolCookingGrill" prob="0.4" count="1"/>
+            <item name="toolCookingPot" prob="0.4" count="1"/>
+            <item name="meleeToolRepairT0StoneAxe" prob="0.2" count="1"/>
+            <item name="meleeToolShovelT0StoneShovel" prob="0.2" count="1"/>
+            <item name="meleeWpnClubT0WoodenClub" prob="0.2" count="1"/>
+            <item name="meleeWpnSpearT0StoneSpear" prob="0.2" count="1"/>
+            <item name="resourceFeather" prob="1" count="1,5"/>
+            <item name="ammoArrowStone" prob="1" count="1,5"/>
+            <item name="gunBowT1WoodenBow" prob="0.2" count="1"/>
+        </lootcontainer>
+
+	</append>
+
+</lootcontainers>

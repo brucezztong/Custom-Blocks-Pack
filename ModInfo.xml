@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="00-Custom-Blocks-Pack" />
+		<Description value="Adds custom block definitions and supporting configurations. (Release A21.0-001)" />
+		<Author value="ZZTong" />
+		<Version value="21.0.001" />
+	</ModInfo>
+</xml>

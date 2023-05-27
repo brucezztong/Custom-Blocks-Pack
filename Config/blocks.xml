@@ -1,0 +1,967 @@
+﻿<blocks>
+	<append xpath="/blocks">
+
+        <!-- *************************************************************************
+            ATM Machines
+        ************************************************************************** -->
+
+        <block name="cbpATMEmpty">
+            <property name="Extends" value="cntATMSecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="CustomIcon" value="cntATMSecure"/>
+            <property name="Model" value="Entities/Commercial/ATMPrefab"/>
+            <property name="LootList" value="cbpJunk"/>
+        </block>
+
+        <block name="cbpATMRandomHelper">
+            <property name="Extends" value="cntATMSecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntATMSecure"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+        </block>
+
+        <block name="cbpATMRandomHelperAir">
+            <property name="Extends" value="cntATMSecure"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntATMSecure"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+        </block>
+
+        <!-- *************************************************************************
+            Bathroom Cabinets and Cupboards...
+        ************************************************************************** -->
+
+        <block name="cbpBathroomCabinetRedBottom">
+            <property name="Shape" value="New"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="counter"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="IsDecoration" value="true"/>
+            <property name="Material" value="Mwood_weak"/>
+            <property name="Texture" value="261,345,262,345,345,345"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="DescriptionKey" value="furnitureGroupDesc"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <property name="EconomicValue" value="17"/>
+            <property name="EconomicBundleSize" value="20"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="108"/>
+            <property name="FilterTags" value="MC_building,SC_loot,SC_residential"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpBathroom"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+        </block>
+
+        <block name="cbpBathroomCabinetRedBottomHelper">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="counter"/>
+            <property name="Texture" value="261,345,262,345,345,345"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetBottomFiller"/>
+            <property name="CustomIconTint" value="ff8080"/>
+        </block>
+        
+        <block name="cbpBathroomCabinetRedTop">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="cupboard"/>
+            <property name="Texture" value="345,345,263,345,345,345"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetRedTopLootHelper"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+        </block>
+
+        <block name="cbpBathroomCabinetRedTopHelper">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="cupboard"/>
+            <property name="Texture" value="345,345,263,345,345,345"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetRedTopLootHelper"/>
+            <property name="CustomIconTint" value="ff8080"/>
+        </block>
+        
+        <block name="cbpBathroomCabinetOldBottom">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="counter"/>
+            <property name="Texture" value="78,84,79,84,84,84"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetOldBottomLootHelper"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+        </block>
+
+        <block name="cbpBathroomCabinetOldBottomHelper">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="counter"/>
+            <property name="Texture" value="78,84,79,84,84,84"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCabinetOldBottomLootHelper"/>
+            <property name="CustomIconTint" value="ff8080"/>
+        </block>
+
+        <block name="cbpBathroomCabinetOldTop">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="cupboard"/>
+            <property name="Texture" value="84,84,81,84,84,84"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+        </block>
+
+        <block name="cbpBathroomCabinetOldTopHelper">
+            <property name="Extends" value="cbpBathroomCabinetRedBottom"/>
+            <property name="Model" value="cupboard"/>
+            <property name="Texture" value="84,84,81,84,84,84"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/>
+            <property name="CustomIconTint" value="ff8080"/>
+        </block>
+
+        <!-- *************************************************************************
+            Bookcases...
+        ************************************************************************** -->
+
+        <block name="cbpBookcaseBookless">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntBookcaseFull"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mwood_weak"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="bookcase_full"/>
+            <property name="Place" value="TowardsPlacer90"/>
+            <property name="Texture" value="67,269,269,269,269,269"/>
+            <property name="UseGlobalUV" value="Local"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpBookcaseNoBooks"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+            <property name="SortOrder1" value="cb17"/>
+            <property name="SortOrder2" value="0060"/>
+            <property name="DescriptionKey" value="furnitureGroupDesc"/>
+        </block>
+
+        <!-- *************************************************************************
+            Cookpot Helper
+        ************************************************************************** -->
+
+        <block name="cbpCookingPotHelper">
+            <property name="Extends" value="decoCookingPot"/>
+            <property name="CustomIcon" value="toolCookingPot"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <!-- *************************************************************************
+            Corpse Helpers
+        ************************************************************************** -->
+
+        <block name="cbpCorpseHumanHelper">
+            <property name="Extends" value="goreBlockHumanCorpse"/>
+            <property name="CustomIcon" value="goreBlockHumanCorpse"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpCorpseHumanHelperAir">
+            <property name="Extends" value="goreBlockHumanCorpse"/>
+            <property name="CustomIcon" value="goreBlockHumanCorpse"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <!-- *************************************************************************
+            Delos (West World) POIs...
+        ************************************************************************** -->
+
+        <block name="cbpDelosAndroidMale">
+            <property name="Extends" value="decoEntityPolymerMaster"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Model" value="Entities/Commercial/mannequinMalePrefab"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpDelosAndroid"/>
+            <property class="RepairItems">
+                <property name="resourceScrapPolymers" value="10"/>
+            </property>
+            <drop event="Harvest" name="resourceScrapPolymers" count="4,8" tag="allHarvest"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CustomIcon" value="decoMannequinMale"/>
+        </block>
+
+        <block name="cbpDelosAndroidFemale">
+            <property name="Extends" value="cbpDelosAndroidMale"/>
+            <property name="Model" value="Entities/Commercial/mannequinFemalePrefab"/>
+            <property name="CustomIcon" value="decoMannequinFemale"/>
+        </block>
+
+        <block name="cbpDelosStorageCrate">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateDelos"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="572"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <!-- *************************************************************************
+            Farming - TFP is missing a mushroom helper.
+        ************************************************************************** -->
+
+        <block name="cbpPlantedMushroomHarvestRandomHelper">
+            <property name="CustomIcon" value="plantedMushroom3Harvest"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="Extends" value="plantedMushroom3Harvest" param1="MultiBlockDim"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+            <property name="DisplayInfo" value="Name"/>
+            <property name="FilterTags" value="MC_outdoor,SC_crops"/>
+        </block>
+
+        <!-- *************************************************************************
+            Gas Barrels
+        ************************************************************************** -->
+
+        <block name="cbpBarrelMetalMasterEmpty">
+            <property name="CreativeMode" value="None"/>
+            <property name="CustomIcon" value="cntBarrelAcidSingle00"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
+            <property name="Place" value="TowardsPlacerInverted"/>
+            <property name="Class" value="CarExplodeLoot"/>
+            <property name="LootList" value="playerStorage"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+            <property name="Material" value="MFuelBarrelMetal"/>
+            <property name="Path" value="solid"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <property class="Explosion">
+                <property name="ParticleIndex" value="14"/>
+                <property name="RadiusBlocks" value="5"/>
+                <property name="BlockDamage" value="500"/>
+                <property name="RadiusEntities" value="5"/>
+                <property name="EntityDamage" value="250"/>
+            </property>
+            <property name="DescriptionKey" value="cntBarrelGroupDesc"/>
+            <drop event="Harvest" name="resourceScrapIron" count="3,6" tag="allToolsHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1,5" prob="0.75" stick_chance="1"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpBarrelGasSingle00Empty">
+            <property name="Extends" value="cbpBarrelMetalMasterEmpty" param1="CustomIcon"/>
+            <property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
+            <property name="Explosion.ParticleIndex" value="14"/>
+            <property name="CustomIcon" value="cntBarrelGasSingle00"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpBarrelGasSingle45Empty">
+            <property name="Extends" value="cbpBarrelGasSingle00Empty"/>
+            <property name="Model" value="Entities/Industrial/barrelGas45Prefab"/>
+            <property name="Explosion.ParticleIndex" value="15"/>
+            <property name="CustomIcon" value="cntBarrelGasSingle45"/>
+        </block>
+
+        <!-- *************************************************************************
+            Landmine Helpers
+        ************************************************************************** -->
+
+        <block name="cbpLandMine50RandomHelper">
+            <property name="Extends" value="mineCandyTin"/>
+            <property name="CustomIcon" value="mineCandyTin"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMine10RandomHelper">
+            <property name="Extends" value="mineCandyTin"/>
+            <property name="CustomIcon" value="mineCandyTin"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineCandyTin50RandomHelper">
+            <property name="Extends" value="mineCandyTin"/>
+            <property name="CustomIcon" value="mineCandyTin"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineCandyTin10RandomHelper">
+            <property name="Extends" value="mineCandyTin"/>
+            <property name="CustomIcon" value="mineCandyTin"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineHubcap50RandomHelper">
+            <property name="Extends" value="mineHubcap"/>
+            <property name="CustomIcon" value="mineHubcap"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineHubcap10RandomHelper">
+            <property name="Extends" value="mineHubcap"/>
+            <property name="CustomIcon" value="mineHubcap"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineAirFilter50RandomHelper">
+            <property name="Extends" value="mineAirFilter"/>
+            <property name="CustomIcon" value="mineAirFilter"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpLandMineAirFilter10RandomHelper">
+            <property name="Extends" value="mineAirFilter"/>
+            <property name="CustomIcon" value="mineAirFilter"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <!-- *************************************************************************
+            Minor Loot and Lootless Containers
+        ************************************************************************** -->
+
+        <block name="cbpBackpack01Empty">
+            <property name="CustomIcon" value="cntBackpack01"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Class" value="Loot"/>
+            <property name="DisplayType" value="blockHardened"/>
+            <property name="Material" value="Mcloth"/>
+            <property name="MaxDamage" value="100"/>
+            <property name="LightOpacity" value="0"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Ext3dModel"/>
+            <property name="Texture" value="293"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#Entities/LootContainers?backpack01Prefab.prefab"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            <property name="GndAlign" value="1"/>
+            <property name="LootList" value="cbpJunk"/>
+            <drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
+            <drop event="Destroy" name="resourceCloth" count="1"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpBackpack03Empty">
+            <property name="Extends" value="cbpBackpack01Empty"/>
+            <property name="CustomIcon" value="cntBackpack03"/>
+            <property name="Model" value="#Entities/LootContainers?backpack03Prefab.prefab"/>
+        </block>
+
+        <block name="cbpDuffle01Empty">
+            <property name="Extends" value="cbpBackpack01Empty"/>
+            <property name="CustomIcon" value="cntDuffle01"/>
+            <property name="Model" value="#Entities/LootContainers?duffle01Prefab.prefab"/>
+        </block>
+
+        <block name="cbpSportsBag01Empty">
+            <property name="Extends" value="cbpBackpack01Empty"/>
+            <property name="CustomIcon" value="cntSportsBag01"/>
+            <property name="Model" value="#Entities/LootContainers?sports_bag01Prefab.prefab"/>
+        </block>
+
+        <block name="cbpSportsBag02Empty">
+            <property name="Extends" value="cbpBackpack01Empty"/>
+            <property name="CustomIcon" value="cntSportsBag02"/>
+            <property name="Model" value="#Entities/LootContainers?sports_bag02Prefab.prefab"/>
+        </block>
+
+        <block name="cbpPurse01Empty">
+            <property name="Extends" value="cbpBackpack01Empty"/>
+            <property name="CustomIcon" value="cntPurse01"/>
+            <property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
+        </block>
+
+        <!-- *******************************************************************
+            Offset Blocks - Normal blocks that are not centered in their space.
+        ******************************************************************** -->
+
+        <block name="cbpToasterOffset">
+            <property name="Extends" value="cntToaster"/>
+            <property name="CustomIcon" value="cntToaster"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="-0.3,0.5,0.0"/>
+        </block>
+
+        <block name="cbpCookingPotOffset">
+            <property name="Extends" value="decoCookingPot"/>
+            <property name="CustomIcon" value="toolCookingPot"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,0.5,-0.3"/>
+        </block>
+
+        <block name="cbpMannequinMaleOffset">
+            <property name="Extends" value="decoMannequinMale"/>
+            <property name="CustomIcon" value="decoMannequinMale"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,0.5,-0.3"/>
+        </block>
+
+        <block name="cbpMannequinFemaleOffset">
+            <property name="Extends" value="decoMannequinFemale"/>
+            <property name="CustomIcon" value="decoMannequinFemale"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,0.5,-0.3"/>
+        </block>
+
+        <!-- ************************************************************************* 
+            Storage Crates...
+        ************************************************************************** -->
+
+        <block name="cbpStorageGenericCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <!-- <property name="Class" value="Loot"/> --> <!-- NO LOOT FOR CUBES -->
+            <!-- <property name="LootList" value="poiStorageBox"/> --> <!-- Default for a Crate -->
+            <!-- <property name="LootList" value="playerStorage"/> --> <!-- Empty, as if new Player Storage -->
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="572"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericEmpty">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpJunk"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="572"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericAmmo">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateAmmo"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="418"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericAmmoCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="418"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericBuilding">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateBldg"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="419"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericBuildingCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="419"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericExplosives">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateExplo"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="420"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericExplosivesCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="420"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericFood">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateFood"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="421"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericFoodCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="421"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericMedical">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateMeds"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="284"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericMedicalCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="284"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericWeapons">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpStorageCrateWeaps"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="422"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <block name="cbpStorageGenericWeaponsCube">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntStorageHealth"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="Texture" value="422"/>
+            <property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+
+        <!-- ************************************************************************* 
+            TFP Shipping Crates...
+        ************************************************************************** -->
+
+        <block name="cbpShippingCrateShamwayCube">
+            <property name="DescriptionKey" value="cntShippingCrateGroupDesc"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntShippingCrateShamway"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_ShamwayPrefab.prefab"/>
+            <property name="Material" value="Mwood_regular"/>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="FilterTags" value="MC_building,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateLabEquipmentCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_PopNPillsPrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateBookstoreCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateBookstore"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_CrackABookPrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateCarPartsCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateCarParts"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_PassNGasPrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateShotgunMessiahCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateWorkingStiffsCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_WorkingStiffsPrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateSavageCountryCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_SavagePrefab.prefab"/>
+        </block>
+
+        <block name="cbpShippingCrateMoPowerElectronicsCube">
+            <property name="Extends" value="cbpShippingCrateShamwayCube"/>
+            <property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#Entities/LootContainers?crate_store_MoPowerPrefab.prefab"/>
+        </block>
+
+        <!-- *************************************************************************
+            TFP Shipping Crate Helpers...
+        ************************************************************************** -->
+
+        <!-- Shamway -->
+        <block name="cbpShippingCrateShamwayHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateShamway"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateShamwayHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateShamway"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Lab Equipment -->
+        <block name="cbpShippingCrateLabEquipmentHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateLabEquipmentHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Bookstore -->
+        <block name="cbpShippingCrateBookstoreHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateBookstore"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateBookstoreHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateBookstore"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Car Parts -->
+        <block name="cbpShippingCrateCarPartsHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateCarParts"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateCarPartsHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateCarParts"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Shotgun Messiah -->
+        <block name="cbpShippingCrateShotgunMessiahHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateShotgunMessiahHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Working Stiffs -->
+        <block name="cbpShippingCrateWorkingStiffsHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateWorkingStiffsHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Savage Country -->
+        <block name="cbpShippingCrateSavageCountryHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateSavageCountryHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- Mo Power Electronics -->
+        <block name="cbpShippingCrateMoPowerElectronicsHelper">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <block name="cbpShippingCrateMoPowerElectronicsHelperAir">
+            <property name="Extends" value="cntWastelandRandomLootHelper" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+        </block>
+
+        <!-- *************************************************************************
+            Shopping Cart Helper
+        ************************************************************************** -->
+
+        <block name="cbpShoppingCartRandomHelperAir">
+            <property name="Extends" value="cntShoppingCartRandomLootHelper"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
+        </block>
+
+        <!-- *************************************************************************
+            Survivor Chest
+        ************************************************************************** -->
+
+        <!-- ******* TEMP REMOVED ******
+        <block name="cbpSurvivorChest">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntChest01"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="cbpSurvivorLoot"/>
+            <property name="Material" value="MwoodReinforced"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Ext3dModel"/>
+            <property name="Texture" value="293"/>
+            <property name="Mesh" value="models"/>
+            <property name="Model" value="LootContainers/chest01" param1="main_mesh"/>
+            <property name="HandleFace" value="Bottom"/>
+            <property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property class="RepairItems">
+                <property name="resourceWood" value="10"/>
+            </property>
+            <drop event="Destroy" name="resourceWood" count="1,3"/>
+            <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+        </block>
+        -->
+
+        <!-- *************************************************************************
+            Survivor Chest - Booby-Trapped
+        ************************************************************************** -->
+
+        <!-- ****** TEMP REMOVED ******
+        <block name="cbpTrappedChest">
+            <property name="Extends" value="mineCookingPot"/>
+            <property name="CustomIcon" value="cntChest01"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Shape" value="Ext3dModel"/>
+            <property name="Mesh" value="models"/>
+            <property name="Model" value="LootContainers/chest01" param1="main_mesh"/> 
+            <property name="Explosion.EntityDamage" value="200"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+        -->
+
+        <!-- *************************************************************************
+            Vending Machines
+        ************************************************************************** -->
+
+        <block name="cbpVendingMachine2Empty">
+            <property name="Extends" value="cntVendingMachine2Broken"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="Loot"/>
+            <property name="CustomIcon" value="cntVendingMachine2Broken"/>
+            <property name="Model" value="Entities/Crafting/vending_machinePrefab"/>
+            <property name="LootList" value="cbpJunk"/>
+        </block>
+
+        <block name="cbpVendingMachineRandomHelper">
+            <property name="Extends" value="cntVendingMachine2RandomLootHelper"/>
+        </block>
+
+        <block name="cbpVendingMachineRandomHelperAir">
+            <property name="Extends" value="cntVendingMachine2RandomLootHelper"/>
+        </block>
+
+    </append>
+</blocks>

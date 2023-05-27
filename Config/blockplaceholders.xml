@@ -1,0 +1,276 @@
+﻿<blockplaceholders>
+	<append xpath="/blockplaceholders">
+
+        <!-- *************************************************************
+            ATM Machines
+        ************************************************************** -->
+
+        <placeholder name="cbpATMRandomHelper">
+            <block name="cbpATMEmpty" prob=".9"/>
+            <block name="cntATMSecure" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpATMRandomHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpATMEmpty" prob=".4"/>
+            <block name="cntATMSecure" prob=".1"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Bathroom Cabinets and Cupboards
+        ************************************************************** -->
+
+        <placeholder name="cbpBathroomCabinetRedBottomHelper">
+            <block name="cntCabinetBottomOpen" prob=".65"/>
+            <block name="cbpBathroomCabinetRedBottom" prob=".35"/>
+        </placeholder>
+
+        <placeholder name="cbpBathroomCabinetRedTopHelper">
+            <block name="cntCupboardCabinetRedTopOpen" prob=".65"/>
+            <block name="cbpBathroomCabinetRedTop" prob=".35"/>
+        </placeholder>
+
+        <placeholder name="cbpBathroomCabinetOldBottomHelper">
+            <block name="cntCabinetOldBottomOpen" prob=".65"/>
+            <block name="cbpBathroomCabinetOldBottom" prob=".35"/>
+        </placeholder>
+
+        <placeholder name="cbpBathroomCabinetOldTopHelper">
+            <block name="cntCupboardCabinetOldTopOpen" prob=".65"/>
+            <block name="cbpBathroomCabinetOldTop" prob=".35"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Cooking Pot Fun - This lets you randomize the placement of
+            cooking pots and sometimes get a bomb to keep survivors
+            on their toes.
+        ************************************************************** -->
+
+        <placeholder name="cbpCookingPotHelper">
+            <block name="air" prob=".4"/>
+            <block name="decoCookingPot" prob=".25"/>
+            <block name="cbpCookingPotOffset" prob=".25"/>
+            <block name="mineCookingPot" prob=".1"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Corpses - Randomized for player variety.
+        ************************************************************** -->
+
+        <placeholder name="cbpCorpseHumanHelper">
+            <block name="goreBlockHumanCorpse" prob=".2"/>
+            <block name="goreBlockHumanCorpse1" prob=".2"/>
+            <block name="goreBlockHumanCorpse2" prob=".2"/>
+            <block name="goreBlockHumanCorpse3" prob=".2"/>
+            <block name="goreBlockHumanBones" prob=".1"/>
+            <block name="goreHumanSkull" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpCorpseHumanHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="goreBlockHumanCorpse" prob=".1"/>
+            <block name="goreBlockHumanCorpse1" prob=".1"/>
+            <block name="goreBlockHumanCorpse2" prob=".1"/>
+            <block name="goreBlockHumanCorpse3" prob=".1"/>
+            <block name="goreBlockHumanBones" prob=".05"/>
+            <block name="goreHumanSkull" prob=".05"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Farming - Not sure why TFP doesn't have a mushroom placeholder.
+        ************************************************************** -->
+
+        <placeholder name="cbpPlantedMushroomHarvestRandomHelper">
+            <block name="plantedMushroom3Harvest" prob=".03" randomrotation="true"/>
+            <block name="air" prob=".87"/>
+            <block name="treeSnowyGrassDiagonal" prob=".431" biome="snow" randomrotation="true"/>
+            <block name="treeTallGrassDiagonal" prob=".431" biome="pine_forest" randomrotation="true"/>
+            <block name="treeBrownGrassDiagonal" prob=".431" biome="desert" randomrotation="true"/>
+            <block name="treeBrownGrassDiagonal" prob=".431" biome="water" randomrotation="true"/>
+            <block name="treeBrownGrassDiagonal" prob=".431" biome="wasteland" randomrotation="true"/>
+            <block name="treeBrownGrassDiagonal" prob=".431" biome="burnt_forest" randomrotation="true"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Land Mine Helpers let you place the possibility of their
+            being a landmine. The "50" variety place a mine 50% of the
+            time, while the "10" variety place a mine 10% of the time.
+        ************************************************************** -->
+
+        <placeholder name="cbpLandMine50RandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="hubcapNoMine" prob=".05"/>
+            <block name="mineCandyTin" prob=".15"/>
+            <block name="mineHubcap" prob=".15"/>
+            <block name="mineAirFilter" prob=".15"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMine10RandomHelper">
+            <block name="air" prob=".9"/>
+            <block name="hubcapNoMine" prob=".01"/>
+            <block name="mineCandyTin" prob=".03"/>
+            <block name="mineHubcap" prob=".03"/>
+            <block name="mineAirFilter" prob=".03"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineCandyTin50RandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="mineCandyTin" prob=".5"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineCandyTin10RandomHelper">
+            <block name="air" prob=".9"/>
+            <block name="mineCandyTin" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineHubcap50RandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="mineHubcap" prob=".5"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineHubcap10RandomHelper">
+            <block name="air" prob=".9"/>
+            <block name="mineHubcap" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineAirFilter50RandomHelper">
+            <block name="air" prob=".5"/>
+            <block name="mineAirFilter" prob=".5"/>
+        </placeholder>
+
+        <placeholder name="cbpLandMineAirFilter10RandomHelper">
+            <block name="air" prob=".9"/>
+            <block name="mineAirFilter" prob=".1"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            TFP Shipping Crates rigged for a very rare appearance. These
+            are handy if you largely want to decorate with the crates
+            and don't want to give out a lot of loot.
+        ************************************************************** -->
+
+        <!-- Shamway -->
+        <placeholder name="cbpShippingCrateShamwayHelper">
+            <block name="cbpShippingCrateShamwayCube" prob=".99"/>
+            <block name="cntShippingCrateShamway" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateShamwayHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateShamwayCube" prob=".49"/>
+            <block name="cntShippingCrateShamway" prob=".01"/>
+        </placeholder>
+
+        <!-- Lab Equipment -->
+        <placeholder name="cbpShippingCrateLabEquipmentHelper">
+            <block name="cbpShippingCrateLabEquipmentCube" prob=".99"/>
+            <block name="cntShippingCrateLabEquipment" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateLabEquipmentHelperAir">
+            <block name="air" prob=".50"/>
+            <block name="cbpShippingCrateLabEquipmentCube" prob=".49"/>
+            <block name="cntShippingCrateLabEquipment" prob=".01"/>
+        </placeholder>
+
+        <!-- Bookstore -->
+        <placeholder name="cbpShippingCrateBookstoreHelper">
+            <block name="cbpShippingCrateBookstoreCube" prob=".99"/>
+            <block name="cntShippingCrateBookstore" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateBookstoreHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateBookstoreCube" prob=".49"/>
+            <block name="cntShippingCrateBookstore" prob=".01"/>
+        </placeholder>
+
+        <!-- Car Parts -->
+        <placeholder name="cbpShippingCrateCarPartsHelper">
+            <block name="cbpShippingCrateCarPartsCube" prob=".99"/>
+            <block name="cntShippingCrateCarParts" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateCarPartsHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateCarPartsCube" prob=".49"/>
+            <block name="cntShippingCrateCarParts" prob=".01"/>
+        </placeholder>
+
+        <!-- Shotgun Messiah -->
+        <placeholder name="cbpShippingCrateShotgunMessiahHelper">
+            <block name="cbpShippingCrateShotgunMessiahCube" prob=".99"/>
+            <block name="cntShippingCrateShotgunMessiah" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateShotgunMessiahHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateShotgunMessiahCube" prob=".49"/>
+            <block name="cntShippingCrateShotgunMessiah" prob=".01"/>
+        </placeholder>
+
+        <!-- Working Stiffs -->
+        <placeholder name="cbpShippingCrateWorkingStiffsHelper">
+            <block name="cbpShippingCrateWorkingStiffsCube" prob=".99"/>
+            <block name="cntShippingCrateWorkingStiffs" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateWorkingStiffsHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateWorkingStiffsCube" prob=".49"/>
+            <block name="cntShippingCrateWorkingStiffs" prob=".01"/>
+        </placeholder>
+
+        <!-- Savage Country -->
+        <placeholder name="cbpShippingCrateSavageCountryHelper">
+            <block name="cbpShippingCrateSavageCountryCube" prob=".99"/>
+            <block name="cntShippingCrateSavageCountry" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateSavageCountryHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateSavageCountryCube" prob=".49"/>
+            <block name="cntShippingCrateSavageCountry" prob=".01"/>
+        </placeholder>
+
+        <!-- Mo Power Electronics -->
+        <placeholder name="cbpShippingCrateMoPowerElectronicsHelper">
+            <block name="cbpShippingCrateMoPowerElectronicsCube" prob=".99"/>
+            <block name="cntShippingCrateMoPowerElectronics" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpShippingCrateMoPowerElectronicsHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cbpShippingCrateMoPowerElectronicsCube" prob=".49"/>
+            <block name="cntShippingCrateMoPowerElectronics" prob=".01"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Shopping Carts
+        ************************************************************** -->
+
+        <placeholder name="cbpShoppingCartRandomHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="cntShoppingCartEmpty" prob=".3"/>
+            <block name="cntShoppingCart" prob=".2"/>
+        </placeholder>
+
+        <!-- *************************************************************
+            Vending Machines
+        ************************************************************** -->
+
+        <placeholder name="cbpVendingMachineRandomHelper">
+            <block name="cntVendingMachine2Broken" prob=".5"/>
+            <block name="cbpVendingMachine2Empty" prob=".4"/>
+            <block name="cntVendingMachine2" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpVendingMachineRandomHelperAir">
+            <block name="air" prob=".3"/>
+            <block name="cntVendingMachine2Broken" prob=".3"/>
+            <block name="cbpVendingMachine2Empty" prob=".3"/>
+            <block name="cntVendingMachine2" prob=".1"/>
+        </placeholder>
+
+    </append>
+</blockplaceholders>
