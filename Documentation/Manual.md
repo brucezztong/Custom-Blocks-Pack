@@ -4,10 +4,14 @@ block definitions between custom POI developers. As a separate modlet, multiple
 modlets can depend upon it instead of each modlet creator defining their own
 version of the same block definition, plus perhaps avoid block name collisions.
 
-### Prefab Editor Tip
+### Prefab Editor Tips
 All of the blocks in this pack have names that start with a "cbp" prefix, so in
 the Prefab Editor when using the block menu, you can type in "cbp" and see a
 list of these blocks and placeholders.
+
+Helper blocks are tinted red just like the TFP Helpers/Placeholders are.
+Otherwise, blocks from this modlet are tinted blue to make it more obvious to
+you if you are building in a dependency to this modlet.
 
 ## Custom Blocks
 **ATM Machines** - The pack adds an empty ATM machine, plus a helper which is
@@ -33,6 +37,19 @@ any gasoline. They still explode, so I guess they're full of gasoline vapors.
 * cbpBarrelGasSingle00Empty
 * cbpBarrelGasSingle45Empty
 
+**Bathroom Cabinets** - If you use the TFP kitchen cabinets in a bathroom then
+your POI's bathrooms will give out canned food. These blocks offer cabinets
+that give out items more appropriate for the bathroom.
+
+* cbpBathroomCabinetRedBottom
+* cbpBathroomCabinetRedBottomHelper
+* cbpBathroomCabinetRedTop
+* cbpBathroomCabinetRedTopHelper
+* cbpBathroomCabinetOldBottom
+* cbpBathroomCabinetOldBottomHelper
+* cbpBathroomCabinetOldTop
+* cbpBathroomCabinetOldTopHelper
+
 **Bookcases** - This is a bookcase that does not give out books and
 instead gives out other things you might find on a bookshelf.
 
@@ -42,9 +59,17 @@ instead gives out other things you might find on a bookshelf.
 block that doesn't sit in the middle of the block's space. Here are a number
 of blocks that have been offset so you can place them closer to a wall.
 
+* cbpCoffeeMakerLeftOffset
+* cbpCoffeeMakerRightOffset
 * cbpCookingPotOffset
+* cbpComputerDeskTopOCLeftOffset
+* cbpComputerDeskTopOCRightOffset
 * cbpMannequinFemaleOffset
 * cbpMannequinMaleOffset
+* cbpSignExitLightMidOffset
+* cbpSignExitLightLowOffset
+* cbpSignShopOpenMidOffset
+* cbpSignShopOpenLowOffset
 * cbpToasterOffset
 
 **Shipping & Storage Crates** - These come in a few varieties. If the name
@@ -111,6 +136,16 @@ or a TFP ATM with loot (10%).
 *cbpATMRandomHelperAir* - This placeholder will be replaced by Air (50%), an
 Empty ATM (40%), or a TFP ATM with loot (10%).
 
+### Bathroom Cabinet Helpers
+All of these helpers work the same way. There's a 65% chance of an open cabinet
+being placed which will have no loot leaving a 35% chance for a closed cabinet.
+
+The Helpers are:
+* cbpBathroomCabinetRedBottomHelper
+* cbpBathroomCabinetRedTopHelper
+* cbpBathroomCabinetOldBottomHelper
+* cbpBathroomCabinetOldTopHelper
+
 ### Cooking Pot Helper
 *cbpCookingPotHelper* - This can be air (40%), a cooking pot (50%), or a bomb
 (10%). It exists to both randomize minor loot (a cooking pot) and to keep
@@ -151,6 +186,13 @@ Here's a complete list of landmine helpers:
 * cbpLandMineHubcap10RandomHelper
 * cbpLandMineAirFilter50RandomHelper
 * cbpLandMineAirFilter10RandomHelper
+
+### Movie Poster Helpers
+*cbpMoviePosterRandomHelper* - Shows one of the TFP movie posters with an equal
+chance for any poster.
+
+*cbpMoviePosterTheaterRandomHelper* - Shows one of the TFP movie posters, but
+this is the theater version of the posters.
 
 ### Shipping Crate Helpers
 *cbpShamwayShippingCrateHelper* - This is a series of helpers, where the

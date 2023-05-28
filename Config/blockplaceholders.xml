@@ -144,6 +144,24 @@
         </placeholder>
 
         <!-- *************************************************************
+            Movie Poster Helpers
+        ************************************************************** -->
+
+        <placeholder name="cbpMoviePosterRandomHelper">
+            <block name="signPosterMovie2159" prob="1"/>
+            <block name="signPosterMovieLoneWolf" prob="1"/>
+            <block name="signPosterMovieMammasJustice" prob="1"/>
+            <block name="signPosterMovieSexualTension" prob="1"/>
+        </placeholder>
+
+        <placeholder name="cbpMoviePosterTheaterRandomHelper">
+            <block name="signPosterMovieTheater2159" prob="1"/>
+            <block name="signPosterMovieTheaterLoneWolf" prob="1"/>
+            <block name="signPosterMovieTheaterMammasJustice" prob="1"/>
+            <block name="signPosterMovieTheaterSexualTension" prob="1"/>
+        </placeholder>
+
+        <!-- *************************************************************
             TFP Shipping Crates rigged for a very rare appearance. These
             are handy if you largely want to decorate with the crates
             and don't want to give out a lot of loot.

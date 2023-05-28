@@ -13,23 +13,25 @@
             Bathroom Cabinest and Cupboards
         *********************************************************** -->
 
-        <lootcontainer name="cbpBathroom" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
-            <item name="cobweb" prob="1" count="1"/>
-            <item name="resourcePaper" prob="1" count="1"/>
-            <item name="resourceScrapPolymers" prob="1" count="1"/>
-            <item name="resourceCloth" prob="1" count="1"/>
+        <lootcontainer name="cbpBathroom" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualQ1Template">
+            <item name="resourcePaper" prob="1" count="1,2"/>
+            <item name="resourceScrapPolymers" prob="1" count="1,2"/>
+            <item name="resourceCloth" prob="1" count="1,2"/>
+            <item name="resourceBrokenGlass" prob="1" count="1,2"/>
             <item name="medicalBandage" prob="1" count="1"/>
-            <item name="medicalAloeCream" prob="1" count="1"/>
-            <item name="candle" prob="0.2" count="1"/>
-            <item name="medicalFirstAidBandage" prob="0.2" count="1"/>
-            <item name="drinkJarGoldenRodTea" prob="0.2" count="1"/>
+            <item name="medicalAloeCream" prob="0.5" count="1"/>
+            <item name="medicalFirstAidBandage" prob="0.25" count="1"/>
+            <item name="drinkJarGoldenRodTea" prob="0.25" count="1"/>
             <item name="drugPainkillers" prob="0.1" count="1"/>
             <item name="drugVitamins" prob="0.1" count="1"/>
             <item name="resourceSewingKit" prob="0.1" count="1"/>
             <item name="medicalSplint" prob="0.1" count="1"/>
             <item name="drugHerbalAntibiotics" prob="0.1" count="1"/>
             <item name="resourceAcid" prob="0.1" count="1"/>
-            <item name="toolBeaker" prob="0.1" count="1"/>
+            <item name="candle" prob="0.1" count="1"/>
+            <item name="toolBeaker" prob="0.05" count="1"/>
+            <item name="meleeToolSalvageT1Wrench" prob="0.05" count="1"/>
+            <item name="meleeWpnBladeT1HuntingKnife" prob="0.05" count="1"/>
         </lootcontainer>
 
         <!-- **********************************************************

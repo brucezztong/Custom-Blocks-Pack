@@ -399,17 +399,59 @@
             <property name="Model" value="#Entities/LootContainers?pursePrefab.prefab"/>
         </block>
 
+        <!-- *************************************************************************
+            Movie Poster Helpers
+        ************************************************************************** -->
+
+        <block name="cbpMoviePosterRandomHelper">
+            <property name="Extends" value="signPosterMovie2159" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="signPosterMovie2159"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
+        <block name="cbpMoviePosterTheaterRandomHelper">
+            <property name="Extends" value="signPosterMovieTheater2159" param1="DescriptionKey"/>
+            <property name="CustomIcon" value="signPosterMovieTheater2159"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="CreativeMode" value="Dev"/>
+        </block>
+
         <!-- *******************************************************************
             Offset Blocks - Normal blocks that are not centered in their space.
         ******************************************************************** -->
 
-        <block name="cbpToasterOffset">
-            <property name="Extends" value="cntToaster"/>
-            <property name="CustomIcon" value="cntToaster"/>
+        <!-- Coffee Maker, Left, Right -->
+        <block name="cbpCoffeeMakerLeftOffset">
+            <property name="Extends" value="cntCoffeeMaker"/>
+            <property name="CustomIcon" value="cntCoffeeMaker"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.27,0.5,0.0"/>
+        </block>
+
+        <block name="cbpCoffeeMakerRightOffset">
+            <property name="Extends" value="cntCoffeeMaker"/>
+            <property name="CustomIcon" value="cntCoffeeMaker"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="-0.27,0.5,0.0"/>
+        </block>
+
+        <!-- Computer Tower, Left, Right -->
+        <block name="cbpComputerDeskTopPCLeftOffset">
+            <property name="Extends" value="decoComputerDeskTopPC"/>
+            <property name="CustomIcon" value="decoComputerDeskTopPC"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.3,0.5,0.0"/>
+        </block>
+
+        <block name="cbpComputerDeskTopPCRightOffset">
+            <property name="Extends" value="decoComputerDeskTopPC"/>
+            <property name="CustomIcon" value="decoComputerDeskTopPC"/>
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="ModelOffset" value="-0.3,0.5,0.0"/>
         </block>
 
+        <!-- Cooking Pot -->
         <block name="cbpCookingPotOffset">
             <property name="Extends" value="decoCookingPot"/>
             <property name="CustomIcon" value="toolCookingPot"/>
@@ -417,6 +459,7 @@
             <property name="ModelOffset" value="0.0,0.5,-0.3"/>
         </block>
 
+        <!-- Mannequins -->
         <block name="cbpMannequinMaleOffset">
             <property name="Extends" value="decoMannequinMale"/>
             <property name="CustomIcon" value="decoMannequinMale"/>
@@ -429,6 +472,44 @@
             <property name="CustomIcon" value="decoMannequinFemale"/>
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="ModelOffset" value="0.0,0.5,-0.3"/>
+        </block>
+
+        <!-- Sign Exit -->
+        <block name="cbpSignExitLightMidOffset">
+            <property name="Extends" value="signExitLight"/>
+            <property name="CustomIcon" value="signExitLight"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,0.17,0.0"/>
+        </block>
+
+        <block name="cbpSignExitLightLowOffset">
+            <property name="Extends" value="signExitLight"/>
+            <property name="CustomIcon" value="signExitLight"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,-0.2,0.0"/>
+        </block>
+
+        <!-- Sign Open -->
+        <block name="cbpSignShopOpenMidOffset">
+            <property name="Extends" value="signShopOpen"/>
+            <property name="CustomIcon" value="signShopOpenSwitch"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,0.2,0.0"/>
+        </block>
+
+        <block name="cbpSignShopOpenLowOffset">
+            <property name="Extends" value="signShopOpen"/>
+            <property name="CustomIcon" value="signShopOpenSwitch"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="0.0,-0.05,0.0"/>
+        </block>
+
+        <!-- Toaster -->
+        <block name="cbpToasterOffset">
+            <property name="Extends" value="cntToaster"/>
+            <property name="CustomIcon" value="cntToaster"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="ModelOffset" value="-0.3,0.5,0.0"/>
         </block>
 
         <!-- ************************************************************************* 
