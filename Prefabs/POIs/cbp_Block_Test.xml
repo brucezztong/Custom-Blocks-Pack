@@ -8,16 +8,16 @@
   <property name="DifficultyTier" value="0" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="TraderArea" value="False" />
-  <property name="PrefabSize" value="100, 7, 120" />
+  <property name="PrefabSize" value="100, 6, 120" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="YOffset" value="-2" />
   <property class="Stats">
-    <property name="TotalVertices" value="7328586" />
-    <property name="TotalTriangles" value="3343606" />
+    <property name="TotalVertices" value="7231110" />
+    <property name="TotalTriangles" value="3268969" />
     <property class="BlockEntities">
-      <property name="Vertices" value="7233807" />
-      <property name="Triangles" value="3260915" />
+      <property name="Vertices" value="7136627" />
+      <property name="Triangles" value="3186766" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="63429" />
@@ -44,8 +44,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="31350" />
-      <property name="Triangles" value="50244" />
+      <property name="Vertices" value="31054" />
+      <property name="Triangles" value="49756" />
     </property>
   </property>
 </prefab>
