@@ -1,0 +1,18 @@
+<buffs>
+
+    <append xpath="/buffs">
+        <buff name="cbpSlowdown" icon="ui_game_symbol_agility" icon_color="132,0,155">
+            <display_value_key value="Slowpoke"/> <display_value value="xxx"/>
+            <stack_type value="ignore"/><duration value="2"/>
+            <effect_group>
+                <passive_effect name="WalkSpeed" operation="base_set" value=".25"/>
+                <passive_effect name="RunSpeed" operation="base_set" value=".3"/>		
+                <passive_effect name="VehicleVelocityMaxPer" operation="base_set" value="0.25"/>
+                <passive_effect name="VehicleVelocityMaxTurboPer" operation="base_set" value="0.25"/>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
+                <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>			
+            </effect_group>
+        </buff>	
+    </append>
+
+</buffs>

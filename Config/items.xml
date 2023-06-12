@@ -1,0 +1,62 @@
+<items>
+    <append xpath="/items" >
+
+        <!-- **************************************************************
+            Pille's Super Brush
+        *************************************************************** -->
+
+        <item name="cbpSuperBrush">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="HoldType" value="1"/>
+            <property name="Meshfile" value="@:Other/Items/Tools/paintbrushPrefab.prefab"/>
+            <property name="CustomIcon" value="meleeToolPaintTool"/>
+            <property name="Material" value="Mwood"/>
+            <property name="DegradationBreaksAfter" value="false"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="SoundJammed" value="ItemNeedsRepair"/>
+            <property name="SoundDestroy" value="wooddestroy1"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="CrosshairUpAfterShot" value="false"/>
+            <property name="Group" value="Tools/Traps"/>
+            <property name="DescriptionKey" value="cbpSuperBrushDesc"/>
+            <property name="PickupJournalEntry" value="paintingTip"/>
+            <property class="Action0">
+                <property name="Class" value="TextureBlock"/>
+                <property name="Hitmask_override" value="Melee"/>
+                <property name="Sound_start" value="erase"/>
+                <property name="Sound_loop" value="erase"/>
+                <property name="Sound_end" value="erase"/>
+                <property name="Infinite_ammo" value="true"/>
+                <property name="Magazine_items" value="resourcePaint"/>
+                <property name="Range" value="50"/>
+                <property name="Delay" value="0.02"/>
+                <property name="RemoveTexture" value="true"/>
+                <property name="DefaultTextureID" value="156"/>
+            </property>
+            <property class="Action1">
+                <property name="Class" value="TextureBlock"/>
+                <property name="Hitmask_override" value="Melee"/>
+                <property name="Sound_start" value="paint"/>
+                <property name="Sound_loop" value="paint"/>
+                <property name="Sound_end" value="paint"/>
+                <property name="Infinite_ammo" value="true"/>
+                <property name="Magazine_items" value="resourcePaint"/>
+                <property name="Range" value="50"/>
+                <property name="Delay" value="0.02"/>
+                <property name="Particles_muzzle_fire" value="paint_splash2"/>
+            </property>
+            <effect_group name="Base Effects" tiered="false">
+                <passive_effect name="ModSlots" operation="base_set" value="0"/>
+                <!--<passive_effect name="RoundsPerMinute" operation="base_set" value="450"/>
+                <passive_effect name="RoundRayCount" operation="base_set" value="8"/>-->
+                <passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+                <passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+                <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+                <passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0"/>
+                <passive_effect name="SpreadMultiplierHip" operation="base_set" value="0"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+            </effect_group>
+        </item>
+
+    </append>
+</items>

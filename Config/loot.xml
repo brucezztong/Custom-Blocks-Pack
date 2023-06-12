@@ -1,14 +1,28 @@
 ﻿<lootcontainers>
 	<append xpath="/lootcontainers">
-        <!-- **********************************************************
-            Base List - Empty, but other modlets can slip in harmless
-            junk into this list if they want using XSLT.
+		<!-- **********************************************************
+            AUTO TURRETS; Low Level Loot
         *********************************************************** -->
-
-        <lootcontainer name="cbpJunk" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
-            <item name="cobweb" count="1"/>
+		
+		<lootcontainer name="cbpAutoTurretLoot" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceBulletCasing" prob="0.4" count="1,5"/>
+			<item name="resourceBulletTip" prob="0.4" count="1,5"/>
+			<item name="resourceGunPowder" prob="0.4" count="1,5"/>
+            <item name="ammo9mmBulletBall" prob="0.4" count="2,5"/>
+        </lootcontainer>
+		
+		<lootcontainer name="cbpShotgunTurretLoot" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourcePaper" prob="1" count="1,5"/>
+			<item name="resourceBuckshot" prob="1" count="1,5"/>
+			<item name="resourceGunPowder" prob="1" count="1,5"/>
+            <item name="ammoShotgunShell" prob="0.4" count="5,10"/>
         </lootcontainer>
 
+		<lootcontainer name="cbpDartTurretLoot" count="0,1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="unit_iron" prob="0.4" count="5,6"/>
+            <item name="ammoDartIron" prob="0.4" count="1,3"/>
+        </lootcontainer>
+			
         <!-- **********************************************************
             Bathroom Cabinest and Cupboards
         *********************************************************** -->
@@ -29,7 +43,7 @@
             <item name="drugHerbalAntibiotics" prob="0.1" count="1"/>
             <item name="resourceAcid" prob="0.1" count="1"/>
             <item name="candle" prob="0.1" count="1"/>
-            <item name="toolBeaker" prob="0.05" count="1"/>
+            <item name="toolBeaker" prob="0.005" count="1"/>
             <item name="meleeToolSalvageT1Wrench" prob="0.05" count="1"/>
             <item name="meleeWpnBladeT1HuntingKnife" prob="0.05" count="1"/>
         </lootcontainer>
@@ -42,9 +56,9 @@
             <item name="resourcePaper" prob="1" count="1,10"/>
             <item name="resourcePaper" prob="0.4" count="10,20"/>
             <item name="resourceLeather" prob="0.8" count="1"/>
-            <item name="resourceTrophy1" prob="0.6" count="1"/>
-            <item name="resourceTrophy2" prob="0.6" count="1"/>
-            <item name="resourceCandleStick" prob="0.6" count="1,2"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1,2"/>
             <item name="oldCash" prob="0.4" count="1,5"/>
             <item name="resourceBrokenGlass" prob="0.2" count="1,2"/>
             <item name="resourceGlue" prob="0.2" count="1"/>
@@ -56,6 +70,55 @@
             <item name="armorSantaHat" prob="0.1" count="1"/>
         </lootcontainer>
 
+		<!-- **********************************************************
+            Clothing; Low Level Loot
+        *********************************************************** -->
+			
+		<lootcontainer name="cbpPants" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceCloth" count="0,2" prob=".08"/>
+		    <item group="groupApparelPants" count="0,2" prob="1"/>
+		    <item name="apparelSuitPants" prob=".1" count="0,2"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpShirts" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceCloth" count="0,2" prob=".08"/>
+			<item group="groupApparelShirtLong" count="0,2" prob=".55"/>
+			<item group="groupApparelTankTopTShirt" count="0,2" prob="0.55"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpShoes" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="apparelWornBoots" count="0,2" prob=".08"/>
+			<item name="apparelCowboyBoots" count="0,2" prob=".08"/>
+			<item name="apparelGothBoots" count="0,2" prob=".08"/>
+			<item name="apparelSuitDressShoes" count="0,2" prob=".08"/>
+			<item name="apparelRunningShoesRegular" count="0,2" loot_prob_template="low"/>
+			<item name="apparelRunningShoesHP" count="0,2" loot_prob_template="veryLow"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpCloset" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupApparelClothesNoShoes" count="0,2" loot_prob_template="high"/>
+			<item name="resourceCloth" count="0,2" loot_prob_template="low"/>
+			<item name="resourceSewingKit" count="0,2" loot_prob_template="low"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpArmyPants" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="resourceCloth" count="0,4" loot_prob_template="high"/>
+			<item name="apparelArmyPants" count="0,2" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+			<item name="resourceMilitaryFiber" count="0,2" loot_prob_template="medLow"/>
+			<item name="armorMilitarySetParts" count="0,2" loot_prob_template="medLow"/>
+			<item group="groupMilitaryArmor" count="0,2" loot_prob_template="veryLow"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpArmyShirts" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item name="resourceCloth" count="0,2" loot_prob_template="high"/>
+			<item name="apparelArmyShirt" count="0,2" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+			<item name="apparelTankTop" count="0,2" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+			<item name="apparelTShirtPlain" count="0,2" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+			<item name="resourceMilitaryFiber" count="0,2" loot_prob_template="medLow"/>
+			<item name="armorMilitarySetParts" count="0,2" loot_prob_template="medLow"/>
+			<item group="groupMilitaryArmor" count="0,2" loot_prob_template="veryLow"/>
+        </lootcontainer>
+		
         <!-- **********************************************************
             Delos (Westworld) Loot Lists
         *********************************************************** -->
@@ -106,6 +169,37 @@
             <item name="apparelDenimPants" mods="dye" mod_chance="0"/>
         </lootcontainer>
 
+		<!-- **********************************************************
+            Freezers; Low Level Loot
+        *********************************************************** -->
+			
+		<lootcontainer name="cbpGrocery" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourcePaper"  count="0,2" loot_prob_template="high"/>
+			<item group="groupFoodCommon" prob="0.1" count="0,2"/>			
+            <item group="groupIngredientsCommon" prob="0.1" count="0,2"/>
+            <item group="foodCandy" count="0,2" prob="0.1"/>
+            <item name="resourceBrokenGlass" prob="0.1" count="0,2"/>
+            <item name="resourceScrapPolymers" prob="0.1" count="0,2"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpBeverage" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupDrinksCommon" prob="1" count="0,2"/>
+            <item group="groupIngredientsCommon" prob="1" count="0,2"/>
+            <item name="drinkJarRiverWater" prob="0.04" count="0,2"/>
+            <item name="foodHoney" prob="0.02" count="0,2"/>
+            <item name="resourceBrokenGlass" prob="0.1" count="0,2"/>
+            <item name="resourceScrapPolymers" prob="0.1" count="0,2"/>
+        </lootcontainer>
+		
+        <!-- **********************************************************
+            Junk - Empty, but other modlets can slip in harmless
+            junk into this list if they want using XSLT.
+        *********************************************************** -->
+
+        <lootcontainer name="cbpJunk" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="1"/>
+        </lootcontainer>
+		
         <!-- **********************************************************
             Storage Crates - Kind of 1/2 a ShippingCrate
         *********************************************************** -->
@@ -202,6 +296,85 @@
             <item name="meleeWpnBladeT1HuntingKnife" prob="0.1" count="1"/>
         </lootcontainer>
 
+		<!-- **********************************************************
+            Store Shelving; Low Level Loot
+        *********************************************************** -->
+			
+		<lootcontainer name="cbpFood" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupFoodTrashUncommon" loot_prob_template="high"/>
+            <item name="resourcePaper"  count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapPolymers"  count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapIron"  count="0,2" loot_prob_template="medHigh"/>
+			<item name="resourceCloth"  count="0,2" loot_prob_template="med"/>
+			<item group="groupFoodTrashUncommon" count="0,2" loot_prob_template="med"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpHardware" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceCloth" count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapPolymers" count="0,2" loot_prob_template="high"/>
+			<item name="resourceNail" count="0,2" loot_prob_template="high"/>
+			<item name="resourceMetalPipe" count="023" loot_prob_template="high"/>
+			<item name="resourceLockPick" count="0,2" loot_prob_template="med"/>
+			<item name="resourceMechanicalParts" count="0,2" loot_prob_template="high"/>
+			<item name="resourceDuctTape" count="0,2" loot_prob_template="med"/>
+			<item name="resourceOil" count="0,2" loot_prob_template="med"/>
+			<item name="resourceRepairKit" count="0,2" loot_prob_template="med"/>
+			<item name="resourceForgedIron" count="0,4" loot_prob_template="low"/>
+			<item name="meleeToolPaintTool" loot_prob_template="med"/>
+			<item group="groupToolsT1Wrench" loot_prob_template="low"/>
+			<item group="groupToolsT1ClawHammer" loot_prob_template="veryLow"/>
+		</lootcontainer>
+
+		<lootcontainer name="cbpPharmacy" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourceCloth" count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapPolymers" count="0,2" loot_prob_template="high"/>
+			<item name="resourceDuctTape" count="0,2" loot_prob_template="med"/>
+			<item group="groupMedicalCommon" count="0,1" prob="0.1"/>
+		</lootcontainer>
+
+		<lootcontainer name="cbpTrash" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupFoodTrashCommon" count="0,1" loot_prob_template="medLow"/>
+			<item name="resourceCloth" count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapPolymers" count="0,2" loot_prob_template="high"/>
+			<item name="resourceNail" count="0,2" loot_prob_template="high"/>
+			<item name="resourceMetalPipe" count="023" loot_prob_template="high"/>
+			<item name="resourceLockPick" count="0,2" loot_prob_template="med"/>
+			<item name="resourceMechanicalParts" count="0,2" loot_prob_template="high"/>
+			<item name="resourceDuctTape" count="0,2" loot_prob_template="med"/>
+			<item name="resourceOil" count="0,2" loot_prob_template="med"/>
+			<item group="groupAmmoResourcesSmall" count="0,1" loot_prob_template="low"/>
+			<item name="resourceFeather" count="1,5" loot_prob_template="low"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpGadgets" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item group="groupFoodTrashCommon" count="0,1" loot_prob_template="medLow"/>
+			<item name="resourceCloth" count="0,2" loot_prob_template="high"/>
+			<item name="resourceScrapPolymers" count="0,2" loot_prob_template="high"/>
+			<item name="resourceNail" count="0,2" loot_prob_template="high"/>
+			<item name="resourceMetalPipe" count="023" loot_prob_template="high"/>
+			<item name="resourceLockPick" count="0,2" loot_prob_template="med"/>
+			<item name="resourceMechanicalParts" count="0,2" loot_prob_template="high"/>
+			<item name="resourceDuctTape" count="0,2" loot_prob_template="med"/>
+			<item name="resourceOil" count="0,2" loot_prob_template="med"/>
+			<item group="groupAmmoResourcesSmall" count="0,1" loot_prob_template="low"/>
+			<item name="resourceFeather" count="1,5" loot_prob_template="low"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpArmy" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+           <item group="groupAmmoSmall" count="0,1" loot_prob_template="high"/>
+		   <item group="weaponSkillMagazinesOnly" count="0,1" loot_prob_template="medHigh"/>
+		   <item group="groupMilitaryBooks" count="0,1" loot_prob_template="med"/>
+		   <item group="groupAmmoMedium" count="0,1" loot_prob_template="med"/>
+		   <item group="groupAmmoLarge" count="0,1" loot_prob_template="low"/>
+		   <item group="groupTreasureMaps" count="0,1" loot_prob_template="veryLow"/>
+		   <item name="meleeToolFlashlight02" count="0,1" loot_prob_template="veryLow"/>
+		   <item group="groupMilitaryGear" count="0,1" loot_prob_template="medLow"/>
+		   <item group="groupArmorModsScaled" count="0,1" loot_prob_template="low"/>
+		   <item name="meleeWpnBladeT1HuntingKnife" count="0,1" loot_prob_template="veryLow"/>
+		   <item name="meleeWpnKnucklesT1IronKnuckles" count="0,1" loot_prob_template="veryLow"/>
+		   <item name="gunHandgunT1Pistol" count="0,1" loot_prob_template="veryLow"/>		   
+       </lootcontainer>
+		
         <!-- **********************************************************
             Survivor Chest; Low Level Loot
         *********************************************************** -->
@@ -212,8 +385,8 @@
             <item name="resourceGlue" prob="0.4" count="1"/>
             <item name="foodCharredMeat" prob="1" count="1,2"/>
             <item name="foodGrilledMeat" prob="1" count="1,2"/>
-            <item name="drinkJarRiverWater" prob="1" count="1,2"/>
-            <item name="drinkJarBoiledWater" prob="1" count="1"/>
+            <item name="drinkJarRiverWater" prob="1" count="1"/>
+            <item name="drinkJarBoiledWater" prob="0.5" count="1"/>
             <item name="toolCookingGrill" prob="0.4" count="1"/>
             <item name="toolCookingPot" prob="0.4" count="1"/>
             <item name="meleeToolRepairT0StoneAxe" prob="0.2" count="1"/>
@@ -224,7 +397,39 @@
             <item name="ammoArrowStone" prob="1" count="1,5"/>
             <item name="gunBowT1WoodenBow" prob="0.2" count="1"/>
         </lootcontainer>
+		
+		<!-- **********************************************************
+            Water Cooler
+        *********************************************************** -->
+		
+		<lootcontainer name="cbpWaterCoolerEmpty" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="0,1"/>
+        </lootcontainer>
+
+		<!-- **********************************************************
+            Weapon Racks and Displays; Low Level Loot
+        *********************************************************** -->
+		
+		<lootcontainer name="cbpAmmoDisplay" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item group="groupAmmoSmall" count="0,2" loot_prob_template="med"/>
+			<item group="groupAmmoResourcesSmall" count="0,2" loot_prob_template="med"/>
+			<item group="groupAmmoMedium" count="0,2" loot_prob_template="low"/>
+			<item group="groupAmmoResourcesMedium" count="0,2" loot_prob_template="low"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpArmorRack" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item group="groupArmorT0" count="0,1" loot_prob_template="ProbT0"/>
+			<item group="groupArmorT1" count="0,1" loot_prob_template="ProbT1"/>
+			<item name="armorMilitarySetParts" count="0,2" loot_prob_template="ProbT1Cap"/>
+			<item group="groupArmorT2" count="0,1" loot_prob_template="ProbT2Cap"/>
+        </lootcontainer>
+
+		<lootcontainer name="cbpGunRack" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+			<item group="groupArmorT0" count="0,1" loot_prob_template="ProbT0"/>
+			<item group="groupArmorT1" count="0,1" loot_prob_template="ProbT1"/>
+			<item name="armorMilitarySetParts" count="0,2" loot_prob_template="ProbT1Cap"/>
+			<item group="groupArmorT2" count="0,1" loot_prob_template="ProbT2Cap"/>
+        </lootcontainer>		
 
 	</append>
-
 </lootcontainers>

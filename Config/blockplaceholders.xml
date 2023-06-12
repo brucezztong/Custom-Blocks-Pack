@@ -40,6 +40,193 @@
             <block name="cbpBathroomCabinetOldTop" prob=".35"/>
         </placeholder>
 
+		<!-- *************************************************************
+            Clothes Rack, Stacks and Shelves; Allows randomised clothing decor 
+        ************************************************************** -->
+		
+		<placeholder name="cbpClothesRackRoundPantsRandomLootHelper">
+			<block name="cbpClothesRackRoundPants" prob=".5"/>
+            <block name="cntClothesRackRoundEmpty" prob=".1"/>
+			<block name="cntClothesRackRoundEmpty2" prob=".1"/>
+			<block name="cntClothesRackRoundPants" prob=".1"/>
+            <block name="cbpClothesRackRoundPantsLoot" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpClothesRackRoundTopsRandomLootHelper">
+			<block name="cbpClothesRackRoundShirts" prob=".5"/>
+            <block name="cntClothesRackRoundEmpty" prob=".1"/>
+			<block name="cntClothesRackRoundEmpty2" prob=".1"/>
+			<block name="cntClothesRackRoundShirts" prob=".1"/>
+            <block name="cbpClothesRackRoundShirtsLoot" prob=".2"/>
+        </placeholder>		
+
+		<placeholder name="cbpClothesRackRectanglePantsRandomLootHelper">
+			<block name="cbpClothesRackRectanglePants" prob=".5"/>
+            <block name="cntClothesRackRectangleEmpty" prob=".1"/>
+			<block name="cntClothesRackRectangleEmpty2" prob=".1"/>
+			<block name="cntClothesRackRectanglePants" prob=".1"/>
+            <block name="cbpClothesRackRectanglePantsLoot" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpClothesRackRectangleShirtsRandomLootHelper">
+			<block name="cbpClothesRackRectangleShirts" prob=".5"/>
+            <block name="cntClothesRackRectangleEmpty" prob=".1"/>
+			<block name="cntClothesRackRectangleEmpty2" prob=".1"/>
+			<block name="cntClothesRackRectangleShirts" prob=".1"/>
+            <block name="cbpClothesRackRectangleShirtsLoot" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackWallPantsRandomLootHelper">
+			<block name="cbpClothesRackWallPants" prob=".5"/>
+            <block name="cntClothesRackWallEmptyHanger" prob=".15"/>
+			<block name="cntClothesRackWallPants" prob=".15"/>
+			<block name="cbpClothesRackWallPantsLoot" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackWallTopRandomLootHelper">
+			<block name="cbpClothesRackWallLongSleeve" prob=".1"/>
+            <block name="cbpClothesRackWallSweater" prob=".1"/>
+			<block name="cbpClothesRackWallTShirts" prob=".2"/>
+            <block name="cntClothesRackWallEmptyHanger" prob=".1"/>
+			<block name="cntClothesRackWallLongSleeve" prob=".05"/>
+			<block name="cntClothesRackWallSweater" prob=".05"/>
+			<block name="cntClothesRackWallTShirts" prob=".1"/>			
+			<block name="cbpClothesRackWallLongSleeveLoot" prob=".1"/>
+            <block name="cbpClothesRackWallSweaterLoot" prob=".1"/>
+			<block name="cbpClothesRackWallTShirtsLoot" prob=".1"/>
+        </placeholder>		
+
+		<placeholder name="cbpClothesShelfHalfJeansRandomLootHelper">
+			<block name="cbpClothesShelfHalfJeans01" prob=".25"/>
+            <block name="cbpClothesShelfHalfJeans02" prob=".25"/>
+			<block name="cntClothesShelfHalfEmpty" prob=".1"/>
+			<block name="cntClothesShelfHalfJeans01" prob=".05"/>
+			<block name="cntClothesShelfHalfJeans02" prob=".05"/>
+            <block name="cbpClothesShelfHalfJeansA" prob=".15"/>
+			<block name="cbpClothesShelfHalfJeansB" prob=".15"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesShelfHalfTopsRandomLootHelper">
+			<block name="cbpClothesShelfHalfShirts01" prob=".2"/>
+            <block name="cbpClothesShelfHalfShirts02" prob=".1"/>
+			<block name="cbpClothesShelfHalfSweaters01" prob=".1"/>
+            <block name="cntClothesShelfHalfEmpty" prob=".15"/>
+			<block name="cntClothesShelfHalfShirts01" prob=".05"/>
+			<block name="cntClothesShelfHalfShirts02" prob=".05"/>
+			<block name="cntClothesShelfHalfSweaters01" prob=".05"/>
+			<block name="cbpClothesShelfHalfShirtsA" prob=".15"/>
+            <block name="cbpClothesShelfHalfShirtsB" prob=".1"/>
+			<block name="cbpClothesShelfHalfSweatersA" prob=".1"/>
+        </placeholder>			
+
+		<placeholder name="cbpClothesShelfStackJeansRandomLootHelper">
+			<block name="cbpClothesShelfStackJeans01" prob=".2"/>
+            <block name="cbpClothesShelfStackJeans02" prob=".2"/>
+			<block name="cntClothesShelfStackEmpty" prob=".1"/>
+			<block name="cntClothesShelfStackJeans01" prob=".1"/>
+			<block name="cntClothesShelfStackJeans02" prob=".1"/>
+            <block name="cbpClothesShelfStackJeansA" prob=".15"/>
+			<block name="cbpClothesShelfStackJeansB" prob=".15"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesShelfStackTopsRandomLootHelper">
+			<block name="cbpClothesShelfStackShirts01" prob=".2"/>
+            <block name="cbpClothesShelfStackShirts02" prob=".2"/>
+			<block name="cntClothesShelfStackEmpty" prob=".1"/>
+			<block name="cntClothesShelfStackShirts01" prob=".1"/>
+			<block name="cntClothesShelfStackShirts02" prob=".1"/>
+			<block name="cbpClothesShelfStackShirtsA" prob=".15"/>
+			<block name="cbpClothesShelfStackShirtsB" prob=".15"/>
+        </placeholder>	
+
+		<placeholder name="cbpClothesPileFloorRandomLootHelper">
+			<block name="cbpClothesPileFloor" prob=".4"/>
+            <block name="mineCandyTin" prob=".05"/>
+			 <block name="mineCookingPot" prob=".05"/>
+			 <block name="cntClothesPileFloor01" prob=".1"/>
+			<block name="mineHubcap" prob=".05"/>
+			<block name="mineAirFilter" prob=".05"/>
+			<block name="cbpClothesPileFloorA" prob=".30"/>
+        </placeholder>	
+
+		<placeholder name="cbpRackRoundMilitaryPantsRandomLootHelper">
+			<block name="cbpClothesRackRoundPantsMilitary" prob="4"/>
+            <block name="cntClothesRackRoundEmptyMilitary" prob=".3"/>
+			<block name="cntClothesRackRoundPantsMilitary" prob=".1"/>
+			<block name="cbpClothesRackRoundPantsMilitaryLoot" prob=".20"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackRoundMilitaryShirtsRandomLootHelper">
+			<block name="cbpClothesRackRoundShirtsMilitary" prob=".4"/>
+            <block name="cntClothesRackRoundEmptyMilitary" prob=".3"/>
+			<block name="cntClothesRackRoundShirtsMilitary" prob=".1"/>
+			<block name="cbpClothesRackRoundShirtsMilitaryLoot" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpRackRackRectangleMilitaryPantsRandomLootHelper">
+			<block name="cbpClothesRackRectanglePantsMilitary" prob=".4"/>
+            <block name="cntClothesRackRectangleEmptyMilitary" prob=".2"/>
+			<block name="cntClothesRackRectangleEmpty2" prob=".1"/>
+			<block name="cntClothesRackRectanglePantsMilitary" prob=".1"/>
+			<block name="cbpClothesRackRectanglePantsMilitaryLoot" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackRectangleMilitaryShirtsRandomLootHelper">
+			<block name="cbpClothesRackRectangleShirtsMilitary" prob=".4"/>
+            <block name="cntClothesRackRectangleEmptyMilitary" prob=".2"/>
+			<block name="cntClothesRackRectangleEmpty2" prob=".1"/>
+			<block name="cntClothesRackRectangleShirtsMilitary" prob=".1"/>
+			<block name="cbpClothesRackRectangleShirtsMilitaryLoot" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackWallMilitaryPantsRandomLootHelper">
+			<block name="cbpClothesRackWallPantsMilitary" prob=".4"/>
+            <block name="cntClothesRackWallEmptyHanger" prob=".2"/>
+			<block name="cntClothesRackWallPantsMilitary" prob=".1"/>
+			<block name="cbpClothesRackWallPantsMilitaryLoot" prob=".3"/>
+        </placeholder>
+
+		<placeholder name="cbpClothesRackWallMilitaryTopsRandomLootHelper">
+			<block name="cbpClothesRackWallLongSleeveMilitary" prob=".1"/>
+			<block name="cbpClothesRackWallSweaterMilitary" prob=".1"/>
+			<block name="cbpClothesRackWallTShirtsMilitary" prob=".2"/>
+            <block name="cntClothesRackWallEmptyHanger" prob=".1"/>
+			<block name="cntClothesRackWallLongSleeveMilitary" prob=".05"/>
+			<block name="cntClothesRackWallSweaterMilitary" prob=".05"/>
+			<block name="cntClothesRackWallTShirtsMilitary" prob=".1"/>
+			<block name="cbpClothesRackWallLongSleeveMilitaryLoot" prob=".1"/>
+			<block name="cbpClothesRackWallSweaterMilitaryLoot" prob=".1"/>
+			<block name="cbpClothesRackWallTShirtsMilitaryLoot" prob=".1"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleBottomShoesRandomLootHelper">
+			<block name="cbpStoreShelfDoubleBottomShoesFull" prob=".5"/>
+            <block name="cntStoreShelfDoubleBottomShoesEmpty" prob=".1"/>
+			<block name="cntStoreShelfDoubleBottomShoesFull" prob=".1"/>
+			<block name="cbpStoreShelfDoubleBottomShoesFullA" prob=".3"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleTopShoesRandomLootHelper">
+			<block name="cbpStoreShelfDoubleTopShoesFull" prob=".5"/>
+            <block name="cntStoreShelfDoubleTopShoesEmpty" prob=".1"/>
+			<block name="cntStoreShelfDoubleTopShoesFull" prob=".1"/>
+			<block name="cbpStoreShelfDoubleTopShoesFullA" prob=".3"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfSingleBottomShoesRandomLootHelper">
+			<block name="cbpStoreShelfSingleBottomShoesFull" prob=".5"/>
+            <block name="cntStoreShelfSingleBottomShoesEmpty" prob=".1"/>
+			<block name="cntStoreShelfSingleBottomShoesFull" prob=".1"/>
+			<block name="cbpStoreShelfSingleBottomShoesFullA" prob=".3"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfSingleTopShoesRandomLootHelper">
+			<block name="cbpStoreShelfSingleTopShoesFull" prob=".5"/>
+            <block name="cntStoreShelfSingleTopShoesEmpty" prob=".1"/>
+			<block name="cntStoreShelfSingleTopShoesFull" prob=".1"/>
+			<block name="cbpStoreShelfSingleTopShoesFullA" prob=".1"/>
+        </placeholder>
+		
         <!-- *************************************************************
             Cooking Pot Fun - This lets you randomize the placement of
             cooking pots and sometimes get a bomb to keep survivors
@@ -91,6 +278,85 @@
             <block name="treeBrownGrassDiagonal" prob=".431" biome="burnt_forest" randomrotation="true"/>
         </placeholder>
 
+		<!-- *************************************************************
+            Freezer; Allows randomised freezer decor 
+        ************************************************************** -->
+		
+		<placeholder name="cbpFreezerGroceriesMiddleRandomLootHelper">
+           <block name="cbpFreezerGroceriesMiddleFull" prob=".1"/>
+            <block name="cbpFreezerGroceriesMiddleFull2" prob=".05"/>
+            <block name="cbpFreezerGroceriesMiddleFullBroken" prob=".1"/>
+            <block name="cbpFreezerGroceriesMiddleFullBroken2" prob=".05"/>			
+			<block name="cntFreezerGroceriesMiddleEmptyClosed" prob=".05"/>
+            <block name="cntFreezerGroceriesMiddleEmptyClosedBroken" prob=".05"/>
+			<block name="cntFreezerGroceriesMiddleEmptyOpen" prob=".05"/>
+            <block name="cntFreezerGroceriesMiddleEmptyOpenBroken" prob=".05"/>
+			<block name="cntFreezerGroceriesMiddleFullClosed" prob=".05"/>
+			<block name="cntFreezerGroceriesMiddleFullClosedBroken" prob=".05"/>
+			<block name="cntFreezerGroceriesMiddleFullClosed2" prob=".05"/>
+			<block name="cntFreezerGroceriesMiddleFullClosedBroken2" prob=".05"/>			
+			<block name="cbpFreezerGroceriesMiddleFullA" prob=".05"/>
+            <block name="cbpFreezerGroceriesMiddleFullB" prob=".1"/>
+            <block name="cbpFreezerGroceriesMiddleFullBrokenA" prob=".05"/>
+            <block name="cbpFreezerGroceriesMiddleFullBrokenB" prob=".1"/>
+        </placeholder>
+
+		<placeholder name="cbpFreezerBeveragesMiddleRandomLootHelper">
+			<block name="cbpFreezerBeveragesMiddleFull" prob=".2"/>
+            <block name="cbpFreezerBeveragesMiddleFullBroken" prob=".2"/>			
+            <block name="cntFreezerBeveragesMiddleEmptyClosed" prob=".05"/>
+            <block name="cntFreezerBeveragesMiddleEmptyClosedBroken" prob=".05"/>
+			<block name="cntFreezerBeveragesMviddleEmptyOpen" prob=".1"/>
+            <block name="cntFreezerBeveragesMiddleEmptyOpenBroken" prob=".1"/>			
+			<block name="cntFreezerBeveragesMiddleFullClosed" prob=".05"/>
+			<block name="cntFreezerBeveragesMiddleFullClosedBroken" prob=".05"/>			
+			<block name="cbpFreezerBeveragesMiddleFullA" prob=".1"/>
+            <block name="cbpFreezerBeveragesMiddleFullBrokenA" prob=".1"/>
+		</placeholder>
+
+		<placeholder name="cbpFreezerBeveragesStandaloneRandomLootHelper">
+			<block name="air" prob=".3"/>
+			<block name="cbpFreezerBeveragesStandaloneFull" prob=".25"/>
+            <block name="cbpFreezerBeveragesStandaloneFullBroken" prob=".25"/>			
+            <block name="cntFreezerBeveragesStandaloneEmptyClosed" prob=".05"/>
+            <block name="cntFreezerBeveragesStandaloneEmptyClosedBroken" prob=".05"/>			
+			<block name="cntFreezerBeveragesStandaloneFullClosed" prob=".05"/>
+			<block name="cntFreezerBeveragesStandaloneFullClosedBroken" prob=".05"/>		
+			<block name="cbpFreezerBeveragesStandaloneFullA" prob=".15"/>
+            <block name="cbpFreezerBeveragesStandaloneFullBrokenA" prob=".15"/>30
+		</placeholder>
+		
+		<!-- *************************************************************
+            Ground Decor; Allows randomised ground decor 
+        ************************************************************** -->
+
+		<placeholder name="cbpGroundDecoRandomHelper">
+            <block name="garbage_decor1" prob=".1"/>
+			<block name="garbage_decor2" prob=".1"/>
+            <block name="garbage_decor3" prob=".1"/>
+            <block name="glassDebris01" prob=".1"/>
+			<block name="glassBroken_01" prob=".1"/>
+            <block name="glassBroken_02" prob=".1"/>
+            <block name="glassBroken_03" prob=".1"/>
+			<block name="glassBrokenCapLeft" prob=".1"/>
+            <block name="glassBrokenCapRight" prob=".1"/>
+            <block name="scrapMetalPile" prob=".1"/>
+        </placeholder>
+
+        <placeholder name="cbpGroundDecoRandomHelperAir">
+            <block name="air" prob=".2"/>
+			<block name="garbage_decor1" prob=".1"/>
+			<block name="garbage_decor2" prob=".05"/>
+            <block name="garbage_decor3" prob=".1"/>
+            <block name="glassDebris01" prob=".05"/>
+			<block name="glassBroken_01" prob=".1"/>
+            <block name="glassBroken_02" prob=".1"/>
+            <block name="glassBroken_03" prob=".05"/>
+			<block name="glassBrokenCapLeft" prob=".1"/>
+            <block name="glassBrokenCapRight" prob=".05"/>
+            <block name="scrapMetalPile" prob=".1"/>
+			</placeholder>
+			
         <!-- *************************************************************
             Land Mine Helpers let you place the possibility of their
             being a landmine. The "50" variety place a mine 50% of the
@@ -142,8 +408,8 @@
             <block name="air" prob=".9"/>
             <block name="mineAirFilter" prob=".1"/>
         </placeholder>
-
-        <!-- *************************************************************
+		
+		<!-- *************************************************************
             Movie Poster Helpers
         ************************************************************** -->
 
@@ -162,7 +428,7 @@
         </placeholder>
 
         <!-- *************************************************************
-            TFP Shipping Crates rigged for a very rare appearance. These
+            Shipping Crates (TFP) rigged for a very rare appearance. These
             are handy if you largely want to decorate with the crates
             and don't want to give out a lot of loot.
         ************************************************************** -->
@@ -262,6 +528,18 @@
             <block name="cbpShippingCrateMoPowerElectronicsCube" prob=".49"/>
             <block name="cntShippingCrateMoPowerElectronics" prob=".01"/>
         </placeholder>
+		
+		<!-- Construction Supplies -->
+		<placeholder name="cbpConstructionsuppliesShippingCrateHelper">
+            <block name="zztongShippingCrateConstructionSuppliesCubeCP" prob=".99"/>
+            <block name="cntShippingCrateConstructionSupplies" prob=".01"/>
+        </placeholder>
+
+        <placeholder name="cbpConstructionSuppliesCrateHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="zztongShippingCrateConstructionSuppliesCubeCP" prob=".49"/>
+            <block name="cntShippingCrateConstructionSupplies" prob=".01"/>
+        </placeholder>
 
         <!-- *************************************************************
             Shopping Carts
@@ -273,22 +551,353 @@
             <block name="cntShoppingCart" prob=".2"/>
         </placeholder>
 
+		<!-- *************************************************************
+            Store Shelves; Allows randomised shelving decor 
+        ************************************************************** -->
+		
+		<placeholder name="cbpStoreShelfSingleBottomFoodRandomLootHelper">
+			<block name="cbpStoreShelfSingleBottomFood01" prob=".2"/>
+            <block name="cbpStoreShelfSingleBottomFood02" prob=".2"/>
+			<block name="cntStoreShelfSingleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleBottomFood01" prob=".05"/>
+            <block name="cntStoreShelfSingleBottomFood02" prob=".05"/>
+			<block name="cbpStoreShelfSingleBottomFoodA" prob=".2"/>
+            <block name="cbpStoreShelfSingleBottomFoodB" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfSingleTopFoodRandomLootHelper">
+			<block name="cbpStoreShelfSingleTopFood01" prob=".5"/>
+			<block name="cntStoreShelfSingleTopEmpty" prob=".25"/>
+            <block name="cntStoreShelfSingleTopFood01" prob=".05"/>
+            <block name="cbpStoreShelfSingleTopFoodA" prob=".2"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleBottomFoodRandomLootHelper">
+			<block name="cbpStoreShelfDoubleBottomFood01" prob=".2"/>
+            <block name="cbpStoreShelfDoubleBottomFood02" prob=".2"/>
+			<block name="cntStoreShelfDoubleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfDoubleBottomFood01" prob=".05"/>
+            <block name="cntStoreShelfDoubleBottomFood02" prob=".05"/>
+			<block name="cbpStoreShelfDoubleBottomFoodA" prob=".2"/>
+            <block name="cbpStoreShelfDoubleBottomFoodB" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleTopFoodRandomLootHelper">
+			<block name="cbpStoreShelfDoubleTopFood01" prob=".5"/>
+			<block name="cntStoreShelfDoubleTopEmpty" prob=".1"/>
+            <block name="cntStoreShelfDoubleTopFood01" prob=".1"/>
+            <block name="cbpStoreShelfDoubleTopFoodA" prob=".3"/>
+        </placeholder>
+
+		<placeholder name="cbpStoreShelfSingleBottomHardwareRandomLootHelper">
+			<block name="cbpStoreShelfSingleBottomHardware01" prob=".2"/>
+            <block name="cbpStoreShelfSingleBottomHardware02" prob=".2"/>
+			<block name="cntStoreShelfSingleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleBottomHardware01" prob=".05"/>
+            <block name="cntStoreShelfSingleBottomHardware02" prob=".05"/>
+			<block name="cbpStoreShelfSingleBottomHardwareA" prob=".2"/>
+            <block name="cbpStoreShelfSingleBottomHardwareB" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfSingleTopHardwareRandomLootHelper">
+			<block name="cbpStoreShelfSingleTopHardware01" prob=".2"/>
+            <block name="cbpStoreShelfSingleTopHardware02" prob=".2"/>
+			<block name="cntStoreShelfSingleTopEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleTopHardware01" prob=".05"/>
+            <block name="cntStoreShelfSingleTopHardware02" prob=".05"/>
+			<block name="cbpStoreShelfSingleTopHardwareA" prob=".2"/>
+            <block name="cbpStoreShelfSingleTopHardwareB" prob=".2"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleBottomHardwareRandomLootHelper">
+			<block name="cbpStoreShelfDoubleBottomHardware01" prob=".10"/>
+            <block name="cbpStoreShelfDoubleBottomHardware02" prob=".10"/>
+            <block name="cbpStoreShelfDoubleBottomHardware03Rags" prob=".15"/>
+			<block name="cntStoreShelfDoubleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfDoubleBottomHardware01" prob=".05"/>
+			<block name="cntStoreShelfDoubleBottomHardware02" prob=".05"/>
+            <block name="cntStoreShelfDoubleBottomHardware03Rags" prob=".15"/>
+			<block name="cbpStoreShelfDoubleBottomHardwareA" prob=".10"/>
+			<block name="cbpStoreShelfDoubleBottomHardwareB" prob=".10"/>
+            <block name="cbpStoreShelfDoubleBottomHardwareCRags" prob=".10"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleTopHardwareRandomLootHelper">
+			<block name="cbpStoreShelfDoubleTopHardware01" prob=".20"/>
+            <block name="cbpStoreShelfDoubleTopHardware02Rags" prob=".25"/>
+			<block name="cntStoreShelfDoubleTopEmpty" prob=".15"/>
+            <block name="cntStoreShelfDoubleTopHardware01" prob=".05"/>
+            <block name="cntStoreShelfDoubleTopHardware02Rags" prob=".10"/>
+			<block name="cbpStoreShelfDoubleTopHardwareA" prob=".05"/>
+            <block name="cbpStoreShelfDoubleTopHardwareBRags" prob=".20"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfSingleBottomPharmaRandomLootHelper">
+			<block name="cbpStoreShelfSingleBottomPharmaGoods01" prob=".25"/>
+            <block name="cbpStoreShelfSingleBottomPharmaGoods02" prob=".25"/>
+			<block name="cntStoreShelfSingleBottomPharmaEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleBottomPharmaGoods01" prob=".05"/>
+            <block name="cntStoreShelfSingleBottomPharmaGoods02" prob=".05"/>
+			<block name="cbpStoreShelfSingleBottomPharmacyGoodsA" prob=".15"/>
+            <block name="cbpStoreShelfSingleBottomPharmacyGoodsB" prob=".15"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleBottomPharmaRandomLootHelper">
+			<block name="cbpStoreShelfDoubleBottomPharmaGoods01" prob=".25"/>
+            <block name="cbpStoreShelfDoubleBottomPharmaGoods02" prob=".25"/>
+			<block name="cntStoreShelfDoubleBottomPharmaEmpty" prob=".1"/>
+            <block name="cntStoreShelfDoubleBottomPharmaGoods01" prob=".05"/>
+            <block name="cntStoreShelfDoubleBottomPharmaGoods02" prob=".05"/>
+			<block name="cbpStoreShelfDoubleBottomPharmacyGoodsA" prob=".15"/>
+            <block name="cbpStoreShelfDoubleBottomPharmacyGoodsB" prob=".15"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfSingleBottomTrashRandomLootHelper">
+			<block name="cbpStoreShelfSingleBottomTrash01" prob=".25"/>
+            <block name="cbpStoreShelfSingleBottomTrash02" prob=".25"/>
+			<block name="cntStoreShelfSingleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleBottomTrash01" prob=".05"/>
+            <block name="cntStoreShelfSingleBottomTrash02" prob=".05"/>
+			<block name="cbpStoreShelfSingleBottomTrashA" prob=".15"/>
+            <block name="cbpStoreShelfSingleBottomTrashB" prob=".15"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfSingleTopTrashRandomLootHelper">
+			<block name="cbpStoreShelfSingleTopTrash01" prob=".25"/>
+            <block name="cbpStoreShelfSingleTopTrash02" prob=".25"/>
+			<block name="cntStoreShelfSingleTopEmpty" prob=".1"/>
+            <block name="cntStoreShelfSingleTopTrash01" prob=".05"/>
+            <block name="cntStoreShelfSingleTopTrash02" prob=".05"/>
+			<block name="cbpStoreShelfSingleTopTrashA" prob=".15"/>
+            <block name="cbpStoreShelfSingleTopTrashB" prob=".15"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleBottomTrashRandomLootHelper">
+			<block name="cbpStoreShelfDoubleBottomTrash01" prob=".25"/>
+            <block name="cbpStoreShelfDoubleBottomTrash02" prob=".25"/>
+			<block name="cntStoreShelfDoubleBottomEmpty" prob=".1"/>
+            <block name="cntStoreShelfDoubleBottomTrash01" prob=".05"/>
+            <block name="cntStoreShelfDoubleBottomTrash02" prob=".05"/>
+			<block name="cbpStoreShelfDoubleBottomTrashA" prob=".15"/>
+            <block name="cbpStoreShelfDoubleBottomTrashB" prob=".15"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfDoubleTopTrashRandomLootHelper">
+			<block name="cbpStoreShelfDoubleTopTrash01" prob=".50"/>
+			<block name="cntStoreShelfDoubleTopEmpty" prob=".1"/>
+			<block name="cntStoreShelfDoubleTopTrash01" prob=".1"/>
+			<block name="cbpStoreShelfDoubleTopTrashA" prob=".30"/>            
+		</placeholder>		
+
+		<placeholder name="cbpStoreShelfElectricsSingleBottomRandomLootHelper">
+			<block name="cbpStoreShelfElectronicsSingleBottomPC" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsSingleBottomElectronicsMonitor" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsSingleBottomGoodsMisc" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsSingleBottomHeadphones" prob=".15"/>
+			<block name="cbpStoreShelfElectronicsSingleBottomKeyboard" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsSingleBottomLaptopClosed" prob=".15"/>
+			<block name="cbpStoreShelfElectronicsSingleBottomLaptopOpen" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsSingleBottomSpeaker" prob=".15"/> 			
+            <block name="cntStoreShelfElectronicsSingleBottomEmpty" prob=".2"/> 			
+			<block name="cntStoreShelfElectronicsSingleBottomPC" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitor" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomGoodsMisc" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomHeadphones" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomKeyboard" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomLaptopClosed" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomLaptopOpen" prob=".05"/>
+		<block name="cntStoreShelfElectronicsSingleBottomSpeaker" prob=".05"/>				
+            <block name="cbpStoreShelfElectricsSingleBottomPCA" prob=".1"/>
+			<block name="cbpStoreShelfElectricsSingleBottomElectronicsMonitorA" prob=".1"/>
+            <block name="cbpStoreShelfElectricsSingleBottomGoodsMiscA" prob=".1"/>
+            <block name="cbpStoreShelfElectricsSingleBottomHeadphonesA" prob=".1"/>
+            <block name="cbpStoreShelfElectricsSingleBottomKeyboardA" prob=".1"/>
+			<block name="cbpStoreShelfElectricsSingleBottomLaptopClosedA" prob=".1"/>
+            <block name="cbpStoreShelfElectricsSingleBottomLaptopOpenA" prob=".1"/>
+            <block name="cbpStoreShelfElectricsSingleBottomSpeakerA" prob=".1"/>
+		</placeholder>
+
+		<placeholder name="cbpStoreShelfElectricsDoubleBottomRandomLootHelper">
+			<block name="cbpStoreShelfElectronicsDoubleBottomGoods01" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsDoubleBottomGoods02" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsDoubleBottomGoods03" prob=".15"/>
+            <block name="cbpStoreShelfElectronicsDoubleBottomGoods04" prob=".15"/>			
+			<block name="cntStoreShelfElectronicsDoubleBottomEmpty" prob=".15"/>			
+			<block name="cntStoreShelfElectronicsDoubleBottomGoods01" prob=".05"/>
+		<block name="cntStoreShelfElectronicsDoubleBottomGoods02" prob=".05"/>
+		<block name="cntStoreShelfElectronicsDoubleBottomGoods03" prob=".05"/>
+		<block name="cntStoreShelfElectronicsDoubleBottomGoods04" prob=".05"/>		
+            <block name="cbpStoreShelfElectricsDoubleBottomGoodsA" prob=".1"/>
+			<block name="cbpStoreShelfElectricsDoubleBottomGoodsB" prob=".1"/>
+            <block name="cbpStoreShelfElectricsDoubleBottomGoodsC" prob=".1"/>
+            <block name="cbpStoreShelfElectricsDoubleBottomGoodsD" prob=".1"/>
+        </placeholder>		
+
+		<placeholder name="cbpShelvesWoodRandomLootHelper">
+			<block name="cbpShelvesWoodFullA" prob=".4"/>
+			<block name="cntShelvesWoodEmpty" prob=".3"/>
+			<block name="cntShelvesWoodFullA" prob=".1"/>
+			<block name="cbpShelvesWoodFull" prob=".2"/>            
+		</placeholder>
+
+		<placeholder name="cbpShelvesFreeStandingRandomLootHelper">
+			<block name="cbpShelvesFreeStandingFullA" prob=".4"/>
+			<block name="cntShelvesFreeStandingEmpty" prob=".3"/>
+			<block name="cntShelvesFreeStandingFullA" prob=".1"/>
+			<block name="cbpShelvesFreeStandingFull" prob=".2"/>            
+		</placeholder>
+
+		<placeholder name="cbpShelvesMetalRandomLootHelper">
+			<block name="cbpShelvesMetalFullA" prob=".40"/>
+			<block name="cntShelvesMetalEmpty" prob=".30"/>
+			<block name="cntShelvesMetalFullA" prob=".10"/>
+			<block name="cbpShelvesMetalFull" prob=".20"/>            
+		</placeholder>
+
+		<placeholder name="cbpMilitaryMetalShelvesRandomLootHelper">
+			<block name="cbpMilitaryMetalShelvesFull" prob=".4"/>
+			<block name="cntMilitaryMetalShelvesEmpty" prob=".3"/>
+			<block name="cntMilitaryMetalShelvesFull" prob=".1"/>
+			<block name="cbpMilitaryMetalShelvesFullA" prob=".2"/>            
+		</placeholder>
+		
+        <!-- *************************************************************
+            Tractors; Allows randomised  Tractors 
+        ************************************************************** -->	
+		
+		<placeholder name="cbpTractorRandomHelper">
+            <block name="cbpTractorWhite" prob=".25"/>
+            <block name="tractorRed" prob=".25"/>
+			<block name="tractorGreen" prob=".25"/>
+			<block name="tractorBlue" prob=".25"/>
+        </placeholder>	
+
+		<placeholder name="cbpTractorRandomHelperAir">
+            <block name="air" prob=".6"/>
+            <block name="cbpTractorWhite" prob=".10"/>
+            <block name="tractorRed" prob=".10"/>
+			<block name="tractorGreen" prob=".10"/>
+			<block name="tractorBlue" prob=".10"/>
+        </placeholder>			
+		
+        <!-- *************************************************************
+            Tree Stump POI
+        ************************************************************** -->
+
+        <placeholder name="cbpTreeStumpPOIRandomHelperAir">
+            <block name="air" prob=".5"/>
+            <block name="treeStumpPOI" prob=".5"/>
+        </placeholder>
+
         <!-- *************************************************************
             Vending Machines
         ************************************************************** -->
 
         <placeholder name="cbpVendingMachineRandomHelper">
-            <block name="cntVendingMachine2Broken" prob=".5"/>
-            <block name="cbpVendingMachine2Empty" prob=".4"/>
+            <block name="cntVendingMachine2Broken" prob=".4"/>
+            <block name="cbpVendingMachine2Empty" prob=".2"/>
+            <block name="sodaVendingMachineEnergy" prob=".1"/>
+			<block name="sodaVendingMachine" prob=".1"/>
+            <block name="sodaVendingMachineWaterPrefab" prob=".1"/>
             <block name="cntVendingMachine2" prob=".1"/>
         </placeholder>
 
         <placeholder name="cbpVendingMachineRandomHelperAir">
             <block name="air" prob=".3"/>
-            <block name="cntVendingMachine2Broken" prob=".3"/>
-            <block name="cbpVendingMachine2Empty" prob=".3"/>
+			<block name="cntVendingMachine2Broken" prob=".2"/>
+            <block name="cbpVendingMachine2Empty" prob=".1"/>
+            <block name="sodaVendingMachineEnergy" prob=".1"/>
+			<block name="sodaVendingMachine" prob=".1"/>
+            <block name="sodaVendingMachineWaterPrefab" prob=".1"/>
             <block name="cntVendingMachine2" prob=".1"/>
+			</placeholder>
+			
+		<!-- *************************************************************
+            Weapon Racks; Allows randomised weapon racks decor 
+        ************************************************************** -->
+		
+		<placeholder name="cbpGunRackLargeRandomLootHelper">
+           <block name="cbpGunRackLargeGuns01" prob=".2"/>
+            <block name="cbpGunRackLargeGuns02" prob=".2"/>
+            <block name="cntGunRackLargeGunsEmpty01" prob=".1"/>
+            <block name="cntGunRackLargeGunsEmpty02" prob=".1"/>
+			<block name="cntGunRackLargeGuns01" prob=".05"/>
+			<block name="cntGunRackLargeGuns02" prob=".05"/>
+			<block name="cbpGunRackLargeGunsA" prob=".15"/>
+            <block name="cbpGunRackLargeGunsB" prob=".15"/>			
         </placeholder>
 
+		<placeholder name="cbpGunRackSmallArmorRandomLootHelper">
+            <block name="cbpGunRackSmallArmor" prob=".2"/>
+            <block name="cntGunRackSmallEmpty02" prob=".25"/>
+            <block name="cntGunRackSmallEmpty03" prob=".25"/>
+			<block name="cntGunRackSmallArmor" prob=".1"/>
+            <block name="cbpGunRackSmallArmorA" prob=".2"/>			
+        </placeholder>
+
+        <placeholder name="cbpGunRackSmallMagazineRandomLootHelper">
+            <block name="cbpGunRackSmallMagazines" prob=".2"/>
+            <block name="cntGunRackSmallEmpty02" prob=".25"/>
+            <block name="cntGunRackSmallEmpty03" prob=".25"/>
+			<block name="cntGunRackSmallMagazines" prob=".1"/>
+            <block name="cbpGunRackSmallMagazinesA" prob=".2"/>
+        </placeholder>
+		
+		<!-- *************************************************************
+             Display Racks; Allows randomised display racks decor 
+        ************************************************************** -->
+
+		<placeholder name="cbpDisplayCaseAmmoLeftRandomLootHelper">
+            <block name="cbpDisplayCaseAmmoLeftBroken" prob=".3"/>
+			<block name="cntDisplayCaseEmptyLeftPristine" prob=".1"/>	
+			<block name="cntDisplayCaseEmptyLeftBroken" prob=".15"/>
+			<block name="cntDisplayCaseEmptyLeft" prob=".15"/>
+			<block name="cntDisplayCaseAmmoLeftBroken" prob=".1"/>
+            <block name="cbpDisplayCaseAmmoLeftBrokenA" prob=".2"/>
+			</placeholder>
+
+		<placeholder name="cbpDisplayCaseAmmoMiddleRandomLootHelper">
+           <block name="cbpDisplayCaseAmmoMiddleBroken01" prob=".2"/>
+            <block name="cbpDisplayCaseAmmoMiddleBroken02" prob=".2"/>
+			<block name="cntDisplayCaseEmptyMiddlePristine" prob=".1"/>
+			<block name="cntDisplayCaseEmptyMiddleBroken" prob=".1"/>
+			<block name="cntDisplayCaseEmptyMiddle" prob=".1"/>
+			<block name="cntDisplayCaseAmmoMiddleBroken01" prob=".05"/>
+			<block name="cntDisplayCaseAmmoMiddleBroken02" prob=".05"/>
+			<block name="cbpDisplayCaseAmmoMiddleBrokenA" prob=".1"/>
+			<block name="cbpDisplayCaseAmmoMiddleBrokenB" prob=".1"/>
+           </placeholder>
+
+		<placeholder name="cbpDisplayCaseAmmoRightRandomLootHelper">
+            <block name="cbpDisplayCaseAmmoRightBroken" prob=".35"/>
+            <block name="cntDisplayCaseEmptyRight" prob=".15"/>
+			<block name="cntDisplayCaseEmptyRightBroken" prob=".15"/>			
+			<block name="cntDisplayCaseAmmoRightBroken" prob=".1"/>
+			<block name="cbpDisplayCaseAmmoRightBrokenA" prob=".25"/>
+            </placeholder>	
+
+        <!-- *************************************************************
+            Water Coolers; Allows randomised Water Coolers and air 
+        ************************************************************** -->
+		
+		<placeholder name="cbpWaterCoolerRandomHelper">
+             <block name="cntWaterCoolerFull" prob=".35"/>
+            <block name="cbpWaterCoolerEmpty" prob=".65"/>
+		</placeholder>	
+		<placeholder name="cbpWaterCoolerRandomHelperAir">
+			 <block name="air" prob=".5"/>
+             <block name="cntWaterCoolerFull" prob=".15"/>
+            <block name="cbpWaterCoolerEmpty" prob=".35"/>
+		</placeholder>
+		<placeholder name="cbpWaterCoolerFullSideCenteredRandomHelper">
+             <block name="cntWaterCoolerFullSideCentered" prob=".35"/>
+            <block name="cbpWaterCoolerFullSideCenteredEmpty" prob=".65"/>
+		</placeholder>	
+		<placeholder name="bpWaterCoolerFullSideCenteredRandomHelperAir">
+			 <block name="air" prob=".5"/>
+             <block name="cntWaterCoolerFullSideCentered" prob=".15"/>
+            <block name="cbpWaterCoolerFullSideCenteredEmpty" prob=".35"/>
+		</placeholder>
+		
     </append>
 </blockplaceholders>

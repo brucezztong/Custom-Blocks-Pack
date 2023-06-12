@@ -1,8 +1,16 @@
-# Custom Block Pack (A21.EXP.001)
+# Custom Block Pack (A21.0.001)
 The motivation to create this modlet was to make it easier to share custom
 block definitions between custom POI developers. As a separate modlet, multiple
 modlets can depend upon it instead of each modlet creator defining their own
 version of the same block definition, plus perhaps avoid block name collisions.
+
+This modlet started at the end of A20 with a bunch of ZZTong custom blocks,
+then Stallionsden piled on with a huge collection of ideas bringing along
+blocks and other configuration from Pille and MPLogue.
+
+The Future direction for this modlet likely will include adding a libary of
+Parts for POI developers to use. You should also expect bug fixes and some
+block redefinitions as A21 becomes better known.
 
 ### Prefab Editor Tips
 All of the blocks in this pack have names that start with a "cbp" prefix, so in
@@ -12,6 +20,12 @@ list of these blocks and placeholders.
 Helper blocks are tinted red just like the TFP Helpers/Placeholders are.
 Otherwise, blocks from this modlet are tinted blue to make it more obvious to
 you if you are building in a dependency to this modlet.
+
+### Tools
+
+Pille's Super Brush is included in this modlet for POI developer convenience.
+If you're not aware of this tool, it acts just like a TFP paintbrush but it is
+faster.
 
 ## Custom Blocks
 **ATM Machines** - The pack adds an empty ATM machine, plus a helper which is
@@ -50,10 +64,34 @@ that give out items more appropriate for the bathroom.
 * cbpBathroomCabinetOldTop
 * cbpBathroomCabinetOldTopHelper
 
-**Bookcases** - This is a bookcase that does not give out books and
+**Bookcases and Book Shelves** - This is a bookcase that does not give out books and
 instead gives out other things you might find on a bookshelf.
 
 * cbpBookcaseBookless
+* cbpBookcaseCornerPoor
+* cbpBookShelfSingleBottom
+* cbpBookShelfSingleTop
+* cbpBookShelfDoubleBottom
+* cbpBookShelfDoubleTop
+* cbpBookShelfSingleCapBottom
+* cbpBookShelfSingleCapTop
+
+**Book Piles** - These are decoration versions of book piles.
+* cbpBookPile01
+* cbpBookPile02
+* cbpBookPile03
+* cbpBookPile04
+* cbpBookPile05
+* cbpBookPile06
+* cbpBookPile07
+* cbpBookPile08
+* cbpBookPile09
+* cbpBookPile10
+* cbpBookPile11
+* cbpBookPile12
+* cbpBookPile13
+* cbpBookPile14
+* cbpBookPile15
 
 **Offset Blocks** - Sometimes a POI designer just wants a version of a TFP
 block that doesn't sit in the middle of the block's space. Here are a number
@@ -146,6 +184,31 @@ The Helpers are:
 * cbpBathroomCabinetOldBottomHelper
 * cbpBathroomCabinetOldTopHelper
 
+### Clothing Racks, Stacks, and Shelves
+A variety of Random Helpers can place clothing racks or air. They will place
+air roughly 60% of the time.
+* cbpClothesRackRoundPantsRandomLootHelper
+* cbpClothesRackRoundTopsRandomLootHelper
+* cbpClothesRackRectanglePantsRandomLootHelper
+* cbpClothesRackRectangleShirtsRandomLootHelper
+* cbpClothesRackWallPantsRandomLootHelper
+* cbpClothesRackWallTopRandomLootHelper
+* cbpClothesShelfHalfJeansRandomLootHelper
+* cbpClothesShelfHalfTopsRandomLootHelper
+* cbpClothesShelfStackJeansRandomLootHelper
+* cbpClothesShelfStackTopsRandomLootHelper
+* cbpClothesPileFloorRandomLootHelper
+* cbpRackRoundMilitaryPantsRandomLootHelper
+* cbpClothesRackRoundMilitaryShirtsRandomLootHelper
+* cbpRackRackRectangleMilitaryPantsRandomLootHelper
+* cbpClothesRackRectangleMilitaryShirtsRandomLootHelper
+* cbpClothesRackWallMilitaryPantsRandomLootHelper
+* cbpClothesRackWallMilitaryTopsRandomLootHelper
+* cbpStoreShelfDoubleBottomShoesRandomLootHelper
+* cbpStoreShelfDoubleTopShoesRandomLootHelper
+* cbpStoreShelfSingleBottomShoesRandomLootHelper
+* cbpStoreShelfSingleTopShoesRandomLootHelper
+
 ### Cooking Pot Helper
 *cbpCookingPotHelper* - This can be air (40%), a cooking pot (50%), or a bomb
 (10%). It exists to both randomize minor loot (a cooking pot) and to keep
@@ -162,6 +225,22 @@ each), bones (5%), or a skull (5%).
 *cbpPlantedMushroomHarvestRandomHelper* - This fills a gap in TFP's helper
 blocks. TFP doesn't have a help block for mushroom. This helper is defined
 exactly like the other TFP helpers.
+
+### Freezer Helpers
+Freezer helpers all have a chance to be air, about 30% of the time. Note the
+difference between Grocery and Beverage Freezers.
+
+* cbpFreezerGroceriesMiddleRandomLootHelper
+* cbpFreezerBeveragesMiddleRandomLootHelper
+* cbpFreezerBeveragesStandaloneRandomLootHelper
+
+### Garbage Helper
+These helpers can randomize the minor debris found around the world. These will
+lead to garbage, broken glass, various minor broken objects, and even a scrap
+metal piles. The air version has a 20% chance of being air.
+
+* cbpGroundDecoRandomHelper
+* cbpGroundDecoRandomHelperAir
 
 ### Land Mine Helpers
 There are a number of variations of these helpers, some that only give out a
@@ -229,6 +308,42 @@ Here's a complete list of shipping crate helpers:
 *cbpShoppingCartRandomHelperAir* - There can become Air (50%), an empty shopping
 cart (30%), or a lootable shopping cart (20%).
 
+### Store Shelves
+Store shelves were added to satisfy a desire by some prefabbers to have POIs
+that are not entirely full of empty shelves, but yet didn't give out a lot of
+loot. They can all end up placing air roughly 30 to 60% of the time depending
+on the block.
+
+* cbpStoreShelfSingleBottomFoodRandomLootHelper
+* cbpStoreShelfSingleTopFoodRandomLootHelper
+* cbpStoreShelfDoubleBottomFoodRandomLootHelper
+* cbpStoreShelfDoubleTopFoodRandomLootHelper
+* cbpStoreShelfSingleBottomHardwareRandomLootHelper
+* cbpStoreShelfSingleTopHardwareRandomLootHelper
+* cbpStoreShelfDoubleBottomHardwareRandomLootHelper
+* cbpStoreShelfDoubleTopHardwareRandomLootHelper
+* cbpStoreShelfSingleBottomPharmaRandomLootHelper
+* cbpStoreShelfSingleBottomTrashRandomLootHelper
+* cbpStoreShelfSingleTopTrashRandomLootHelper
+* cbpStoreShelfDoubleBottomTrashRandomLootHelper
+* cbpStoreShelfDoubleTopTrashRandomLootHelper
+* cbpStoreShelfDoubleBottomTrashRandomLootHelper
+* cbpShelvesWoodRandomLootHelper
+* cbpShelvesFreeStandingRandomLootHelper
+* cbpShelvesMetalRandomLootHelper
+* cbpMilitaryMetalShelvesRandomLootHelper
+
+### Tractors
+The Tractor helper mimics the game's automobile helpers for the non-air version
+of the helper all tractors have an equal chance of being placd. For the air
+version there's a 60% chance of placing an air block.
+
+* cbpTractorRandomHelper
+* cbpTractorRandomHelperAir
+
+### Tree Stump POI
+This helper either places 
+
 ### Vending Machines
 *cbpVendingMachineRandomHelper* - This can be a broken vending machine (50%), an
 empty vending machine (40%), or a working vending machine (10%).
@@ -236,13 +351,38 @@ empty vending machine (40%), or a working vending machine (10%).
 *cbpVendingMachineRandomHelperAir* - This can be Air (30%), a broken vending
 machine (30%), an empty vending machine (30%), or a working vending machine (10%)
 
+### Weapon Racks and Displays
+This series of helpers focus on randomizing loot blocks for weapons racks and
+displays.
+
+* cbpGunRackLargeRandomLootHelper
+* cbpGunRackSmallArmorRandomLootHelper
+* cbpGunRackSmallMagazineRandomLootHelper
+* cbpDisplayCaseAmmoLeftRandomLootHelper
+* cbpDisplayCaseAmmoMiddleRandomLootHelper
+* cbpDisplayCaseAmmoRightRandomLootHelper
+
+### Water Cooler Helpers
+There are two lines of Water Cooler blocks -- those that are centered and those
+that are offset. Within each line you can either get a full or empty block.
+The air version of the helpers has a 50% chance of placing an air block.
+
+* cbpWaterCoolerRandomHelper
+* cbpWaterCoolerRandomHelperAir
+* cbpWaterCoolerFullSideCenteredRandomHelper
+* bpWaterCoolerFullSideCenteredRandomHelperAir
+
 ## Contributors
 The following persons contributed to this modlet:
 
-**MP Logue** - MORE
+**Pille** - Contributed the Super Brush tool/item.
+
+**MP Logue** - Contributed a number of interesting blocks with special effects
+and blocks that assist with structural integrity.
 
 **Stallionsden** - Collaborated on various loot settings, inspired Landmine,
-Vending Machine and ATM blocks, contributed the Mushroom Helper. MORE
+Vending Machine and ATM blocks, contributed the Mushroom Helper. Then added
+a truly massive number of blocks and placeholders.
 
 **ZZTong** - Contributed various shipping crate blocks and helpers,
 contributed empty and low-loot block variations, contributed the Delos (West
