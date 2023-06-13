@@ -5324,6 +5324,13 @@
 		<property name="Collide" value=""/>
 	</block>
 
+<block name="cbpSteelSpearPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpSteelSpearPropWall"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
 
 	<block name="cbpCompoundCrossbowProp"> <!-- Weapon decor - flush with surface  -->
 		<property name="CustomIcon" value="shapeFontExclamation"/>
@@ -5350,6 +5357,13 @@
 		<property name="Collide" value=""/>
 	</block>
 	
+	<block name="cbpCompoundCrossbowPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpCompoundCrossbowProp"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>
+	
 
 	<block name="cbpCompoundBowProp"> <!-- Weapon decor - flush with surface  -->
 		<property name="CustomIcon" value="shapeFontExclamation"/>
@@ -5374,6 +5388,13 @@
 		<property name="Extends" value="cbpCompoundBowProp"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
+	</block>
+	
+	<block name="cbpCompoundBowPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpCompoundBowProp"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
 	</block>
 
 	
@@ -5402,6 +5423,13 @@
 		<property name="Collide" value=""/>
 	</block>	
 	
+	<block name="cbpAxeSteelPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpAxeSteelPropWall"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>
+	
 
 	<block name="cbpGunRifleT3SniperRiflePropWall"> <!-- Weapon decor - flush with surface  -->
 		<property name="CustomIcon" value="shapeFontExclamation"/>
@@ -5427,6 +5455,13 @@
 		<property name="ModelOffset" value="0,.6,-.2"/>
 		<property name="Collide" value=""/>
 	</block>	
+	
+	<block name="cbpGunRifleT3SniperRiflePropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpGunRifleT3SniperRiflePropWall"/>
+		<property name="ModelOffset" value="0,.6,-.2"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>
 
 
 	<block name="cbpM60PropWall"> <!-- Weapon decor - flush with surface  -->
@@ -5452,7 +5487,14 @@
 		<property name="Extends" value="cbpM60PropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
-	</block>		
+	</block>	
+
+		<block name="cbpM60PropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpM60PropWall"/>
+		<property name="ModelOffset" value="0,.4,-.2"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>
 	
 
 	<block name="cbpAutoShotgunPropWall"> <!-- Weapon decor - flush with surface  -->
@@ -5478,7 +5520,14 @@
 		<property name="Extends" value="cbpAutoShotgunPropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
-	</block>		
+	</block>	
+
+		<block name="cbpAutoShotgunPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpAutoShotgunPropWall"/>
+		<property name="ModelOffset" value="0,.4,-.2"/>
+		<property name="Collide" value=""/>
+		<property name="GndAlign" value="1"/>
+	</block>	
 
 
 	<block name="cbpRocketLauncherPropWall"> <!-- Weapon decor - flush with surface  -->
@@ -5504,7 +5553,14 @@
 		<property name="Extends" value="cbpRocketLauncherPropWall"/>
 		<property name="Collide" value=""/>
 				<property name="ModelOffset" value="0,.4,0"/>
-	</block>		
+	</block>	
+
+		<block name="cbpRocketLauncherPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpRocketLauncherPropWall"/>
+		<property name="Collide" value=""/>
+		<property name="ModelOffset" value="0,.4,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>	
 	
 
 	<block name="cbpTacticalARPropWall"> <!-- Weapon decor - flush with surface  -->
@@ -5530,7 +5586,14 @@
 		<property name="Extends" value="cbpTacticalARPropWall"/>
 		<property name="Collide" value=""/>
 		<property name="ModelOffset" value="0,.4,0"/>
-	</block>		
+	</block>
+
+		<block name="cbpTacticalARPropCtr_Wonky"> 
+		<property name="Extends" value="cbpTacticalARPropWall"/>
+		<property name="Collide" value=""/>
+		<property name="ModelOffset" value="0,.4,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
 	
 	<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
@@ -5772,7 +5835,245 @@
             <property name="CanDecorateOnSlopes" value="false"/>
             <property name="PlacementDistance" value="6"/>
         </block>
-		    </append>
+		
+		<!-- ************************************************************************* 
+            CUSTOM TREES WITH ADVANCED ROTATION  (used for felled trees) that do not cause NRE's
+        ************************************************************************** -->
+
+	<block name="cbpTreeFallenMountainPine19m">
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="10ff0c"/>
+		<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Material" value="MtreeWoodSmall"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Texture" value="116"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="CanPlayersSpawnOn" value="false"/>
+		<property name="Model" value="@:Entities/Trees/MountainPineMed01Prefab.prefab"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="IsDistantDecoration" value="true"/> 
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ModelOffset" value="0,0,-.2"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="BigDecorationRadius" value="1"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+		<property name="SortOrder1" value="a0c0"/>
+		<property name="ActivationDistance" value="12"/>
+	</block>
+
+	<block name="cbpTreeFallenWinterPine6m">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/AlaskaCedar60Prefab.prefab"/>
+		<property name="ModelOffset" value="-.4,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenBurntMed">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/pineBurntMedPrefab.prefab"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="ModelOffset" value="0,0,.5"/>
+	</block>
+
+
+	<block name="cbpTreeFallenDry21m">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/MountainPineDeadPrefab.prefab"/>
+		<property name="ModelOffset" value="-.5,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenDeadTree01">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/White_Oak22Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,-.3"/>
+	</block>
+
+
+	<block name="cbpTreeFallenPlainsTree2">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/White_Oak42Prefab.prefab"/>
+		<property name="ModelOffset" value="-.2,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenMountainPine27m">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/ScotsPineMed01Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,-.5"/>
+	</block>
+
+
+	<block name="cbpTreeFallenMountainPine48m">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/ScotsPineLrg01Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenPineBurntLrg">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/pineBurntPrefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenBurntFullMed">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/FirMed01BurntPrefab.prefab"/>
+		<property name="ModelOffset" value="-.4,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenOakMed01">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/OakMed03Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookyLarge">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland42Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookySmall">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland25Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookyMed">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland39Prefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+	<!-- ************************************************************************* 
+            WONKY TREES (align with ground slope) 
+        ************************************************************************** -->
+
+	<block name="cbpTreeFallenMountainPine19m_Wonky">		
+		<property name="Extends" value="cbpTreeFallenMountainPine19m"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenWinterPine6m_Wonky">		
+		<property name="Extends" value="cbpTreeFallenWinterPine6m"/>
+		<property name="Model" value="@:Entities/Trees/AlaskaCedar60Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenBurntMed_Wonky">		
+		<property name="Extends" value="cbpTreeFallenBurntMed"/>
+		<property name="Model" value="@:Entities/Trees/pineBurntMedPrefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenDry21m_Wonky">		
+		<property name="Extends" value="cbpTreeFallenDry21m"/>
+		<property name="Model" value="@:Entities/Trees/MountainPineDeadPrefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenDeadTree01_Wonky">		
+		<property name="Extends" value="cbpTreeFallenDeadTree01"/>
+		<property name="Model" value="@:Entities/Trees/White_Oak22Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenPlainsTree2_Wonky">		
+		<property name="Extends" value="cbpTreeFallenPlainsTree2"/>
+		<property name="Model" value="@:Entities/Trees/White_Oak42Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenMountainPine27m_Wonky">		
+		<property name="Extends" value="cbpTreeFallenMountainPine27m"/>
+		<property name="Model" value="@:Entities/Trees/ScotsPineMed01Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenMountainPine48m_Wonky">		
+		<property name="Extends" value="cbpTreeFallenMountainPine48m"/>
+		<property name="Model" value="@:Entities/Trees/ScotsPineLrg01Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenPineBurntLrg_Wonky">		
+		<property name="Extends" value="cbpTreeFallenPineBurntLrg"/>
+		<property name="Model" value="@:Entities/Trees/pineBurntPrefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenBurntFullMed_Wonky">		
+		<property name="Extends" value="cbpTreeFallenBurntFullMed"/>
+		<property name="Model" value="@:Entities/Trees/FirMed01BurntPrefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenOakMed01_Wonky">		
+		<property name="Extends" value="cbpTreeFallenOakMed01"/>
+		<property name="Model" value="@:Entities/Trees/OakMed03Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookyLarge_Wonky">		
+		<property name="Extends" value="cbpTreeFallenSpookyLarge"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland42Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookySmall_Wonky">		
+		<property name="Extends" value="cbpTreeFallenSpookySmall"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland25Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>
+
+
+	<block name="cbpTreeFallenSpookyMed_Wonky">		
+		<property name="Extends" value="cbpTreeFallenSpookyMed"/>
+		<property name="Model" value="@:Entities/Trees/Haunted_Tree_Wasteland39Prefab.prefab"/>		
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+	</block>		
+		
+</append>
 		<!-- ************************************************************************* 
             ADDS RANDOM ROTATION TO PLANTS, RUBISH, TRASH, ETC: When placed 
         ************************************************************************** -->
@@ -5782,7 +6083,6 @@ These are not needed for the players - it just makes it easier to randomize
 the decoration process for prefabbers.  However, it does add random rotation to 
 that are planted by players, so it is a nice bonus. 
 -->
-
 
 
 <append xpath="/blocks/block[@name='plantedYucca3Harvest']">
