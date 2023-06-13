@@ -4974,18 +4974,26 @@
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
         </block>
 
-        <block name="cbpHardAir">
-            <property name="CustomIcon" value="shapeCube"/>
-            <property name="CustomIconTint" value="32455E"/>
-            <property name="Material" value="Mbedrock"/>
-            <property name="Shape" value="BillboardPlant"/>
-            <property name="Mesh" value="grass"/>
-            <property name="Texture" value="1"/>
-            <property name="StabilitySupport" value="true"/>
-            <property name="Collide" value=""/>
-            <drop event="Destroy" count="0"/>
-            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-        </block>
+        <block name="cbpHardAir">  <!--  Invisible block that provided structural support -->
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CustomIconTint" value="32455E"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="Collide" value=""/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+
+
+	<block name="cbpHardAirLadder">  <!--  Air block that acts like a ladder - place on wall (zombies can use them)-->
+		<property name="Extends" value="cbpHardAir"/>
+		<property name="Class" value="Ladder"/>
+	</block>
         
         <block name="cbpHardAirTallx20">
             <property name="CustomIcon" value="shapeCube"/>
@@ -5137,9 +5145,398 @@
             <property name="BuffChance" value="1"/>
             <property name="BuffsWhenWalkedOn" value="buffShocked"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-        </block>
+        </block>       	
+		
+		<block name="cbpHardAirTripWire">  <!-- Invisible Noise Trap that can be used as a trigger for collapsing ground trick  -->
+		<property name="Extends" value="cbpHardAir"/>
+		<property name="Material" value="Mtrash"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Collide" value="movement"/>
+	</block>
 
-        <block name="cbpSparklyBlockLarge"> 
+
+	<block name="cbpHardAirShock">  <!-- Air block that shocks players/zombies when walked through  -->
+		<property name="Extends" value="cbpHardAir"/>
+		<property name="Collide" value="movement"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="buffShocked"/>
+	</block>
+	
+	<block name="cbpHardAirHeal">  <!-- Air block "mine" that heals everything - one time use when walked over  -->
+		<property name="Extends" value="cbpHardAir"/>		
+		<property name="Class" value="Mine"/>
+		<property name="Tags" value="Mine"/>
+		<property name="TriggerDelay" value="0"/>
+		<property name="Explosion.RadiusBlocks" value="1"/>
+		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="Explosion.BlockDamage" value="0"/>
+		<property name="Explosion.EntityDamage" value="0"/>
+		<property name="Explosion.ParticleIndex" value="20"/>
+		<property name="BuffChance" value="1"/>
+		<property name="Collide" value="movement"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="cbpBuffEntitySpawnHeal"/>  <!--  Custom Buff -->
+	</block>
+	
+
+	<block name="cbpHardAirVomitSplash">  <!-- Air block "mine" that explodes with vomit effect and gives radiation - one time use when walked over  -->
+		<property name="Extends" value="cbpHardAir"/>	
+		<property name="Class" value="Mine"/>
+		<property name="Tags" value="Mine"/>
+		<property name="CustomIconTint" value="ff00f5"/>
+		<property name="Collide" value="movement"/>
+		<property name="TriggerDelay" value="0"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="buffRadiation03"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="Explosion.BlockDamage" value="1"/>
+		<property name="Explosion.EntityDamage" value="3"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+	</block>
+
+<!-- ************************************************************************* 
+           VISUAL EFFECT ONLY AIR BLOCKS: - does not have any 'damage' buffs
+        ************************************************************************** -->
+
+	<block name="cbpHardAirDark">
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CustomIconTint" value="00e6ff"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Collide" value="movement"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="cbpDarkAir"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+	</block>
+
+
+	<block name="cbpHardAirBlur">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpBlurAir"/>
+	</block>
+
+
+	<block name="cbpHardAirHot">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpHotAir"/>
+	</block>
+
+
+	<block name="cbpHardAirHot2">
+		<property name="Extends" value="cbpHardAirDark"/>			
+		<property name="BuffsWhenWalkedOn" value="cbpHotAir2"/>
+	</block>
+
+
+	<block name="cbpHardAirCold">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpColdAir"/>
+	</block>
+
+
+	<block name="cbpHardAirCold2">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpColdAir2"/>
+	</block>
+
+
+	<block name="cbpHardAirDistorted">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpDistortedAir"/>
+	</block>
+
+
+	<block name="cbpHardAirGrey">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpGreyAir"/>
+	</block>
+
+
+	<block name="cbpHardAirRadiation">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpRadiationAir"/>
+	</block>	
+	
+	
+	<block name="cbpHardAirInfected">
+		<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpInfectedAir"/>
+	</block>	
+	
+	
+	<block name="cbpHardAirDrunk">
+			<property name="Extends" value="cbpHardAirDark"/>	
+		<property name="BuffsWhenWalkedOn" value="cbpDrunkAir"/>
+	</block>	
+	
+	<!-- ************************************************************************* 
+           CUSTOM BOULDER: can be used as a building block - 1x1x1 with stability support 
+        ************************************************************************** -->
+		<block name="cbpBoulderBuildingBlock_MFS01"> <!-- Boulder Building Block with Random Rotation -->
+		<property name="CustomIcon" value="rockResource"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="Mcobblestone"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="PlaceAsRandomRotation" value="true"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>
+	
+	<!-- ************************************************************************* 
+           WEAPON DECOR BLOCKS
+        ************************************************************************** -->
+		
+		<block name="cbpSteelSpearPropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Melee/Spear/spear_steel_Prefab.prefab"/>
+		<property name="ModelOffset" value="-.47,0,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>
+
+
+	<block name="cbpSteelSpearPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpSteelSpearPropWall"/>
+		<property name="ModelOffset" value="0,.75,0"/>
+		<property name="Collide" value=""/>
+	</block>
+
+
+	<block name="cbpCompoundCrossbowProp"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
+		<property name="ModelOffset" value="0,0.9,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>
+
+
+	<block name="cbpCompoundCrossbowPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpCompoundCrossbowProp"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+	</block>
+	
+
+	<block name="cbpCompoundBowProp"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundBow/advancedCompoundBowPrefab.prefab"/>
+		<property name="ModelOffset" value="-.4,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>
+
+
+	<block name="cbpCompoundBowPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpCompoundBowProp"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+	</block>
+
+	
+	<block name="cbpAxeSteelPropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+		<property name="ModelOffset" value="0.45,0.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpAxeSteelPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpAxeSteelPropWall"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="Collide" value=""/>
+	</block>	
+	
+
+	<block name="cbpGunRifleT3SniperRiflePropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
+		<property name="ModelOffset" value=".45,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpGunRifleT3SniperRiflePropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpGunRifleT3SniperRiflePropWall"/>
+		<property name="ModelOffset" value="0,.6,-.2"/>
+		<property name="Collide" value=""/>
+	</block>	
+
+
+	<block name="cbpM60PropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/MachineGun/m60MachinegunPrefab.prefab"/>
+		<property name="ModelOffset" value=".45,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpM60PropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpM60PropWall"/>
+		<property name="ModelOffset" value="0,.4,-.2"/>
+		<property name="Collide" value=""/>
+	</block>		
+	
+
+	<block name="cbpAutoShotgunPropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
+		<property name="ModelOffset" value=".45,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpAutoShotgunPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpAutoShotgunPropWall"/>
+		<property name="ModelOffset" value="0,.4,-.2"/>
+		<property name="Collide" value=""/>
+	</block>		
+
+
+	<block name="cbpRocketLauncherPropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab"/>
+		<property name="ModelOffset" value=".45,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpRocketLauncherPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="Extends" value="cbpRocketLauncherPropWall"/>
+		<property name="Collide" value=""/>
+				<property name="ModelOffset" value="0,.4,0"/>
+	</block>		
+	
+
+	<block name="cbpTacticalARPropWall"> <!-- Weapon decor - flush with surface  -->
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="MstainlessSteel"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
+		<property name="ModelOffset" value=".45,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="meleeToolAllSteelParts" count="3" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="meleeToolAllSteelParts" count="2,3" tag="oreWoodHarvest"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>		
+
+
+	<block name="cbpTacticalARPropCtr"> 
+		<property name="Extends" value="cbpTacticalARPropWall"/>
+		<property name="Collide" value=""/>
+		<property name="ModelOffset" value="0,.4,0"/>
+	</block>		
+	
+	<!-- ************************************************************************* 
+           SPARKLY STUFF: using vanilla particle effects
+        ************************************************************************** -->
+		
+		<block name="cbpSparklyBlockLarge"> 
             <property name="CustomIcon" value="shapeFontExclamation"/>
             <property name="CreativeMode" value="Dev"/>
             <property name="Material" value="Mcobblestone"/>
@@ -5155,6 +5552,47 @@
             <drop event="Destroy" count="0"/>
             <property name="FilterTags" value="MC_outdoor,SC_decor"/>
         </block>
+		
+		<block name="cbpSparklyBlockZomLeft"> <!-- Small blue shock: offset -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_twitch_zombie_shock_left"/>
+		<property name="ModelOffset" value="0,-0.6,0"/>
+	</block>
+	
+	<block name="cbpSparklyBlockZomRight"> <!-- Small blue shock: centered  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_twitch_zombie_shock_right"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+	</block>
+
+
+	<block name="cbpSparklyBlockDroneBeamAttack"> <!-- Thin blue laser beam - one block long: centered  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_drone_beam_attack"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+	</block>
+
+	
+	<block name="cbpSparklyBlockDroneBeam"> <!-- Long, Red laser beam:  Inset to start/intersect with block surface  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_drone_bream"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+	</block>
+
+	
+	<block name="cbpSparklyBlockDroneHealPlayer"> <!-- Single-Use (non looping) swirly light effect - needs a trigger  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_drone_heal_player"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+	</block>
+
+	
+	<block name="cbpSparklyBlockDroneHealBeam"> <!-- Single-Use (non looping) laser/spark effect - needs a trigger  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_drone_heal_beam"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+	</block>
 
         <block name="cbpSparklyBlockSmall"> 
             <property name="CustomIcon" value="shapeFontExclamation"/>
@@ -5172,6 +5610,22 @@
             <drop event="Destroy" count="0"/>
             <property name="FilterTags" value="MC_outdoor,SC_decor"/>
         </block>
+		
+		<block name="cbpVomitBulbProp"> <!-- Undulating and dripping acid ball  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIconTint" value="ff00f5"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Vomit/vomitBulbPrefab.prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+	
+	<block name="cbpRadBulbProp"> <!-- Small radiated blob that spits out spark and cloud effect  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIconTint" value="ff00f5"/>
+		<property name="Model" value="@:Other/Items/Weapons/Ranged/Vomit/vomitRadPrefab.prefab"/>
+		<property name="ModelOffset" value="0,.5,0"/>
+		<property name="AllowAllRotations" value="true"/>
+	</block>	
+		
 	
         <!-- ************************************************************************* 
             OFFSET BLOCKS 
@@ -5318,6 +5772,295 @@
             <property name="CanDecorateOnSlopes" value="false"/>
             <property name="PlacementDistance" value="6"/>
         </block>
+		    </append>
+		<!-- ************************************************************************* 
+            ADDS RANDOM ROTATION TO PLANTS, RUBISH, TRASH, ETC: When placed 
+        ************************************************************************** -->
 
-    </append>
+	<!--
+These are not needed for the players - it just makes it easier to randomize
+the decoration process for prefabbers.  However, it does add random rotation to 
+that are planted by players, so it is a nice bonus. 
+-->
+
+
+
+<append xpath="/blocks/block[@name='plantedYucca3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedYucca1']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedYucca2']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedYucca3HarvestRandomHelper']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedPumpkin3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedPotato3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedCorn3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeSmallRandomHelper']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeSmallThinRandomHelper']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeMediumRandomHelper']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeLargeRandomHelper']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='garbage_decor1']">
+	<property name="GndAlign" value="1"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='garbage_decor2']">
+	<property name="GndAlign" value="1"/>
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='garbage_decor3']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+
+<append xpath="/blocks/block[@name='cntTrashPile01']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile02']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile03']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile04']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile05']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile06']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile07']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile08']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntTrashPile09']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeAzalea']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='forestFlower']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedHop3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cobweb']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='scrapMetalPile']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+</append>
+
+<append xpath="/blocks/block[@name='hangingMoss']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedAloe3Harvest']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cinderBlocks01']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cinderBlocks02']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='cinderBlocks03']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>	
+</append>
+
+<append xpath="/blocks/block[@name='driftwood']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='driftwood2']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='decoCowSkull']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treePlant02']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeStumpPOI']">
+	<property name="PlaceAsRandomRotation" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+</append>
+
 </blocks>

@@ -1,7 +1,7 @@
 <buffs>
 
     <append xpath="/buffs">
-        <buff name="cbpSlowdown" icon="ui_game_symbol_agility" icon_color="132,0,155">
+        <buff name="cbpSlowDown" icon="ui_game_symbol_agility" icon_color="132,0,155">
             <display_value_key value="Slowpoke"/> <display_value value="xxx"/>
             <stack_type value="ignore"/><duration value="2"/>
             <effect_group>
@@ -13,6 +13,150 @@
                 <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>			
             </effect_group>
         </buff>	
+		
+		<buff name="cbpBuffEntitySpawnHeal" icon="ui_game_symbol_add" hidden="true">
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveAllNegativeBuffs"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionHealthMaxBlockage" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="0"/>			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="ParticleEffects/p_drone_heal_player" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="ParticleEffects/p_drone_heal_player"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/>
+		</effect_group>
+	</buff>	
+
+
+<!-- Visual Effects only - no damage buffs  -->
+
+
+	<buff name="cbpDrunkAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Dark"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Drunk" intensity="1" fade=".5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Drunk" intensity="0" fade=".5"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpDarkAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Dark"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Dark" intensity="1" fade=".5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Dark" intensity="0" fade=".5"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpBlurAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Blurry"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity="1" fade="0.5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpHotAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Hot"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpHotAir2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Hot"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Hot2"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Hot2"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpColdAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Chilly"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Cold"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpColdAir2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Chilly"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="3" effect_name="Cold2"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Cold2"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpDistortedAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Wavey"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Distortion"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpDistortedAirMild" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Wavey"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".2" fade="1" effect_name="Distortion"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpGreyAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Greyish"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpRadiationAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Radiation"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity="1" fade="2"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+		</effect_group>
+	</buff>
+
+
+	<buff name="cbpInfectedAir" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<display_value_key value="Infected"/> <display_value value="xxx"/>
+		<stack_type value="ignore"/><duration value="2"/>
+		<effect_group>			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Infected"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Infected"/>
+		</effect_group>
+	</buff>
     </append>
 
 </buffs>
