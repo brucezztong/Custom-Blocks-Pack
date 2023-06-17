@@ -5106,7 +5106,7 @@
 
         <block name="cbpSlowAir">
             <property name="CustomIcon" value="shapeCube"/>
-            <property name="CustomIconTint" value="00e6ff"/>
+            <property name="CustomIconTint" value="ff8080"/>
             <property name="Material" value="Mbedrock"/>
             <property name="Shape" value="BillboardPlant"/>
             <property name="Mesh" value="grass"/>
@@ -5116,6 +5116,21 @@
             <property name="Stacknumber" value="500"/>
             <property name="BuffChance" value="1"/>
             <property name="BuffsWhenWalkedOn" value="cbpSlowdown"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+        </block>
+		
+		<block name="cbpSlowAir2">
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="00e6ff"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Collide" value="movement"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="BuffChance" value="1"/>
+            <property name="BuffsWhenWalkedOn" value="cbpSlowdown2"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
         </block>
 

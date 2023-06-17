@@ -25,7 +25,8 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionHealthMaxBlockage" operation="set" value="0"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionCounter" operation="set" value="0"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="0"/>			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk"/>
@@ -33,7 +34,38 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="ParticleEffects/p_drone_heal_player"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/>
 		</effect_group>
-	</buff>	
+	</buff>
+	
+	<buff name="cbpSlowDown2" icon="ui_game_symbol_agility" icon_color="132,0,155">
+            <display_value_key value="Slowpoke"/> <display_value value="xxx"/>
+            <stack_type value="ignore"/><duration value="2"/>
+            <effect_group>
+                <passive_effect name="WalkSpeed" operation="base_set" value=".25"/>
+                <passive_effect name="RunSpeed" operation="base_set" value=".3"/>		
+                <passive_effect name="VehicleVelocityMaxPer" operation="base_set" value="0.25"/>
+                <passive_effect name="VehicleVelocityMaxTurboPer" operation="base_set" value="0.25"/>
+                </effect_group>
+        </buff>	
+		
+		<buff name="cbpBuffEntitySpawnHeal" icon="ui_game_symbol_add" hidden="true">
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveAllNegativeBuffs"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$armHurtCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$legHurtCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionHealthMaxBlockage" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$abrasionCounter" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffDrugPainkillersDuration" operation="set" value="0"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="ParticleEffects/p_drone_heal_player" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="ParticleEffects/p_drone_heal_player"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="add" value="30000"/>
+		</effect_group>
+	</buff>
 
 
 <!-- Visual Effects only - no damage buffs  -->
