@@ -593,5 +593,19 @@ cbpWoodenChestDesc,blocks,Block,,,A Wooden Chest full of Surprises used in Pois 
 cbpWoodenChestMilitary,blocks,Container,,,Military Chest
 cbpWoodenChestMilitary,blocks,Container,,,Military Chest
 cbpWoodenChestRotten,blocks,Container,,,Rotted Chest
+cbpParkBenchA,blocks,Block,,,cbp Park Bench A,,
+cbpParkBenchB,blocks,Block,,,cbp Park Bench B,,
+cbpCupboardCornerRedEmpty,blocks,Container,,,cbp Corner Cupboard Empty,,
+cbpCupboardCornerRedEmptyDesc,blocks,Container,,,A cbp Custom Block That Has No Loot.,,
+cbpCupboardCornerRed,blocks,Container,,,cbp Corner Cupboard,,
+cbpCupboardCornerRedDesc,blocks,Container,,,A cbp Custom Block That Has Reduced Loot.,,
+cbpCupboardCornerRedLootHelper,blocks,Container,,,cbp Corner Cupboard Random Helper,,
+cbpCupboardCornerRedLootHelperDesc,blocks,Container,,,A cbp Random Helper block that will result in either a cbp lootable, empty or Vanilla lootable corner block.,,
+cbpCupboardCornerCNROldEmpty,blocks,Container,,,cbp Corner Cupboard Old Empty,,
+cbpCupboardCornerCNROldEmptyDesc,blocks,Container,,,A cbp Custom Block That Has No Loot.,,
+cbpCupboardCornerCNROld,blocks,Container,,,cbp Corner Cupboard Old,,
+cbpCupboardCornerCNROldDesc,blocks,Container,,,A cbp Custom Block That Has Reduced Loot.,,
+cbpCupboardCornerCNROldLootHelper,blocks,Container,,,cbp Corner Cupboard Random Helper,,
+cbpCupboardCornerCNROldLootHelperDesc,blocks,Container,,,A cbp Random Helper block that will result in either a cbp lootable, empty or Vanilla lootable corner block.,,
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,,

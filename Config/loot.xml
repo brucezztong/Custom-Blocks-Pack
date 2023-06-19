@@ -24,7 +24,7 @@
         </lootcontainer>
 			
         <!-- **********************************************************
-            Bathroom Cabinest and Cupboards
+            Bathroom Cabinets and Cupboards
         *********************************************************** -->
 
         <lootcontainer name="cbpBathroom" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualQ1Template">
@@ -46,6 +46,46 @@
             <item name="toolBeaker" prob="0.005" count="1"/>
             <item name="meleeToolSalvageT1Wrench" prob="0.05" count="1"/>
             <item name="meleeWpnBladeT1HuntingKnife" prob="0.05" count="1"/>
+        </lootcontainer>
+		
+		<!-- **********************************************************
+             Corner Cabinet Red and Old
+        *********************************************************** -->
+		
+		<lootcontainer name="cbpKitchen" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualQ1Template">
+            <item name="foodRottingFlesh" count="1,3" loot_prob_template="medLow"/>
+			<item name="resourceBone" count="1,3" loot_prob_template="med"/>
+			<item name="foodShamSandwich" loot_prob_template="low"/>
+			<item name="resourceAnimalFat" count="1,2" loot_prob_template="veryLow"/>
+			<item name="foodCropBlueberries" count="1,2" loot_prob_template="veryLow"/>
+			<item name="foodCornMeal" count="1,2" loot_prob_template="medLow"/>
+			<item name="foodCropCorn" count="1,2" loot_prob_template="low"/>
+			<item name="foodCropPotato" count="1,2" loot_prob_template="low"/>
+			<item name="foodCropPumpkin" count="1,2" loot_prob_template="veryLow"/>
+			 <item name="foodCanChicken" prob="0.25" count="1"/>
+			<item name="foodCanMiso" prob="0.25" count="1"/>
+			<item name="foodCanSoup" prob="0.25" count="1"/>
+			<item name="foodCanPears" prob="0.25" count="1"/>
+			<item name="foodCornMeal" prob="0.25" count="1"/>
+			<item name="foodCanCatfood" prob="0.25" count="1"/>
+			<item name="foodShamSandwich" prob="0.25" count="1"/>
+			<item name="foodCharredMeat" prob="0.25" count="1"/>
+			<item name="foodSkillMagazine" prob="0.25" count="1" loot_prob_template="veryLow"/>
+			<item name="toolCookingPot" prob="0.25" count="1"/>
+			<item name="toolCookingGrill" prob="0.25" count="1"/>
+			<item name="resourceCropCoffeeBeans" prob="0.25" count="1"/>
+			<item name="resourceCropGoldenrodPlant" prob="0.25" count="1"/>
+			<item name="resourceCropChrysanthemumPlant" prob="0.25" count="1"/>
+			<item name="foodCornMeal" prob="0.25" count="1"/>
+			<item name="plantedPotato1" prob="0.25" count="1"/>
+			<item name="plantedCoffee1" prob="0.25" count="1"/>
+			<item name="plantedCorn1" prob="0.25" count="1"/>
+			<item name="plantedBlueberry1" prob="0.25" count="1"/>
+			<item name="plantedAloe1" prob="0.25" count="1"/>
+			<item name="plantedMushroom1" prob="0.25" count="1"/>
+			<item name="plantedYucca1" prob="0.25" count="1"/>
+			<item name="plantedHop1" prob="0.25" count="1"/>
+			<item name="plantedPumpkin1" prob="0.25" count="1"/>
         </lootcontainer>
 
         <!-- **********************************************************

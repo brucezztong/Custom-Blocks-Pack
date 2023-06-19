@@ -39,6 +39,24 @@
             <block name="cntCupboardCabinetOldTopOpen" prob=".65"/>
             <block name="cbpBathroomCabinetOldTop" prob=".35"/>
         </placeholder>
+		
+		<!-- **********************************************************
+             Corner Cabinet Red and Old
+        *********************************************************** -->
+		
+		<placeholder name="cbpCupboardCornerRedLootHelper">
+            <block name="cbpCupboardCornerRedEmpty" prob=".5"/>
+			<block name="cntCupboardCornerCNRRed" prob=".15"/>
+            <block name="cbpCupboardCornerRed" prob=".35"/>
+        </placeholder>
+
+        <placeholder name="cbpCupboardCornerCNROldLootHelper">
+            <block name="cbpCupboardCornerCNROldEmpty" prob=".5"/>
+			<block name="cntCupboardCornerCNROld" prob=".15"/>
+            <block name="cbpCupboardCornerCNROld" prob=".35"/>
+        </placeholder>
+		
+		
 
 		<!-- *************************************************************
             Clothes Rack, Stacks and Shelves; Allows randomised clothing decor 

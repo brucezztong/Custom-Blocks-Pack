@@ -12,6 +12,7 @@
             <property name="Class" value="Loot"/>
             <property name="CustomIcon" value="cntATMSecure"/>
             <property name="Model" value="Entities/Commercial/ATMPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="LootList" value="cbpJunk"/>
         </block>
 
@@ -20,6 +21,7 @@
             <property name="CreativeMode" value="Dev"/>
             <property name="CustomIcon" value="cntATMSecure"/>
             <property name="CustomIconTint" value="ff8080"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
         </block>
 
@@ -28,6 +30,7 @@
             <property name="CreativeMode" value="Dev"/>
             <property name="CustomIcon" value="cntATMSecure"/>
             <property name="CustomIconTint" value="ff8080"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
         </block>
 
@@ -122,6 +125,134 @@
             <property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/>
             <property name="CustomIconTint" value="ff8080"/>
         </block>
+		
+		<!-- **********************************************************
+             Corner Cabinet Red and Old
+        *********************************************************** -->
+		
+		 <block name="cbpCupboardCabinetRedMaster">
+			<property name="Extends" value="cntCabinetBottomFiller" />
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="0011"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>    
+
+		<block name="cbpCupboardCornerRedEmpty">
+			<property name="Extends" value="cntCupboardCabinetRedTopClosed" />
+			<property name="DescriptionKey" value="cbpCupboardCornerRedEmptyDesc"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpWaterCoolerEmpty"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+
+		<block name="cbpCupboardCornerRed">
+			<property name="Extends" value="cntCupboardCabinetRedTopClosed" />
+			<property name="DescriptionKey" value="cbpCupboardCornerRedDesc"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpKitchen"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+
+		<block name="cbpCupboardCornerRedLootHelper">
+			<property name="Extends" value="cbpCupboardCabinetRedMaster" />
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpKitchen"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNRRed"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="DescriptionKey" value="cbpCupboardCornerRedLootHelperDesc"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Texture" value="345,345,263,345,345,345"/>
+			<property name="ImposterExchange" value="imposterDontBlockCupboard" param1="108"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="RepairItems">
+			<property name="resourceWood" value="10"/>
+			</property>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="0010"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
+		</block>    
+
+		<block name="cbpCupboardCabinetOldMaster">
+			<property name="Extends" value="cntCupboardCabinetOldTopClosed" />
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntCupboardCabinetOldTopLootHelper"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Texture" value="84,84,81,84,84,84"/>
+			<property name="ImposterExchange" value="imposterDontBlockCupboard" param1="43"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="RepairItems">
+			<property name="resourceWood" value="10"/>
+			</property>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="1010"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
+		</block>
+
+
+		<block name="cbpCupboardCornerCNROldEmpty">
+			<property name="Extends" value="cbpCupboardCabinetOldMaster" param1=",Place"/>
+			<property name="DescriptionKey" value="cbpCupboardCornerCNROldEmptyDesc"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpWaterCoolerEmpty"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="1013"/>
+		</block>
+
+		<block name="cbpCupboardCornerCNROld">
+			<property name="Extends" value="cbpCupboardCabinetOldMaster" param1=",Place"/>
+			<property name="DescriptionKey" value="cbpCupboardCornerCNROldDesc"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpKitchen"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="1013"/>
+		</block>
+
+		<block name="cbpCupboardCornerCNROldLootHelper">
+			<property name="Extends" value="cbpCupboardCabinetOldMaster" />
+			<property name="DescriptionKey" value="cbpCupboardCornerCNROldLootHelperDesc"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpKitchen"/>
+			<property name="Model" value="cupboard_corner"/>
+			<property name="CustomIcon" value="cntCupboardCornerCNROld"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="Texture" value="78,84,79,84,84,84"/> <!-- 80=sink, 84=cabinetWood -->
+			<property class="RepairItems">
+			<property name="resourceWood" value="10"/>
+			</property>
+			<property name="SortOrder1" value="B108"/>
+			<property name="SortOrder2" value="1001"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperResidential"/>
+		</block>
+
 
         <!-- *************************************************************************
             Bookcases...
@@ -137,6 +268,7 @@
             <property name="Place" value="TowardsPlacer90"/>
             <property name="Texture" value="67,269,269,269,269,269"/>
             <property name="UseGlobalUV" value="Local"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
             <property class="RepairItems">
@@ -162,6 +294,7 @@
             <property name="Model" value="cube_corner_beveled_bookcase_full"/>
             <property name="Texture" value="269,269,67,269,269,269"/>
             <property name="UseGlobalUV" value="Local"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Place" value="TowardsPlacer90"/>
             <property class="RepairItems">
                 <property name="resourceWood" value="10"/>
@@ -180,6 +313,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Material" value="Mfurniture"/>
             <property name="Model" value="Entities/Commercial/bookshelfBottomFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
@@ -196,6 +330,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Model" value="Entities/Commercial/bookshelfTopFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
             <property name="DowngradeBlock" value="cntBookShelfSingleTopEmpty"/>
@@ -211,6 +346,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Model" value="Entities/Commercial/bookshelfBottomDoubleFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
             <property name="DowngradeBlock" value="cntBookShelfDoubleBottomEmpty"/>
@@ -226,6 +362,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Model" value="Entities/Commercial/bookshelfTopDoubleFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
             <property name="DowngradeBlock" value="cntBookShelfDoubleTopEmpty"/>
@@ -241,6 +378,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Model" value="Entities/Commercial/bookshelfBottomCapFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
             <property name="DowngradeBlock" value="cntBookShelfSingleCapBottomEmpty"/>
@@ -256,6 +394,7 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Model" value="Entities/Commercial/bookshelfTopCapFullPrefab"/>
             <drop event="Destroy" name="resourcePaper" count="3,6"/>
             <property name="DowngradeBlock" value="cntBookShelfSingleCapTopEmpty"/>
@@ -397,6 +536,8 @@
 
         <block name="cbpCookingPotHelper">
             <property name="Extends" value="decoCookingPot"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="1"/>
             <property name="CustomIcon" value="toolCookingPot"/>
             <property name="CustomIconTint" value="ff8080"/>
             <property name="CreativeMode" value="Dev"/>
@@ -410,6 +551,8 @@
             <property name="Extends" value="goreBlockHumanCorpse"/>
             <property name="CustomIcon" value="goreBlockHumanCorpse"/>
             <property name="CustomIconTint" value="ff8080"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="1"/>
             <property name="CreativeMode" value="Dev"/>
         </block>
 
@@ -417,6 +560,8 @@
             <property name="Extends" value="goreBlockHumanCorpse"/>
             <property name="CustomIcon" value="goreBlockHumanCorpse"/>
             <property name="CustomIconTint" value="ff8080"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="1"/>
             <property name="CreativeMode" value="Dev"/>
         </block>
 
@@ -430,6 +575,7 @@
             <property name="Model" value="Entities/Commercial/mannequinMalePrefab"/>
             <property name="Class" value="Loot"/>
             <property name="LootList" value="cbpDelosAndroid"/>
+			<property name="WaterFlow" value="permitted"/>
             <property class="RepairItems">
                 <property name="resourceScrapPolymers" value="10"/>
             </property>
@@ -604,7 +750,8 @@
             <property name="Model" value="@:Entities/LootContainers/backpack01Prefab.prefab"/>
             <property name="IsTerrainDecoration" value="true"/>
             <property name="Collide" value="melee,bullet,arrow,rocket"/>
-            <property name="GndAlign" value="1"/>
+            <property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="1"/>
             <property name="LootList" value="cbpJunk"/>
             <drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
             <drop event="Destroy" name="resourceCloth" count="1"/>
@@ -3296,6 +3443,7 @@
             <property name="Shape" value="ModelEntity"/>
             <property name="Model" value="Entities/Commercial/ClothsFloor01Prefab"/>
             <property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="1"/>
             <property name="IsTerrainDecoration" value="true"/>
             <property name="StabilitySupport" value="false"/>
             <drop event="Destroy" name="resourceScrapPolymers" count="0"/>
@@ -4949,6 +5097,41 @@
             <property name="CustomIcon" value="treeStump"/>
             <property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
         </block>
+		
+		
+		 <!-- *************************************************************************
+            Park Bench All Rotations
+        ************************************************************************** -->
+		
+		<block name="cbpParkBenchA">
+			<property name="Extends" value="woodNoUpgradeMaster"/>
+			<property name="CustomIcon" value="parkBenchA"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/parkBenchAPrefab" param1="main_mesh"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property name="AllowAllRotations" value="true"/>
+			<drop event="Destroy" name="resourceWood" count="4,8"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B424"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
+		<block name="cbpParkBenchB">
+			<property name="Extends" value="cbpParkBenchA" param1="Path"/>
+			<property name="CustomIcon" value="parkBenchB"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Furniture/parkBenchBPrefab" param1="main_mesh"/>
+			<property name="SortOrder1" value="B424"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
 
         <!-- ************************************************************************* 
             SUPPORT/RADIATION BLOCKS 
