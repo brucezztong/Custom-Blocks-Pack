@@ -5143,6 +5143,7 @@
             <property name="Model" value="water_full"/>
             <property name="Texture" value="223"/>
             <property name="Count" value="8"/>
+            <property name="WaterFlow" value="permitted"/>
             <property name="lightopacity" value="150"/>
             <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
             <property name="BuffChance" value="1"/>
