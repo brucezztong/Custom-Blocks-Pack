@@ -537,7 +537,6 @@
         <block name="cbpCookingPotHelper">
             <property name="Extends" value="decoCookingPot"/>
 			<property name="WaterFlow" value="permitted"/>
-			<property name="GndAlign" value="1"/>
             <property name="CustomIcon" value="toolCookingPot"/>
             <property name="CustomIconTint" value="ff8080"/>
             <property name="CreativeMode" value="Dev"/>
@@ -552,7 +551,6 @@
             <property name="CustomIcon" value="goreBlockHumanCorpse"/>
             <property name="CustomIconTint" value="ff8080"/>
 			<property name="WaterFlow" value="permitted"/>
-			<property name="GndAlign" value="1"/>
             <property name="CreativeMode" value="Dev"/>
         </block>
 
@@ -561,7 +559,6 @@
             <property name="CustomIcon" value="goreBlockHumanCorpse"/>
             <property name="CustomIconTint" value="ff8080"/>
 			<property name="WaterFlow" value="permitted"/>
-			<property name="GndAlign" value="1"/>
             <property name="CreativeMode" value="Dev"/>
         </block>
 
@@ -3443,7 +3440,6 @@
             <property name="Shape" value="ModelEntity"/>
             <property name="Model" value="Entities/Commercial/ClothsFloor01Prefab"/>
             <property name="WaterFlow" value="permitted"/>
-			<property name="GndAlign" value="1"/>
             <property name="IsTerrainDecoration" value="true"/>
             <property name="StabilitySupport" value="false"/>
             <drop event="Destroy" name="resourceScrapPolymers" count="0"/>
