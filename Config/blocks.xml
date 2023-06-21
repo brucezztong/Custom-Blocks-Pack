@@ -884,6 +884,18 @@
         </block>
 
         <!-- ************************************************************************* 
+            Server Racks
+        ************************************************************************** -->
+
+        <block name="bcpServerRackBlack">
+            <property name="Extends" value="decoServerRackWhite"/>
+            <property name="CustomIcon" value="decoServerRackWhite"/>
+            <property name="CustomIconTint" value="080808"/>
+            <property name="TintColor" value="080808"/>
+            <property name="SortOrder2" value="0002"/>
+        </block>
+
+        <!-- ************************************************************************* 
             Storage Crates...
         ************************************************************************** -->
 
