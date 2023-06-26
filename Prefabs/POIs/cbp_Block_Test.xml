@@ -13,11 +13,11 @@
   <property name="Zoning" value="none" />
   <property name="YOffset" value="-2" />
   <property class="Stats">
-    <property name="TotalVertices" value="7231650" />
-    <property name="TotalTriangles" value="3269257" />
+    <property name="TotalVertices" value="7242991" />
+    <property name="TotalTriangles" value="3272975" />
     <property class="BlockEntities">
-      <property name="Vertices" value="7136627" />
-      <property name="Triangles" value="3186766" />
+      <property name="Vertices" value="7147968" />
+      <property name="Triangles" value="3190484" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="63969" />

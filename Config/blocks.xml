@@ -882,12 +882,925 @@
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="ModelOffset" value="-0.3,0.5,0.0"/>
         </block>
+		
+		<!-- Offset Hazard Pipes -->
+		 	<!-- *** BROKEN_PIPE_FIRE_HAZARDS -->
+		<block name="cbpPipeSmallRed3mOffset">
+		<!-- Class -->
+		<property name="Extends" value="pipeSmall1x1Red"/>
+		<property name="CreativeMode" value="None" />
+		<property name="Class" value="TriggerDowngrade" />
+		<property name="StartSound" value="flametrap_start" />
+		<property name="StopSound" value="flametrap_end" />
+		<property name="Explosion.ParticleIndex" value="14"/>
+		<!-- UI_Info -->
+		<property name="CustomIcon" value="pipeSmall1x1"/>
+		<property name="CustomIconTint" value="8D2427"/>
+		<property name="ItemTypeIcon" value="fire"/>
+		<property name="TintColor" value="8D2427"/>
+		<!-- Visual -->
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Industrial/pipeSmall_1x1Prefab"/>
+		<property name="ModelOffset" value="-2,0.5,0"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="LightOpacity" value="2"/>
+		<!-- Placement -->
+		<property name="HandleFace" value="Bottom"/>
+		<!-- Interaction -->
+		<dropextendsoff/>
+		<drop event="Harvest" name="terrStone" count="0" tag="salvageHarvest" tool_category="Disassemble"/>
+		<drop event="Destroy" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="DowngradeFX" value="impact_organic_on_metal,explosion2"/>
+		<property name="DowngradeBlock" value="pipeFireHazardRed3m"/>
+		<!-- Sorting -->
+		<property name="SortOrder1" value="B750"/>
+		<property name="SortOrder2" value="0000"/>
+		<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+		</block>
 
+		<!-- Black -->
+		<block name="cbpPipeFireHazardBlack2mOffset">
+			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardBlack3mOffset">
+			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+
+		<block name="cbpPipeFireHazardBlack4mOffset">
+			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpPipeFireHazardRed2mOffset">
+			<property name="Extends" value="pipeSmallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardRed3mOffset">
+			<property name="Extends" value="pipeSmallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardRed4mOffset">
+			<property name="Extends" value="pipeSmallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpPipeFireHazardYellow2mOffset">
+			<property name="Extends" value="pipeSmallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardYellow3mOffset">
+			<property name="Extends" value="pipeSmallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardYellow4mOffset">
+			<property name="Extends" value="pipeSmallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpPipeFireHazardGreen2mOffset">
+			<property name="Extends" value="pipeSmallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardGreen3mOffset">
+			<property name="Extends" value="pipeSmallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardGreen4mOffset">
+			<property name="Extends" value="pipeSmallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpPipeFireHazardBlue2mOffset">
+			<property name="Extends" value="pipeSmallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardBlue3mOffset">
+			<property name="Extends" value="pipeSmallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardBlue4mOffset">
+			<property name="Extends" value="pipeSmallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpPipeFireHazardGrey2mOffset">
+			<property name="Extends" value="pipeSmallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.5,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.5,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardGrey3mOffset">
+			<property name="Extends" value="pipeSmallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardGrey4mOffset">
+			<property name="Extends" value="pipeSmallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.5,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.5,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpPipeFireHazardWallBlack2mOffset">
+			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallBlack3mOffset">
+			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallBlack4mOffset">
+			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpPipeFireHazardWallRed2mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallRed3mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallRed4mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeRed" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpPipeFireHazardWallYellow2mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallYellow3mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallYellow4mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeYellow" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpPipeFireHazardWallGreen2mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Class" value="Hazard" />
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallGreen3mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallGreen4mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGreen" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpPipeFireHazardWallBlue2mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallBlue3mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallBlue4mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeBlue" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Grey -->
+			<block name="cbpPipeFireHazardWallGrey2mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-1.5,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallGrey3mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2,0.5,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpPipeFireHazardWallGrey4mOffset">
+			<property name="Extends" value="pipeSmallWallBrokeGrey" param1="RepairItems"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+			<property name="ModelOffset" value="-2.5,0.5,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
         <!-- ************************************************************************* 
             Server Racks
         ************************************************************************** -->
 
-        <block name="bcpServerRackBlack">
+        <block name="cbpServerRackBlack">
             <property name="Extends" value="decoServerRackWhite"/>
             <property name="CustomIcon" value="decoServerRackWhite"/>
             <property name="CustomIconTint" value="080808"/>
@@ -895,7 +1808,7 @@
             <property name="SortOrder2" value="0002"/>
         </block>
 
-        <!-- ************************************************************************* 
+		<!-- ************************************************************************* 
             Storage Crates...
         ************************************************************************** -->
 
@@ -5139,7 +6052,7 @@
 			<property name="Model" value="Entities/Furniture/parkBenchBPrefab" param1="main_mesh"/>
 			<property name="SortOrder1" value="B424"/>
 			<property name="SortOrder2" value="0001"/>
-		</block>
+		</block>  	
 
         <!-- ************************************************************************* 
             SUPPORT/RADIATION BLOCKS 
