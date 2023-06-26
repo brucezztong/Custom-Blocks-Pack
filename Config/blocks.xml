@@ -922,6 +922,8 @@
 		<!-- Black -->
 		<block name="cbpPipeFireHazardBlack2mOffset">
 			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+			<property name="CustomIcon" value="pipeFireHazardBlack2m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Hazard" />
 			<property name="ParticleName" value="flame_hazard" />
@@ -948,6 +950,8 @@
 			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Hazard" />
+			<property name="CustomIcon" value="pipeFireHazardBlack3m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="ParticleName" value="flame_hazard" />
 			<property name="ParticleOffset" value="-0.5,0,0.5"/>
 			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
@@ -973,6 +977,8 @@
 			<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="Hazard" />
+			<property name="CustomIcon" value="pipeFireHazardBlack4m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="ParticleName" value="flame_hazard" />
 			<property name="ParticleOffset" value="-1.5,0,0.5"/>
 			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
@@ -1362,6 +1368,8 @@
 		<block name="cbpPipeFireHazardWallBlack2mOffset">
 			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
 			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="pipeFireHazardWallBlack2m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="Class" value="Hazard" />
 			<property name="ParticleName" value="flame_hazard" />
 			<property name="ParticleOffset" value="-0.5,0,0.5"/>
@@ -1386,6 +1394,8 @@
 		<block name="cbpPipeFireHazardWallBlack3mOffset">
 			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
 			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="pipeFireHazardWallBlack3m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="Class" value="Hazard" />
 			<property name="ParticleName" value="flame_hazard" />
 			<property name="ParticleOffset" value="-0.5,0,0.5"/>
@@ -1410,6 +1420,8 @@
 		<block name="cbpPipeFireHazardWallBlack4mOffset">
 			<property name="Extends" value="pipeSmallWallBroke" param1="RepairItems"/>
 			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="pipeFireHazardWallBlack4m"/>
+            <property name="CustomIconTint" value="180E0E"/>
 			<property name="Class" value="Hazard" />
 			<property name="ParticleName" value="flame_hazard" />
 			<property name="ParticleOffset" value="-1.5,0,0.5"/>
