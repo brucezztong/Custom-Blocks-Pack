@@ -1808,6 +1808,89 @@
 			<property name="SortOrder2" value="0000"/>
 		</block>
 		
+		
+		<block name="cbpFireHazardRock2M">
+			<property name="Extends" value="pipeSmallWallBrokeGrey"/>
+			<property name="CustomIcon" value="rock04"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="0.9,0,0" />
+			<property name="DamageSize" value="2,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="0.9,0,0" />
+			<property name="SecondarySize" value="2,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ModelOffset" value="-3.5,2,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<block name="cbpFireHazardRock3M">
+			<property name="Extends" value="pipeSmallWallBrokeGrey"/>
+			<property name="CustomIcon" value="rock04"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-0.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.4,0,0" />
+			<property name="DamageSize" value="3,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.4,0,0" />
+			<property name="SecondarySize" value="3,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ModelOffset" value="-3.5,2,0"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="cbpFireHazardRock4M">
+			<property name="Extends" value="pipeSmallWallBrokeGrey"/>
+			<property name="CustomIcon" value="rock04"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Hazard" />
+			<property name="ParticleName" value="flame_hazard" />
+			<property name="ParticleOffset" value="-1.5,0,0.5"/>
+			<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+			<property name="DamageOffset" value="1.9,0,0" />
+			<property name="DamageSize" value="4,1,1" />
+			<property name="SecondaryBuffs" value="buffHazard_Slow" />
+			<property name="SecondaryOffset" value="1.9,0,0" />
+			<property name="SecondarySize" value="4,0.25,0.25" />
+			<property name="StartSound" value="flametrap_start" />
+			<property name="StopSound" value="flametrap_end" />
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ModelOffset" value="-3.5,2,0"/>
+			<property name="MultiBlockDim" value="4,1,1"/>
+			<property name="SortOrder1" value="B750"/>
+			<property name="SortOrder2" value="0000"/>
+			</block>
+		
+		
         <!-- ************************************************************************* 
             Server Racks
         ************************************************************************** -->
@@ -6325,7 +6408,8 @@
 		<property name="Explosion.BlockDamage" value="1"/>
 		<property name="Explosion.EntityDamage" value="3"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
-	</block>
+	</block>  	
+
 
 <!-- ************************************************************************* 
            VISUAL EFFECT ONLY AIR BLOCKS: - does not have any 'damage' buffs
@@ -6820,6 +6904,20 @@
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="AllowAllRotations" value="true"/>
 	</block>	
+	
+	<block name="cbp_SparklySmallFlame"> <!-- Small white electric ark from stun batton  -->
+        <property name="Extends" value="cbpSparklyBlockLarge"/>
+        <property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
+        <property name="ModelOffset" value="0,0,0"/>
+    </block>
+	
+	<block name="cbp_SparklySmallFlameOffset"> <!-- Small white electric ark from stun batton  -->
+        <property name="Extends" value="cbpSparklyBlockLarge"/>
+        <property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
+        <property name="ModelOffset" value="0,-.5,0"/>
+    </block>
+	
+	
 		
 	
         <!-- ************************************************************************* 
