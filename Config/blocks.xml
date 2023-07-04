@@ -3559,9 +3559,9 @@
             <property name="Extends" value="cbpStoreShelfHarwareMaster"/>
             <property name="DescriptionKey" value="cbpStoreShelfSingleBottomHardwareRandomLootHelperDesc"/>
             <property name="CreativeMode" value="Dev"/>
-            <property name="CustomIcon" value="cntStoreShelfDoubleTopFood01"/>
+            <property name="CustomIcon" value="cntStoreShelfSingleBottomHardware01"/>
             <property name="CustomIconTint" value="ff8080"/>
-            <property name="Model" value="Entities/Commercial/storeShelfTopDoubleGoodsPrefab"/>
+            <property name="Model" value="Entities/Commercial/storeShelfBottomHardwareGoods01Prefab"/>
             <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
         </block>
 
@@ -3602,7 +3602,7 @@
         <block name="cbpStoreShelfDoubleBottomHardwareA">
             <property name="Extends" value="cbpStoreShelfHarwareMaster"/>
             <property name="DescriptionKey" value="cbpStoreShelfDoubleBottomHardwareADesc"/>
-            <property name="CustomIcon" value="cntStoreShelfDoubleBottomHardware01"/>
+            <property name="CustomIcon" value="cntStoreShelfDoubleTopHardware01"/>
             <property name="CustomIconTint" value="#FFF0F5"/>
             <property name="Model" value="Entities/Commercial/storeShelfBottomDoubleHardware01Prefab"/>
             <dropextendsoff/>
@@ -3732,7 +3732,7 @@
             <property name="Extends" value="cbpStoreShelfPharmacyMaster"/>
             <property name="DescriptionKey" value="cbpStoreShelfSingleBottomPharmaRandomLootHelperDesc"/>
             <property name="CreativeMode" value="Dev"/>
-            <property name="CustomIcon" value="cntStoreShelfDoubleTopHardware01"/>
+            <property name="CustomIcon" value="cntStoreShelfSingleBottomPharmaGoods01"/>
             <property name="CustomIconTint" value="ff8080"/>
             <property name="Model" value="Entities/Commercial/ShelfPharmaGoods01Prefab"/>
             <property name="FilterTags" value="MC_helpers,SC_helperElectrical,SC_commercial"/>
@@ -4705,6 +4705,7 @@
             <property name="ItemTypeIcon" value="other"/>
             <property name="DisplayInfo" value="Name"/>
             <property name="Model" value="@:Entities/LootContainers/clothsRacksRectanglePantsPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
             <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
             <property name="SortOrder1" value="B465"/>
             <property name="SortOrder2" value="0009"/>
@@ -4733,6 +4734,7 @@
             <property name="ItemTypeIcon" value="other"/>
             <property name="DisplayInfo" value="Name"/>
             <property name="Model" value="@:Entities/LootContainers/clothsRacksRectangleShirtsPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,2"/>
             <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
             <property name="SortOrder1" value="B465"/>
             <property name="SortOrder2" value="0009"/>
