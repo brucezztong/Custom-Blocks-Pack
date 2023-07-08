@@ -92,7 +92,7 @@
             Bookless Bookcases
         *********************************************************** -->
 
-        <lootcontainer name="cbpBookcaseNoBooks" count="1" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+        <lootcontainer name="cbpBookcaseNoBooks" count="1" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
             <item name="resourcePaper" prob="1" count="1,10"/>
             <item name="resourcePaper" prob="0.4" count="10,20"/>
             <item name="resourceLeather" prob="0.8" count="1"/>

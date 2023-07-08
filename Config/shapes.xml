@@ -1,0 +1,26 @@
+<configs>
+
+
+	<append xpath="/shapes">
+
+
+		<shape name="cbpBulletProofWaterProofWindowFull" tag="Bulletproof">
+			<property name="ShapeMenu" value="false" />
+			<property name="Model" value="window_store_four_sided_full" />
+			<property name="CustomIcon" value="shapeWindowStoreFourSidedBulletproofFull" />
+			<property name="ShapeCategories" value="Windows" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="UseGlobalUV" value=",DDLDDDL" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+			<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+			<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+			<property name="DowngradeBlock" value="corrugatedMetalShapes:windowStoreFourSidedBroken" />
+			<drop event="Destroy" count="0" />
+		</shape>
+
+
+	</append>
+
+</configs>

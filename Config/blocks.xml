@@ -1888,7 +1888,65 @@
 			<property name="MultiBlockDim" value="4,1,1"/>
 			<property name="SortOrder1" value="B750"/>
 			<property name="SortOrder2" value="0000"/>
+		 </block>
+			
+		 <block name="cbpOffsetStainedGlassPlate">
+				<property name="CustomIcon" value="shapeSheet"/>
+				<property name="CustomIconTint" value="99FF00"/>
+				<property name="Extends" value="glassBusinessPlate"/>
+				<property name="Texture" value="596"/>
+				<property name="LightOpacity" value="4"/>
+				<property name="ModelOffset" value="1,1.5,1"/>
+		 </block>
+
+
+			<block name="cbpSmokeCapOffset"> 
+				<property name="Extends" value="capChimneyLargeSmoke"/>
+				<property name="ModelOffset" value="0,-.2,0"/>
+				<property name="Collide" value=""/>
 			</block>
+
+
+		<block name="cbpVomitBulbPropOffsetSide"> 
+			<property name="CustomIcon" value="shapeFontExclamation"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcobblestone"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Vomit/vomitBulbPrefab.prefab"/>
+			<property name="ModelOffset" value="1,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
+
+		<block name="cbpFireBlockZomLeft"> 
+			<property name="CustomIcon" value="shapeFontExclamation"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcobblestone"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
+
+		<block name="cbpFireBlockZomLeftOffsetDown"> 
+			<property name="Extends" value="cbpFireBlockZomLeft"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+		</block>
 		
 		
         <!-- ************************************************************************* 
@@ -2477,6 +2535,7 @@
             <property name="Class" value="Loot"/>
             <property name="CustomIcon" value="cntVendingMachine2Broken"/>
             <property name="Model" value="Entities/Crafting/vending_machinePrefab"/>
+            <property name="ModelOffset" value="0,0.5,0"/>
             <property name="LootList" value="cbpJunk"/>
         </block>
 
@@ -6186,6 +6245,7 @@
 		<property name="StabilitySupport" value="true"/>
 		<property name="ImposterExclude" value="true"/>
 		<property name="Collide" value=""/>
+		<property name="WaterFlow" value="permitted"/>
 		<drop event="Destroy" count="0"/>
 		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 		<property name="ModelOffset" value="0,0,0"/>
@@ -6195,6 +6255,7 @@
 	<block name="cbpHardAirLadder">  <!--  Air block that acts like a ladder - place on wall (zombies can use them)-->
 		<property name="Extends" value="cbpHardAir"/>
 		<property name="Class" value="Ladder"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
         
         <block name="cbpHardAirTallx20">
@@ -6207,6 +6268,7 @@
             <property name="StabilitySupport" value="true"/>
             <property name="MultiBlockDim" value="1,20,1"/>
             <property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
             <drop event="Destroy" count="0"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
         </block>
@@ -6221,6 +6283,7 @@
             <property name="StabilitySupport" value="true"/>
             <property name="MultiBlockDim" value="3,9,3"/>
             <property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
             <drop event="Destroy" count="0"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
         </block>
@@ -6246,6 +6309,7 @@
             <property name="Explosion.BlockDamage" value="2"/>
             <property name="Explosion.EntityDamage" value="1"/>
             <property name="MaxDamage" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="PlaceAsRandomRotation" value="false"/>
             <property name="OnlySimpleRotations" value="false"/>
             <property name="Group" value="Tools/Traps"/>
@@ -6261,6 +6325,7 @@
             <property name="Shape" value="BillboardPlant"/>
             <property name="Mesh" value="grass"/>
             <property name="Texture" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="StabilitySupport" value="true"/>
             <property name="Collide" value="movement"/>
             <property name="Stacknumber" value="500"/>
@@ -6281,6 +6346,7 @@
             <property name="Count" value="8"/>
             <property name="Collide" value="movement"/>
             <property name="BuffChance" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="BuffsWhenWalkedOn" value="buffDrugPainkillers"/>
             <property name="Collide" value=""/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -6302,6 +6368,7 @@
             <property name="Group" value="Tools/Traps"/>
             <property name="FilterTags" value="MC_building,SC_traps"/>
             <property name="SortOrder1" value="70g0"/>
+			<property name="WaterFlow" value="permitted"/>
             <drop event="Fall" count="0" prob="0"/>
             <property name="ShowModelOnFall" value="true"/>
         </block>
@@ -6316,6 +6383,7 @@
             <property name="StabilitySupport" value="false"/>
             <property name="Collide" value="movement"/>
             <property name="Stacknumber" value="500"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="BuffChance" value="1"/>
             <property name="BuffsWhenWalkedOn" value="cbpSlowdown"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -6331,6 +6399,7 @@
             <property name="StabilitySupport" value="false"/>
             <property name="Collide" value="movement"/>
             <property name="Stacknumber" value="500"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="BuffChance" value="1"/>
             <property name="BuffsWhenWalkedOn" value="cbpSlowdown2"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -6344,6 +6413,7 @@
             <property name="Mesh" value="grass"/>
             <property name="Texture" value="1"/>
             <property name="StabilitySupport" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="Collide" value="movement"/>
             <property name="Stacknumber" value="500"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -6359,6 +6429,7 @@
             <property name="StabilitySupport" value="true"/>
             <property name="Collide" value="movement"/>
             <property name="Stacknumber" value="500"/>
+			<property name="WaterFlow" value="permitted"/>
             <property name="BuffChance" value="1"/>
             <property name="BuffsWhenWalkedOn" value="buffShocked"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
@@ -6368,6 +6439,7 @@
 		<property name="Extends" value="cbpHardAir"/>
 		<property name="Material" value="Mtrash"/>
 		<property name="StabilitySupport" value="false"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="Collide" value="movement"/>
 	</block>
 
@@ -6376,6 +6448,7 @@
 		<property name="Extends" value="cbpHardAir"/>
 		<property name="Collide" value="movement"/>
 		<property name="BuffChance" value="1"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="BuffsWhenWalkedOn" value="buffShocked"/>
 	</block>
 	
@@ -6391,6 +6464,7 @@
 		<property name="Explosion.ParticleIndex" value="20"/>
 		<property name="BuffChance" value="1"/>
 		<property name="Collide" value="movement"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="BuffChance" value="1"/>
 		<property name="BuffsWhenWalkedOn" value="cbpBuffEntitySpawnHeal"/>  <!--  Custom Buff -->
 	</block>
@@ -6407,6 +6481,7 @@
 		<property name="BuffsWhenWalkedOn" value="buffRadiation03"/>
 		<property name="Explosion.RadiusBlocks" value="2"/>
 		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="Explosion.BlockDamage" value="1"/>
 		<property name="Explosion.EntityDamage" value="3"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
@@ -6426,6 +6501,7 @@
 		<property name="Texture" value="1"/>
 		<property name="StabilitySupport" value="false"/>
 		<property name="Collide" value="movement"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="Stacknumber" value="500"/>
 		<property name="BuffChance" value="1"/>
 		<property name="BuffsWhenWalkedOn" value="cbpDarkAir"/>
@@ -6436,80 +6512,117 @@
 	<block name="cbpHardAirBlur">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpBlurAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirHot">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpHotAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirHot2">
 		<property name="Extends" value="cbpHardAirDark"/>			
 		<property name="BuffsWhenWalkedOn" value="cbpHotAir2"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirCold">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpColdAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirCold2">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpColdAir2"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirDistorted">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpDistortedAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirGrey">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpGreyAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>
 
 
 	<block name="cbpHardAirRadiation">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpRadiationAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>	
 	
 	
 	<block name="cbpHardAirInfected">
 		<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpInfectedAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>	
 	
 	
 	<block name="cbpHardAirDrunk">
 			<property name="Extends" value="cbpHardAirDark"/>	
 		<property name="BuffsWhenWalkedOn" value="cbpDrunkAir"/>
+		<property name="WaterFlow" value="permitted"/>
 	</block>	
+	
+	<block name="cbpHardAirShockLight">
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CustomIconTint" value="00e6ff"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Collide" value="movement"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="buffShockedLight"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		<property name="WaterFlow" value="permitted" />
+	</block>
 	
 	<!-- ************************************************************************* 
            CUSTOM BOULDER: can be used as a building block - 1x1x1 with stability support 
         ************************************************************************** -->
-		<block name="cbpBoulderBuildingBlock_MFS01"> <!-- Boulder Building Block with Random Rotation -->
-		<property name="CustomIcon" value="rockResource"/>
+		<block name="cbpBoulderBuildingBlock"> <!-- Boulder Building Block with Random Rotation -->
 		<property name="CreativeMode" value="Dev"/>
-		<property name="Material" value="Mcobblestone"/>
-		<property name="StabilitySupport" value="true"/>
+		<property name="DisplayType" value="blockHardenedMulti"/>
+		<property name="Map.Color" value="120,120,120"/>
+		<property name="IndexName" value="quest_stone_boulder"/>
+		<property name="Material" value="Mstone_shapes"/>
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
 		<property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
 		<property name="PlaceAsRandomRotation" value="true"/>
 		<property name="AllowAllRotations" value="true"/>
 		<property name="OnlySimpleRotations" value="false"/>
 		<property name="ImposterDontBlock" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="IsDistantDecoration" value="false"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="PassThroughDamage" value="true"/>
 		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
 		<drop event="Destroy" count="0"/>
+		<property name="DowngradeBlock" value="rockResourceBroke1"/>
+		<property name="SortOrder1" value="B275"/>
+		<property name="SortOrder2" value="0000"/>
 		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 	</block>
 	
@@ -6919,8 +7032,11 @@
         <property name="ModelOffset" value="0,-.5,0"/>
     </block>
 	
-	
-		
+	   <block name="cbpdecoMannequinFemaleGold">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="TintColor" value="e7fa39"/>
+			<property name="CustomIcon" value="decoMannequinFemale"/>
+		</block>		
 	
         <!-- ************************************************************************* 
             OFFSET BLOCKS 
