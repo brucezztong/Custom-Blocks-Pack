@@ -911,10 +911,18 @@
              <block name="cntWaterCoolerFullSideCentered" prob=".35"/>
             <block name="cbpWaterCoolerFullSideCenteredEmpty" prob=".65"/>
 		</placeholder>	
-		<placeholder name="bpWaterCoolerFullSideCenteredRandomHelperAir">
+		<placeholder name="cbpWaterCoolerFullSideCenteredRandomHelperAir">
 			 <block name="air" prob=".5"/>
              <block name="cntWaterCoolerFullSideCentered" prob=".15"/>
             <block name="cbpWaterCoolerFullSideCenteredEmpty" prob=".35"/>
+		</placeholder>
+		
+		<!-- *************************************************************
+            Vimit Claymore Helper; Allows Random variant of the vomit CLaymore stuff 
+        ************************************************************** -->
+		
+		<placeholder name="cbpHardAirVomitClaymoreHelper">
+			<block name="cbpHardAirVomitClaymore" prob="1"/>
 		</placeholder>
 		
     </append>

@@ -1,4 +1,7 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.0.001.0012 : 
+* Icons added to MPL's deco weapons.
+
 A21.0.001.0011 :
 * Start of Modlet tagging and releases.

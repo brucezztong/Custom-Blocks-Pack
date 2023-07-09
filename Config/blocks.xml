@@ -6631,7 +6631,7 @@
         ************************************************************************** -->
 		
 		<block name="cbpSteelSpearPropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="meleeWpnSpearT3SteelSpear"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6650,12 +6650,16 @@
 
 
 	<block name="cbpSteelSpearPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="meleeWpnSpearT3SteelSpear"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpSteelSpearPropWall"/>
 		<property name="ModelOffset" value="0,.75,0"/>
 		<property name="Collide" value=""/>
 	</block>
 
 <block name="cbpSteelSpearPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="meleeWpnSpearT3SteelSpear"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpSteelSpearPropWall"/>
 		<property name="ModelOffset" value="0,0,0"/>
 		<property name="Collide" value=""/>
@@ -6664,7 +6668,7 @@
 
 
 	<block name="cbpCompoundCrossbowProp"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6683,12 +6687,16 @@
 
 
 	<block name="cbpCompoundCrossbowPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpCompoundCrossbowProp"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
 	</block>
 	
 	<block name="cbpCompoundCrossbowPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpCompoundCrossbowProp"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
@@ -6697,7 +6705,7 @@
 	
 
 	<block name="cbpCompoundBowProp"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunBowT3CompoundBow"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6716,12 +6724,16 @@
 
 
 	<block name="cbpCompoundBowPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunBowT3CompoundBow"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpCompoundBowProp"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
 	</block>
 	
 	<block name="cbpCompoundBowPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunBowT3CompoundBow"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpCompoundBowProp"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
@@ -6730,7 +6742,7 @@
 
 	
 	<block name="cbpAxeSteelPropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6749,12 +6761,16 @@
 
 
 	<block name="cbpAxeSteelPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpAxeSteelPropWall"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
 	</block>	
 	
 	<block name="cbpAxeSteelPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpAxeSteelPropWall"/>
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="Collide" value=""/>
@@ -6763,7 +6779,7 @@
 	
 
 	<block name="cbpGunRifleT3SniperRiflePropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6782,12 +6798,16 @@
 
 
 	<block name="cbpGunRifleT3SniperRiflePropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpGunRifleT3SniperRiflePropWall"/>
 		<property name="ModelOffset" value="0,.6,-.2"/>
 		<property name="Collide" value=""/>
 	</block>	
 	
 	<block name="cbpGunRifleT3SniperRiflePropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpGunRifleT3SniperRiflePropWall"/>
 		<property name="ModelOffset" value="0,.6,-.2"/>
 		<property name="Collide" value=""/>
@@ -6796,7 +6816,7 @@
 
 
 	<block name="cbpM60PropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunMGT3M60"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6815,12 +6835,16 @@
 
 
 	<block name="cbpM60PropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunMGT3M60"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpM60PropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
 	</block>	
 
 		<block name="cbpM60PropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunMGT3M60"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpM60PropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
@@ -6829,7 +6853,7 @@
 	
 
 	<block name="cbpAutoShotgunPropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunShotgunT3AutoShotgun"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6848,12 +6872,16 @@
 
 
 	<block name="cbpAutoShotgunPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunShotgunT3AutoShotgun"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpAutoShotgunPropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
 	</block>	
 
 		<block name="cbpAutoShotgunPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunShotgunT3AutoShotgun"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpAutoShotgunPropWall"/>
 		<property name="ModelOffset" value="0,.4,-.2"/>
 		<property name="Collide" value=""/>
@@ -6862,7 +6890,7 @@
 
 
 	<block name="cbpRocketLauncherPropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunExplosivesT3RocketLauncher"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6881,12 +6909,16 @@
 
 
 	<block name="cbpRocketLauncherPropCtr"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunExplosivesT3RocketLauncher"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpRocketLauncherPropWall"/>
 		<property name="Collide" value=""/>
 				<property name="ModelOffset" value="0,.4,0"/>
 	</block>	
 
 		<block name="cbpRocketLauncherPropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
+		<property name="CustomIcon" value="gunExplosivesT3RocketLauncher"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpRocketLauncherPropWall"/>
 		<property name="Collide" value=""/>
 		<property name="ModelOffset" value="0,.4,0"/>
@@ -6895,7 +6927,7 @@
 	
 
 	<block name="cbpTacticalARPropWall"> <!-- Weapon decor - flush with surface  -->
-		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
 		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="CreativeMode" value="Dev"/>
 		<property name="Material" value="MstainlessSteel"/>
@@ -6914,12 +6946,16 @@
 
 
 	<block name="cbpTacticalARPropCtr"> 
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpTacticalARPropWall"/>
 		<property name="Collide" value=""/>
 		<property name="ModelOffset" value="0,.4,0"/>
 	</block>
 
 		<block name="cbpTacticalARPropCtr_Wonky"> 
+		<property name="CustomIcon" value="gunMGT2TacticalAR"/>
+		<property name="CustomIconTint" value="ff1a36"/>
 		<property name="Extends" value="cbpTacticalARPropWall"/>
 		<property name="Collide" value=""/>
 		<property name="ModelOffset" value="0,.4,0"/>
@@ -7036,7 +7072,104 @@
 			<property name="Extends" value="decoMannequinFemale"/>
 			<property name="TintColor" value="e7fa39"/>
 			<property name="CustomIcon" value="decoMannequinFemale"/>
-		</block>		
+		</block>
+
+		<block name="cbpHardAirClaymore">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="CarExplode"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="5"/>
+			<property name="RadiusBlocks" value="5"/>
+			<property name="BlockDamage" value="300"/>
+			<property name="RadiusEntities" value="5"/>
+			<property name="EntityDamage" value="50"/>
+		</property>
+		<property name="CustomIcon" value="cntBarrelAcidSingle00"/>
+		<property name="ItemTypeIcon" value="explosion"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<property name="Collide" value=""/>
+	</block>    
+
+	<block name="cbpHologramZombieRadiatedCop"> 
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="Morganic"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Entities/Zombies/Prefabs/ZCopRadiated.prefab"/>
+		<property name="ModelOffset" value="0,1.3,0"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+	</block>  
+
+	<block name="cbpRadiatedCopClaymore">
+		<property name="Extends" value="cbpHologramZombieRadiatedCop"/>
+		<property name="Class" value="CarExplode"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="8"/>
+			<property name="RadiusBlocks" value="5"/>
+			<property name="BlockDamage" value="300"/>
+			<property name="RadiusEntities" value="5"/>
+			<property name="EntityDamage" value="50"/>
+		</property>
+		<property name="ModelOffset" value="0,.9,0"/>
+		<property name="IsTerrainDecoration" value="true"/>
+	</block>  
+
+	<block name="cbpHardAirVomitClaymoreHelper">
+		<property name="Extends" value="garbage_decor3"/>
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="CarExplode"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="11"/>
+			<property name="RadiusBlocks" value="1"/>
+			<property name="BlockDamage" value="1"/>
+			<property name="RadiusEntities" value="1"/>
+			<property name="EntityDamage" value="1"/>
+		</property>
+		<property name="ItemTypeIcon" value="explosion"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="PlaceAsRandomRotation" value="false"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="Collide" value=""/>		
+	</block>   	
+
+	<block name="cbpHardAirVomitClaymore">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="CarExplode"/>
+		<property class="Explosion">
+			<property name="ParticleIndex" value="8"/>
+			<property name="RadiusBlocks" value="2"/>
+			<property name="BlockDamage" value="20"/>
+			<property name="RadiusEntities" value="2"/>
+			<property name="EntityDamage" value="20"/>
+		</property>
+		<property name="CustomIcon" value="cntBarrelAcidSingle00"/>
+		<property name="ItemTypeIcon" value="explosion"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="false"/>
+			<property name="OnlySimpleRotations" value="false"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="Collide" value=""/>
+	</block>
 	
         <!-- ************************************************************************* 
             OFFSET BLOCKS 
