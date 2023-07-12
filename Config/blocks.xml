@@ -6805,6 +6805,14 @@
 		<property name="Collide" value=""/>
 	</block>	
 	
+	<block name="cbpGunRifleT3SniperRiflePropCtrOffset"> <!-- Weapon decor - centered Offset in block  -->
+		<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+		<property name="CustomIconTint" value="ff1a36"/>
+		<property name="Extends" value="cbpGunRifleT3SniperRiflePropWall"/>
+		<property name="ModelOffset" value="-.3,.2,-.9"/>
+		<property name="Collide" value=""/>
+	</block>
+	
 	<block name="cbpGunRifleT3SniperRiflePropCtr_Wonky"> <!-- Weapon decor - centered in block  -->
 		<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
 		<property name="CustomIconTint" value="ff1a36"/>
@@ -6962,6 +6970,74 @@
 		<property name="GndAlign" value="1"/>
 	</block>
 	
+	<block name="cbpHuntingKnifePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/Knives/hunting_knifePrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.4,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
+
+		<block name="cbpHuntingKnifePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpHuntingKnifePropWall"/>
+			<property name="ModelOffset" value="0,.4,0"/>
+		</block>
+
+		<block name="cbpHuntingKnifePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpHuntingKnifePropWall"/>
+			<property name="ModelOffset" value="0,.4,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+					  
+		<block name="cbpMachettePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/Knives/machetePrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+
+
+		<block name="cbpMachettePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpMachettePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpMachettePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpMachettePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+	
 	<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
         ************************************************************************** -->
@@ -7002,7 +7078,6 @@
 		<property name="ModelOffset" value="0,.5,0"/>
 		<property name="AllowAllRotations" value="true"/>
 	</block>
-
 	
 	<block name="cbpSparklyBlockDroneBeam"> <!-- Long, Red laser beam:  Inset to start/intersect with block surface  -->
 		<property name="Extends" value="cbpSparklyBlockLarge"/>
@@ -7010,6 +7085,11 @@
 		<property name="ModelOffset" value="0,.5,0"/>
 	</block>
 
+	<block name="cbpSparklyBlockDroneBeamOffset"> <!-- Long, Red laser beam:  Inset to start/intersect with block surface  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="Model" value="ParticleEffects/p_drone_bream"/>
+		<property name="ModelOffset" value="-.3,.25,-1.2"/>
+	</block>
 	
 	<block name="cbpSparklyBlockDroneHealPlayer"> <!-- Single-Use (non looping) swirly light effect - needs a trigger  -->
 		<property name="Extends" value="cbpSparklyBlockLarge"/>
