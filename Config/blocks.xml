@@ -7398,6 +7398,338 @@
         </block>
 		
 		<!-- ************************************************************************* 
+            MID-CENTURY BATHROOM OBJECTS: Tinted Bathroom Objects giving the POI that 70s feel
+        ************************************************************************** -->
+		
+		<block name="cbpAvacadoToiletOpen"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet01"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="cntToilet01"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonToiletOpen"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet01"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="cntToilet01"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseToiletOpen"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet01"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="cntToilet01"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseToiletOpen"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet01"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="cntToilet01"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+	
+<!-- -->
+
+	<block name="cbpAvacadoToiletClosed"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet02"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="cntToilet02"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonToiletClosed"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet02"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="cntToilet02"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseToiletClosed"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet02"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="cntToilet02"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseToiletClosed"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet02"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="cntToilet02"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoToiletClosedIndustrial"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet03"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="cntToilet03"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonToiletClosedIndustrial"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet03"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="cntToilet03"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseToiletClosedIndustrial"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet03"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="cntToilet03"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseToiletClosedIndustrial"> <!-- Tinted Toilet  -->
+		<property name="CustomIcon" value="cntToilet03"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="cntToilet03"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoUrinal"> <!-- Tinted Urinal  -->
+		<property name="CustomIcon" value="urinalCommercialMounted"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="urinalCommercialMounted"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonUrinal"> <!-- Tinted Urinal  -->
+		<property name="CustomIcon" value="urinalCommercialMounted"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="urinalCommercialMounted"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseUrinal"> <!-- Tinted Urinal  -->
+		<property name="CustomIcon" value="urinalCommercialMounted"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="urinalCommercialMounted"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseUrinal"> <!-- Tinted Urinal  -->
+		<property name="CustomIcon" value="urinalCommercialMounted"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="urinalCommercialMounted"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoSinkWallMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="wallMountSinkCommercial"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="wallMountSinkCommercial"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonSinkWallMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="wallMountSinkCommercial"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="wallMountSinkCommercial"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseSinkWallMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="wallMountSinkCommercial"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="wallMountSinkCommercial"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseSinkWallMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="wallMountSinkCommercial"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="wallMountSinkCommercial"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoSinkCounterMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="counterMountedSinkCommercial"/>
+		<property name="TintColor" value="baba80counterMountedSinkCommercial"/>
+	</block>	
+	
+	<block name="cbpSalmonSinkCounterMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="counterMountedSinkCommercial"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseSinkCounterMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="counterMountedSinkCommercial"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseSinkCounterMounted"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="counterMountedSinkCommercial"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoSinkCounterMountedOffset"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="counterMountedSinkCommercialOffset"/>
+		<property name="TintColor" value="baba80counterMountedSinkCommercial"/>
+	</block>	
+	
+	<block name="cbpSalmonSinkCounterMountedOffset"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="counterMountedSinkCommercialOffset"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseSinkCounterMountedOffset"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="counterMountedSinkCommercialOffset"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseSinkCounterMountedOffset"> <!-- Tinted Sink  -->
+		<property name="CustomIcon" value="counterMountedSinkCommercial"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="counterMountedSinkCommercialOffset"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+	
+<!-- -->
+
+	<block name="cbpAvacadoSinkPedestal"> <!-- Tinted Wall Mounted Sink  -->
+		<property name="CustomIcon" value="pedestalSink"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="pedestalSink"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonSinkPedestal"> <!-- Tinted Wall Mounted Sink  -->
+		<property name="CustomIcon" value="pedestalSink"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="pedestalSink"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseSinkPedestal"> <!-- Tinted Wall Mounted Sink  -->
+		<property name="CustomIcon" value="pedestalSink"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="pedestalSink"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseSinkPedestal"> <!-- Tinted Wall Mounted Sink  -->
+		<property name="CustomIcon" value="pedestalSink"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="pedestalSink"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+	
+<!-- -->
+
+	<block name="cbpAvacadoBathtubEmpty"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubEmpty"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="cntBathTubEmpty"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonBathtubEmpty"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubEmpty"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="cntBathTubEmpty"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseBathtubEmpty"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubEmpty"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="cntBathTubEmpty"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseBathtubEmpty"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubEmpty"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="cntBathTubEmpty"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoBathtubGore"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubGore"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="cntBathTubGore"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonBathtubGore"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubGore"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="cntBathTubGore"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseBathtubGore"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubGore"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="cntBathTubGore"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseBathtubGore"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="cntBathTubGore"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="cntBathTubGore"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>	
+
+<!-- -->
+
+	<block name="cbpAvacadoBathtubClawFoot"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="decoClawFootBathTub"/>
+		<property name="CustomIconTint" value="baba80"/>
+		<property name="Extends" value="decoClawFootBathTub"/>
+		<property name="TintColor" value="baba80"/>
+	</block>	
+	
+	<block name="cbpSalmonBathtubClawFoot"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="decoClawFootBathTub"/>
+		<property name="CustomIconTint" value="e8bba0"/>
+		<property name="Extends" value="decoClawFootBathTub"/>
+		<property name="TintColor" value="e8bba0"/>
+	</block>	
+
+	<block name="cbpRoseBathtubClawFoot"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="decoClawFootBathTub"/>
+		<property name="CustomIconTint" value="c9aebf"/>
+		<property name="Extends" value="decoClawFootBathTub"/>
+		<property name="TintColor" value="c9aebf"/>
+	</block>	
+		
+	<block name="cbpTurquoiseBathtubClawFoot"> <!-- Tinted Bathtub  -->
+		<property name="CustomIcon" value="decoClawFootBathTub"/>
+		<property name="CustomIconTint" value="aad3ce"/>
+		<property name="Extends" value="decoClawFootBathTub"/>
+		<property name="TintColor" value="aad3ce"/>
+	</block>		
+		
+		<!-- ************************************************************************* 
             CUSTOM TREES WITH ADVANCED ROTATION  (used for felled trees) that do not cause NRE's
         ************************************************************************** -->
 
