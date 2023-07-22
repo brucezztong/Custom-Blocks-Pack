@@ -8236,13 +8236,7 @@ that are planted by players, so it is a nice bonus.
 	<property name="PlaceAsRandomRotation" value="true"/>
 	<property name="AllowAllRotations" value="true"/>
 	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
-</append>
-
-<append xpath="/blocks/block[@name='decoCowSkull']">
-	<property name="PlaceAsRandomRotation" value="true"/>
-	<property name="AllowAllRotations" value="true"/>
-	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
-</append>
+</append>    
 
 <append xpath="/blocks/block[@name='treePlant02']">
 	<property name="PlaceAsRandomRotation" value="true"/>

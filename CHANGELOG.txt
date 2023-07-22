@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.0.001.0015 :
+* Stallion changed random block rotation on decoCowSkull.
+
 A21.0.001.0014 : 
 * MPL added tinted bathroom sets. Stallion added rounded corner shapes.
 
