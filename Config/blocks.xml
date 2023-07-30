@@ -7037,7 +7037,883 @@
 			<property name="ModelOffset" value="0,.3,0"/>
 			<property name="GndAlign" value="1"/>
 		</block>
+		
+		<block name="cbpJunkDronePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunBotT3JunkDrone"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Junk Drone/junkDroneHeld_Prefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="Weight" value="1"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		 <block name="cbpWoodenBowPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunBowT1WoodenBow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedWoodenBow/advancedWoodenBowPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpWoodenBowPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunBowT1WoodenBow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWoodenBowPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpWoodenBowPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunBowT1WoodenBow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWoodenBowPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpClawHammerPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/hammerPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpClawHammerPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpClawHammerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpClawHammerPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpClawHammerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpNailgunPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolRepairT3Nailgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/nailgunPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpNailgunPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolRepairT3Nailgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpNailgunPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpNailgunPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolRepairT3Nailgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpNailgunPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpFireaxePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/Axe/fireaxe_ironPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpFireaxePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpFireaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpFireaxePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpFireaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
 	
+		 <block name="cbpIronPickaxePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolPickT1IronPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/pickaxe_ironPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpIronPickaxePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolPickT1IronPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronPickaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpIronPickaxePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolPickT1IronPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronPickaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSteelPickaxePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/pickaxe_steelPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpSteelPickaxePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelPickaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpSteelPickaxePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelPickaxePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpIronShovelPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/shovel_ironPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpIronShovelPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronShovelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpIronShovelPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronShovelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSteelShovelPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/shovel_steelPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpSteelShovelPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelShovelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpSteelShovelPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelShovelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpChainsawPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolAxeT3Chainsaw"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpChainsawPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolAxeT3Chainsaw"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpChainsawPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpChainsawPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolAxeT3Chainsaw"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpChainsawPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpAugerPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpAugerPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpAugerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpAugerPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpAugerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpWrenchPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT1Wrench"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/wrenchPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpWrenchPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolSalvageT1Wrench"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWrenchPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpWrenchPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT1Wrench"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWrenchPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpRatchetPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT2Ratchet"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/ratchetPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpRatchetPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolSalvageT2Ratchet"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpRatchetPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpRatchetPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT2Ratchet"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpRatchetPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpImpactDriverPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpImpactDriverPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpImpactDriverPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpImpactDriverPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpImpactDriverPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		 <block name="cbpBaseballBatPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeWpnClubT1BaseballBat"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/Bat/bat_Prefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpBaseballBatPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeWpnClubT1BaseballBat"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpBaseballBatPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpBaseballBatPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeWpnClubT1BaseballBat"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpBaseballBatPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSteelClubPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeWpnClubT3SteelClub"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/ClubIron/clubIronPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpSteelClubPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeWpnClubT3SteelClub"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelClubPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpSteelClubPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeWpnClubT3SteelClub"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelClubPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSteelSledgehammerPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Melee/SledgeHammer/steelSledgehammerPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpSteelSledgehammerPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelSledgehammerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpSteelSledgehammerPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSteelSledgehammerPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpWireToolPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="meleeToolWireTool"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Tools/wire_strippersPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpWireToolPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="meleeToolWireTool"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWireToolPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpWireToolPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="meleeToolWireTool"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpWireToolPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSMG5PropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpSMG5PropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSMG5PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpSMG5PropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpSMG5PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpMagnum44PropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Magnums/magnumPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpMagnum44PropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpMagnum44PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpMagnum44PropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpMagnum44PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpDesertVulturePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunHandgunT3DesertVulture"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Desert Eagle/desertEaglePrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpDesertVulturePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunHandgunT3DesertVulture"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpDesertVulturePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpDesertVulturePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunHandgunT3DesertVulture"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpDesertVulturePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpDoubleBarrelPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/DoubleBarrelShotgun/doubleBarrelShotgunPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpDoubleBarrelPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpDoubleBarrelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpDoubleBarrelPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrel"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpDoubleBarrelPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpPumpShotgunPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunShotgunT2PumpShotgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpPumpShotgunPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunShotgunT2PumpShotgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpPumpShotgunPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpPumpShotgunPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunShotgunT2PumpShotgun"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpPumpShotgunPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpHuntingRiflePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunRifleT1HuntingRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpHuntingRiflePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunRifleT1HuntingRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpHuntingRiflePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpHuntingRiflePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunRifleT1HuntingRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpHuntingRiflePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpLeverActionRiflePropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunRifleT2LeverActionRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/LeverActionRifle/leverActionRiflePrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpLeverActionRiflePropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunRifleT2LeverActionRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpLeverActionRiflePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpLeverActionRiflePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunRifleT2LeverActionRifle"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpLeverActionRiflePropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		 <block name="cbpAK47PropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunMGT1AK47"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/AK47/ak47Prefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpAK47PropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunMGT1AK47"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpAK47PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpAK47PropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunMGT1AK47"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpAK47PropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		 <block name="cbpIronCrossbowPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/IronCrossBow/ironCrossBowPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpIronCrossbowPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronCrossbowPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+		</block>
+
+		<block name="cbpIronCrossbowPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpIronCrossbowPropWall"/>
+			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
 	<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
         ************************************************************************** -->
@@ -8237,12 +9113,6 @@ that are planted by players, so it is a nice bonus.
 	<property name="AllowAllRotations" value="true"/>
 	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
 </append>    
-
-<append xpath="/blocks/block[@name='treePlant02']">
-	<property name="PlaceAsRandomRotation" value="true"/>
-	<property name="AllowAllRotations" value="true"/>
-	<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
-</append>
 
 <append xpath="/blocks/block[@name='treeStumpPOI']">
 	<property name="PlaceAsRandomRotation" value="true"/>
