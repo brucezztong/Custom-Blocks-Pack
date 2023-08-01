@@ -6209,6 +6209,1790 @@
 			<property name="SortOrder1" value="B424"/>
 			<property name="SortOrder2" value="0001"/>
 		</block>  	
+		
+		<!-- ************************************************************************* 
+            ZOMBIE DISPLAYS 
+        ************************************************************************** -->
+		<block name="cbpZombieTemplateMale">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#FF0000"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="air" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBoe.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+		<drop event="Destroy" count="0" />
+    <property name="PlaceAltBlockValue" value="cbpZombieArlene,cbpZombieArleneFeral,cbpZombieArleneRadiated,cbpZombieMarlene,cbpZombieMarleneFeral,cbpZombieMarleneRadiated,cbpZombiePartyGirl,cbpZombiePartyGirlFeral,cbpZombiePartyGirlFeralRadiated,cbpZombieNurse,cbpZombieNurseFeral,cbpZombieNurseRadiated,cbpZombieJoe,cbpZombieJoeFeral,cbpZombieJoeRadiated,cbpZombieSteve,cbpZombieSteveFeral,cbpZombieSteveRadiated,cbpZombieTomClark,cbpZombieTomClarkFeral,cbpZombieTomClarkRadiated,cbpZombieBusinessMan,cbpZombieBusinessManFeral,cbpZombieBusinessManRadiated,cbpZombieBurnt,cbpZombieBurntFeral,cbpZombieBurntRadiated,cbpZombieSpider,cbpZombieSpiderFeral,cbpZombieSpiderRadiated,cbpZombieBoe,cbpZombieBoeFeral,cbpZombieBoeRadiated,cbpZombieJanitor,cbpZombieJanitorFeral,cbpZombieJanitorRadiated,cbpZombieMoe,cbpZombieMoeFeral,cbpZombieMoeRadiated,cbpZombieLab,cbpZombieLabFeral,cbpZombieLabRadiated,cbpZombieDarlene,cbpZombieDarleneFeral,cbpZombieDarleneRadiated,cbpZombieYo,cbpZombieYoFeral,cbpZombieYoRadiated,cbpZombieUtilityWorker,cbpZombieUtilityWorkerFeral,cbpZombieUtilityWorkerRadiated,cbpZombieBiker,cbpZombieBikerFeral,cbpZombieBikerRadiated,cbpZombieLumberjack,cbpZombieLumberjackFeral,cbpZombieLumberjackRadiated,cbpZombieFemaleFat,cbpZombieFemaleFatFeral,cbpZombieFemaleFatRadiated,cbpZombieFatHawaiian,cbpZombieFatHawaiianFeral,cbpZombieFatHawaiianRadiated,cbpZombieMaleHazmat,cbpZombieFatCop,cbpZombieFatCopFeral,cbpZombieFatCopRadiated,cbpZombieSkateboarder,cbpZombieSkateboarderFeral,cbpZombieSkateboarderRadiated,cbpZombieSoldier,cbpZombieSoldierFeral,cbpZombieSoldierRadiated,cbpZombieWightFeral,cbpZombieWightRadiated,cbpZombieScreamer,cbpZombieScreamerFeral,cbpZombieScreamerRadiated,cbpZombieMutated,cbpZombieMutatedFeral,cbpZombieMutatedRadiated,cbpZombieDemolition,cbpZombieSteveCrawler,cbpZombieSteveCrawlerFeral" />
+	 </block>
+  <block name="cbpZombieArlene">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieArlene" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZArlene.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+		<drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieArleneFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieArleneFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZArleneFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieArleneRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieArleneRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZArleneRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieMarlene">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMarlene" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMarlene.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieMarleneFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMarleneFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMarleneFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieMarleneRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMarleneRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMarleneRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpZombiePartyGirl">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombiePartyGirl" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCocktailWaitress.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombiePartyGirlFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombiePartyGirlFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombiePartyGirlRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombiePartyGirlRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCocktailWaitressRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieNurse">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieNurse" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZNurse.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+   <block name="cbpZombieNurseFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieNurseFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZNurseFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieNurseRadiated">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieNurseRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZNurseRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieJoe">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJoe" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZJoe.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  
+   <block name="cbpZombieJoeFeral">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJoeFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZJoeFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieJoeRadiated">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJoeRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZJoeRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieSteve">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSteve" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSteve.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieSteveFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSteveFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSteveFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSteveRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSteveRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSteveRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieTomClark">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieTomClark" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZTomClark.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpZombieTomClarkFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieTomClarkFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZTomClarkFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieTomClarkRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieTomClarkRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZTomClarkRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+    <block name="cbpZombieBusinessMan">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBusinessMan" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSuit.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>   
+   <block name="cbpZombieBusinessManFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBusinessManFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSuitFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieBusinessManRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBusinessManRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSuitRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+		<drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieBurnt">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBurnt" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBurnt.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieBurntFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBurntFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+		<property name="Model" value="@:Entities/Zombies/Prefabs/ZBurntFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieBurntRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBurntRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBurntRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSpider">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSpider" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSpider.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSpiderFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSpiderFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSpiderFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSpiderRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSpiderRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSpiderRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieBoe">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBoe" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBoe.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieBoeFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBoeFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBoeFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+   <block name="cbpZombieBoeRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBoeRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBoeRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieJanitor">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJanitor" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMechanic.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+     <block name="cbpZombieJanitorFeral">
+	 <property name="CustomIcon" value="sleeperSit" />
+	 <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJanitorFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMechanicFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpZombieJanitorRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieJanitorRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMechanicRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieMoe">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMoe" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>	
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMoe.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieMoeFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMoeFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMoeFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpZombieMoeRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMoeRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMoeRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieLab">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLab" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLab.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieLabFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLabFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLabFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieLabRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLabRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLabRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieDarlene">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieDarlene" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZDarlene.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieDarleneFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieDarleneFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZDarleneFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieDarleneRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieDarleneRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZDarleneRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieYo">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieYo" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZYo.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieYoFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieYoFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZYoFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieYoRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieYoRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZYoRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieUtilityWorker">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieUtilityWorker" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZWorker.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieUtilityWorkerFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieUtilityWorkerFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZWorkerFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block> 
+  <block name="cbpZombieUtilityWorkerRadiated">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieUtilityWorker" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZWorkerRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieBiker">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBiker" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBiker.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieBikerFeral">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBikerFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBikerFeral.prefab"/>
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	 <block name="cbpZombieBikerRadiated">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieBikerRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBikerRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+ <block name="cbpZombieLumberjack">
+  <property name="CustomIcon" value="sleeperSit" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLumberjack" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLumberjack.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieLumberjackFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLumberjackFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLumberjackFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieLumberjackRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieLumberjackRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZLumberjackRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieFemaleFat">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFemaleFat" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBigMama.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieFemaleFatFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFemaleFatFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBigMamaFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+	<block name="cbpZombieFemaleFatRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFemaleFatRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZBigMamaRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieFatHawaiian">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatHawaiian" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZHawaiian.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieFatHawaiianFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatHawaiianFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZHawaiianFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieFatHawaiianRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatHawaiianRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZHawaiianRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieMaleHazmat">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMaleHazmat" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZHazmat.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieFatCop">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatCop" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCop.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieFatCopFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatCopFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCopFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieFatCopRadiated">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieFatCopRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCopRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieSkateboarder">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSkateboarder" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZThug.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSkateboarderFeral">
+   <property name="CustomIcon" value="sleeperSit" />
+   <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSkateboarderFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZThugFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSkateboarderRadiated">
+	 <property name="CustomIcon" value="sleeperSit" />
+	 <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSkateboarderRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZThugRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSoldier">
+	 <property name="CustomIcon" value="sleeperSit" />
+	 <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSoldier" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSoldier.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSoldierFeral">
+	 <property name="CustomIcon" value="sleeperSit" />
+	 <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSoldierFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSoldierFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieSoldierRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSoldierRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZSoldierRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieWightFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieWightFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZWightFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieWightRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieWightRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab" />
+		<property name="ReplaceMaterial0" value="@:Entities/Zombies/Zombies/Materials/oldTimer_radiated.mat"/>
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+     <block name="cbpZombieScreamer">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieScreamer" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZScreamer.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieScreamerFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieScreamerFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZScreamerFeral.prefab" />
+		<!--<property name="ReplaceMaterial1" value="@:Entities/Zombies/Zombies/Materials/feral_eye.mat"/>-->
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpZombieScreamerRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieScreamerRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZScreamerRadiated.prefab" />
+		<!--<property name="ReplaceMaterial0" value="@:Entities/Zombies/Zombies/Materials/screamer_radiated.mat"/>-->
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieMutated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMutated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZScreamerRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpZombieMutatedFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMutatedFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMutatedFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+    <block name="cbpZombieMutatedRadiated">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieMutatedRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+    <block name="cbpZombieDemolition">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieDemolition" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZDemolition.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpZombieSteveCrawler">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSteveCrawler" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCrawler.prefab" />
+		<property name="ReplaceMaterial1" value="@:Entities/Zombies/Zombies/Materials/feral_eye.mat"/>
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>   
+    <block name="cbpZombieSteveCrawlerFeral">
+	<property name="CustomIcon" value="sleeperSit" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpZombieSteveCrawlerFeral" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="@:Entities/Zombies/Prefabs/ZCrawlerFeral.prefab" />
+		<property name="ModelOffset" value="0,1,0"/>
+    <drop event="Destroy" count="0" />
+  </block>   
+    
+<!-- ZOMBIE DISPLAYS -->
+<!-- Animal Displays -->  
+  <block name="cbpAnimalTemplateTimid">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#FF0000"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="air" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Deer/animalDeerStagRagdoll" />
+    <property name="PlaceAltBlockValue" value="cbpTimidAnimalStag,cbpTimidAnimalDoe,cbpTimidAnimalRabbit,cbpTimidAnimalChicken" />
+	<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+   <block name="cbpTimidAnimalStag">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpTimidAnimalStag" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Deer/animalDeerStagRagdoll"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpTimidAnimalDoe">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpTimidAnimalDoe" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Deer/animalDeerDoeRagdoll"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+     <block name="cbpTimidAnimalRabbit">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpTimidAnimalRabbit" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Rabbit/RABBIT"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+     <block name="cbpTimidAnimalChicken">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpTimidAnimalChicken" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/CHICKEN/chickenPrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpAnimalTemplateHostile">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#FF0000"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="air" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+    <property name="Model" value="Entities/Animals/Wolf/animalStandardDogZombieRagdoll" />
+    <property name="PlaceAltBlockValue" value="cbpHostileAnimalBear,cbpHostileAnimalZombieBear,cbpHostileAnimalWolf,cbpHostileAnimalCoyote,cbpHostileAnimalDireWolf,cbpHostileAnimalMountainLion,cbpHostileAnimalZombieVulture,cbpHostileAnimalZombieVultureRadiated,cbpHostileAnimalZombieDog,cbpHostileAnimalSnake,cbpHostileAnimalBoar,cbpHostileAnimalBossGrace" />
+	<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+  <block name="cbpHostileAnimalBear">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalBear" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Bear/animalBearStandardRagdoll"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpHostileAnimalZombieBear">
+  <property name="CustomIcon" value="sleeperBoarAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalZombieBear" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Bear/animalBearStandardRagdoll"/>
+		<property name="ReplaceMaterial0" value="Entities/Animals/Bear/Materials/zBear"/>
+		<property name="ReplaceMaterial1" value="Materials/UMAFur_ZombieBear"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpHostileAnimalWolf">
+  <property name="CustomIcon" value="sleeperBoarAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalWolf" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Wolf/animalStandardWolfRagdoll" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <block name="cbpHostileAnimalCoyote">
+  <property name="CustomIcon" value="sleeperVultureAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalCoyote" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Wolf/animalStandardCoyoteRagdoll" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+   <block name="cbpHostileAnimalDireWolf">
+  <property name="CustomIcon" value="sleeperVultureAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalDireWolf" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Mass" value="180"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Wolf/animalStandardWolfRagdoll" />
+		<property name="SizeScale" value="1.4"/>
+		<property name="ReplaceMaterial1" value="entities/animals/wolf/materials/wolfEyeFeral"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>  
+     <block name="cbpHostileAnimalMountainLion">
+  <property name="CustomIcon" value="sleeperBearAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalMountainLion" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Mountain_Lion/animalStandardMountainLionRagdoll" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>   
+       <block name="cbpHostileAnimalZombieVulture">
+	<property name="CustomIcon" value="sleeperWolfAnimal" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalZombieVulture" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Vulture/animalVultureStandardRagdoll" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+       <block name="cbpHostileAnimalZombieVultureRadiated">
+	<property name="CustomIcon" value="sleeperWolfAnimal" />
+	<property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalZombieVultureRadiated" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Vulture/animalVultureStandardRagdoll" />
+		<property name="Radiated" value=""/>
+		<property name="Mass" value="50"/>
+		<property name="SizeScale" value="1.2"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+       <block name="cbpHostileAnimalZombieDog">
+  <property name="CustomIcon" value="sleeperWolfAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalZombieDog" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Wolf/animalStandardDogZombieRagdoll"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+       <block name="cbpHostileAnimalSnake">
+  <property name="CustomIcon" value="sleeperSnakeAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalSnake" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Snake/snake_Prefab" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  
+    <block name="cbpHostileAnimalBoar">
+  <property name="CustomIcon" value="sleeperSnakeAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalBoar" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Boar/AnimalBoarStandardRagdoll" />
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+    <block name="cbpHostileAnimalBossGrace">
+  <property name="CustomIcon" value="sleeperSnakeAnimal" />
+  <property name="CustomIconTint" value="#00FF00"/>
+    <property name="Class" value="UpgradeRated" />
+    <property name="UpgradeRated.ToBlock" value="cbpHostileAnimalBossGrace" />
+    <property name="UpgradeRated.Rate" value="5" />
+    <property name="Material" value="Morganic" />
+    <property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+        <property name="Model" value="Entities/Animals/Boar/AnimalBossGrace" />
+		<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
+		<property name="ReplaceMaterial1" value="Entities/Animals/Boar/Materials/GRACE"/>
+		<property name="ModelOffset" value="0,0,0"/>
+    <drop event="Destroy" count="0" />
+  </block>
+  <!-- Animal Displays -->  
+		
 
         <!-- ************************************************************************* 
             SUPPORT/RADIATION BLOCKS 
@@ -7255,39 +9039,6 @@
 			<property name="GndAlign" value="1"/>
 		</block>
 		
-		<block name="cbpIronShovelPropWall"> <!-- Weapon decor - flush with surface  -->
-			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
-			<property name="CustomIconTint" value="ff1a36"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="Material" value="MstainlessSteel"/>
-			<property name="StabilitySupport" value="true"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="@:Other/Items/Tools/shovel_ironPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
-			<property name="AllowAllRotations" value="true"/>
-			<property name="OnlySimpleRotations" value="false"/>
-			<property name="ImposterDontBlock" value="true"/>
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block> 
-
-		<block name="cbpIronShovelPropCenter"> <!-- Weapon decor - centered in block  -->
-			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
-			<property name="CustomIconTint" value="ff1a36"/>
-			<property name="Extends" value="cbpIronShovelPropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
-		</block>
-
-		<block name="cbpIronShovelPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
-			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
-			<property name="CustomIconTint" value="ff1a36"/>
-			<property name="Extends" value="cbpIronShovelPropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
-			<property name="GndAlign" value="1"/>
-		</block>
-		
 		<block name="cbpSteelShovelPropWall"> <!-- Weapon decor - flush with surface  -->
 			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
 			<property name="CustomIconTint" value="ff1a36"/>
@@ -7626,7 +9377,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="-.47,.5,.1"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -7640,14 +9391,14 @@
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="Extends" value="cbpSMG5PropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="ModelOffset" value="0,.5,.1"/>
 		</block>
 
 		<block name="cbpSMG5PropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="Extends" value="cbpSMG5PropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="ModelOffset" value="0,.5,.1"/>
 			<property name="GndAlign" value="1"/>
 		</block>
 		
@@ -7692,7 +9443,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Weapons/Ranged/Desert Eagle/desertEaglePrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="-.47,.5,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -7706,14 +9457,47 @@
 			<property name="CustomIcon" value="gunHandgunT3DesertVulture"/>
 			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="Extends" value="cbpDesertVulturePropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 		</block>
 
 		<block name="cbpDesertVulturePropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
 			<property name="CustomIcon" value="gunHandgunT3DesertVulture"/>
 			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="Extends" value="cbpDesertVulturePropWall"/>
-			<property name="ModelOffset" value="0,.3,0"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpPistolPropWall"> <!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunHandgunT1Pistol"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+			<property name="ModelOffset" value="-.47,.5,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block> 
+
+		<block name="cbpPistolPropCenter"> <!-- Weapon decor - centered in block  -->
+			<property name="CustomIcon" value="gunHandgunT1Pistol"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpPistolPropWall"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+		</block>
+
+		<block name="cbpPistolPropCtr_Wonky"> <!-- Weapon decor - Conform to Surface  -->
+			<property name="CustomIcon" value="gunHandgunT1Pistol"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="Extends" value="cbpPistolPropWall"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 			<property name="GndAlign" value="1"/>
 		</block>
 		

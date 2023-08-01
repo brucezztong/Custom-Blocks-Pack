@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.0.001.0017 :
+* Stallion added Zombie Displays and adjusted some item deco block positions.
+
 A21.0.001.0016 :
 * Stallion added more prop blocks and took autorotate off of some plants.
 
