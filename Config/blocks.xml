@@ -789,7 +789,167 @@
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="ModelOffset" value="-0.3,0.5,0.0"/>
 		</block>
+		
+		<block name="cbpOffsetStainedGlassPlate">
+			<property name="CustomIcon" value="glassBusinessPlate"/>
+			<property name="CustomIconTint" value="99FF00"/>
+			<property name="Extends" value="glassBusinessPlate"/>
+			<property name="Texture" value="596"/>
+			<property name="LightOpacity" value="4"/>
+			<property name="ModelOffset" value="1,1.5,1"/>
+		</block>
+		<block name="cbpSmokeCapOffset">
+			<property name="CustomIcon" value="capChimney"/>
+			<property name="CustomIconTint" value="99FF00"/>
+			<property name="Extends" value="capChimneyLargeSmoke"/>
+			<property name="ModelOffset" value="0,-.2,0"/>
+			<property name="Collide" value=""/>
+		</block>
+		
+		<block name="cbpSaleSaleSaleSign">
+			<property name="CustomIcon" value="signSale01"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/signSale01Prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+		</block>
+		
+		<block name="cbpMetalCatwalkBridge">
+			<property name="CustomIcon" value="metalCatwalk"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="Mbridge_metal"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="catwalk_metal"/>
+			<property name="SortOrder2" value="0640"/>
+			<property name="Texture" value="445,446,446,446,446,446"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="112"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="8"/>
+			</property>
+			<property name="DescriptionKey" value="cbpMetalCatwalkGroupDesc"/>
+			<property name="EconomicValue" value="48"/>
+			<property name="FilterTags" value="MC_building,SC_industrial,SC_construction"/>
+			<property name="SortOrder1" value="40e0"/>
+		</block>
+		
+		<block name="cbpCubeTeeBridge">
+			<property name="Shape" value="New"/>
+			<property name="Model" value="cube_tee"/>
+			<property name="CustomIcon" value="shapeCubeTee"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Material" value="Mbridge_metal"/>
+			<property name="Texture" value="537"/>
+			<property name="Stacknumber" value="500"/>
+		</block>
+		
+		<block name="cbpShippingContainerSideStable">
+			<property name="CustomIcon" value="shippingContainerSideBlue"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/shippingContainerSideBluePrefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,3,1"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="30"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+		
+		<block name="cbpSemiFlatbedMiddleA">
+			<property name="CustomIcon" value="semiFlatbedMiddle"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/semiFlatbedMiddlePrefab"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,3"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="PlacementDistance" value="6"/>
+		</block>
+		
+		<block name="cbpSemiFlatbedMiddleB">
+			<property name="CustomIcon" value="semiFlatbedMiddle"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/semiFlatbedMiddlePrefab"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,3"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ModelOffset" value="0,0.49,0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="PlacementDistance" value="6"/>
+		</block>
+		
+		<block name="cbpSemiFlatbedFrontA">
+			<property name="CustomIcon" value="semiFlatbedFront"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/semiFlatbedFrontPrefab"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,3"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="PlacementDistance" value="6"/>
+		</block>
+		
+		<block name="cbpSemiFlatbedFrontB">
+			<property name="CustomIcon" value="semiFlatbedFront"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/semiFlatbedFrontPrefab"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,1,3"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ModelOffset" value="0,0.49,0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="PlacementDistance" value="6"/>
+		</block>
+		
 		<!-- Offset Hazard Pipes -->
+		
 		<!-- *** BROKEN_PIPE_FIRE_HAZARDS -->
 		<block name="cbpPipeSmallRed3mOffset">
 			<!-- Class -->
@@ -1831,21 +1991,8 @@
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="SortOrder1" value="B750"/>
 			<property name="SortOrder2" value="0000"/>
-		</block>
+		</block>     		
 		
-		<block name="cbpOffsetStainedGlassPlate">
-			<property name="CustomIcon" value="shapeSheet"/>
-			<property name="CustomIconTint" value="99FF00"/>
-			<property name="Extends" value="glassBusinessPlate"/>
-			<property name="Texture" value="596"/>
-			<property name="LightOpacity" value="4"/>
-			<property name="ModelOffset" value="1,1.5,1"/>
-		</block>
-		<block name="cbpSmokeCapOffset">
-			<property name="Extends" value="capChimneyLargeSmoke"/>
-			<property name="ModelOffset" value="0,-.2,0"/>
-			<property name="Collide" value=""/>
-		</block>
 		<block name="cbpVomitBulbPropOffsetSide">
 			<property name="CustomIcon" value="shapeFontExclamation"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -5730,7 +5877,7 @@
 		</block>
 		<block name="cbpGroundDecoRandomHelper">
 			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIcon" value="groundDecalBurntPaper"/>
+			<property name="CustomIcon" value="garbage_decor2"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -5740,7 +5887,7 @@
 		</block>
 		<block name="cbpGroundDecoRandomHelperAir">
 			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIcon" value="groundDecalBurntPaper"/>
+			<property name="CustomIcon" value="garbage_decor1"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -8053,6 +8200,8 @@
         ************************************************************************** -->
 		<block name="cbpBoulderBuildingBlock">
 			<!-- Boulder Building Block with Random Rotation -->
+			<property name="CustomIcon" value="rockResource"/>
+			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="DisplayType" value="blockHardenedMulti"/>
 			<property name="Map.Color" value="120,120,120"/>
@@ -8081,7 +8230,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		<!-- ************************************************************************* 
-           WEAPON DECOR BLOCKS
+           WEAPON/TOOLS/VEHICLE/DRONE DECOR BLOCKS
         ************************************************************************** -->
 		<block name="cbpSteelSpearPropWall">
 			<!-- Weapon decor - flush with surface  -->
@@ -8097,7 +8246,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8132,7 +8281,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8167,7 +8316,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8418,7 +8567,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8451,7 +8600,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8485,7 +8634,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8505,7 +8654,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8525,7 +8674,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8543,7 +8692,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8576,7 +8725,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8609,7 +8758,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8642,7 +8791,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8675,7 +8824,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8708,7 +8857,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8741,7 +8890,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8774,7 +8923,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8807,7 +8956,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8840,7 +8989,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8873,7 +9022,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8906,7 +9055,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8939,7 +9088,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -8972,7 +9121,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9005,7 +9154,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9038,7 +9187,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9071,7 +9220,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9104,7 +9253,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9137,7 +9286,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9170,7 +9319,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9203,7 +9352,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9236,7 +9385,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9269,7 +9418,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9302,7 +9451,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9335,7 +9484,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9368,7 +9517,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9401,7 +9550,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9420,7 +9569,7 @@
 			<property name="ModelOffset" value="0,.3,0"/>
 			<property name="GndAlign" value="1"/>
 		</block>
-		<block name="cbpPaintBrushPropWallPropCtr_Corner">
+		<block name="cbpPaintBrushPropWalloffsetCtr_Corner">
 			<!-- Weapon decor - Conform to Surface  -->
 			<property name="CustomIcon" value="meleeToolPaintTool"/>
 			<property name="CustomIconTint" value="ff1a36"/>
@@ -9442,7 +9591,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9460,7 +9609,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9478,7 +9627,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9496,7 +9645,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9514,7 +9663,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
@@ -9547,8 +9696,11 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,20" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		
@@ -9557,6 +9709,8 @@
 			<property name="CustomIconTint" value="ff1a36"/>
 			<property name="CreativeMode" value="Dev"/>
 			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/Vehicles/jeep_Prefab.prefab"/>
@@ -9565,28 +9719,16 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block>   		    	
+		</block>   
+
+	
 		
-		<block name="cbpBlimpProp">			
-			<property name="CustomIcon" value="vehicleJokeblimp"/>
-			<property name="CustomIconTint" value="ff1a36"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="Material" value="MstainlessSteel"/>
-			<property name="StabilitySupport" value="true"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="@:Entities/Vehicles/jokeblimp_Prefab.prefab"/>
-			<property name="ModelOffset" value="0,0,0"/>
-			<property name="AllowAllRotations" value="true"/>
-			<property name="OnlySimpleRotations" value="false"/>
-			<property name="ImposterDontBlock" value="true"/>
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block>
 		<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
         ************************************************************************** -->
@@ -9789,143 +9931,26 @@
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value=""/>
 		</block>
-		<!-- ************************************************************************* 
-            OFFSET BLOCKS 
-        ************************************************************************** -->
-		<block name="cbpSaleSaleSaleSign">
-			<property name="CustomIcon" value="signSale01"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Commercial/signSale01Prefab"/>
-			<property name="MultiBlockDim" value="1,2,1"/>
-		</block>
-		<block name="cbpMetalCatwalkBridge">
-			<property name="CustomIcon" value="metalCatwalk"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockHardened"/>
-			<property name="Material" value="Mbridge_metal"/>
-			<property name="Shape" value="New"/>
-			<property name="Model" value="catwalk_metal"/>
-			<property name="SortOrder2" value="0640"/>
-			<property name="Texture" value="445,446,446,446,446,446"/>
-			<property name="ImposterExchange" value="imposterPlate" param1="112"/>
-			<property name="UseGlobalUV" value="Local"/>
-			<property class="RepairItems">
-				<property name="resourceForgedIron" value="8"/>
-			</property>
-			<property name="DescriptionKey" value="cbpMetalCatwalkGroupDesc"/>
-			<property name="EconomicValue" value="48"/>
-			<property name="FilterTags" value="MC_building,SC_industrial,SC_construction"/>
-			<property name="SortOrder1" value="40e0"/>
-		</block>
-		<block name="cbpCubeTeeBridge">
-			<property name="Shape" value="New"/>
-			<property name="Model" value="cube_tee"/>
-			<property name="CustomIcon" value="shapeCubeTee"/>
-			<property name="StabilitySupport" value="true"/>
-			<property name="Material" value="Mbridge_metal"/>
-			<property name="Texture" value="537"/>
-			<property name="Stacknumber" value="500"/>
-		</block>
-		<block name="cbpShippingContainerSideStable">
-			<property name="CustomIcon" value="shippingContainerSideBlue"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Industrial/shippingContainerSideBluePrefab"/>
-			<property name="Place" value="TowardsPlacer"/>
-			<property name="DisplayType" value="blockMulti"/>
-			<property name="MultiBlockDim" value="3,3,1"/>
-			<property class="RepairItems">
-				<property name="resourceScrapIron" value="30"/>
-			</property>
-			<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-			<property name="FilterTags" value="MC_building,SC_automotive"/>
-		</block>
-		<block name="cbpSemiFlatbedMiddleA">
-			<property name="CustomIcon" value="semiFlatbedMiddle"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Industrial/semiFlatbedMiddlePrefab"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockMulti"/>
-			<property name="MultiBlockDim" value="3,1,3"/>
-			<property name="FilterTags" value="MC_building,SC_automotive"/>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
-			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="ShowModelOnFall" value="false"/>
-			<property name="BigDecorationRadius" value="5"/>
-			<property name="CanDecorateOnSlopes" value="false"/>
-			<property name="PlacementDistance" value="6"/>
-		</block>
-		<block name="cbpSemiFlatbedMiddleB">
-			<property name="CustomIcon" value="semiFlatbedMiddle"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Industrial/semiFlatbedMiddlePrefab"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockMulti"/>
-			<property name="MultiBlockDim" value="3,1,3"/>
-			<property name="FilterTags" value="MC_building,SC_automotive"/>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
-			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="ModelOffset" value="0,0.49,0"/>
-			<property name="ShowModelOnFall" value="false"/>
-			<property name="BigDecorationRadius" value="5"/>
-			<property name="CanDecorateOnSlopes" value="false"/>
-			<property name="PlacementDistance" value="6"/>
-		</block>
-		<block name="cbpSemiFlatbedFrontA">
-			<property name="CustomIcon" value="semiFlatbedFront"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Industrial/semiFlatbedFrontPrefab"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockMulti"/>
-			<property name="MultiBlockDim" value="3,1,3"/>
-			<property name="FilterTags" value="MC_building,SC_automotive"/>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
-			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="ShowModelOnFall" value="false"/>
-			<property name="BigDecorationRadius" value="5"/>
-			<property name="CanDecorateOnSlopes" value="false"/>
-			<property name="PlacementDistance" value="6"/>
-		</block>
-		<block name="cbpSemiFlatbedFrontB">
-			<property name="CustomIcon" value="semiFlatbedFront"/>
-			<property name="CustomIconTint" value="435E70"/>
-			<property name="Material" value="Mmetal_hard"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Industrial/semiFlatbedFrontPrefab"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockMulti"/>
-			<property name="MultiBlockDim" value="3,1,3"/>
-			<property name="FilterTags" value="MC_building,SC_automotive"/>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
-			<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>
-			<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="ModelOffset" value="0,0.49,0"/>
-			<property name="ShowModelOnFall" value="false"/>
-			<property name="BigDecorationRadius" value="5"/>
-			<property name="CanDecorateOnSlopes" value="false"/>
-			<property name="PlacementDistance" value="6"/>
-		</block>
+		
+		<block name="cbpSparklyBlockLargeOff"> 
+            <property name="CustomIcon" value="shapeFontExclamation"/>
+            <property name="CustomIconTint" value="ffe400"/>
+            <property name="TintColor" value="e7fa39"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Material" value="Mpaper"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+            <property name="ModelOffset" value="0,0,0"/>
+            <property name="AllowAllRotations" value="true"/>
+            <property name="OnlySimpleRotations" value="false"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="DowngradeBlock" value="cbpSparklyBlockLarge"/>
+            <property name="DestroyFX" value=""/>
+        </block>
+		
 		<!-- ************************************************************************* 
             MID-CENTURY BATHROOM OBJECTS: Tinted Bathroom Objects giving the POI that 70s feel
         ************************************************************************** -->
@@ -10248,7 +10273,7 @@
 			<property name="TintColor" value="aad3ce"/>
 		</block>
 		<!-- ************************************************************************* 
-            CUSTOM TREES WITH ADVANCED ROTATION  (used for felled trees) that do not cause NRE's
+            CUSTOM TREES WITH ADVANCED ROTATION  that do not cause NRE's
         ************************************************************************** -->
 		<block name="cbpTreeFallenMountainPine19m">
 			<property name="CustomIcon" value="shapeFontExclamation"/>

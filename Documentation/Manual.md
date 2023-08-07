@@ -109,6 +109,16 @@ of blocks that have been offset so you can place them closer to a wall.
 * cbpSignShopOpenMidOffset
 * cbpSignShopOpenLowOffset
 * cbpToasterOffset
+* cbpOffsetStainedGlassPlate
+* cbpSmokeCapOffset
+* cbpSaleSaleSaleSign
+* cbpMetalCatwalkBridge
+* cbpCubeTeeBridge
+* cbpShippingContainerSideStable
+* cbpSemiFlatbedMiddleA
+* cbpSemiFlatbedMiddleB
+* cbpSemiFlatbedFrontA
+* cbpSemiFlatbedFrontB
 
 **Shipping & Storage Crates** - These come in a few varieties. If the name
 include "Cube" then it is just a block that looks like a storage crate. It
@@ -149,6 +159,662 @@ There are also Helper blocks for the various Crates. (see below)
 **Vending Machines** - The pack adds an empty vending machine.
 
 * cbpVendingMachine2Empty
+
+**Offset Hazard Pipes** - TFP hazard Pipes offsetted so you can hide the pipes inside walls and just show the flames.
+
+* cbpPipeSmallRed3mOffset
+* cbpPipeFireHazardBlack2mOffset
+* cbpPipeFireHazardBlack3mOffset
+* cbpPipeFireHazardBlack4mOffset
+* cbpPipeFireHazardRed2mOffset
+* cbpPipeFireHazardRed3mOffset
+* cbpPipeFireHazardRed4mOffset
+* cbpPipeFireHazardYellow2mOffset
+* cbpPipeFireHazardYellow3mOffset
+* cbpPipeFireHazardYellow4mOffset
+* cbpPipeFireHazardGreen2mOffset
+* cbpPipeFireHazardGreen3mOffset
+* cbpPipeFireHazardGreen4mOffset
+* cbpPipeFireHazardBlue2mOffset
+* cbpPipeFireHazardBlue3mOffset
+* cbpPipeFireHazardBlue4mOffset
+* cbpPipeFireHazardGrey2mOffset
+* cbpPipeFireHazardGrey3mOffset
+* cbpPipeFireHazardGrey4mOffset
+* cbpPipeFireHazardWallBlack2mOffset
+* cbpPipeFireHazardWallBlack3mOffset
+* cbpPipeFireHazardWallBlack4mOffset
+* cbpPipeFireHazardWallRed2mOffset
+* cbpPipeFireHazardWallRed3mOffset
+* cbpPipeFireHazardWallRed4mOffset
+* cbpPipeFireHazardWallYellow2mOffset
+* cbpPipeFireHazardWallYellow3mOffset
+* cbpPipeFireHazardWallYellow4mOffset
+* cbpPipeFireHazardWallGreen2mOffset
+* cbpPipeFireHazardWallGreen3mOffset
+* cbpPipeFireHazardWallGreen4mOffset
+* cbpPipeFireHazardWallBlue2mOffset
+* cbpPipeFireHazardWallBlue3mOffset
+* cbpPipeFireHazardWallBlue4mOffset
+* cbpPipeFireHazardWallGrey2mOffset
+* cbpPipeFireHazardWallGrey3mOffset
+* cbpPipeFireHazardWallGrey4mOffset
+
+**Hazard Rocks** - Used to hide actual block in small spaces.
+ 
+* cbpFireHazardRock2M
+* cbpFireHazardRock3M
+* cbpFireHazardRock4M
+
+**Hazard Pipe No Model Offset** - A pipe that is 1x1x1 so you can add stuff on top of it where the flame is. 
+
+* cbpFireHazardBlackNomodeloffset
+
+**Drone Hazards** - A right and left pipe used to make the Drone deco look like it is operating. 
+
+* cbpDroneright
+* cbpDroneLeft
+
+**Server Racks** - TFP Server racks tinted a different colour.
+
+* cbpServerRackBlack
+
+**TFP Bundle Storage** - Utilises the TFP storage crates not yet in game as lootable blocks in game.
+
+[DECO]
+* cbpWoodboxCube
+* cbpIronboxCube
+* cbpSteelboxCube
+[LOOTABLE]
+* cbpWoodbox
+* cbpIronbox
+* cbpSteelbox
+
+**Store Shelves Deco** - Shelves filled with said shelf name but not lootable.
+
+* cbpStoreShelfSingleBottomFood01
+* cbpStoreShelfSingleBottomFood02
+* cbpStoreShelfSingleTopFood01
+* cbpStoreShelfDoubleBottomFood01
+* cbpStoreShelfDoubleBottomFood02
+* cbpStoreShelfDoubleTopFood01
+* cbpStoreShelfSingleBottomHardware01
+* cbpStoreShelfSingleBottomHardware02
+* cbpStoreShelfSingleTopHardware01
+* cbpStoreShelfSingleTopHardware02
+* cbpStoreShelfDoubleBottomHardware01
+* cbpStoreShelfDoubleBottomHardware02
+* cbpStoreShelfDoubleBottomHardware03Rags
+* cbpStoreShelfDoubleTopHardware01
+* cbpStoreShelfDoubleTopHardware02Rags
+* cbpStoreShelfSingleBottomPharmaGoods01
+* cbpStoreShelfSingleBottomPharmaGoods02
+* cbpStoreShelfDoubleBottomPharmaGoods01
+* cbpStoreShelfDoubleBottomPharmaGoods02
+* cbpStoreShelfSingleBottomTrash01
+* cbpStoreShelfSingleBottomTrash02
+* cbpStoreShelfSingleTopTrash01
+* cbpStoreShelfSingleTopTrash02
+* cbpStoreShelfDoubleBottomTrash01
+* cbpStoreShelfDoubleBottomTrash02
+* cbpStoreShelfDoubleTopTrash01
+* cbpStoreShelfElectronicsSingleBottomPC
+* cbpStoreShelfElectronicsSingleBottomElectronicsMonitor
+* cbpStoreShelfElectronicsSingleBottomGoodsMisc
+* cbpStoreShelfElectronicsSingleBottomHeadphones
+* cbpStoreShelfElectronicsSingleBottomKeyboard
+* cbpStoreShelfElectronicsSingleBottomLaptopClosed
+* cbpStoreShelfElectronicsSingleBottomLaptopOpen
+* cbpStoreShelfElectronicsSingleBottomSpeaker
+* cbpStoreShelfElectronicsDoubleBottomGoods01
+* cbpStoreShelfElectronicsDoubleBottomGoods02
+* cbpStoreShelfElectronicsDoubleBottomGoods03
+* cbpStoreShelfElectronicsDoubleBottomGoods04
+* cbpShelvesWoodFullA
+* cbpShelvesFreeStandingFullA
+* cbpShelvesMetalFullA
+* cbpMilitaryMetalShelvesFull
+
+**Store Shelves Lootable** - Shelves filled with said shelf name but not lootable.
+
+* cbpStoreShelfSingleBottomFoodA
+* cbpStoreShelfSingleBottomFoodB
+* cbpStoreShelfSingleTopFoodA
+* cbpStoreShelfDoubleBottomFoodA
+* cbpStoreShelfDoubleBottomFoodB
+* cbpStoreShelfDoubleTopFoodA
+* cbpStoreShelfSingleBottomHardwareA
+* cbpStoreShelfSingleBottomHardwareB
+* cbpStoreShelfSingleTopHardwareA
+* cbpStoreShelfSingleTopHardwareB
+* cbpStoreShelfDoubleBottomHardwareA
+* cbpStoreShelfDoubleBottomHardwareB
+* cbpStoreShelfDoubleBottomHardwareCRags
+* cbpStoreShelfDoubleTopHardwareA
+* cbpStoreShelfDoubleTopHardwareBRags
+* cbpStoreShelfSingleBottomPharmacyGoodsA
+* cbpStoreShelfSingleBottomPharmacyGoodsB
+* cbpStoreShelfDoubleBottomPharmacyGoodsA
+* cbpStoreShelfDoubleBottomPharmacyGoodsB
+* cbpStoreShelfSingleBottomTrashA
+* cbpStoreShelfSingleBottomTrashB
+* cbpStoreShelfSingleTopTrashA
+* cbpStoreShelfSingleTopTrashB
+* cbpStoreShelfDoubleBottomTrashA
+* cbpStoreShelfDoubleBottomTrashB
+* cbpStoreShelfDoubleTopTrashA
+* cbpStoreShelfElectricsSingleBottomPCA
+* cbpStoreShelfElectricsSingleBottomElectronicsMonitorA
+* cbpStoreShelfElectricsSingleBottomGoodsMiscA
+* cbpStoreShelfElectricsSingleBottomHeadphonesA
+* cbpStoreShelfElectricsSingleBottomKeyboardA
+* cbpStoreShelfElectricsSingleBottomLaptopClosedA
+* cbpStoreShelfElectricsSingleBottomLaptopOpenA
+* cbpStoreShelfElectricsSingleBottomSpeakerA
+* cbpStoreShelfElectricsDoubleBottomGoodsA
+* cbpStoreShelfElectricsDoubleBottomGoodsB
+* cbpStoreShelfElectricsDoubleBottomGoodsC
+* cbpStoreShelfElectricsDoubleBottomGoodsD
+* cbpShelvesWoodFull
+* cbpShelvesFreeStandingFull
+* cbpShelvesMetalFull
+* cbpMilitaryMetalShelvesFullA
+
+**Clothes/Wall Racks Deco** - Racks that are just deco and not lootable. Also have seperated the racks to one having pants the other shirts ETC.
+
+* cbpClothesRackRoundPants
+* cbpClothesRackRoundShirts
+* cbpClothesRackRectanglePants
+* cbpClothesRackRectangleShirts
+* cbpClothesRackWallPants
+* cbpClothesRackWallLongSleeve
+* cbpClothesRackWallSweater
+* cbpClothesRackWallTShirts
+* cbpClothesShelfHalfJeans01
+* cbpClothesShelfHalfJeans02
+* cbpClothesShelfHalfShirts01
+* cbpClothesShelfHalfShirts02
+* cbpClothesShelfHalfSweaters01
+* cbpClothesShelfStackJeans01
+* cbpClothesShelfStackJeans02
+* cbpClothesShelfStackShirts01
+* cbpClothesShelfStackShirts02
+* cbpClothesRackRoundPantsMilitary
+* cbpClothesRackRoundShirtsMilitary
+* cbpClothesRackRectanglePantsMilitary
+* cbpClothesRackRectangleShirtsMilitary
+* cbpClothesRackWallPantsMilitary
+* cbpClothesRackWallLongSleeveMilitary
+* cbpClothesRackWallSweaterMilitary
+* cbpClothesRackWallTShirtsMilitary
+* cbpStoreShelfDoubleBottomShoesFull
+* cbpStoreShelfDoubleTopShoesFull
+* cbpStoreShelfSingleBottomShoesFull
+* cbpStoreShelfSingleTopShoesFull
+
+**Clothes/Wall Racks Lootable** - Racks that are just deco and lootable. Also have seperated the racks to one having pants the other shirts ETC.
+
+* cbpClothesRackRoundPantsLoot
+* cbpClothesRackRoundShirtsLoot
+* cbpClothesRackRectanglePantsLoot
+* cbpClothesRackRectangleShirtsLoot
+* cbpClothesRackWallPantsLoot
+* cbpClothesRackWallLongSleeveLoot
+* cbpClothesRackWallSweaterLoot
+* cbpClothesRackWallTShirtsLoot
+* cbpClothesShelfHalfJeansA
+* cbpClothesShelfHalfJeansB
+* cbpClothesShelfHalfShirtsA
+* cbpClothesShelfHalfShirtsB
+* cbpClothesShelfHalfSweatersA
+* cbpClothesShelfStackJeansA
+* cbpClothesShelfStackJeansB
+* cbpClothesShelfStackShirtsA
+* cbpClothesShelfStackShirtsB
+* cbpClothesPileFloorA
+* cbpClothesRackRoundPantsMilitaryLoot
+* cbpClothesRackRoundShirtsMilitaryLoot
+* cbpClothesRackRectanglePantsMilitaryLoot
+* cbpClothesRackRectangleShirtsMilitaryLoot
+* cbpClothesRackWallPantsMilitaryLoot
+* cbpClothesRackWallLongSleeveMilitaryLoot
+* cbpClothesRackWallSweaterMilitaryLoot
+* cbpClothesRackWallTShirtsMilitaryLoot
+* cbpStoreShelfDoubleBottomShoesFullA
+* cbpStoreShelfDoubleTopShoesFullA
+* cbpStoreShelfSingleBottomShoesFullA
+* cbpStoreShelfSingleTopShoesFullA
+
+**Floor Pile** -  a lootable block and the randomHelper version also has a chance for a landmine to spawn.
+
+* cbpClothesPileFloor
+
+**Display Cases Deco** - Display cases that look like display cases but are non lootable.
+
+* cbpDisplayCaseAmmoLeftBroken
+* cbpDisplayCaseAmmoMiddleBroken01
+* cbpDisplayCaseAmmoMiddleBroken02
+* cbpDisplayCaseAmmoRightBroken
+
+**Display Cases Lootable** - Display cases that look like display cases and are lootable But heavily reduced Loot returns.
+
+* cbpDisplayCaseAmmoLeftBrokenA
+* cbpDisplayCaseAmmoMiddleBrokenA
+* cbpDisplayCaseAmmoMiddleBrokenB
+* cbpDisplayCaseAmmoRightBrokenA
+
+**Gun Rack Deco** - Gun racks that are just displays and not lootable. Also each rack is now personalised so the magazine rack only shows magazines and the armor rack only shows armor.
+
+* cbpGunRackSmallMagazines
+* cbpGunRackSmallArmor
+* cbpGunRackLargeGuns01
+* cbpGunRackLargeGuns02
+
+**Gun Rack Lootable** - Gun racks that are lootable. Also each rack is now personalised so the magazine rack only shows magazines and the armor rack only shows armor.
+
+* cbpGunRackSmallMagazinesA
+* cbpGunRackSmallArmorA
+* cbpGunRackLargeGunsA
+* cbpGunRackLargeGunsB
+
+**Vehicle Deco** - Player made vehicles can now be a display in your poi/s. No more having to go to the trader Hughs to get them. 
+
+* cbpBicycleStatic [fixed the model offset that vanillas sinks into the ground]
+* cbpMinibikeStatic
+* cbpMotorcycleStatic
+* cbp4x4Static
+* cbpGyrocopterStatic
+* cbpHelipad
+
+**Traps and Turrets** - As the player made ones should never be used in a poi. These have had all the elctrical references removed and are just displays.
+
+* cbpAutoTurret
+* cbpShotgunTurret
+* cbpBladeTrap
+* cbpDartTrap
+* cbpSwitch
+
+**Benches** - A special request for all rotations added to the vanilla park benches. 
+
+* cbpParkBenchA
+* cbpParkBenchB
+
+**Zombie/Animal Displays** - They Look like zombies, they twitch like zombies but are just deco blocks. A good use for them is in a lab in a containment field. [Credits to Valmar the Legend]
+
+* cbpZombieArlene
+* cbpZombieArleneFeral
+* cbpZombieArleneRadiated
+* cbpZombieMarlene
+* cbpZombieMarleneFeral
+* cbpZombieMarleneRadiated
+* cbpZombiePartyGirl
+* cbpZombiePartyGirlFeral
+* cbpZombiePartyGirlRadiated
+* cbpZombieNurse
+* cbpZombieNurseFeral
+* cbpZombieNurseRadiated
+* cbpZombieJoe
+* cbpZombieJoeFeral
+* cbpZombieJoeRadiated
+* cbpZombieSteve
+* cbpZombieSteveFeral
+* cbpZombieSteveRadiated
+* cbpZombieTomClark
+* cbpZombieTomClarkFeral
+* cbpZombieTomClarkRadiated
+* cbpZombieBusinessMan
+* cbpZombieBusinessManFeral
+* cbpZombieBusinessManRadiated
+* cbpZombieBurnt
+* cbpZombieBurntFeral
+* cbpZombieBurntRadiated
+* cbpZombieSpider
+* cbpZombieSpiderFeral
+* cbpZombieSpiderRadiated
+* cbpZombieBoe
+* cbpZombieBoeFeral
+* cbpZombieBoeRadiated
+* cbpZombieJanitor
+* cbpZombieJanitorFeral
+* cbpZombieJanitorRadiated
+* cbpZombieMoe
+* cbpZombieMoeFeral
+* cbpZombieMoeRadiated
+* cbpZombieLab
+* cbpZombieLabFeral
+* cbpZombieLabRadiated
+* cbpZombieDarlene
+* cbpZombieDarleneFeral
+* cbpZombieDarleneRadiated
+* cbpZombieYo
+* cbpZombieYoFeral
+* cbpZombieYoRadiated
+* cbpZombieUtilityWorker
+* cbpZombieUtilityWorkerFeral
+* cbpZombieUtilityWorkerRadiated
+* cbpZombieBiker
+* cbpZombieBikerFeral
+* cbpZombieBikerRadiated
+* cbpZombieLumberjack
+* cbpZombieLumberjackFeral
+* cbpZombieLumberjackRadiated
+* cbpZombieFemaleFat
+* cbpZombieFemaleFatFeral
+* cbpZombieFemaleFatRadiated
+* cbpZombieFatHawaiian
+* cbpZombieFatHawaiianFeral
+* cbpZombieFatHawaiianRadiated
+* cbpZombieMaleHazmat
+* cbpZombieFatCop
+* cbpZombieFatCopFeral
+* cbpZombieFatCopRadiated
+* cbpZombieSkateboarder
+* cbpZombieSkateboarderFeral
+* cbpZombieSkateboarderRadiated
+* cbpZombieSoldier
+* cbpZombieSoldierFeral
+* cbpZombieSoldierRadiated
+* cbpZombieWightFeral
+* cbpZombieWightRadiated
+* cbpZombieScreamer
+* cbpZombieScreamerFeral
+* cbpZombieScreamerRadiated
+* cbpZombieMutated
+* cbpZombieMutatedFeral
+* cbpZombieMutatedRadiated
+* cbpZombieDemolition
+* cbpZombieSteveCrawler
+* cbpZombieSteveCrawlerFeral
+* cbpTimidAnimalStag
+* cbpTimidAnimalDoe
+* cbpTimidAnimalRabbit
+* cbpTimidAnimalChicken
+* cbpHostileAnimalBear
+* cbpHostileAnimalZombieBear
+* cbpHostileAnimalWolf
+* cbpHostileAnimalCoyote
+* cbpHostileAnimalDireWolf
+* cbpHostileAnimalMountainLion
+* cbpHostileAnimalZombieVulture
+* cbpHostileAnimalZombieVultureRadiated
+* cbpHostileAnimalZombieDog
+* cbpHostileAnimalSnake
+* cbpHostileAnimalBoar
+* cbpHostileAnimalBossGrace
+
+**Support/Radiation Blocks** - Blocks used for support (invisible) to radiate areas etc. 
+
+* cbpRadiationWater 
+* cbpHardAir
+* cbpHardAirLadder
+* cbpHardAirTallx20
+* cbpHardAir3x9
+* cbpFastCollapseSheet
+* cbpBurnAir
+* cbpHealthWaterPOI_BC01
+* cbpPlateSwitchTrap
+* cbpSlowAir
+* cbpSlowAir2
+* cbpTripWire
+* cbpShockAir
+* cbpHardAirTripWire
+* cbpHardAirShock
+* cbpHardAirHeal
+* cbpHardAirVomitSplash
+
+**Visual Effects Blocks** - Blocks that give visual effects but and player damage and others no player damage.
+
+* cbpHardAirDark 
+* cbpHardAirBlur
+* cbpHardAirHot
+* cbpHardAirHot2
+* cbpHardAirCold
+* cbpHardAirCold2
+* cbpHardAirDistorted
+* cbpHardAirGrey
+* cbpHardAirRadiation
+* cbpHardAirInfected
+* cbpHardAirDrunk
+* cbpHardAirShockLight
+
+**Custom Boulder** - Can be used as a building block.
+
+* cbpBoulderBuildingBlock
+
+**Weapon/Tools/Vehicles/Drone Deco Blocks** - Weapon displays you can hang on your wall or around your poi. A tool wall in a hardware store to a weapon wall in a gun shop, to Drones in a drone factory and everything in between
+ 
+* cbpSteelSpearPropWall
+* cbpSteelSpearPropCtr
+* cbpSteelSpearPropCtr_Wonky
+* cbpCompoundCrossbowProp
+* cbpCompoundCrossbowPropCtr
+* cbpCompoundCrossbowPropCtr_Wonky
+* cbpCompoundBowProp
+* cbpCompoundBowPropCtr
+* cbpCompoundBowPropCtr_Wonky
+* cbpAxeSteelPropWall
+* cbpAxeSteelPropCtr
+* cbpAxeSteelPropCtr_Wonky
+* cbpGunRifleT3SniperRiflePropWall
+* cbpGunRifleT3SniperRiflePropCtr
+* cbpGunRifleT3SniperRiflePropCtrOffset
+* cbpGunRifleT3SniperRiflePropCtr_Wonky
+* cbpM60PropWall
+* cbpM60PropCtr
+* cbpM60PropCtr_Wonky
+* cbpAutoShotgunPropWall
+* cbpAutoShotgunPropCtr
+* cbpAutoShotgunPropCtr_Wonky
+* cbpRocketLauncherPropWall
+* cbpRocketLauncherPropCtr
+* cbpRocketLauncherPropCtr_Wonky
+* cbpTacticalARPropWall
+* cbpTacticalARPropCtr
+* cbpTacticalARPropCtr_Wonky
+* cbpHuntingKnifePropWall
+* cbpHuntingKnifePropCenter
+* cbpHuntingKnifePropCtr_Wonky
+* cbpMachettePropWall
+* cbpMachettePropCenter
+* cbpMachettePropCtr_Wonky
+* cbpJunkDroneProp
+* cbpJunkDroneGroundProp
+* cbpJunkDroneOffsetProp
+* cbpWoodenBowPropWall
+* cbpWoodenBowPropCenter
+* cbpWoodenBowPropCtr_Wonky
+* cbpClawHammerPropWall
+* cbpClawHammerPropCenter
+* cbpClawHammerPropCtr_Wonky
+* cbpNailgunPropWall
+* cbpNailgunPropCenter
+* cbpNailgunPropCtr_Wonky
+* cbpFireaxePropWall
+* cbpFireaxePropCenter
+* cbpFireaxePropCtr_Wonky
+* cbpIronPickaxePropWall
+* cbpIronPickaxePropCenter
+* cbpIronPickaxePropCtr_Wonky
+* cbpSteelPickaxePropWall
+* cbpSteelPickaxePropCenter
+* cbpSteelPickaxePropCtr_Wonky
+* cbpSteelShovelPropWall
+* cbpSteelShovelPropCenter
+* cbpSteelShovelPropCtr_Wonky
+* cbpChainsawPropWall
+* cbpChainsawPropCenter
+* cbpChainsawPropCtr_Wonky
+* cbpAugerPropWall
+* cbpAugerPropCenter
+* cbpAugerPropCtr_Wonky
+* cbpWrenchPropWall
+* cbpWrenchPropCenter
+* cbpWrenchPropCtr_Wonky
+* cbpRatchetPropWall
+* cbpRatchetPropCenter
+* cbpRatchetPropCtr_Wonky
+* cbpImpactDriverPropWall
+* cbpImpactDriverPropCenter
+* cbpImpactDriverPropCtr_Wonky
+* cbpBaseballBatPropWall
+* cbpBaseballBatPropCenter
+* cbpBaseballBatPropCtr_Wonky
+* cbpSteelClubPropWall
+* cbpSteelClubPropCenter
+* cbpSteelClubPropCtr_Wonky
+* cbpSteelSledgehammerPropWall
+* cbpSteelSledgehammerPropCenter
+* cbpSteelSledgehammerPropCtr_Wonky
+* cbpWireToolPropWall
+* cbpWireToolPropCenter
+* cbpWireToolPropCtr_Wonky
+* cbpSMG5PropWall
+* cbpSMG5PropCenter
+* cbpSMG5PropCtr_Wonky
+* cbpMagnum44PropWall
+* cbpMagnum44PropCenter
+* cbpMagnum44PropCtr_Wonky
+* cbpDesertVulturePropWall
+* cbpDesertVulturePropCenter
+* cbpDesertVulturePropCtr_Wonky
+* cbpPistolPropWall
+* cbpPistolPropCenter
+* cbpPistolPropCtr_Wonky
+* cbpDoubleBarrelPropWall
+* cbpDoubleBarrelPropCenter
+* cbpDoubleBarrelPropCtr_Wonky
+* cbpPumpShotgunPropWall
+* cbpPumpShotgunPropCenter
+* cbpPumpShotgunPropCtr_Wonky
+* cbpHuntingRiflePropWall
+* cbpHuntingRiflePropCenter
+* cbpHuntingRiflePropCtr_Wonky
+* cbpLeverActionRiflePropWall
+* cbpLeverActionRiflePropCenter
+* cbpLeverActionRiflePropCtr_Wonky
+* cbpAK47PropWall
+* cbpAK47PropCenter
+* cbpAK47PropCtr_Wonky
+* cbpIronCrossbowPropWall
+* cbpIronCrossbowPropCenter
+* cbpIronCrossbowPropCtr_Wonky
+* cbpPaintBrushPropWall
+* cbpPaintBrushPropWallPropCenter
+* cbpPaintBrushPropWallPropCtr_Wonky
+* cbpPaintBrushPropWalloffsetCtr_Corner
+* cbpFlameThrowerProp
+* cbpJunkSledgeProp
+* cbpJunkTurretProp
+* cbpJunkTurret2Prop
+* cbpStunBattonPropWall
+* cbpStunBattonPropCenter
+* cbpStunBattonPropCtr_Wonky
+* cbpMotorCycleProp [No Hoist]
+* cbp4x4Prop [No Hoist]
+
+**Sparkly Stuff** - as the name suggest special effect blocks. 
+
+* cbpSparklyBlockLarge
+* cbpSparklyBlockZomLeft
+* cbpSparklyBlockZomRight
+* cbpSparklyBlockDroneBeamAttack
+* cbpSparklyBlockDroneBeam
+* cbpSparklyBlockDroneBeamOffset
+* cbpSparklyBlockDroneHealPlayer
+* cbpSparklyBlockDroneHealBeam
+* cbpSparklyBlockSmall
+* cbpVomitBulbProp
+* cbpRadBulbProp
+* cbp_SparklySmallFlame
+* cbp_SparklySmallFlameOffset
+* cbpdecoMannequinFemaleGold
+* cbpHardAirClaymore
+* cbpHologramZombieRadiatedCop
+* cbpRadiatedCopClaymore
+* cbpHardAirVomitClaymoreHelper
+* cbpHardAirVomitClaymore
+* cbp_SparklyBlockLargeOff
+
+**Mid Century Bathroom Objects** - Go back to the 50s with these coloured variation of bath sets. 
+
+* cbpAvacadoToiletOpen
+* cbpSalmonToiletOpen
+* cbpRoseToiletOpen
+* cbpTurquoiseToiletOpen
+* cbpAvacadoToiletClosed
+* cbpSalmonToiletClosed
+* cbpRoseToiletClosed
+* cbpTurquoiseToiletClosed
+* cbpAvacadoToiletClosedIndustrial
+* cbpSalmonToiletClosedIndustrial
+* cbpRoseToiletClosedIndustrial
+* cbpTurquoiseToiletClosedIndustrial
+* cbpAvacadoUrinal
+* cbpSalmonUrinal
+* cbpRoseUrinal
+* cbpTurquoiseUrinal
+* cbpAvacadoSinkWallMounted
+* cbpSalmonSinkWallMounted
+* cbpRoseSinkWallMounted
+* cbpTurquoiseSinkWallMounted
+* cbpAvacadoSinkCounterMounted
+* cbpSalmonSinkCounterMounted
+* cbpRoseSinkCounterMounted
+* cbpTurquoiseSinkCounterMounted
+* cbpAvacadoSinkCounterMountedOffset
+* cbpSalmonSinkCounterMountedOffset
+* cbpRoseSinkCounterMountedOffset
+* cbpTurquoiseSinkCounterMountedOffset
+* cbpAvacadoSinkPedestal
+* cbpSalmonSinkPedestal
+* cbpRoseSinkPedestal
+* cbpTurquoiseSinkPedestal
+* cbpAvacadoBathtubEmpty
+* cbpSalmonBathtubEmpty
+* cbpRoseBathtubEmpty
+* cbpTurquoiseBathtubEmpty
+* cbpAvacadoBathtubGore
+* cbpSalmonBathtubGore
+* cbpRoseBathtubGore
+* cbpTurquoiseBathtubGore
+* cbpAvacadoBathtubClawFoot
+* cbpSalmonBathtubClawFoot
+* cbpRoseBathtubClawFoot
+* cbpTurquoiseBathtubClawFoot
+
+**Custom Trees with Advanced rotation** - Trees that can be placed laying down. 
+
+* cbpTreeFallenMountainPine19m
+* cbpTreeFallenWinterPine6m
+* cbpTreeFallenBurntMed
+* cbpTreeFallenDry21m
+* cbpTreeFallenDeadTree01
+* cbpTreeFallenPlainsTree2
+* cbpTreeFallenMountainPine27m
+* cbpTreeFallenMountainPine48m
+* cbpTreeFallenPineBurntLrg
+* cbpTreeFallenBurntFullMed
+* cbpTreeFallenOakMed01
+* cbpTreeFallenSpookyLarge
+* cbpTreeFallenSpookySmall
+* cbpTreeFallenSpookyMed
+
+**Wonky Trees** - Trees that align with ground slope. 
+
+* cbpTreeFallenMountainPine19m_Wonky 
+* cbpTreeFallenWinterPine6m_Wonky
+* cbpTreeFallenBurntMed_Wonky
+* cbpTreeFallenDry21m_Wonky
+* cbpTreeFallenDeadTree01_Wonky
+* cbpTreeFallenPlainsTree2_Wonky
+* cbpTreeFallenMountainPine27m_Wonky
+* cbpTreeFallenMountainPine48m_Wonky
+* cbpTreeFallenPineBurntLrg_Wonky
+* cbpTreeFallenBurntFullMed_Wonky
+* cbpTreeFallenOakMed01_Wonky
+* cbpTreeFallenSpookyLarge_Wonky
+* cbpTreeFallenSpookySmall_Wonky
+* cbpTreeFallenSpookyMed_Wonky
 
 ## Other Blocks
 For those interesting in mixing in an homage to Westworld (Movie 1973, TV

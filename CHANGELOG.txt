@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.0.001.0019 :
+* Adjustments for 0018 plus documentation.
+
 A21.0.001.0018 : 
 * Stallion added a bunch of stuff. I'm not entirely sure what all it is. I
     think if includes some deco weapons, a motorcycle and 4x4 without hoists.
