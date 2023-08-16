@@ -947,7 +947,7 @@
 			<property name="CanDecorateOnSlopes" value="false"/>
 			<property name="PlacementDistance" value="6"/>
 		</block>
-		
+			
 		<!-- Offset Hazard Pipes -->
 		
 		<!-- *** BROKEN_PIPE_FIRE_HAZARDS -->
@@ -1913,7 +1913,8 @@
 			<property name="MultiBlockDim" value="4,1,1"/>
 			<property name="SortOrder1" value="B750"/>
 			<property name="SortOrder2" value="0000"/>
-		</block>                                          
+		</block> 
+
 		<block name="cbpFireHazardBlackNomodeloffset">
 			<property name="CustomIcon" value="pipeSmall1x1"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
@@ -2008,7 +2009,8 @@
 			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block>
+		</block> 		
+		
 		<block name="cbpFireBlockZomLeft">
 			<property name="CustomIcon" value="shapeFontExclamation"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -8753,7 +8755,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Tools/nailgunPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="0,.1,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -8885,7 +8887,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Tools/shovel_steelPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="0,.2,.4"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -8918,7 +8920,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Weapons/Melee/Chainsaw/chainsawPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="-.30,.4,-.3"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -8951,7 +8953,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="0,.1,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -9512,7 +9514,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Weapons/Ranged/IronCrossBow/ironCrossBowPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="0,0.9,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -9683,6 +9685,48 @@
 			<property name="GndAlign" value="1"/>
 		</block>
 		
+		<block name="cbpBicycleProp">			
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/bicycle_Prefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpMiniBikeProp">			
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/minibike_Prefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
 		<block name="cbpMotorCycleProp">			<!-- No Hoist  -->
 			<property name="CustomIcon" value="motorcycleStatic"/>
 			<property name="CustomIconTint" value="ff1a36"/>
@@ -9727,8 +9771,149 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>   
 
-	
+		<block name="cbpGyroProp">			<!-- Not destroyed  -->
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/gyrocopter_Prefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
 		
+		<!-- ************************************************************************* 
+           FAKE TRADERS: Display
+        ************************************************************************** -->
+		 <block name="cbpTraderJoelProp">			
+			<property name="CustomIcon" value="decoMannequinMilitaryCommando"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderJoel.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderRektProp">			
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderRekt.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderBobProp">			
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderBob.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderHughProp">			
+			<property name="CustomIcon" value="decoMannequinMilitaryCommando"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderHugh.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderJenProp">			
+			<property name="CustomIcon" value="decoMannequinFemale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderJen.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		
+				
 		<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
         ************************************************************************** -->

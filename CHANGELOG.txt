@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.1.001.0020 :
+* Stallion added trader props, vehicle props, and adjusted some offsets.
+
 A21.0.001.0019 :
 * Adjustments for 0018 plus documentation.
 
