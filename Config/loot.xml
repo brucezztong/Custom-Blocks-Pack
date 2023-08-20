@@ -70,7 +70,7 @@
 			<item name="foodCanCatfood" prob="0.25" count="1"/>
 			<item name="foodShamSandwich" prob="0.25" count="1"/>
 			<item name="foodCharredMeat" prob="0.25" count="1"/>
-			<item name="foodSkillMagazine" prob="0.25" count="1" loot_prob_template="veryLow"/>
+<!-- DF			<item name="foodSkillMagazine" prob="0.25" count="1" loot_prob_template="veryLow"/> -->
 			<item name="toolCookingPot" prob="0.25" count="1"/>
 			<item name="toolCookingGrill" prob="0.25" count="1"/>
 			<item name="resourceCropCoffeeBeans" prob="0.25" count="1"/>
@@ -402,8 +402,8 @@
 
 		<lootcontainer name="cbpArmy" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
            <item group="groupAmmoSmall" count="0,1" loot_prob_template="high"/>
-		   <item group="weaponSkillMagazinesOnly" count="0,1" loot_prob_template="medHigh"/>
-		   <item group="groupMilitaryBooks" count="0,1" loot_prob_template="med"/>
+		   <!-- DF <item group="weaponSkillMagazinesOnly" count="0,1" loot_prob_template="medHigh"/> -->
+		   <!-- DF <item group="groupMilitaryBooks" count="0,1" loot_prob_template="med"/> -->
 		   <item group="groupAmmoMedium" count="0,1" loot_prob_template="med"/>
 		   <item group="groupAmmoLarge" count="0,1" loot_prob_template="low"/>
 		   <item group="groupTreasureMaps" count="0,1" loot_prob_template="veryLow"/>

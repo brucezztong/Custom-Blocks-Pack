@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.1.001.0021 :
+* Changes for compatibility with Darkness Falls.
+
 A21.1.001.0020 :
 * Stallion added trader props, vehicle props, and adjusted some offsets.
 

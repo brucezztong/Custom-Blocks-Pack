@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-    <Name value="00-Custom-Blocks-Pack" />
+    <Name value="Custom-Blocks-Pack" />
     <Author value="MPLogue,Pille,Stallionsden,ZZTong" />
     <Description value="Adds custom block definitions and supporting configurations. (Version A21.0.001)" />
     <DisplayName value="Custom-Blocks-Pack" />
-    <Version value="21.1.001.0020" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
-    <!-- Build Date: 8/16/2023 -->
+    <Version value="21.1.001.0021" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
+    <!-- Build Date: 8/20/2023 -->
     <Website value="" />
     <!-- Dependencies: None -->
 </xml>
