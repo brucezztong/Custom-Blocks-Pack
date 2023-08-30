@@ -9794,6 +9794,84 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		
+		<block name="cbpGeneratorSmall">
+			<!-- Generator Small decor - As placed  -->
+			<property name="CustomIcon" value="questGeneratorSmall"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/smallGeneratorPrefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpGeneratorSmallAligned">
+			<!-- Generator Small decor - flush with surface  -->
+			<property name="CustomIcon" value="questGeneratorSmall"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/smallGeneratorPrefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="GndAlign" value="1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpGeneratorLarge">
+			<!-- Generator Large decor - As placed  -->
+			<property name="CustomIcon" value="questGeneratorLarge"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/bigGeneratorPrefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpGeneratorLargeAligned">
+			<!-- Generator Large decor - flush with surface  -->
+			<property name="CustomIcon" value="questGeneratorLarge"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/bigGeneratorPrefab"/>
+			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="GndAlign" value="1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
 		<!-- ************************************************************************* 
            FAKE TRADERS: Display
         ************************************************************************** -->
