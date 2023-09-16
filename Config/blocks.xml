@@ -947,6 +947,33 @@
 			<property name="CanDecorateOnSlopes" value="false"/>
 			<property name="PlacementDistance" value="6"/>
 		</block>
+		
+		<block name="cbpHoistChainOffset">
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="CustomIcon" value="decoHoistChain"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Material" value="Mmetal_chains"/>
+			<property name="Model" value="Entities/Industrial/hoistChainPrefab"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="ModelOffset" value="0,0.5,0.4"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+			<property name="SortOrder1" value="B551"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="cbpHoistHookOffset">
+	<property name="Extends" value="decoHoistChain"/>
+	<property name="CustomIcon" value="decoHoistHook"/>
+	<property name="CustomIconTint" value="435E70"/>
+	<property name="Model" value="Entities/Industrial/hoistHookPrefab"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+	<property name="ModelOffset" value="0,0.5,0.4"/>
+	<property name="SortOrder1" value="B551"/>
+	<property name="SortOrder2" value="0002"/>
+</block>
 			
 		<!-- Offset Hazard Pipes -->
 		
@@ -9697,6 +9724,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
 			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
@@ -9717,6 +9745,7 @@
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
@@ -9739,6 +9768,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
 			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
@@ -9762,6 +9792,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
 			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
@@ -9785,6 +9816,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
 			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
@@ -9807,6 +9839,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
@@ -9827,6 +9860,7 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="GndAlign" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
@@ -9846,6 +9880,7 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
@@ -9866,6 +9901,107 @@
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="GndAlign" value="1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpCampFire">
+			<property name="CustomIcon" value="campfire"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/campfireCookStationPrefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+	
+		<block name="cbpCementMixer">
+			<property name="CustomIcon" value="cementMixer"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/cementMixerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		 <block name="cbpWorkbench">
+			<property name="CustomIcon" value="workbench"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/woodWorkBenchPrefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpForge">
+			<property name="CustomIcon" value="forge"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/forgeWorkstationPrefab"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		 <block name="cbpChemistryStation">
+			<property name="CustomIcon" value="chemistryStation"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/chemStationPrefab"/>
+			<property name="MultiBlockDim" value="3,2,1"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="WaterFlow" value="permitted"/>
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
 			<drop event="Destroy" count="0"/>
@@ -10213,6 +10349,42 @@
             <property name="DowngradeBlock" value="cbpSparklyBlockLarge"/>
             <property name="DestroyFX" value=""/>
         </block>
+		
+		<block name="cbpCampFireFlame">
+			<property name="CustomIcon" value="shapeFontExclamation"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcobblestone"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="ParticleEffects/p_onFire"/>
+			<property name="ModelOffset" value="0,-0.9,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpCampFireFlameOffset2Block">
+			<property name="CustomIcon" value="shapeFontExclamation"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcobblestone"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="ParticleEffects/p_onFire"/>
+			<property name="ModelOffset" value="-2,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		
 		
 		<!-- ************************************************************************* 
             MID-CENTURY BATHROOM OBJECTS: Tinted Bathroom Objects giving the POI that 70s feel

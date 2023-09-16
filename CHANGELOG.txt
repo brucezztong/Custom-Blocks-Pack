@@ -1,5 +1,15 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.1.001.0023 :
+* Let water flow through some more blocks.
+* Added cbpForge, cbpChemstation, cbpCementMixer, cbpWorkbench
+    (non lootable) for deco in hardware stores etc
+* Added cbpCampfire - Deco block of the working campfire in game
+* Added cbpCampFireFlame - a flame to sit in the cbpCampfire
+* Added cbpCampFireFlameOffset2Block -  a 2 block offset flame for specific purpose 
+* Added OffsetHoistChain - against the wall
+* Added OffsetHoistHook - against the wall
+
 A21.1.001.0022 :
 * Stallion added generator blocks.
 
