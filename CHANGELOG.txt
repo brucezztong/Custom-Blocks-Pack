@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.1.001.0024 :
+* Stallion added plant variants.
+
 A21.1.001.0023 :
 * Let water flow through some more blocks.
 * Added cbpForge, cbpChemstation, cbpCementMixer, cbpWorkbench

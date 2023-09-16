@@ -964,16 +964,164 @@
 		</block>
 		
 		<block name="cbpHoistHookOffset">
-	<property name="Extends" value="decoHoistChain"/>
-	<property name="CustomIcon" value="decoHoistHook"/>
-	<property name="CustomIconTint" value="435E70"/>
-	<property name="Model" value="Entities/Industrial/hoistHookPrefab"/>
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
-	<property name="ModelOffset" value="0,0.5,0.4"/>
-	<property name="SortOrder1" value="B551"/>
-	<property name="SortOrder2" value="0002"/>
-</block>
+			<property name="Extends" value="decoHoistChain"/>
+			<property name="CustomIcon" value="decoHoistHook"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="Model" value="Entities/Industrial/hoistHookPrefab"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<property name="ModelOffset" value="0,0.5,0.4"/>
+			<property name="SortOrder1" value="B551"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<!-- *** CHERRY_BLOSSOM -->
+		<!-- White -->
+		<block name="cbpCherryBlossomWhite">
+			<property name="Extends" value="treePlant02"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/plantCherryBlossomPrefab"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="GndAlign" value="0"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpCherryBlossomBrown">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="SortOrder2" value="0401"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Red -->
+		<block name="cbpCherryBlossomRed">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="SortOrder2" value="0402"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Orange -->
+		<block name="cbpCherryBlossomOrange">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0403"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Yellow -->
+		<block name="cbpCherryBlossomYellow">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="SortOrder2" value="0404"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Green -->
+		<block name="cbpCherryBlossomGreen">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="SortOrder2" value="0405"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Blue -->
+		<block name="cbpCherryBlossomBlue">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="SortOrder2" value="0406"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Purple -->
+		<block name="cbpCherryBlossomPurple">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="SortOrder2" value="0407"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Grey -->
+		<block name="cbpCherryBlossomGrey">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="SortOrder2" value="0408"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Black -->
+		<block name="cbpCherryBlossomBlack">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="SortOrder2" value="0409"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+			</block>
+
+		<!-- Pink -->
+		<block name="cbpCherryBlossomPink">
+			<property name="Extends" value="cbpCherryBlossomWhite"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="SortOrder2" value="0410"/>
+			<property name="ModelOffset" value=".4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+		</block>
+		<!-- *** CHERRY_BLOSSOM -->
+
 			
 		<!-- Offset Hazard Pipes -->
 		
