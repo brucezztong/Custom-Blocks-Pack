@@ -376,6 +376,7 @@
 			<property name="Extends" value="decoEntityClothMaster"/>
 			<property name="CustomIcon" value="cntBookPile01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookPile1Prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="GndAlign" value="1"/>
@@ -388,6 +389,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile02"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookPile2Prefab"/>
 			<property name="SortOrder2" value="0001"/>
 		</block>
@@ -395,6 +397,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile03"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookPile3Prefab"/>
 			<property name="SortOrder2" value="0002"/>
 		</block>
@@ -402,6 +405,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile04"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookPile4Prefab"/>
 			<property name="SortOrder2" value="0003"/>
 		</block>
@@ -409,6 +413,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile05"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookRiverofAshPrefab"/>
 			<property name="SortOrder2" value="0004"/>
 		</block>
@@ -416,6 +421,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile06"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookLongRoadPrefab"/>
 			<property name="SortOrder2" value="0005"/>
 		</block>
@@ -423,6 +429,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile07"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookWatercolorPrefab"/>
 			<property name="SortOrder2" value="0006"/>
 		</block>
@@ -430,6 +437,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile08"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookScarletJournalsPrefab"/>
 			<property name="SortOrder2" value="0007"/>
 		</block>
@@ -437,6 +445,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile09"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookInvisibleKillerPrefab"/>
 			<property name="SortOrder2" value="0008"/>
 		</block>
@@ -444,6 +453,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile10"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookSpearHunterPrefab"/>
 			<property name="SortOrder2" value="0009"/>
 		</block>
@@ -451,6 +461,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile11"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookAftermathPrefab"/>
 			<property name="SortOrder2" value="0010"/>
 		</block>
@@ -458,12 +469,14 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile12"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="SortOrder2" value="0011"/>
 		</block>
 		<block name="cbpBookPile13">
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile13"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookAuthorizedPersonnelPrefab"/>
 			<property name="SortOrder2" value="0012"/>
 		</block>
@@ -471,6 +484,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile14"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookTimeMattersPrefab"/>
 			<property name="SortOrder2" value="0013"/>
 		</block>
@@ -478,6 +492,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile15"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="Entities/Commercial/bookSocialistGuidePrefab"/>
 			<property name="SortOrder2" value="0014"/>
 		</block>
@@ -488,7 +503,7 @@
 			<property name="Extends" value="decoCookingPot"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="CustomIcon" value="toolCookingPot"/>
-			<property name="CustomIconTint" value="ff8080"/>
+			<property name="CustomIconTint" value="ff8080"/>			
 			<property name="CreativeMode" value="Dev"/>
 		</block>
 		<!-- *************************************************************************
@@ -557,6 +572,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
 			<property name="DisplayInfo" value="Name"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="FilterTags" value="MC_outdoor,SC_crops"/>
 		</block>
 		<!-- *************************************************************************
@@ -777,6 +793,66 @@
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 		</block>
+		
+					<!-- *** PALLETS_BOXES -->
+		<block name="cbpPalletBoxesBase">
+			<property name="Material" value="MCardboardLoot"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/boxesCardboardPalletPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="149"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<drop event="Harvest" name="resourcePaper" count="1,3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+
+		<block name="cbpPalletBoxesTile">
+			<property name="Extends" value="cbpPalletBoxesBase"/>
+			<property name="CustomIcon" value="palletBrownBoxesTile"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Industrial/boxesCardboardTilePrefab"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="cbpPalletBoxesTop">
+			<property name="Extends" value="cbpPalletBoxesBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBrownBoxesTop"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Industrial/boxesCardboardCapMedPrefab"/>
+			<property name="ImposterExchange" value="imposterHalf" param1="149"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="cbpPalletBoxesTopSmall">
+			<property name="Extends" value="cbpPalletBoxesBase"/>
+			<property name="CustomIcon" value="palletBrownBoxesTopSmall"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Industrial/boxesCardboardCapSmlPrefab"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="cbpPalletBoxesLoose">
+			<property name="Extends" value="cbpPalletBoxesBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBrownBoxesLoose"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Industrial/boxesCardboardLoosePrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		
 		<!-- *************************************************************************
             Movie Poster Helpers
         ************************************************************************** -->
@@ -6283,6 +6359,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="CustomIcon" value="treeStump"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
 		</block>
 		<!-- *************************************************************************
@@ -10574,7 +10651,7 @@
 			<property name="Material" value="Mcobblestone"/>
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="ParticleEffects/p_onFire"/>
+			<property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
 			<property name="ModelOffset" value="0,-0.9,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
@@ -10591,7 +10668,7 @@
 			<property name="Material" value="Mcobblestone"/>
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="ParticleEffects/p_onFire"/>
+			<property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
 			<property name="ModelOffset" value="-2,0,0"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
@@ -10601,7 +10678,6 @@
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
-		
 		
 		
 		<!-- ************************************************************************* 
