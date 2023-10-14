@@ -323,7 +323,7 @@
             <item name="gunShotgunT1DoubleBarrelParts" prob="1" count="1,2"/>
             <item name="gunBotRoboticsParts" prob="0.4" count="1,2"/>
             <item name="meleeWpnBatonT2StunBatonParts" prob="0.4" count="1,2"/>
-            <item name="gunExplosivesT3RocketLauncherParts" prob="0.2" count="1,2"/>
+            <!-- item name="gunExplosivesT3RocketLauncherParts" prob="0.2" count="1,2"/ -->
             <item name="meleeWpnBladeT3MacheteParts" prob="0.2" count="1,2"/>
             <item name="meleeWpnSpearT3SteelSpearParts" prob="0.2" count="1,2"/>
             <item name="meleeWpnClubT3SteelClubParts" prob="0.2" count="1,2"/>
