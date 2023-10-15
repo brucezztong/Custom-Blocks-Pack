@@ -918,7 +918,121 @@
 		</placeholder>
 		
 		<!-- *************************************************************
-            Vimit Claymore Helper; Allows Random variant of the vomit CLaymore stuff 
+            Plants; Allows randomised potted plants 
+        ************************************************************** -->
+		 <placeholder name="cbpAloePottedRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantAloePottedWhite" prob=".1"/>
+             <block name="plantAloePottedBrown" prob=".1"/>			 
+			 <block name="plantAloePottedRed" prob=".1"/>
+             <block name="plantAloePottedOrange" prob=".1"/>
+			 <block name="plantAloePottedYellow" prob=".1"/>
+             <block name="plantAloePottedGreen" prob=".1"/>
+			 <block name="plantAloePottedBlue" prob=".1"/>
+             <block name="plantAloePottedPurple" prob=".1"/>
+			 <block name="plantAloePottedGrey" prob=".05"/>
+             <block name="plantAloePottedPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		<placeholder name="cbpAloePottedCornerRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantAloePottedCornerWhite" prob=".1"/>
+             <block name="plantAloePottedCornerBrown" prob=".1"/>			 
+			 <block name="plantAloePottedCornerRed" prob=".1"/>
+             <block name="plantAloePottedCornerOrange" prob=".1"/>
+			 <block name="plantAloePottedCornerYellow" prob=".1"/>
+             <block name="plantAloePottedCornerGreen" prob=".1"/>
+			 <block name="plantAloePottedCornerBlue" prob=".1"/>
+             <block name="plantAloePottedCornerPurple" prob=".1"/>
+			 <block name="plantAloePottedCornerGrey" prob=".05"/>
+             <block name="plantAloePottedCornerPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		 <placeholder name="cbpHousePottedRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantHousePottedWhite" prob=".1"/>
+             <block name="plantHousePottedBrown" prob=".1"/>			 
+			 <block name="plantHousePottedRed" prob=".1"/>
+             <block name="plantHousePottedOrange" prob=".1"/>
+			 <block name="plantHousePottedYellow" prob=".1"/>
+             <block name="plantHousePottedGreen" prob=".1"/>
+			 <block name="plantHousePottedBlue" prob=".1"/>
+             <block name="plantHousePottedPurple" prob=".05"/>
+			 <block name="plantHousePottedGrey" prob=".05"/>
+             <block name="plantHousePottedBlack" prob=".05"/>
+			 <block name="plantHousePottedPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		<placeholder name="cbpHousePottedCornerRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantHousePottedCornerWhite" prob=".1"/>
+             <block name="plantHousePottedCornerBrown" prob=".1"/>			 
+			 <block name="plantHousePottedCornerRed" prob=".1"/>
+             <block name="plantHousePottedCornerOrange" prob=".1"/>
+			 <block name="plantHousePottedCornerYellow" prob=".1"/>
+             <block name="plantHousePottedCornerGreen" prob=".1"/>
+			 <block name="plantHousePottedCornerBlue" prob=".1"/>
+             <block name="plantHousePottedCornerPurple" prob=".05"/>
+			 <block name="plantHousePottedCornerGrey" prob=".05"/>
+             <block name="plantHousePottedCornerBlack" prob=".05"/>
+			 <block name="plantHousePottedCornerPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		<placeholder name="cbpCherryBlossomRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantCherryBlossomWhite" prob=".1"/>
+             <block name="plantCherryBlossomBrown" prob=".1"/>			 
+			 <block name="plantCherryBlossomRed" prob=".1"/>
+             <block name="plantCherryBlossomOrange" prob=".1"/>
+			 <block name="plantCherryBlossomYellow" prob=".1"/>
+             <block name="plantCherryBlossomGreen" prob=".1"/>
+			 <block name="plantCherryBlossomBlue" prob=".1"/>
+             <block name="plantCherryBlossomPurple" prob=".05"/>
+			 <block name="plantCherryBlossomGrey" prob=".05"/>
+             <block name="plantCherryBlossomBlack" prob=".05"/>
+			 <block name="plantCherryBlossomPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		<placeholder name="cbpFernHangingRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantFernHangingWhite" prob=".1"/>
+             <block name="plantFernHangingBrown" prob=".1"/>			 
+			 <block name="plantFernHangingRed" prob=".1"/>
+             <block name="plantFernHangingOrange" prob=".1"/>
+			 <block name="plantFernHangingYellow" prob=".1"/>
+             <block name="plantFernHangingGreen" prob=".1"/>
+			 <block name="plantFernHangingBlue" prob=".1"/>
+             <block name="plantFernHangingPurple" prob=".05"/>
+			 <block name="plantFernHangingGrey" prob=".05"/>
+             <block name="plantFernHangingBlack" prob=".05"/>
+			 <block name="plantFernHangingPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		<placeholder name="cbpHouseTallPottedRandomHelper">
+			 <block name="air" prob=".5"/>
+             <block name="plantHouseTallPottedWhite" prob=".1"/>
+             <block name="plantHouseTallPottedBrown" prob=".1"/>			 
+			 <block name="plantHouseTallPottedRed" prob=".1"/>
+             <block name="plantHouseTallPottedOrange" prob=".1"/>
+			 <block name="plantHouseTallPottedYellow" prob=".1"/>
+             <block name="plantHouseTallPottedGreen" prob=".1"/>
+			 <block name="plantHouseTallPottedBlue" prob=".1"/>
+             <block name="plantHouseTallPottedPurple" prob=".05"/>
+			 <block name="plantHouseTallPottedGrey" prob=".05"/>
+             <block name="plantHouseTallPottedBlack" prob=".05"/>
+			 <block name="plantHouseTallPottedPink" prob=".05"/>
+			 <block name="treePlant02" prob=".05"/>
+		</placeholder>
+		
+		
+		<!-- *************************************************************
+            Vomit Claymore Helper; Allows Random variant of the vomit CLaymore stuff 
         ************************************************************** -->
 		
 		<placeholder name="cbpHardAirVomitClaymoreHelper">

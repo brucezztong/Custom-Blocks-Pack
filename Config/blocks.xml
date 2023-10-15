@@ -2364,6 +2364,34 @@
 			<property name="TintColor" value="080808"/>
 			<property name="SortOrder2" value="0002"/>
 		</block>
+		
+		<!-- ************************************************************************* 
+            Wheel Chairs
+        ************************************************************************** -->
+		
+		<block name="cbpWheelchairPink">
+			<property name="CustomIcon" value="wheelchairWhite"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="TintColor" value="7E4A6D"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/wheelChairPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="1330"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="2,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5,25"/>
+			<property name="SortOrder1" value="B435"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_decor,SC_commercial,A21_NEW"/>
+		</block>
 		<!-- ************************************************************************* 
             Storage Crates...
         ************************************************************************** -->
@@ -6362,6 +6390,80 @@
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
 		</block>
+		
+		<!-- *************************************************************************
+            Potted Plant Helpers
+        ************************************************************************** -->
+		<block name="cbpAloePottedRandomHelper">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpAloePottedCornerRandomHelper">
+			<property name="Extends" value="plantAloePottedCornerWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantAloePottedCornerWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpHousePottedRandomHelper">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpHousePottedCornerRandomHelper">
+			<property name="Extends" value="plantHousePottedCornerWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantHousePottedCornerWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpCherryBlossomRandomHelper">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpFernHangingRandomHelper">
+			<property name="Extends" value="plantFernHangingWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantFernHangingWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="cbpHouseTallPottedRandomHelper">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="LD00"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
 		<!-- *************************************************************************
             Park Bench All Rotations
         ************************************************************************** -->
@@ -8195,6 +8297,29 @@
 			<property name="Collide" value=""/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 		</block>
+		
+		<block name="cbpWaterFire">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="CustomIconTint" value="435E70"/>
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Class" value="Liquidv2"/>
+			<property name="Count" value="8"/>
+			<property name="Map.Color" value="20,20,120"/>
+			<property name="Map.Color" value="119,136,204"/>
+			<property name="Material" value="Mwater"/>
+			<property name="Shape" value="Water"/>
+			<property name="Mesh" value="water"/>
+			<property name="Model" value="water_full"/>
+			<property name="Texture" value="223"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="BuffChance" value="1"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="1550"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		</block>
+		
 		<block name="cbpHardAir">
 			<!--  Invisible block that provided structural support -->
 			<property name="CustomIcon" value="shapeCube"/>
