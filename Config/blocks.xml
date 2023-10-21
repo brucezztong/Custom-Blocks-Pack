@@ -794,7 +794,9 @@
 			<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 		</block>
 		
-					<!-- *** PALLETS_BOXES -->
+		<!-- *************************************************************************
+            PALLETS BOXES
+        ************************************************************************** -->			
 		<block name="cbpPalletBoxesBase">
 			<property name="Material" value="MCardboardLoot"/>
 			<property name="CustomIcon" value="palletBrownBoxesBase"/>
@@ -1270,6 +1272,490 @@
 		</block>
 		<!-- *** CHERRY_BLOSSOM -->
 
+					<!-- ***CBP SLEEPER_BLOCKS -->
+		<block name="cbpSleeperSit">
+			<property name="Class" value="Sleeper"/>
+			<property name="CustomIcon" value="sleeperSit"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="sleeperGroupDesc"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSitPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="0"/>
+			<property name="LookIdentity" value="0,0,1"/> <!-- this "sleeper pose" is looking in a certain direction
+			In rot 0 (usually facing north),
+			view direction 0,0,1 = north; 0,0,-1 = south; -1,0,0 = west, 1,0,0 = east -->
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperSleeper"/>
+		</block>
+
+		<block name="cbpSleeperBack">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperBack"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleBackPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="1"/>
+			<property name="LookIdentity" value="1,0,0"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="cbpSleeperSideLeft">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperSideLeft"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSideLeftPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="2"/>
+			<property name="LookIdentity" value="1,0,0"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="cbpSleeperSideRight">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperSideRight"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSideRightPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="3"/>
+			<property name="LookIdentity" value="-1,0,0"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="cbpSleeperStomach">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperStomach"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleStomachPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="4"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="cbpSleeperIdle">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="5"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="ExcludeWalkType" value="Crawler"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="cbpSleeperCrawlerOnly">
+			<property name="Extends" value="sleeperStomach" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperStomach"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombiesCrawlers"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<block name="cbpSleeperWolfAnimal">
+			<property name="Extends" value="sleeperSit" param1="MultiBlockDim"/>
+			<property name="CustomIcon" value="sleeperWolfAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="sleeperAnimalDesc"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="SpawnGroup" value="WolfPack"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="cbpSleeperBearAnimal">
+			<property name="Extends" value="sleeperWolfAnimal"/>
+			<property name="CustomIcon" value="sleeperBearAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperBearPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="SpawnGroup" value="BearGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="cbpSleeperBoarAnimal">
+			<property name="Extends" value="sleeperWolfAnimal"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoarPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="BoarGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="cbpSleeperGraceAnimal">
+			<property name="Extends" value="sleeperBoarAnimal"/>
+			<property name="CustomIcon" value="sleeperGraceAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="GraceGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<!-- sleeper rabbit chicken go here -->
+
+		<block name="cbpSleeperChickenAnimal">
+			<property name="Extends" value="sleeperBoarAnimal"/>
+			<property name="CustomIcon" value="sleeperChickenAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/CHICKEN/sleeperPose/idleSleepChickenPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.95,0"/>
+			<property name="SpawnGroup" value="ChickenGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+
+		<block name="cbpSleeperRabbitAnimal">
+			<property name="Extends" value="sleeperBoarAnimal"/>
+			<property name="CustomIcon" value="sleeperRabbitAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Rabbit/sleeperPose/idleSleeperRabbit"/>
+			<property name="ModelOffset" value="0,-0.95,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SpawnGroup" value="RabbitGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+
+		<!-- sleeper rabbit chicken go here -->
+
+		<block name="cbpSleeperVultureAnimal">
+			<property name="Extends" value="sleeperWolfAnimal"/>
+			<property name="CustomIcon" value="sleeperVultureAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVulturePrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="VultureGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+
+		<block name="cbpSleeperSnakeAnimal">
+			<property name="Extends" value="sleeperWolfAnimal"/>
+			<property name="CustomIcon" value="sleeperSnakeAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Snake/sleeperPose/idleSleeperSnakePrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="SnakeGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0014"/>
+		</block>
+
+		<block name="cbpSleeperZombieDogAnimal">
+			<property name="Extends" value="sleeperWolfAnimal"/>
+			<property name="CustomIcon" value="sleeperZombieDogAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepZombieDogPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombieDogGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+
+		<block name="cbpSleeperZombieBearAnimal">
+			<property name="Extends" value="sleeperBearAnimal"/>
+			<property name="CustomIcon" value="sleeperZombieBearAnimal"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBearAnimal"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperZombieBearPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombieBearsGroup"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0016"/>
+		</block>
+
+			<!-- *** INFESTED_SLEEPER_BLOCKS -->
+			<block name="cbpInfestedSleeperSit">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Sleeper"/>
+			<property name="CustomIcon" value="sleeperSit"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="DescriptionKey" value="sleeperGroupDesc"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSitInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="0"/>
+			<property name="LookIdentity" value="0,0,1"/> <!-- this "sleeper pose" is looking in a certain direction
+			In rot 0 (usually facing north),
+			view direction 0,0,1 = north; 0,0,-1 = south; -1,0,0 = west, 1,0,0 = east -->
+			<property name="SpawnMode" value="Infested"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperSleeper,A21_NEW"/>
+		</block>
+
+		<block name="cbpInfestedSleeperBack">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBack"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleBackInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="1"/>
+			<property name="LookIdentity" value="1,0,0"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="cbpInfestedSleeperSideLeft">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperSideLeft"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSideLeftInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="2"/>
+			<property name="LookIdentity" value="1,0,0"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="cbpInfestedSleeperSideRight">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperSideRight"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSideRightInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="3"/>
+			<property name="LookIdentity" value="-1,0,0"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="cbpInfestedSleeperStomach">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperStomach"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleStomachInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="4"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="cbpInfestedSleeperIdle">
+			<property name="Extends" value="infestedSleeperSit"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSleepInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="Pose" value="5"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="ExcludeWalkType" value="Crawler"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="cbpInfestedSleeperCrawlerOnly">
+			<property name="Extends" value="infestedSleeperStomach" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperStomach"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombiesCrawlers"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<block name="cbpInfestedSleeperWolfAnimal">
+			<property name="Extends" value="infestedSleeperSit" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperWolfAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="DescriptionKey" value="sleeperAnimalDesc"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepWolfInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="SpawnGroup" value="WolfPack"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="cbpInfestedSleeperBearAnimal">
+			<property name="Extends" value="infestedSleeperWolfAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBearAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperBearInfestedPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="BearGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="cbpInfestedSleeperBoarAnimal">
+			<property name="Extends" value="infestedSleeperWolfAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoarInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="BoarGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="cbpInfestedSleeperGraceAnimal">
+			<property name="Extends" value="infestedSleeperBoarAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="GraceGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<block name="cbpInfestedSleeperVultureAnimal">
+			<property name="Extends" value="infestedSleeperWolfAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperVultureAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Vulture/sleeperPose/idleSleeperVultureInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="VultureGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+
+		<block name="cbpInfestedSleeperSnakeAnimal">
+			<property name="Extends" value="infestedSleeperWolfAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperSnakeAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Snake/sleeperPose/idleSleeperSnakeInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="SnakeGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+
+		<block name="cbpInfestedSleeperZombieDogAnimal">
+			<property name="Extends" value="infestedSleeperWolfAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperZombieDogAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Wolf/sleeperPose/idleSleepZombieDogInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombieDogGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+
+		<block name="cbpInfestedSleeperZombieBearAnimal">
+			<property name="Extends" value="infestedSleeperBearAnimal"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperBearAnimal"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="Model" value="Entities/Animals/Bear/sleeperPose/idleSleeperZombieBearInfestedPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="SpawnGroup" value="ZombieBearsGroup"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0014"/>
+		</block>
+		
+		<block name="cbpSleeperIdleExtra">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,-1.3,0"/>
+			<property name="Pose" value="5"/>
+			<property name="LookIdentity" value="0,0,1"/>
+			<property name="ExcludeWalkType" value="Crawler"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
+		<block name="cbpSleeperBackExtra">
+			<property name="Extends" value="sleeperSit"/>
+			<property name="CustomIcon" value="sleeperBack"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleBackPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="-0.5,-1,0"/>
+			<property name="Pose" value="1"/>
+			<property name="LookIdentity" value="1,0,0"/>
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
 			
 		<!-- Offset Hazard Pipes -->
 		
@@ -2354,6 +2840,8 @@
 			<property name="Extends" value="cbpFireBlockZomLeft"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 		</block>
+		
+		
 		<!-- ************************************************************************* 
             Server Racks
         ************************************************************************** -->
@@ -10245,6 +10733,687 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		
+		<!-- ************************************************************************* 
+           VEHICLE PROPS: Tinted
+        ************************************************************************** -->
+		<!-- BICYCLE -->
+		<block name="cbpBicyclePropWhite">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropBrown">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropRed">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropOrange">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropYellow">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropGreen">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropBlue">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropPurple">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropGrey">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropBlack">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpBicyclePropPink">	
+			<property name="Extends" value="cbpBicycleProp"/>
+			<property name="CustomIcon" value="bicycleStatic"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<!-- MINIBIKE -->   		
+		<block name="cbpMiniBikePropWhite">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropBrown">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropRed">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropOrange">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropYellow">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropGreen">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropBlue">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropPurple">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropGrey">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropBlack">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMiniBikePropPink">	
+			<property name="Extends" value="cbpMiniBikeProp"/>
+			<property name="CustomIcon" value="minibikeStatic"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		 <!-- MOTORCYCLE -->
+		 <block name="cbpMotorCyclePropWhite">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropBrown">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropRed">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropOrange">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropYellow">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropGreen">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropBlue">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropPurple">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropGrey">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropBlack">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpMotorCyclePropPink">		
+			<property name="Extends" value="cbpMotorCycleProp"/>
+			<property name="CustomIcon" value="motorcycleStatic"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		 
+		 <!-- 4X4 -->
+		 <block name="cbp4x4PropWhite">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropBrown">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropRed">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropOrange">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropYellow">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropGreen">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropBlue">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropPurple">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropGrey">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropBlack">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbp4x4PropPink">		
+			<property name="Extends" value="cbp4x4Prop"/>
+			<property name="CustomIcon" value="4x4Static"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>     		 
+		 
+		 <!-- GYRO -->
+		<block name="cbpGyroPropWhite">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropBrown">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="736452"/>
+			<property name="TintColor" value="736452"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropRed">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="9C7A7A"/>
+			<property name="TintColor" value="9C7A7A"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropOrange">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropYellow">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="B7B690"/>
+			<property name="TintColor" value="B7B690"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropGreen">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="A4B790"/>
+			<property name="TintColor" value="A4B790"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropBlue">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="99A6AB"/>
+			<property name="TintColor" value="99A6AB"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropPurple">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="97939C"/>
+			<property name="TintColor" value="97939C"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropGrey">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropPink">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
+		<block name="cbpGyroPropBlack">			
+			<property name="Extends" value="cbpGyroProp"/>
+			<property name="CustomIcon" value="gyrocopterStatic"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,1,4"/>
+		</block>
+		
 		<block name="cbpGeneratorSmall">
 			<!-- Generator Small decor - As placed  -->
 			<property name="CustomIcon" value="questGeneratorSmall"/>
@@ -10546,7 +11715,123 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		
+		<!-- ************************************************************************* 
+           FAKE TRADERS: DisplayOffset
+        ************************************************************************** -->
+		<block name="cbpTraderJoelPropOffset">			
+			<property name="CustomIcon" value="decoMannequinMilitaryCommando"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderJoel.prefab"/>
+			<property name="ModelOffset" value="0,0,-1.3"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
 		
+		<block name="cbpTraderRektPropOffset">			
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderRekt.prefab"/>
+			<property name="ModelOffset" value="0,0,-1.3"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderBobPropOffset">			
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderBob.prefab"/>
+			<property name="ModelOffset" value="0,0,-1.3"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderHughPropOffset">			
+			<property name="CustomIcon" value="decoMannequinMilitaryCommando"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderHugh.prefab"/>
+			<property name="ModelOffset" value="0,0,-1.25"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpTraderJenPropOffset">			
+			<property name="CustomIcon" value="decoMannequinFemale"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Traders/Prefabs/TraderJen.prefab"/>
+			<property name="ModelOffset" value="0,0,-1.3"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
 				
 		<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
@@ -10803,6 +12088,8 @@
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
+		
+		
 		
 		
 		<!-- ************************************************************************* 
