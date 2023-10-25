@@ -1039,5 +1039,17 @@
 			<block name="cbpHardAirVomitClaymore" prob="1"/>
 		</placeholder>
 		
+		<!-- *************************************************************
+            Random Spawn Trader Block; Adds a Random Spawn Block for a random trader to spawn 
+        ************************************************************** -->
+		 <placeholder name="cbpSpawnTraderRandomLootHelper">
+			 <block name="cbpSpawnTraderJoel" prob=".20"/>
+             <block name="cbpSpawnTraderJen" prob=".20"/>			 
+			 <block name="cbpSpawnTraderBob" prob=".20"/>
+             <block name="cbpSpawnTraderHugh" prob=".20"/>
+			 <block name="cbpSpawnTraderRekt" prob=".20"/>
+          </placeholder>
+		
+		
     </append>
 </blockplaceholders>

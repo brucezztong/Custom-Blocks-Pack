@@ -11832,6 +11832,141 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
+		
+		<!-- ************************************************************************* 
+           SPAWN TRADERS: Actual Spawn Traders so you can see in editor which trader you are placing
+        ************************************************************************** -->
+		<!-- *** TRADER_SPAWNER Joel-->
+
+<block name="cbpSpawnTraderJoel">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="SpawnEntity"/>
+    <property name="SpawnClass" value="npcTraderJoel"/>
+    <property name="IndexName" value="Trader"/>
+    <property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="6BB6E8"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="DisplayType" value="blockHardened"/>
+    <property name="Material" value="Mmetal_medium"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Traders/Prefabs/TraderJoel.prefab"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="Collide" value="sight"/>
+    <property name="StabilitySupport" value="false"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0"/>
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="SortOrder1" value="LD04"/>
+    <property name="SortOrder2" value="0500"/>
+    <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
+
+<!-- *** TRADER_SPAWNER Jen-->
+
+<block name="cbpSpawnTraderJen">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="SpawnEntity"/>
+    <property name="SpawnClass" value="npcTraderJen"/>
+    <property name="IndexName" value="Trader"/>
+    <property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="6BB6E8"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="DisplayType" value="blockHardened"/>
+    <property name="Material" value="Mmetal_medium"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Traders/Prefabs/TraderJen.prefab"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="Collide" value="sight"/>
+    <property name="StabilitySupport" value="false"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0"/>
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="SortOrder1" value="LD04"/>
+    <property name="SortOrder2" value="0500"/>
+    <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
+
+<!-- *** TRADER_SPAWNER Bob-->
+
+<block name="cbpSpawnTraderBob">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="SpawnEntity"/>
+    <property name="SpawnClass" value="npcTraderBob"/>
+    <property name="IndexName" value="Trader"/>
+    <property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="6BB6E8"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="DisplayType" value="blockHardened"/>
+    <property name="Material" value="Mmetal_medium"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Traders/Prefabs/TraderBob.prefab"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="Collide" value="sight"/>
+    <property name="StabilitySupport" value="false"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0"/>
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="SortOrder1" value="LD04"/>
+    <property name="SortOrder2" value="0500"/>
+    <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
+
+<!-- *** TRADER_SPAWNER Hugh-->
+
+<block name="cbpSpawnTraderHugh">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="SpawnEntity"/>
+    <property name="SpawnClass" value="npcTraderHugh"/>
+    <property name="IndexName" value="Trader"/>
+    <property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="6BB6E8"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="DisplayType" value="blockHardened"/>
+    <property name="Material" value="Mmetal_medium"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Traders/Prefabs/TraderHugh.prefab"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="Collide" value="sight"/>
+    <property name="StabilitySupport" value="false"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0"/>
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="SortOrder1" value="LD04"/>
+    <property name="SortOrder2" value="0500"/>
+    <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
+
+<!-- *** TRADER_SPAWNER Rekt-->
+
+<block name="cbpSpawnTraderRekt">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="SpawnEntity"/>
+    <property name="SpawnClass" value="npcTraderRekt"/>
+    <property name="IndexName" value="Trader"/>
+    <property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="6BB6E8"/>
+    <property name="ModelOffset" value="0,0,0"/>
+    <property name="DisplayType" value="blockHardened"/>
+    <property name="Material" value="Mmetal_medium"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="@:Entities/Traders/Prefabs/TraderRekt.prefab"/>
+    <property name="WaterFlow" value="permitted"/>
+    <property name="Collide" value="sight"/>
+    <property name="StabilitySupport" value="false"/>
+    <drop event="Destroy" name="resourceScrapIron" count="0"/>
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="SortOrder1" value="LD04"/>
+    <property name="SortOrder2" value="0500"/>
+    <property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
+
+<block name="cbpSpawnTraderRandomLootHelper">
+	<property name="Extends" value="cbpSpawnTraderJoel"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="ff1a36"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="SortOrder1" value="B101"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>
 				
 		<!-- ************************************************************************* 
            SPARKLY STUFF: using vanilla particle effects
