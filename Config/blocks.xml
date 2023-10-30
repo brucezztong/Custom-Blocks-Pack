@@ -1433,8 +1433,6 @@
 			<property name="SortOrder2" value="0010"/>
 		</block>
 
-		<!-- sleeper rabbit chicken go here -->
-
 		<block name="cbpSleeperChickenAnimal">
 			<property name="Extends" value="sleeperBoarAnimal"/>
 			<property name="CustomIcon" value="sleeperChickenAnimal"/>
@@ -1460,8 +1458,6 @@
 			<property name="SortOrder1" value="LD02"/>
 			<property name="SortOrder2" value="0012"/>
 		</block>
-
-		<!-- sleeper rabbit chicken go here -->
 
 		<block name="cbpSleeperVultureAnimal">
 			<property name="Extends" value="sleeperWolfAnimal"/>
@@ -1756,8 +1752,64 @@
 			<property name="SortOrder1" value="LD02"/>
 			<property name="SortOrder2" value="0001"/>
 		</block>
-			
-		<!-- Offset Hazard Pipes -->
+		
+		<!-- ************************************************************************* 
+            Offset Trash Bags...
+        ************************************************************************** -->
+		<block name="cbpTrashPile06Offset">
+			<property name="Extends" value="cntTrashPile01"/>
+			<property name="CustomIcon" value="cntTrashPile06"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="PlaceAsRandomRotation" value="False"/>
+			<property name="Model" value="@:Entities/LootContainers/trashPileHPrefab.prefab"/>
+			<property name="ModelOffset" value="-.27,0,0"/>
+			<!--<property name="GndAlign" value="1"/>-->
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
+		<block name="cbpTrashPile09Offset">
+			<property name="Extends" value="cntTrashPile01"/>
+			<property name="CustomIcon" value="cntTrashPile09"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="PlaceAsRandomRotation" value="False"/>
+			<property name="Model" value="@:Entities/LootContainers/trashPileIPrefab.prefab"/>
+			<property name="ModelOffset" value="-.24,0,0"/>
+			<!--<property name="GndAlign" value="1"/>-->
+			<property name="ImposterExchange" value="imposterCTREighth" param1="116"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		
+		<!-- ************************************************************************* 
+            Offset Shower Handle...  To Use As A Door Handle ETC
+        ************************************************************************** -->
+		<block name="cbpShowerHandleOffset">
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="CustomIcon" value="showerHandle01"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="PlaceAsRandomRotation" value="False"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plumbing/showerHandlePrefab"/>
+			<property name="ModelOffset" value="-.4,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="40"/> <!-- disassemble value -->
+			<property name="SortOrder1" value="B109"/>
+			<property name="SortOrder2" value="0202"/>
+			<property name="FilterTags" value="MC_building,SC_plumbing,A21_NEW"/>
+		</block>
+		
+		<!-- ************************************************************************* 
+				Offset Hazard Pipes 
+		************************************************************************** -->
 		
 		<!-- *** BROKEN_PIPE_FIRE_HAZARDS -->
 		<block name="cbpPipeSmallRed3mOffset">

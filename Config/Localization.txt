@@ -693,5 +693,7 @@ cbpShapePlateRound13mRight18,blocks,block,,,Plate Round 13m Right 18,,
 cbpShapePlateRound13mRight19,blocks,block,,,Plate Round 13m Right 19,,
 cbpShapePlateRound13mRight20,blocks,block,,,Plate Round 13m Right 20,,
 cbpShapePlateRound13mRight21,blocks,block,,,Plate Round 13m Right 21,,
+cbpTrashPile06Offset,blocks,Container,,,Trash Pile 06 Offset
+cbpTrashPile09Offset,blocks,Container,,,Trash Pile 09 Offset
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 
