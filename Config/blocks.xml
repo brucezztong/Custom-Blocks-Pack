@@ -854,6 +854,2582 @@
 			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
 			<property name="SortOrder2" value="0004"/>
 		</block>
+				
+		<!-- *************************************************************************
+				 PALLETS_BRICKS
+		************************************************************************** -->
+		 <block name="cbpbricksStack">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="bricksStack"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Material" value="Mrubble"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/bricksStackPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceRockSmall" count="50" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0410"/>
+			<property name="FilterTags" value="MC_building,SC_construction,SC_decor,A21_NEW"/>
+		  </block>
+					  
+		  <block name="cbpOSBWoodStack">
+				<property name="CreativeMode" value="Dev"/>
+				<property name="CustomIcon" value="OSBWoodStack"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="Material" value="Mwood"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/OutdoorDecor/OSBWoodStackPrefab"/>
+				<property name="ModelOffset" value="0.5,0.5,-1.0"/>
+				<property name="MultiBlockDim" value="2,1,3"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+				<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+				<drop event="Destroy" count="0"/>
+				<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0404"/>
+				<property name="FilterTags" value="MC_building,SC_construction,SC_decor"/>
+			</block>
+
+			<block name="cbpplywoodStack">
+				<property name="Extends" value="OSBWoodStack"/>
+				<property name="CustomIcon" value="plywoodStack"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="Model" value="Entities/OutdoorDecor/plyWoodStackPrefab"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0405"/>
+			</block>
+
+			<block name="cbpwoodPlanksStack">
+				<property name="Extends" value="OSBWoodStack"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="CustomIcon" value="woodPlanksStack"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="Model" value="Entities/OutdoorDecor/woodPlanksStackPrefab"/>
+				<property name="ModelOffset" value="0,0.5,-1.0"/>
+				<property name="MultiBlockDim" value="1,1,3"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0406"/>
+			</block>
+
+			<block name="cbpdryWallStack">
+				<property name="CreativeMode" value="Dev"/>
+				<property name="CustomIcon" value="dryWallStack"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="Material" value="Mpaper"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/OutdoorDecor/dryWallStackPrefab"/>
+				<property name="ModelOffset" value="0.5,0.5,-1.0"/>
+				<property name="MultiBlockDim" value="2,1,3"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+				<property name="MaxDamage" value="200"/>
+				<drop event="Harvest" name="resourceRockSmall" count="8" tag="allHarvest"/>
+				<drop event="Harvest" name="resourcePaper" count="4" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceCrushedSand" count="10" tag="allHarvest"/>
+				<drop event="Destroy" count="0"/>
+				<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0407"/>
+				<property name="FilterTags" value="MC_building,SC_construction,SC_decor,A21_NEW"/>
+			</block>
+
+			<block name="cbpmetalPipeStack">
+				<property name="CreativeMode" value="Dev"/>
+				<property name="CustomIcon" value="metalPipeStack"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/OutdoorDecor/metalPipeStackPrefab"/>
+				<property name="ModelOffset" value="0,0.5,-1.5"/>
+				<property name="MultiBlockDim" value="1,1,4"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+				<drop event="Harvest" name="resourceMetalPipe" count="8" tag="allHarvest"/>
+				<drop event="Destroy" count="0"/>
+				<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0408"/>
+				<property name="FilterTags" value="MC_building,SC_construction,SC_decor,A21_NEW"/>
+			</block>
+
+			<block name="cbpmetalPipeStackLoose">
+				<property name="Extends" value="cbpmetalPipeStack"/>
+				<property name="CustomIcon" value="metalPipeStackLoose"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="Model" value="Entities/OutdoorDecor/metalPipeStackLoosePrefab"/>
+				<property name="WaterFlow" value="permitted"/>
+				<drop event="Harvest" name="resourceMetalPipe" count="4" tag="allHarvest"/>
+				<property name="SortOrder1" value="B278"/>
+				<property name="SortOrder2" value="0409"/>
+			</block>
+
+
+		<!-- Full Brick Base -->
+		<block name="cbpBricksBase">
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Material" value="Mrubble"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletStoneBasePrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="57"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceRockSmall" count="50" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+
+		<!-- Full Brick Tile -->
+		<block name="cbpBricksTile">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CustomIcon" value="palletBricksTile"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Model" value="Entities/Industrial/palletStoneTilePrefab"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+
+		<!-- Med Brick Base -->
+		<block name="cbpBricksPartial1">
+			<property name="Extends" value="palletBricksBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBricksPartial1"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Model" value="Entities/Industrial/palletStoneBaseMedPrefab"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+
+		<!-- Med Brick Cap -->
+		<block name="cbpBricksTop">
+			<property name="Extends" value="palletBricksBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBricksTop"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Model" value="Entities/Industrial/palletStoneCapMedPrefab"/>
+			<property name="ImposterExchange" value="imposterHalf" param1="57"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+
+		<!-- Small Brick Base -->
+		<block name="cbpBricksPartial2">
+			<property name="Extends" value="palletBricksBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBricksPartial2"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Model" value="Entities/Industrial/palletStoneBaseSmlPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+
+		<!-- Small Brick Cap -->
+		<block name="cbpBricksLoose">
+			<property name="Extends" value="palletBricksBase" param1="Path"/>
+			<property name="CustomIcon" value="palletBricksLoose"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="Model" value="Entities/Industrial/palletStoneCapSmlPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksBaseBrown">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0110"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksTileBrown">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CustomIcon" value="palletBricksTile"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0111"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksPartial1Brown">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CustomIcon" value="palletBricksPartial1"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0112"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksTopBrown">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CustomIcon" value="palletBricksTop"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0113"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksPartial2Brown">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CustomIcon" value="palletBricksPartial2"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0114"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBricksLooseBrown">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CustomIcon" value="palletBricksLoose"/>
+			<property name="CustomIconTint" value="966E51"/>
+			<property name="TintColor" value="966E51"/>
+			<property name="SortOrder2" value="0115"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksBaseRed">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0120"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksTileRed">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CustomIcon" value="palletBricksTile"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0121"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksPartial1Red">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CustomIcon" value="palletBricksPartial1"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0122"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksTopRed">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CustomIcon" value="palletBricksTop"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0123"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksPartial2Red">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CustomIcon" value="palletBricksPartial2"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0124"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBricksLooseRed">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CustomIcon" value="palletBricksLoose"/>
+			<property name="CustomIconTint" value="784750"/>
+			<property name="TintColor" value="784750"/>
+			<property name="SortOrder2" value="0125"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksBaseOrange">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0130"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksTileOrange">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="CustomIcon" value="palletBricksTile"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0131"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksPartial1Orange">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="CustomIcon" value="palletBricksPartial1"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0132"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksTopOrange">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="CustomIcon" value="palletBricksTop"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0133"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksPartial2Orange">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="CustomIcon" value="palletBricksPartial2"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0134"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBricksLooseOrange">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="CustomIcon" value="palletBricksLoose"/>
+			<property name="CustomIconTint" value="9A5B41"/>
+			<property name="TintColor" value="9A5B41"/>
+			<property name="SortOrder2" value="0135"/>
+		</block>
+
+		<block name="cbpBricksBaseRandomHelper">
+			<property name="Extends" value="palletBricksBase" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksBase"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0190"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+		<block name="cbpBricksTileRandomHelper">
+			<property name="Extends" value="palletBricksTile" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0191"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+		<block name="cbpBricksPartial1RandomHelper">
+			<property name="Extends" value="palletBricksPartial1" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksPartial1"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0192"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+		<block name="cbpBricksTopRandomHelper">
+			<property name="Extends" value="palletBricksTop" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksTop"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0193"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+		<block name="cbpBricksPartial2RandomHelper">
+			<property name="Extends" value="palletBricksPartial2" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksPartial2"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0194"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+		<block name="cbpBricksLooseRandomHelper">
+			<property name="Extends" value="palletBricksLoose" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletBricksLoose"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0195"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+		<!-- *************************************************************************
+				 PALLETS_TARPS
+		************************************************************************** -->
+		<!-- White -->
+		<block name="cbpTarpBaseWhite">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="C3C1B8"/>
+			<property name="TintColor" value="C3C1B8"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletsTarpHalfPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceRockSmall" count="10,30" prob="0.2" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceCrushedSand" count="10,30" prob="0.2" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceClayLump" count="10,30" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceCobblestones" count="10,30" prob="0.2" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0200"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpTarpBaseBrown">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="766D64"/>
+			<property name="TintColor" value="766D64"/>
+			<property name="SortOrder2" value="0201"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpTarpBaseRed">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="985C63"/>
+			<property name="TintColor" value="985C63"/>
+			<property name="SortOrder2" value="0202"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpTarpBaseOrange">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="977B51"/>
+			<property name="TintColor" value="977B51"/>
+			<property name="SortOrder2" value="0203"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpTarpBaseYellow">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="9A9A68"/>
+			<property name="TintColor" value="9A9A68"/>
+			<property name="SortOrder2" value="0204"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpTarpBaseGreen">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="5B7657"/>
+			<property name="TintColor" value="5B7657"/>
+			<property name="SortOrder2" value="0205"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpTarpBaseBlue">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="4F6C7A"/>
+			<property name="TintColor" value="4F6C7A"/>
+			<property name="SortOrder2" value="0206"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpTarpBasePurple">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="6E5F7A"/>
+			<property name="TintColor" value="6E5F7A"/>
+			<property name="SortOrder2" value="0207"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpTarpBaseGrey">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="SortOrder2" value="0208"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpTarpBaseBlack">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="505050"/>
+			<property name="TintColor" value="505050"/>
+			<property name="SortOrder2" value="0209"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpTarpBasePink">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="867185"/>
+			<property name="TintColor" value="867185"/>
+			<property name="SortOrder2" value="0210"/>
+		</block>
+
+		<!-- Army Green -->
+		<block name="cbpTarpBaseArmyGreen">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="445245"/>
+			<property name="TintColor" value="445245"/>
+			<property name="SortOrder2" value="0211"/>
+		</block>
+
+		<block name="cbpTarpBaseRandomHelper">
+			<property name="Extends" value="palletTarpBaseWhite" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletTarpBaseWhite"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="SortOrder2" value="0213"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+
+			<!-- *** PALLETS_TARP_TILE -->
+		<!-- White -->
+		<block name="cbpTarpTileWhite">
+			<property name="Extends" value="palletTarpBaseWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="C3C1B8"/>
+			<property name="TintColor" value="C3C1B8"/>
+			<property name="Model" value="Entities/Industrial/palletsTarpFullPrefab"/>
+			<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0300"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpTarpTileBrown">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="766D64"/>
+			<property name="TintColor" value="766D64"/>
+			<property name="SortOrder2" value="0301"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpTarpTileRed">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="985C63"/>
+			<property name="TintColor" value="985C63"/>
+			<property name="SortOrder2" value="0302"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpTarpTileOrange">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="977B51"/>
+			<property name="TintColor" value="977B51"/>
+			<property name="SortOrder2" value="0303"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpTarpTileYellow">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="9A9A68"/>
+			<property name="TintColor" value="9A9A68"/>
+			<property name="SortOrder2" value="0304"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpTarpTileGreen">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="5B7657"/>
+			<property name="TintColor" value="5B7657"/>
+			<property name="SortOrder2" value="0305"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpTarpTileBlue">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="4F6C7A"/>
+			<property name="TintColor" value="4F6C7A"/>
+			<property name="SortOrder2" value="0306"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpTarpTilePurple">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="6E5F7A"/>
+			<property name="TintColor" value="6E5F7A"/>
+			<property name="SortOrder2" value="0307"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpTarpTileGrey">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="SortOrder2" value="0308"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpTarpTileBlack">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="505050"/>
+			<property name="TintColor" value="505050"/>
+			<property name="SortOrder2" value="0309"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpTarpTilePink">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="867185"/>
+			<property name="TintColor" value="867185"/>
+			<property name="SortOrder2" value="0310"/>
+		</block>
+
+		<!-- Army Green -->
+		<block name="cbpTarpTileArmyGreen">
+			<property name="Extends" value="palletTarpTileWhite"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="445245"/>
+			<property name="TintColor" value="445245"/>
+			<property name="SortOrder2" value="0311"/>
+		</block>
+
+		<block name="cbpTarpTileRandomHelper">
+			<property name="Extends" value="palletTarpTileWhite" param1="DescriptionKey"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="palletTarpTileWhite"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="SortOrder2" value="0313"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperIndustrial,A21_NEW"/>
+		</block>
+		<!-- *************************************************************************
+				 PALLETS_MISC_GOODS
+		************************************************************************** -->
+		<block name="cbpCompressedCardboard">
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="CustomIcon" value="palletCompressedCardboard"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/OutdoorDecor/cardboardPalletPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="139"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Weight" value="16"/>
+			<drop event="Harvest" name="resourcePaper" count="25" tag="allHarvest"/>
+			<drop event="Fall" name="resourceScrapPolymers" count="0" prob="0" stick_chance="0"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+
+		<block name="cbpCans">
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="CustomIcon" value="palletCans"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/OutdoorDecor/canPalletPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="139"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Weight" value="16"/>
+			<drop event="Harvest" name="resourceScrapIron" count="25" tag="allHarvest"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0401"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+
+		<block name="cbpEmpty">
+			<property name="Extends" value="woodWeakNoUpgradeMaster" param1="Group"/>
+			<property name="CustomIcon" value="palletEmpty"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletsWoodSinglePrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0402"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+
+		<block name="cbpEmptyStack">
+			<property name="Extends" value="woodNoUpgradeMaster" param1="Group"/>
+			<property name="CustomIcon" value="palletEmptyStack"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletsWoodStackPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0403"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor"/>
+		</block>
+		<!-- *************************************************************************
+				 PALLETS_MILITARY_AMMO_CANS
+		************************************************************************** -->
+		<block name="cbpCartonMilitaryBase">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="palletCartonMilitaryBase"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletCartonMilitaryBasePrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0500"/>
+			<property name="FilterTags" value="MC_building,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpCartonMilitaryCap">
+			<property name="Extends" value="palletCartonMilitaryBase"/>
+			<property name="CustomIcon" value="palletCartonMilitaryCap"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletCartonMilitaryCapPrefab"/>
+			<property name="SortOrder2" value="0501"/>
+		</block>
+
+		<block name="cbpCartonMilitaryTile">
+			<property name="Extends" value="palletCartonMilitaryBase"/>
+			<property name="CustomIcon" value="palletCartonMilitaryTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletCartonMilitaryTilePrefab"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="SortOrder2" value="0502"/>
+		</block>
+
+		<block name="cbpCartonMilitaryTileCovered">
+			<property name="Extends" value="palletCartonMilitaryBase"/>
+			<property name="CustomIcon" value="palletCartonMilitaryTileCovered"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletCartonMilitaryTileCoveredPrefab"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="2,4" tag="allHarvest"/>
+			<property name="SortOrder2" value="0503"/>
+		</block>
+		<!-- *************************************************************************
+				 Cow_Feed
+		************************************************************************** -->
+		<block name="cbpBagCowFeedBaseFull">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletBagCowFeedBaseFull"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="plantedCorn1" count="3,5" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagCowFeedTile">
+			<property name="Extends" value="palletBagCowFeedBaseFull"/>
+			<property name="CustomIcon" value="palletBagCowFeedTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="3,5" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+
+		<block name="cbpBagCowFeedBaseMed">
+			<property name="Extends" value="palletBagCowFeedBaseFull"/>
+			<property name="CustomIcon" value="palletBagCowFeedBaseMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+
+		<block name="cbpBagCowFeedCapMed">
+			<property name="Extends" value="palletBagCowFeedBaseMed"/>
+			<property name="CustomIcon" value="palletBagCowFeedCapMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="2,3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+
+		<block name="cbpBagCowFeedCapSml">
+			<property name="Extends" value="palletBagCowFeedBaseMed"/>
+			<property name="CustomIcon" value="palletBagCowFeedCapSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="1,2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0604"/>
+		</block>
+
+		<block name="cbpBagCowFeedSingleBent">
+			<property name="Extends" value="palletBagCowFeedBaseMed"/>
+			<property name="CustomIcon" value="palletBagCowFeedSingleBent"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0605"/>
+		</block>
+
+		<block name="cbpBagCowFeedSingleFlat">
+			<property name="Extends" value="palletBagCowFeedBaseMed"/>
+			<property name="CustomIcon" value="palletBagCowFeedSingleFlat"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagCowFeedSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="plantedCorn1" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0606"/>
+		</block> 
+		<!-- *************************************************************************
+				 Flour
+		************************************************************************** -->
+		<block name="cbpBagFlourBaseFull">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletBagFlourBaseFull"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="foodCornMeal" count="3,5" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0700"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagFlourTile">
+			<property name="Extends" value="palletBagFlourBaseFull"/>
+			<property name="CustomIcon" value="palletBagFlourTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="3,5" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0701"/>
+		</block>
+
+		<block name="cbpBagFlourBaseMed">
+			<property name="Extends" value="palletBagFlourBaseFull"/>
+			<property name="CustomIcon" value="palletBagFlourBaseMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0702"/>
+		</block>
+
+		<block name="cbpBagFlourCapMed">
+			<property name="Extends" value="palletBagFlourBaseMed"/>
+			<property name="CustomIcon" value="palletBagFlourCapMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="2,3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0703"/>
+		</block>
+
+		<block name="cbpBagFlourCapSml">
+			<property name="Extends" value="palletBagFlourBaseMed"/>
+			<property name="CustomIcon" value="palletBagFlourCapSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="1,2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0704"/>
+		</block>
+
+		<block name="cbpBagFlourSingleBent">
+			<property name="Extends" value="palletBagFlourBaseMed"/>
+			<property name="CustomIcon" value="palletBagFlourSingleBent"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0705"/>
+		</block>
+
+		<block name="cbpBagFlourSingleFlat">
+			<property name="Extends" value="palletBagFlourBaseMed"/>
+			<property name="CustomIcon" value="palletBagFlourSingleFlat"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFlourSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="foodCornMeal" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0706"/>
+		</block>
+		<!-- *************************************************************************
+				 Sand
+		************************************************************************** -->
+		<block name="cbpBagSandBaseFull">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletBagSandBaseFull"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceCrushedSand" count="30,40" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0800"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagSandTile">
+			<property name="Extends" value="palletBagSandBaseFull"/>
+			<property name="CustomIcon" value="palletBagSandTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0801"/>
+		</block>
+
+		<block name="cbpBagSandBaseMed">
+			<property name="Extends" value="palletBagSandBaseFull"/>
+			<property name="CustomIcon" value="palletBagSandBaseMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0802"/>
+		</block>
+
+		<block name="cbpBagSandCapMed">
+			<property name="Extends" value="palletBagSandBaseMed"/>
+			<property name="CustomIcon" value="palletBagSandCapMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0803"/>
+		</block>
+
+		<block name="cbpBagSandCapSml">
+			<property name="Extends" value="palletBagSandBaseMed"/>
+			<property name="CustomIcon" value="palletBagSandCapSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0804"/>
+		</block>
+
+		<block name="cbpBagSandSingleBent">
+			<property name="Extends" value="palletBagSandBaseMed"/>
+			<property name="CustomIcon" value="palletBagSandSingleBent"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0805"/>
+		</block>
+
+		<block name="cbpBagSandSingleFlat">
+			<property name="Extends" value="palletBagSandBaseMed"/>
+			<property name="CustomIcon" value="palletBagSandSingleFlat"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagSandSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCrushedSand" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0806"/>
+		</block>
+		<!-- *************************************************************************
+				 Concrete
+		************************************************************************** -->
+		<block name="cbpBagConcreteBaseFull">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletBagConcreteBaseFull"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceCement" count="30,40" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0900"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagConcreteTile">
+			<property name="Extends" value="palletBagConcreteBaseFull"/>
+			<property name="CustomIcon" value="palletBagConcreteTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0901"/>
+		</block>
+
+		<block name="cbpBagConcreteBaseMed">
+			<property name="Extends" value="palletBagConcreteBaseFull"/>
+			<property name="CustomIcon" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0902"/>
+		</block>
+
+		<block name="cbpBagConcreteCapMed">
+			<property name="Extends" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIcon" value="palletBagConcreteCapMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0903"/>
+		</block>
+
+		<block name="cbpBagConcreteBaseSml">
+			<property name="Extends" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIcon" value="palletBagConcreteBaseSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteBaseSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0904"/>
+		</block>
+
+		<block name="cbpBagConcreteCapSml">
+			<property name="Extends" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIcon" value="palletBagConcreteCapSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0905"/>
+		</block>
+
+		<block name="cbpBagConcreteSingleBent">
+			<property name="Extends" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIcon" value="palletBagConcreteSingleBent"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0906"/>
+		</block>
+
+		<block name="cbpBagConcreteSingleFlat">
+			<property name="Extends" value="palletBagConcreteBaseMed"/>
+			<property name="CustomIcon" value="palletBagConcreteSingleFlat"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagConcreteSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCement" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0907"/>
+		</block>
+		<!-- *************************************************************************
+				 Fertilizer
+		************************************************************************** -->
+		<block name="cbpBagFertilizerBaseFull">
+			<property name="Material" value="Msandstone"/>
+			<property name="CustomIcon" value="palletBagFertilizerBaseFull"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="30,40" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="1000"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagFertilizerTile">
+			<property name="Extends" value="palletBagFertilizerBaseFull"/>
+			<property name="CustomIcon" value="palletBagFertilizerTile"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1001"/>
+		</block>
+
+		<block name="cbpBagFertilizerBaseMed">
+			<property name="Extends" value="palletBagFertilizerBaseFull"/>
+			<property name="CustomIcon" value="palletBagFertilizerBaseMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1002"/>
+		</block>
+
+		<block name="cbpBagFertilizerCapMed">
+			<property name="Extends" value="palletBagFertilizerBaseMed"/>
+			<property name="CustomIcon" value="palletBagFertilizerCapMed"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1003"/>
+		</block>
+
+		<block name="cbpBagFertilizerCapSml">
+			<property name="Extends" value="palletBagFertilizerBaseMed"/>
+			<property name="CustomIcon" value="palletBagFertilizerCapSml"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1004"/>
+		</block>
+
+		<block name="cbpBagFertilizerSingleBent">
+			<property name="Extends" value="palletBagFertilizerBaseMed"/>
+			<property name="CustomIcon" value="palletBagFertilizerSingleBent"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1005"/>
+		</block>
+
+		<block name="cbpBagFertilizerSingleFlat">
+			<property name="Extends" value="palletBagFertilizerBaseMed"/>
+			<property name="CustomIcon" value="palletBagFertilizerSingleFlat"/>
+			<property name="CustomIconTint" value="FF8080"/>
+			<property name="Model" value="Entities/Industrial/palletBagFertilizerSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1006"/>
+		</block>
+		<!-- *************************************************************************
+				 Blank_Bags
+		************************************************************************** -->
+		<!-- Blank_Bags_White -->
+		<block name="cbpBagBlankBaseFullWhite">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileWhite">
+			<property name="Extends" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedWhite">
+			<property name="Extends" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedWhite">
+			<property name="Extends" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlWhite">
+			<property name="Extends" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentWhite">
+			<property name="Extends" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatWhite">
+			<property name="Extends" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<!-- Blank_Bags_Brown -->
+		<block name="cbpBagBlankBaseFullBrown">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0100"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileBrown">
+			<property name="Extends" value="palletBagBlankBaseFullBrown"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedBrown">
+			<property name="Extends" value="palletBagBlankBaseFullBrown"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedBrown">
+			<property name="Extends" value="palletBagBlankBaseMedBrown"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlBrown">
+			<property name="Extends" value="palletBagBlankBaseMedBrown"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentBrown">
+			<property name="Extends" value="palletBagBlankBaseMedBrown"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatBrown">
+			<property name="Extends" value="palletBagBlankBaseMedBrown"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="72685A"/>
+			<property name="TintColor" value="72685A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0106"/>
+		</block>
+
+		<!-- Blank_Bags_Red -->
+		<block name="cbpBagBlankBaseFullRed">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0200"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileRed">
+			<property name="Extends" value="palletBagBlankBaseFullRed"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0201"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedRed">
+			<property name="Extends" value="palletBagBlankBaseFullRed"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0202"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedRed">
+			<property name="Extends" value="palletBagBlankBaseMedRed"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0203"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlRed">
+			<property name="Extends" value="palletBagBlankBaseMedRed"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0204"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentRed">
+			<property name="Extends" value="palletBagBlankBaseMedRed"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0205"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatRed">
+			<property name="Extends" value="palletBagBlankBaseMedRed"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="6E575B"/>
+			<property name="TintColor" value="6E575B"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0206"/>
+		</block>
+
+		<!-- Blank_Bags_Orange -->
+		<block name="cbpBagBlankBaseFullOrange">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0300"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileOrange">
+			<property name="Extends" value="palletBagBlankBaseFullOrange"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0301"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedOrange">
+			<property name="Extends" value="palletBagBlankBaseFullOrange"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0302"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedOrange">
+			<property name="Extends" value="palletBagBlankBaseMedOrange"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0303"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlOrange">
+			<property name="Extends" value="palletBagBlankBaseMedOrange"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0304"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentOrange">
+			<property name="Extends" value="palletBagBlankBaseMedOrange"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0305"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatOrange">
+			<property name="Extends" value="palletBagBlankBaseMedOrange"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="8A7963"/>
+			<property name="TintColor" value="8A7963"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0306"/>
+		</block>
+
+		<!-- Blank_Bags_Yellow -->
+		<block name="cbpBagBlankBaseFullYellow">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileYellow">
+			<property name="Extends" value="palletBagBlankBaseFullYellow"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0401"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedYellow">
+			<property name="Extends" value="palletBagBlankBaseFullYellow"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0402"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedYellow">
+			<property name="Extends" value="palletBagBlankBaseMedYellow"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlYellow">
+			<property name="Extends" value="palletBagBlankBaseMedYellow"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0404"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentYellow">
+			<property name="Extends" value="palletBagBlankBaseMedYellow"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0405"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatYellow">
+			<property name="Extends" value="palletBagBlankBaseMedYellow"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="747360"/>
+			<property name="TintColor" value="747360"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0406"/>
+		</block>
+
+		<!-- Blank_Bags_Green -->
+		<block name="cbpBagBlankBaseFullGreen">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0500"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileGreen">
+			<property name="Extends" value="palletBagBlankBaseFullGreen"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0501"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedGreen">
+			<property name="Extends" value="palletBagBlankBaseFullGreen"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0502"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedGreen">
+			<property name="Extends" value="palletBagBlankBaseMedGreen"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0503"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlGreen">
+			<property name="Extends" value="palletBagBlankBaseMedGreen"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0504"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentGreen">
+			<property name="Extends" value="palletBagBlankBaseMedGreen"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0505"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatGreen">
+			<property name="Extends" value="palletBagBlankBaseMedGreen"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="5D6F58"/>
+			<property name="TintColor" value="5D6F58"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0506"/>
+		</block>
+
+		<!-- Blank_Bags_Blue -->
+		<block name="cbpBagBlankBaseFullBlue">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileBlue">
+			<property name="Extends" value="palletBagBlankBaseFullBlue"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedBlue">
+			<property name="Extends" value="palletBagBlankBaseFullBlue"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedBlue">
+			<property name="Extends" value="palletBagBlankBaseMedBlue"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlBlue">
+			<property name="Extends" value="palletBagBlankBaseMedBlue"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0604"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentBlue">
+			<property name="Extends" value="palletBagBlankBaseMedBlue"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0605"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatBlue">
+			<property name="Extends" value="palletBagBlankBaseMedBlue"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="667178"/>
+			<property name="TintColor" value="667178"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0606"/>
+		</block>
+
+		<!-- Blank_Bags_Purple -->
+		<block name="cbpBagBlankBaseFullPurple">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0700"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTilePurple">
+			<property name="Extends" value="palletBagBlankBaseFullPurple"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0701"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedPurple">
+			<property name="Extends" value="palletBagBlankBaseFullPurple"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0702"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedPurple">
+			<property name="Extends" value="palletBagBlankBaseMedPurple"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0703"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlPurple">
+			<property name="Extends" value="palletBagBlankBaseMedPurple"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0704"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentPurple">
+			<property name="Extends" value="palletBagBlankBaseMedPurple"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0705"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatPurple">
+			<property name="Extends" value="palletBagBlankBaseMedPurple"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="5F5C65"/>
+			<property name="TintColor" value="5F5C65"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0706"/>
+		</block>
+
+		<!-- Blank_Bags_Grey -->
+		<block name="cbpBagBlankBaseFullGrey">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0800"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileGrey">
+			<property name="Extends" value="palletBagBlankBaseFullGrey"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0801"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedGrey">
+			<property name="Extends" value="palletBagBlankBaseFullGrey"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0802"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedGrey">
+			<property name="Extends" value="palletBagBlankBaseMedGrey"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0803"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlGrey">
+			<property name="Extends" value="palletBagBlankBaseMedGrey"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0804"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentGrey">
+			<property name="Extends" value="palletBagBlankBaseMedGrey"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0805"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatGrey">
+			<property name="Extends" value="palletBagBlankBaseMedGrey"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0806"/>
+		</block>
+
+		<!-- Blank_Bags_Black -->
+		<block name="cbpBagBlankBaseFullBlack">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceCoal" count="5,8" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="0900"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileBlack">
+			<property name="Extends" value="palletBagBlankBaseFullBlack"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="5,8" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0901"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedBlack">
+			<property name="Extends" value="palletBagBlankBaseFullBlack"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="3,6" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0902"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedBlack">
+			<property name="Extends" value="palletBagBlankBaseMedBlack"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="3,6" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0903"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlBlack">
+			<property name="Extends" value="palletBagBlankBaseMedBlack"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="0904"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentBlack">
+			<property name="Extends" value="palletBagBlankBaseMedBlack"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="1,2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0905"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatBlack">
+			<property name="Extends" value="palletBagBlankBaseMedBlack"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceCoal" count="1,2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="0906"/>
+		</block>
+
+		<!-- Blank_Bags_Pink -->
+		<block name="cbpBagBlankBaseFullPink">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="1000"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTilePink">
+			<property name="Extends" value="palletBagBlankBaseFullPink"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1001"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedPink">
+			<property name="Extends" value="palletBagBlankBaseFullPink"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1002"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedPink">
+			<property name="Extends" value="palletBagBlankBaseMedPink"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1003"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlPink">
+			<property name="Extends" value="palletBagBlankBaseMedPink"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1004"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentPink">
+			<property name="Extends" value="palletBagBlankBaseMedPink"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1005"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatPink">
+			<property name="Extends" value="palletBagBlankBaseMedPink"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="8B7A8C"/>
+			<property name="TintColor" value="8B7A8C"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1006"/>
+		</block>
+
+		<!-- Blank_Bags_ArmyGreen -->
+		<block name="cbpBagBlankBaseFullArmyGreen">
+			<property name="CustomIcon" value="palletBagBlankBaseFullWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Material" value="Msandstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseFullPrefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="19"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="200"/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B279"/>
+			<property name="SortOrder2" value="1100"/>
+			<property name="FilterTags" value="MC_building,SC_commercial,SC_construction,SC_decor,A21_NEW"/>
+		</block>
+
+		<block name="cbpBagBlankTileArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseFullArmyGreen"/>
+			<property name="CustomIcon" value="palletBagBlankTileWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankTilePrefab"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="30,40" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1101"/>
+		</block>
+
+		<block name="cbpBagBlankBaseMedArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseFullArmyGreen"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="palletBagBlankBaseMedWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankBaseMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceWood" count="3" tag="allHarvest"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1102"/>
+		</block>
+
+		<block name="cbpBagBlankCapMedArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseMedArmyGreen"/>
+			<property name="CustomIcon" value="palletBagBlankCapMedWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapMedPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="15,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1103"/>
+		</block>
+
+		<block name="cbpBagBlankCapSmlArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseMedArmyGreen"/>
+			<property name="CustomIcon" value="palletBagBlankCapSmlWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankCapSmlPrefab"/>
+			<property name="MaxDamage" value="100"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="6,12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder2" value="1104"/>
+		</block>
+
+		<block name="cbpBagBlankSingleBentArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseMedArmyGreen"/>
+			<property name="CustomIcon" value="palletBagBlankSingleBentWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleBentPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1105"/>
+		</block>
+
+		<block name="cbpBagBlankSingleFlatArmyGreen">
+			<property name="Extends" value="palletBagBlankBaseMedArmyGreen"/>
+			<property name="CustomIcon" value="palletBagBlankSingleFlatWhite"/>
+			<property name="CustomIconTint" value="48574A"/>
+			<property name="TintColor" value="48574A"/>
+			<property name="Model" value="Entities/Industrial/palletBagBlankSingleFlatPrefab"/>
+			<property name="MaxDamage" value="50"/>
+			<dropextendsoff/>
+			<drop event="Harvest" name="resourceClayLump" count="2,4" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="SortOrder2" value="1106"/>
+		</block>
+		
 		
 		<!-- *************************************************************************
             Movie Poster Helpers
@@ -1271,6 +3847,497 @@
 			<property name="GndAlign" value="0"/>
 		</block>
 		<!-- *** CHERRY_BLOSSOM -->
+		
+			<!-- *************************************************************************
+						 POTTED_HOUSE_PLANT_TALL_OFFSET 
+			************************************************************************** -->
+		<!-- White -->
+		<block name="cbpHouseTallPottedWhiteOffset">
+			<property name="Extends" value="treePlant02"/>
+			<property name="GndAlign" value="0"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/plantHouseTallPottedPrefab"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="SortOrder2" value="0600"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpHouseTallPottedBrownOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpHouseTallPottedRedOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpHouseTallPottedOrangeOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpHouseTallPottedYellowOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="SortOrder2" value="0604"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpHouseTallPottedGreenOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="SortOrder2" value="0605"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpHouseTallPottedBlueOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="SortOrder2" value="0606"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpHouseTallPottedPurpleOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="SortOrder2" value="0607"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpHouseTallPottedGreyOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="SortOrder2" value="0608"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpHouseTallPottedBlackOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="SortOrder2" value="0609"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpHouseTallPottedPinkOffset">
+			<property name="Extends" value="plantHouseTallPottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="SortOrder2" value="0610"/>
+		</block>
+		<!-- *************************************************************************
+				 POTTED_ALOE OFFSET
+		************************************************************************** -->		
+		<!-- White -->
+		<block name="cbpAloePottedWhiteOffset">
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="736452"/>
+			<property name="Extends" value="treePlant02"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="Model" value="Entities/Plants/plantAloePottedPrefab"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpAloePottedBrownOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="736452"/>
+			<property name="TintColor" value="736452"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpAloePottedRedOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="9C7A7A"/>
+			<property name="TintColor" value="9C7A7A"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpAloePottedOrangeOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpAloePottedYellowOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="B7B690"/>
+			<property name="TintColor" value="B7B690"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpAloePottedGreenOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="A4B790"/>
+			<property name="TintColor" value="A4B790"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpAloePottedBlueOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="99A6AB"/>
+			<property name="TintColor" value="99A6AB"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpAloePottedPurpleOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="97939C"/>
+			<property name="TintColor" value="97939C"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpAloePottedGreyOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpAloePottedPinkOffset">
+			<property name="Extends" value="plantAloePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CustomIcon" value="plantAloePottedWhite"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		<!-- *************************************************************************
+				 POTTED_HOUSE_PLANT OFFSET
+		************************************************************************** --> 		
+		<!-- White -->
+		<block name="cbpHousePottedWhiteOffset">
+			<property name="Extends" value="treePlant02"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/plantHousePottedPrefab"/>
+			<property name="SortOrder2" value="0200"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpHousePottedBrownOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="SortOrder2" value="0201"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpHousePottedRedOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="SortOrder2" value="0202"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpHousePottedOrangeOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0203"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpHousePottedYellowOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="SortOrder2" value="0204"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpHousePottedGreenOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="SortOrder2" value="0205"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpHousePottedBlueOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="SortOrder2" value="0206"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpHousePottedPurpleOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="SortOrder2" value="0207"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpHousePottedGreyOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="SortOrder2" value="0208"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpHousePottedBlackOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="SortOrder2" value="0209"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpHousePottedPinkOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="SortOrder2" value="0210"/>
+		</block>
+
+		<!-- *************************************************************************
+				 CHERRY_BLOSSOM OFFSET
+		************************************************************************** -->
+		<!-- White -->
+		<block name="cbpCherryBlossomWhiteOffset">
+			<property name="Extends" value="treePlant02"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/plantCherryBlossomPrefab"/>
+			<property name="SortOrder2" value="0400"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpCherryBlossomBrownOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="TintColor" value="736859"/>
+			<property name="SortOrder2" value="0401"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpCherryBlossomRedOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="SortOrder2" value="0402"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpCherryBlossomOrangeOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpCherryBlossomYellowOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="SortOrder2" value="0404"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpCherryBlossomGreenOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="SortOrder2" value="0405"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpCherryBlossomBlueOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="TintColor" value="8D9EA4"/>
+			<property name="SortOrder2" value="0406"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpCherryBlossomPurpleOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="SortOrder2" value="0407"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpCherryBlossomGreyOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="TintColor" value="878787"/>
+			<property name="SortOrder2" value="0408"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpCherryBlossomBlackOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="TintColor" value="464646"/>
+			<property name="SortOrder2" value="0409"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpCherryBlossomPinkOffset">
+			<property name="Extends" value="plantCherryBlossomWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,-.5,0"/>
+			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
+			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="TintColor" value="B5A6B4"/>
+			<property name="SortOrder2" value="0410"/>
+		</block>
 
 					<!-- ***CBP SLEEPER_BLOCKS -->
 		<block name="cbpSleeperSit">

@@ -1049,7 +1049,83 @@
              <block name="cbpSpawnTraderHugh" prob=".20"/>
 			 <block name="cbpSpawnTraderRekt" prob=".20"/>
           </placeholder>
-		
+		  
+		  <!-- *************************************************************
+            Pallets - Randomized BRICK PALLETS.
+        ************************************************************** -->
+		 <placeholder name="cbpBricksBaseRandomHelper">
+		<block name="cbpBricksBase"/>
+		<block name="cbpBricksBaseBrown"/>
+		<block name="cbpBricksBaseRed"/>
+		<block name="cbpBricksBaseOrange"/>
+	</placeholder>
+
+	<placeholder name="cbpBricksTileRandomHelper">
+		<block name="cbpBricksTile"/>
+		<block name="cbpBricksTileBrown"/>
+		<block name="cbpBricksTileRed"/>
+		<block name="cbpBricksTileOrange"/>
+	</placeholder>
+
+	<placeholder name="cbpBricksPartial1RandomHelper">
+		<block name="cbpBricksPartial1"/>
+		<block name="cbpBricksPartial1Brown"/>
+		<block name="cbpBricksPartial1Red"/>
+		<block name="cbpBricksPartial1Orange"/>
+	</placeholder>
+
+	<placeholder name="cbpBricksTopRandomHelper">
+		<block name="cbpBricksTop"/>
+		<block name="cbpBricksTopBrown"/>
+		<block name="cbpBricksTopRed"/>
+		<block name="cbpBricksTopOrange"/>
+	</placeholder>
+
+	<placeholder name="cbpBricksPartial2RandomHelper">
+		<block name="cbpBricksPartial2"/>
+		<block name="cbpBricksPartial2Brown"/>
+		<block name="cbpBricksPartial2Red"/>
+		<block name="cbpBricksPartial2Orange"/>
+	</placeholder>
+
+	<placeholder name="cbpBricksLooseRandomHelper">
+		<block name="cbpBricksLoose"/>
+		<block name="cbpBricksLooseBrown"/>
+		<block name="cbpBricksLooseRed"/>
+		<block name="cbpBricksLooseOrange"/>
+	</placeholder>
+		<!-- *************************************************************
+            Pallets - Randomized TARP PALLETS.
+        ************************************************************** -->
+		<placeholder name="cbpTarpBaseRandomHelper">
+		<block name="cbpTarpBaseWhite"/>
+		<block name="cbpTarpBaseBrown"/>
+		<block name="cbpTarpBaseRed"/>
+		<block name="cbpTarpBaseOrange"/>
+		<block name="cbpTarpBaseYellow"/>
+		<block name="cbpTarpBaseGreen"/>
+		<block name="cbpTarpBaseBlue"/>
+		<block name="cbpTarpBasePurple"/>
+		<block name="cbpTarpBaseGrey"/>
+		<block name="cbpTarpBaseBlack"/>
+		<block name="cbpTarpBasePink"/>
+		<block name="cbpTarpBaseArmyGreen"/>
+	</placeholder>
+
+	<placeholder name="cbpTarpTileRandomHelper">
+		<block name="cbpTarpTileWhite"/>
+		<block name="cbpTarpTileBrown"/>
+		<block name="cbpTarpTileRed"/>
+		<block name="cbpTarpTileOrange"/>
+		<block name="cbpTarpTileYellow"/>
+		<block name="cbpTarpTileGreen"/>
+		<block name="cbpTarpTileBlue"/>
+		<block name="cbpTarpTilePurple"/>
+		<block name="cbpTarpTileGrey"/>
+		<block name="cbpTarpTileBlack"/>
+		<block name="cbpTarpTilePink"/>
+		<block name="cbpTarpTileArmyGreen"/>
+	</placeholder>
 		
     </append>
 </blockplaceholders>
