@@ -1,6 +1,18 @@
 ﻿<blocks>
 	<append xpath="/blocks">
 		<!-- *************************************************************************
+            TerrStone: Has no zombie spawns.
+        ************************************************************************** -->
+		<block name="cbpTerrStone_no_spawn">
+			<property name="CustomIcon" value="terrStone"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Extends" value="terrStone"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+		</block>
+		
+		
+		
+		<!-- *************************************************************************
             ATM Machines
         ************************************************************************** -->
 		<block name="cbpATMEmpty">
@@ -3450,6 +3462,26 @@
             Offset Blocks - Normal blocks that are not centered in their space.
         ******************************************************************** -->
 		<!-- Coffee Maker, Left, Right -->
+		<block name="cbpHandTruck">
+			<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems"/>
+			<property name="Model" value="Entities/Commercial/handTruckPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0.4"/>
+			<property name="StabilitySupport" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceMechanicalParts" value="2"/>
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,12"/>
+			<property name="CustomIcon" value="decoHandTruck"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="B551"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
+		<!-- Coffee Maker, Left, Right -->
 		<block name="cbpCoffeeMakerLeftOffset">
 			<property name="Extends" value="cntCoffeeMaker"/>
 			<property name="CustomIcon" value="cntCoffeeMaker"/>
@@ -4338,8 +4370,91 @@
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0410"/>
 		</block>
+		
+		<!-- *************************************************************************
+				Offset Bed, Painting and TV
+		************************************************************************** -->
+		<block name="cbpendTable_2x1">
+			<property name="Extends" value="endTable"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="CustomIcon" value="endTable"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>             
 
-					<!-- ***CBP SLEEPER_BLOCKS -->
+		<block name="cbpendTableLamp_2x1">
+			<property name="Extends" value="endTableLamp"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		
+		<block name="cbppictureCanvas_01e">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Msteel"/>
+			<property name="CustomIcon" value="pictureCanvas_01e"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/pictureCanvas_01ePrefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="ModelOffset" value="-.2,0,-.2"/>
+			<property name="AllowAllRotations" value="true"/>
+		</block> 
+
+		<block name="cbpbed02_rotate">
+			<property name="Extends" value="bed02"/>
+			<property name="CustomIcon" value="bed02"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="a2adac"/>
+			<property name="ModelOffset" value="-.25,.5,.2"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Msteel"/>
+		</block> 
+
+		<block name="cbptvLargeWall3x2_rotate">
+			<property name="Extends" value="tvLargeWall3x2"/>
+			<property name="CustomIcon" value="tvLargeWall3x2"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="0,0,-.2"/>
+			<property name="AllowAllRotations" value="true"/>
+		</block>
+		
+		<block name="cbpStoreElectronicsBookShelfSpeaker2Left_rotate">
+			<property name="Extends" value="cntStoreElectronicsBookShelfSpeaker"/>
+			<property name="CustomIcon" value="cntStoreElectronicsBookShelfSpeaker"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value=".25,.5,0"/>
+			<property name="AllowAllRotations" value="true"/>
+		</block>
+
+		<block name="cbpStoreElectronicsBookShelfSpeaker2Right_rotate">
+			<property name="Extends" value="cntStoreElectronicsBookShelfSpeaker"/>
+			<property name="CustomIcon" value="cntStoreElectronicsBookShelfSpeaker"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="-.25,.5,0"/>
+			<property name="AllowAllRotations" value="true"/>
+		</block>
+		
+		<block name="cbppipeSmallCornerWallOffset">
+			<property name="Extends" value="pipeSmallCorner"/>
+			<property name="CustomIcon" value="pipeSmallCorner"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="0,.1,0"/>
+		</block>
+	
+
+		<!-- *************************************************************************
+				 CBP SLEEPER_BLOCKS
+		************************************************************************** -->  					
 		<block name="cbpSleeperSit">
 			<property name="Class" value="Sleeper"/>
 			<property name="CustomIcon" value="sleeperSit"/>
@@ -5884,8 +5999,8 @@
 			<property name="SecondaryBuffs" value="buffHazard_Slow"/>
 			<property name="SecondaryOffset" value="1,0,0"/>
 			<property name="SecondarySize" value="3,0.25,0.25"/>
-			<property name="StartSound" value="flametrap_start"/>
-			<property name="StopSound" value="flametrap_end"/>
+			<!--<property name="StartSound" value="flametrap_start"/>
+			<property name="StopSound" value="flametrap_end"/>-->
 			<property name="ItemTypeIcon" value="fire"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -5910,8 +6025,8 @@
 			<property name="SecondaryBuffs" value="buffHazard_Slow"/>
 			<property name="SecondaryOffset" value="1,0,0"/>
 			<property name="SecondarySize" value="3,0.25,0.25"/>
-			<property name="StartSound" value="flametrap_start"/>
-			<property name="StopSound" value="flametrap_end"/>
+			<!--<property name="StartSound" value="flametrap_start"/>
+			<property name="StopSound" value="flametrap_end"/>-->
 			<property name="ItemTypeIcon" value="fire"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -5920,8 +6035,8 @@
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="SortOrder1" value="B750"/>
 			<property name="SortOrder2" value="0000"/>
-		</block>     		
-		
+		</block>
+
 		<block name="cbpVomitBulbPropOffsetSide">
 			<property name="CustomIcon" value="shapeFontExclamation"/>
 			<property name="CreativeMode" value="Dev"/>
@@ -11880,6 +11995,24 @@
 			<property name="ModelOffset" value="0,0,0"/>
 			<drop event="Destroy" count="0"/>
 		</block>
+		 <!-- Animal Displays 2x1-->
+		<block name="cbpHostileAnimalBoar2x1">
+			<property name="CustomIcon" value="sleeperSnakeAnimal"/>
+			<property name="CustomIconTint" value="#00FF00"/>
+			<property name="Class" value="UpgradeRated"/>
+			<property name="UpgradeRated.ToBlock" value="cbpHostileAnimalBoar"/>
+			<property name="UpgradeRated.Rate" value="5"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="CanDecorateOnSlopes" value="true"/>
+			<property name="Model" value="Entities/Animals/Boar/AnimalBoarStandardRagdoll"/>
+			<drop event="Destroy" count="0"/>
+		</block>
 		<!-- Animal Displays -->
 		<!-- ************************************************************************* 
             SUPPORT/RADIATION BLOCKS 
@@ -13435,7 +13568,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
-			<property name="ModelOffset" value="-.47,.3,0"/>
+			<property name="ModelOffset" value="-.47,.5,.1"/>
 			<property name="AllowAllRotations" value="true"/>
 			<property name="OnlySimpleRotations" value="false"/>
 			<property name="ImposterDontBlock" value="true"/>
@@ -13851,6 +13984,59 @@
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
+		
+		<block name="cbpCompoundCrossbowProp2">
+			<!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.04,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpIronCrossbowPropWall2">
+			<!-- Weapon decor - flush with surface  -->
+			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
+			<property name="CustomIconTint" value="ff1a36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="MstainlessSteel"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Other/Items/Weapons/Ranged/IronCrossBow/ironCrossBowPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.04,0"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="22" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		
+		<block name="cbpEmptyBucket">
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CustomIconTint" value="00e6ff"/>
+		<property name="Material" value="Mbedrock"/>	
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="@:Other/Items/Crafting/Metal/IronBucketEmptyPrefab.prefab" local_scale="1.75,1.75,1.75"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="Collide" value="movement"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		<property name="WaterFlow" value="permitted" />
+	</block>
 		
 		<!-- ************************************************************************* 
            VEHICLE PROPS: Tinted
@@ -15307,7 +15493,7 @@
             <property name="Class" value="TrapDoor"/>
             <property name="DowngradeBlock" value="cbpSparklyBlockLarge"/>
             <property name="DestroyFX" value=""/>
-        </block>
+        </block>		
 		
 		<block name="cbpCampFireFlame">
 			<property name="CustomIcon" value="shapeFontExclamation"/>
@@ -15343,7 +15529,61 @@
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 		</block>
 		
-		
+		 <block name="cbpRadiationBlockParticles"> <!-- Small blue shock: offset -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Model" value="ParticleEffects/RadiatedParticlesOnMesh"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>		
+	
+	<block name="cbpMetalOnOrganicBlock"> <!-- Small blue shock: offset -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Model" value="ParticleEffects/p_impact_metal_on_organic"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+	
+	<block name="cbpSparklySmallFlame"> <!-- Small fire  -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Model" value="ParticleEffects/p_twitch_zombie_fire_left"/>
+		<property name="ModelOffset" value="0,-.5,0"/>
+	</block>
+	
+	<block name="cbpVenomAir">
+		<property name="Class" value="Mine"/>
+		<property name="Tags" value="Mine"/>
+		<property name="CustomIcon" value="shapeCube"/>
+		<property name="CustomIconTint" value="ff00f5"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Shape" value="BillboardPlant"/>
+		<property name="Mesh" value="grass"/>
+		<property name="Texture" value="1"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="ParticleName" value="ember_pile"/>
+		<property name="Collide" value="movement"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		<property name="TriggerDelay" value="0"/>
+		<property name="BuffChance" value="1"/>
+		<property name="BuffsWhenWalkedOn" value="buffRadiation03"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="1"/>
+		<property name="Explosion.BlockDamage" value="1"/>
+		<property name="Explosion.EntityDamage" value="3"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+	</block>
+	
+	<block name="cbpRadiationBlockZomLeft"> <!-- Small blue shock: offset -->
+		<property name="Extends" value="cbpSparklyBlockLarge"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Model" value="ParticleEffects/p_twitch_zombie_radiation_left"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
 		
 		
 		<!-- ************************************************************************* 
@@ -15667,6 +15907,98 @@
 			<property name="Extends" value="decoClawFootBathTub"/>
 			<property name="TintColor" value="aad3ce"/>
 		</block>
+		
+		<!-- *************************************************************************
+				 Wall Explode Stuff
+		************************************************************************** -->
+		
+		<block name="cbpRockToRubble">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="rubblePileCement"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="2"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cbphardConcreteRubble"/>
+	</block>
+				 
+	<block name="cbpRockToRubble_Mine">
+		<property name="Extends" value="cntBarrelMetalMaster"/>
+		<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+		<property name="CustomIcon" value="rubblePileCement"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property class="Explosion">
+		<property name="ParticleIndex" value="13"/>
+		<property name="RadiusBlocks" value="5"/>
+		<property name="BlockDamage" value="120"/>
+		<property name="RadiusEntities" value="5"/>
+		<property name="EntityDamage" value="5"/>
+	</property>
+	<property name="DowngradeBlock" value="cbphardConcreteRubble"/>
+</block>   
+
+	<block name="cbphardConcreteRubble">
+		<property name="Extends" value="rubblePileCement"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="CustomIcon" value="rubblePileCement"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="Material" value="MrConcrete"/>
+	</block>
+	
+	<block name="cbpOnFireOffset"> 
+		<property name="Extends" value="cbpFireBlockZomLeft"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Model" value="ParticleEffects/p_onFire"/>
+		<property name="ModelOffset" value="0,-.5,0"/>
+	</block>
+
+	<block name="cbpOnFire"> 
+		<property name="Extends" value="cbpOnFireOffset"/>
+		<property name="CustomIcon" value="shapeFontExclamation"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+	
+	<block name="cbplooseCorrugatedMetalTrapSheet">
+    <property name="Extends" value="looseCorrugatedMetalTrapCube"/>
+    <property name="Shape" value="New"/>
+    <property name="Model" value="billboard" />
+    <property name="Texture" value="603"/>
+    <property name="CustomIcon" value="shapeBillboard" />
+    <property name="CustomIconTint" value="5F4D46"/>
+    <property name="StabilitySupport" value="true"/>
+    <property name="Material" value="Mbedrock"/>
+	</block>
+	
+	<block name="cbpPipeFireHazardBlackOffset3">
+    <property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+    <property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Hazard" />
+    <property name="ParticleName" value="flame_hazard" />
+    <property name="ParticleOffset" value="-1.1,2,0.5"/>
+    <property name="DamageBuffs" value="buffBurningHazardPlayer" />
+    <property name="DamageOffset" value="0,0,0" />
+    <property name="DamageSize" value="2,1,1" />
+    <property name="SecondaryBuffs" value="MPL_HardAirDark" />
+    <property name="SecondaryOffset" value="0.5,2,0" />
+    <property name="SecondarySize" value="2,2.25,0.25" />
+    <property name="StartSound" value="flametrap_start" />
+    <property name="StopSound" value="flametrap_end" />
+    <property name="ItemTypeIcon" value="fire"/>
+    <property name="Material" value="MrConcrete"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+    <property name="ModelOffset" value="-1.1,2.5,0"/>
+    <property name="MultiBlockDim" value="2,1,1"/>
+    <property name="SortOrder1" value="B750"/>
+    <property name="SortOrder2" value="0000"/>
+</block> 
+	
 		<!-- ************************************************************************* 
             CUSTOM TREES WITH ADVANCED ROTATION  that do not cause NRE's
         ************************************************************************** -->

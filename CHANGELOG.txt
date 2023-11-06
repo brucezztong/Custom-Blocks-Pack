@@ -1,5 +1,17 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.2.001.0033 :
+* Offset handtruck [so it fits under pallets and crates etc]
+* Fixed duplicate blocks [cbpHardAirShock & cbpHardAirShockLight] was in twice
+* Added terrstone that disables zombies spawns
+* Added 16 Gravestones with game events [tfp examples]
+* Added cbpStoreElectronicsBookShelfSpeaker2Left_rotate
+* Added cbpStoreElectronicsBookShelfSpeaker2Right_rotate
+* cbpCompoundCrossbowProp2 & cbpIronCrossbowPropWall2 
+* adjusted the cbppumpshotgunprop so it was in the middle not the bottom when - placed against a wall
+* added tv, bed  and canvas can be put on 45 degree angle
+* Added blocks used for collapsing wall
+
 A21.2.001.0032 :
 * Offsets of all potted plants (to stick the potted bit underground to make it
     look like it is growing out of the ground.

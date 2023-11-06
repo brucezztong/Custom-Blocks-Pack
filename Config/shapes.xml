@@ -2,6 +2,89 @@
 
 
 	<append xpath="/shapes">
+		<!-- *************************************************************************
+            Admin Glass: Windows that are undamageable. 
+        ************************************************************************** -->
+		<!-- CLEAR -->
+		<shape name="cbpWindowStoreThreeSidedFull">
+		<property class="Admin"/>
+		<property name="Model" value="window_store_three_sided_full" />
+		<property name="Material" value="Mbedrock"/>
+		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowStoreCornerFull">
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+		
+		<!-- BULLETPROOF -->
+		<shape name="cbpWindowStoreThreeSidedBulletproofFull" tag="Bulletproof">
+			<property name="ShapeMenu" value="false" />
+			<property class="Admin"/>
+			<!-- <property name="Path" value="solid" /> -->
+			<property name="Model" value="window_store_three_sided_full" />
+			<property name="Material" value="Mbedrock"/>
+			<!-- <property name="Place" value="TowardsPlacerInverted" /> -->
+			<property name="CustomIcon" value="shapeWindowStoreThreeSidedBulletproofFull" />
+			<property name="ShapeCategories" value="Windows" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="UseGlobalUV" value=",DDLDDDL" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+			<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+			<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+			<drop event="Destroy" count="0" />
+			<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+			<property name="WaterFlow" value="T,B,N,S,E," />
+		</shape>
+		
+		<shape name="cbpWindowStoreCornerBulletproofFull" tag="Bulletproof">
+		<property name="ShapeMenu" value="false" />
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerBulletproofFull" />
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,333" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+		
 
 		<!-- *************************************************************************
             WINDOW SHAPES: Windows that are waterproof. No water leakage

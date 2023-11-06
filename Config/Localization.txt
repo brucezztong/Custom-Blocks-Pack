@@ -941,5 +941,11 @@ cbpwoodPlanksStack,blocks,block,,,Wood Plank Stack,,Holzbohlenstapel,Pila de tab
 cbpdryWallStack,blocks,block,,,Drywall Stack,,Gipskartonstapel,Pila de planchas de yeso,Pile de cloisons,Catasta di cartongesso,乾式壁の束,석고판 무더기,Stos płyt karton-gips,Pilha de gesso cartonado,Стопка гипсокартона,Alçı Panel Yığını,石膏板堆,石牆堆
 cbpmetalPipeStack,blocks,block,,,Metal Pipe Stack,,Metallrohrstapel,Pila de tubos de metal,Pile de tuyaux en métal,Catasta di tubi metallici,金属パイプの束,금속 파이프 무더기,Stos metalowych rur,Pilha de canos de metal,Пачка металлических труб,Metal Boru Yığını,金属管堆,金屬管堆
 cbpmetalPipeStackLoose,blocks,block,,,"Metal Pipe Stack, Loose",,Metallrohrstapel – lose,Pila de tubos de metal suelta,"Pile de tuyaux en métal, en vrac",Catasta di tubi metallici allentati,金属パイプの束（ゆるゆる）,"금속 파이프 무더기, 느슨함","Stos metalowych rur, luzem","Pilha de canos de metal, solta",Пачка неплотных металлических труб,"Metal Boru Yığını, Gevşek",金属管堆，松散,金屬管堆，鬆散
+cbpendTable_2x1,blocks,block,,,End Table 2x1
+cbpendTableLamp_2x1,blocks,block,,,End Table Lamp 2x1
+cbppictureCanvas_01e,blocks,block,,,Picture Canvas 01e
+cbpbed02_rotate,blocks,block,,,Queen Bed Angled
+cbptvLargeWall3x2_rotate,blocks,block,,,TV LArge Wall 3x2 Angled
+cbppipeSmallCornerWallOffset,blocks,block,,,Pipe Small Corner Wall Offset
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 
