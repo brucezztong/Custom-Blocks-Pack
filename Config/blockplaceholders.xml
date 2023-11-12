@@ -15,6 +15,61 @@
             <block name="cbpATMEmpty" prob=".4"/>
             <block name="cntATMSecure" prob=".1"/>
         </placeholder>
+		
+		<!-- *************************************************************
+            Trash Rolling Random Helper
+        ************************************************************** -->		
+		<placeholder name="cbpBinTrashRollingRandomHelper">
+			<block name="cntbinTrashRollingWhite" prob=".5"/>
+            <block name="cntbinTrashRollingBrown" prob=".1"/>
+			<block name="cntbinTrashRollingRed" prob=".1"/>
+			<block name="cntbinTrashRollingOrange" prob=".1"/>
+            <block name="cntbinTrashRollingYellow" prob=".1"/>
+			<block name="cntbinTrashRollingGreen" prob=".1"/>
+            <block name="cntbinTrashRollingBlue" prob=".05"/>
+			<block name="cntbinTrashRollingGrey" prob=".05"/>
+		</placeholder>
+		
+		<!-- *************************************************************
+            Loot Random Helper: In place for wasteland,forest,desert,street,house lootrandomhelper
+        ************************************************************** -->		
+		<placeholder name="cbpAllPileRandomHelper">
+			<block name="cntTrashPile01" prob=".5"/>
+            <block name="cntTrashPile02" prob=".1"/>
+			<block name="cntTrashPile03" prob=".1"/>
+			<block name="cntTrashPile04" prob=".1"/>
+            <block name="cntTrashPile05" prob=".1"/>
+			<block name="cntTrashPile06" prob=".1"/>
+            <block name="cntTrashPile07" prob=".05"/>
+			<block name="cntTrashPile08" prob=".05"/>
+			<block name="cntTrashPile09" prob=".5"/>
+            <block name="cntBackpack01" prob=".1"/>
+			<block name="cntBackpack03" prob=".1"/>
+			<block name="cntDuffle01" prob=".1"/>
+            <block name="cntSportsBag01Red" prob=".1"/>
+			<block name="cntSportsBag01Orange" prob=".1"/>
+            <block name="cntSportsBag01Yellow" prob=".05"/>
+			<block name="cntSportsBag01Green" prob=".05"/>
+			<block name="cntSportsBag01Blue" prob=".5"/>
+            <block name="cntSportsBag01Purple" prob=".1"/>
+			<block name="cntSportsBag01Pink" prob=".1"/>
+			<block name="cntSportsBag02Brown" prob=".1"/>
+            <block name="cntSportsBag02Red" prob=".1"/>
+			<block name="cntSportsBag02Orange" prob=".1"/>
+            <block name="cntSportsBag02Yellow" prob=".05"/>
+			<block name="cntSportsBag02Green" prob=".05"/>
+			<block name="cntSportsBag02Blue" prob=".5"/>
+            <block name="cntSportsBag02Purple" prob=".1"/>
+			<block name="cntSportsBag02Pink" prob=".1"/>
+			<block name="cntPurse01" prob=".1"/>
+            <block name="cntDeskSafe" prob=".1"/>
+			<block name="cntWoodenChestClosed" prob=".1"/>
+			<block name="cntShoppingCartEmptyRed" prob=".1"/>
+			<block name="cntShoppingCartEmptyOrange" prob=".1"/>
+			<block name="cntShoppingCartEmptyYellow" prob=".1"/>
+			<block name="cntShoppingCartEmptyGreen" prob=".1"/>
+			<block name="cntShoppingCartEmptyBlue" prob=".1"/>
+		</placeholder>
 
         <!-- *************************************************************
             Bathroom Cabinets and Cupboards
@@ -287,7 +342,7 @@
 
         <placeholder name="cbpPlantedMushroomHarvestRandomHelper">
             <block name="plantedMushroom3Harvest" prob=".03" randomrotation="true"/>
-            <block name="air" prob=".87"/>
+            <block name="air" prob=".97"/>
             <block name="treeSnowyGrassDiagonal" prob=".431" biome="snow" randomrotation="true"/>
             <block name="treeTallGrassDiagonal" prob=".431" biome="pine_forest" randomrotation="true"/>
             <block name="treeBrownGrassDiagonal" prob=".431" biome="desert" randomrotation="true"/>

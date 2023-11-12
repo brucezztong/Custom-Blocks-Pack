@@ -3891,6 +3891,8 @@
 			<property name="Model" value="Entities/Plants/plantHouseTallPottedPrefab"/>
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="TintColor" value="B9B9B9"/>
 			<property name="SortOrder2" value="0600"/>
@@ -3903,6 +3905,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="736859"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="736859"/>
 			<property name="SortOrder2" value="0601"/>
 		</block>
@@ -3914,6 +3918,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="9C7E7E"/>
 			<property name="SortOrder2" value="0602"/>
 		</block>
@@ -3925,6 +3931,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="C7A78C"/>
 			<property name="SortOrder2" value="0603"/>
 		</block>
@@ -3936,6 +3944,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="B7B797"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B7B797"/>
 			<property name="SortOrder2" value="0604"/>
 		</block>
@@ -3947,6 +3957,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="95A385"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="95A385"/>
 			<property name="SortOrder2" value="0605"/>
 		</block>
@@ -3958,6 +3970,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="8D9EA4"/>
 			<property name="SortOrder2" value="0606"/>
 		</block>
@@ -3969,6 +3983,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="90869C"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="90869C"/>
 			<property name="SortOrder2" value="0607"/>
 		</block>
@@ -3980,6 +3996,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="878787"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="878787"/>
 			<property name="SortOrder2" value="0608"/>
 		</block>
@@ -3991,6 +4009,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="464646"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="464646"/>
 			<property name="SortOrder2" value="0609"/>
 		</block>
@@ -4002,6 +4022,8 @@
 			<property name="CustomIcon" value="plantHouseTallPottedWhite"/>
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0610"/>
 		</block>
@@ -4015,7 +4037,9 @@
 			<property name="Extends" value="treePlant02"/>
 			<property name="GndAlign" value="0"/>
 			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CanPickup" value="false"/>
 			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B9B9B9"/>
 			<property name="Model" value="Entities/Plants/plantAloePottedPrefab"/>
 			<property name="SortOrder2" value="0000"/>
@@ -4026,8 +4050,10 @@
 			<property name="Extends" value="plantAloePottedWhite"/>
 			<property name="GndAlign" value="0"/>
 			<property name="ModelOffset" value="0,-.3,0"/>
+			<property name="CanPickup" value="false"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="736452"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="736452"/>
 			<property name="SortOrder2" value="0001"/>
 		</block>
@@ -4039,6 +4065,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="9C7A7A"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="9C7A7A"/>
 			<property name="SortOrder2" value="0002"/>
 		</block>
@@ -4050,6 +4078,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="C7A78C"/>
 			<property name="SortOrder2" value="0003"/>
 		</block>
@@ -4061,6 +4091,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="B7B690"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B7B690"/>
 			<property name="SortOrder2" value="0004"/>
 		</block>
@@ -4072,6 +4104,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="A4B790"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="A4B790"/>
 			<property name="SortOrder2" value="0005"/>
 		</block>
@@ -4083,6 +4117,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="99A6AB"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="99A6AB"/>
 			<property name="SortOrder2" value="0006"/>
 		</block>
@@ -4094,6 +4130,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="97939C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="97939C"/>
 			<property name="SortOrder2" value="0007"/>
 		</block>
@@ -4105,6 +4143,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="878787"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="878787"/>
 			<property name="SortOrder2" value="0008"/>
 		</block>
@@ -4116,6 +4156,8 @@
 			<property name="ModelOffset" value="0,-.3,0"/>
 			<property name="CustomIcon" value="plantAloePottedWhite"/>
 			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0010"/>
 		</block>
@@ -4129,6 +4171,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B9B9B9"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Plants/plantHousePottedPrefab"/>
@@ -4142,6 +4186,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="736859"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="736859"/>
 			<property name="SortOrder2" value="0201"/>
 		</block>
@@ -4153,6 +4199,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="9C7E7E"/>
 			<property name="SortOrder2" value="0202"/>
 		</block>
@@ -4164,6 +4212,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="C7A78C"/>
 			<property name="SortOrder2" value="0203"/>
 		</block>
@@ -4175,6 +4225,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="B7B797"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B7B797"/>
 			<property name="SortOrder2" value="0204"/>
 		</block>
@@ -4186,6 +4238,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="95A385"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="95A385"/>
 			<property name="SortOrder2" value="0205"/>
 		</block>
@@ -4197,6 +4251,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="8D9EA4"/>
 			<property name="SortOrder2" value="0206"/>
 		</block>
@@ -4208,6 +4264,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="90869C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="90869C"/>
 			<property name="SortOrder2" value="0207"/>
 		</block>
@@ -4219,7 +4277,9 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="878787"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="878787"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="SortOrder2" value="0208"/>
 		</block>
 
@@ -4230,6 +4290,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="464646"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="464646"/>
 			<property name="SortOrder2" value="0209"/>
 		</block>
@@ -4241,6 +4303,8 @@
 			<property name="ModelOffset" value="0,-.4,0"/>
 			<property name="CustomIcon" value="plantHousePottedWhite"/>
 			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0210"/>
 		</block>
@@ -4255,7 +4319,9 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="B9B9B9"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Plants/plantCherryBlossomPrefab"/>
 			<property name="SortOrder2" value="0400"/>
@@ -4268,6 +4334,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="736859"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="736859"/>
 			<property name="SortOrder2" value="0401"/>
 		</block>
@@ -4279,6 +4347,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="9C7E7E"/>
 			<property name="SortOrder2" value="0402"/>
 		</block>
@@ -4290,6 +4360,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="C7A78C"/>
 			<property name="SortOrder2" value="0403"/>
 		</block>
@@ -4301,7 +4373,9 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="B7B797"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="B7B797"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="SortOrder2" value="0404"/>
 		</block>
 
@@ -4312,6 +4386,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="95A385"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="95A385"/>
 			<property name="SortOrder2" value="0405"/>
 		</block>
@@ -4323,6 +4399,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="8D9EA4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="8D9EA4"/>
 			<property name="SortOrder2" value="0406"/>
 		</block>
@@ -4334,7 +4412,9 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="90869C"/>
+			<property name="CanPickup" value="false"/>
 			<property name="TintColor" value="90869C"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="SortOrder2" value="0407"/>
 		</block>
 
@@ -4345,6 +4425,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="878787"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="878787"/>
 			<property name="SortOrder2" value="0408"/>
 		</block>
@@ -4356,6 +4438,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="464646"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="464646"/>
 			<property name="SortOrder2" value="0409"/>
 		</block>
@@ -4367,6 +4451,8 @@
 			<property name="ModelOffset" value="0,-.5,0"/>
 			<property name="CustomIcon" value="plantCherryBlossomWhite"/>
 			<property name="CustomIconTint" value="B5A6B4"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0410"/>
 		</block>
@@ -4449,6 +4535,308 @@
 			<property name="CustomIcon" value="pipeSmallCorner"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="ModelOffset" value="0,.1,0"/>
+		</block>
+		
+		<!-- *************************************************************************
+            TABLE_UMBRELLAS CORNER
+        ************************************************************************** -->
+			
+		<!-- White -->
+		<block name="cbpUmbrellaTableDownWhiteCorner">
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="888888"/>
+			<property name="TintColor" value="888888"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/umbrellaTableDownPrefab"/>
+			<property name="ModelOffset" value="0.5,-0.5,-.5"/>
+			<property name="LightOpacity" value="4"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<!--<property name="Place" value="TowardsPlacerInverted"/>-->
+			<property name="EconomicValue" value="20"/>
+			<drop event="Destroy" name="resourceCloth" count="1,3"/>
+			<property name="SortOrder1" value="B409"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor,A21_NEW"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpUmbrellaTableDownBrownCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="766356"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="TintColor" value="766356"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpUmbrellaTableDownRedCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="734B4B"/>
+			<property name="TintColor" value="734B4B"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpUmbrellaTableDownOrangeCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="9C7F6A"/>
+			<property name="TintColor" value="9C7F6A"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpUmbrellaTableDownYellowCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="868066"/>
+			<property name="TintColor" value="868066"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpUmbrellaTableDownGreenCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="6B7D6C"/>
+			<property name="TintColor" value="6B7D6C"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpUmbrellaTableDownBlueCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="6A777D"/>
+			<property name="TintColor" value="6A777D"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpUmbrellaTableDownPurpleCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="6C6875"/>
+			<property name="TintColor" value="6C6875"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpUmbrellaTableDownGreyCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="505050"/>
+			<property name="TintColor" value="505050"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpUmbrellaTableDownBlackCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="3A3A3A"/>
+			<property name="TintColor" value="3A3A3A"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpUmbrellaTableDownPinkCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableDownWhite"/>
+			<property name="CustomIconTint" value="867586"/>
+			<property name="TintColor" value="867586"/>
+			<property name="ModelOffset" value="0,-0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+
+		<!-- White -->
+		<block name="cbpUmbrellaTableUpWhiteCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="888888"/>
+			<property name="TintColor" value="888888"/>
+			<property name="Model" value="Entities/Furniture/umbrellaTableUPPrefab"/>
+			<property name="ModelOffset" value="0.5,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0100"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpUmbrellaTableUpBrownCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="766356"/>
+			<property name="TintColor" value="766356"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpUmbrellaTableUpRedCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="734B4B"/>
+			<property name="TintColor" value="734B4B"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpUmbrellaTableUpOrangeCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="9C7F6A"/>
+			<property name="TintColor" value="9C7F6A"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpUmbrellaTableUpYellowCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="868066"/>
+			<property name="TintColor" value="868066"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpUmbrellaTableUpGreenCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="6B7D6C"/>
+			<property name="TintColor" value="6B7D6C"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpUmbrellaTableUpBlueCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="6A777D"/>
+			<property name="TintColor" value="6A777D"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0106"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="cbpUmbrellaTableUpPurpleCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="6C6875"/>
+			<property name="TintColor" value="6C6875"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0107"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpUmbrellaTableUpGreyCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="505050"/>
+			<property name="TintColor" value="505050"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0108"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpUmbrellaTableUpBlackCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="3A3A3A"/>
+			<property name="TintColor" value="3A3A3A"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0109"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="cbpUmbrellaTableUpPinkCorner">
+			<property name="Extends" value="cbpUmbrellaTableDownWhiteCorner"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="867586"/>
+			<property name="TintColor" value="867586"/>
+			<property name="ModelOffset" value="0,0.5,-.5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0110"/>
 		</block>
 	
 
@@ -6757,6 +7145,58 @@
 		<block name="cbpVendingMachineRandomHelperAir">
 			<property name="Extends" value="cntVendingMachine2RandomLootHelper"/>
 		</block>
+		
+		<!-- *************************************************************************
+            RANDOM ROLLING TRASH BIN
+        ************************************************************************** -->
+				
+		<block name="cbpBinTrashRollingRandomHelper">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="rollingTrashBin"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/binTrashRollingPrerfab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="40"/>
+			<property name="VehicleHitScale" value="999"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="1,3"/>
+			<property name="SortOrder1" value="B113"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="FilterTags" value="MC_building,SC_loot,A21_NEW"/>
+		</block>
+		
+		<!-- *************************************************************************
+            RANDOM Loot Spawner: Like the street,house,garage etc loot random helper but not a box so no missing textures
+        ************************************************************************** -->
+		
+		<block name="cbpAllPileRandomHelper">
+			<property name="Extends" value="cntForestRandomLootHelper"/>
+			<property name="Model" value="@:Entities/LootContainers/trashPileHPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="CustomIcon" value="cntTrashPile06"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="GndAlign" value="1"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="OnlySimpleRotations" value="False"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
 		<!-- *************************************************************************
             Freezer Display Deco
         ************************************************************************** -->
@@ -15979,6 +16419,8 @@
     <property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
     <property name="CreativeMode" value="Dev"/>
     <property name="Class" value="Hazard" />
+	<property name="CustomIcon" value="pipeSmall1x1"/>
+    <property name="CustomIconTint" value="6BB6E8"/>
     <property name="ParticleName" value="flame_hazard" />
     <property name="ParticleOffset" value="-1.1,2,0.5"/>
     <property name="DamageBuffs" value="buffBurningHazardPlayer" />
@@ -15997,7 +16439,7 @@
     <property name="MultiBlockDim" value="2,1,1"/>
     <property name="SortOrder1" value="B750"/>
     <property name="SortOrder2" value="0000"/>
-</block> 
+</block>   		
 	
 		<!-- ************************************************************************* 
             CUSTOM TREES WITH ADVANCED ROTATION  that do not cause NRE's
@@ -16409,6 +16851,8 @@ that are planted by players, so it is a nice bonus.
 	<append xpath="/blocks/block[@name='treeStumpPOI']">
 		<property name="PlaceAsRandomRotation" value="true"/>
 		<property name="AllowAllRotations" value="true"/>
-		<property name="OnlySimpleRotations" value="true" rotatemax="7"/>
+		<property name="OnlySimpleRotations" value="true" rotatemax="7"/> 
 	</append>
+	
+	
 </blocks>
