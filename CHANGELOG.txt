@@ -1,5 +1,9 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.2.001.0035 :
+* Misc Adjustments
+* Offset Windows
+
 A21.2.001.0034 :
 * Turned off Pickup feature for potted plants that look like garden plants
 * Removed All grass types from mushroom helper

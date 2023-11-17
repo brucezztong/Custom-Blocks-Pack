@@ -587,6 +587,17 @@
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="FilterTags" value="MC_outdoor,SC_crops"/>
 		</block>
+		
+		<block name="cbpPlantedMushroom2RandomHelper">
+			<property name="CustomIcon" value="plantedMushroom3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="Extends" value="plantedMushroom3Harvest" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="FilterTags" value="MC_outdoor,SC_crops"/>
+		</block>
 		<!-- *************************************************************************
             Gas Barrels
         ************************************************************************** -->
@@ -16365,7 +16376,399 @@
 		<property name="TintColor" value="e7fa39"/>
 		<property name="DowngradeBlock" value="cbphardConcreteRubble"/>
 	</block>
-				 
+	
+	<block name="cbpRockToPickupTruck">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedPickupTruck01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedPickupTruck01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToPickupTruckDoors">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedPickupTruck01DoorWhite"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedPickupTruck01DoorRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToPickupTruckWide">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedPickupTruck3Wide01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedPickupTruck3Wide01DoorRandomHelper"/>
+	</block>
+
+	<block name="cbpRockToPickupTruckWideDoors">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedPickupTruck3Wide01DoorWhite"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedPickupTruck3Wide01DoorRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToBurntWide">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="burntSedan3Wide01"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="burntSedan3Wide01"/>
+	</block>	
+	
+	<block name="cbpRockToSUV">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedSUV01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedSUV01RandomHelper"/>
+	</block> 	
+	
+	<block name="cbpRockToSUVDoors">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="abandonedSUV01DoorsWhite"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedSUV01DoorsRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToSUVWide">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntSUV01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="abandonedSUV3Wide01RandomHelper"/>
+	</block>
+		
+	<block name="cbpRockToSedan">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntSedan01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntSedan01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToCarsWide">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntCar03SedanDamage0Master"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cars3WideRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToWrecks">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="carWrecksRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToRandomCar">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntCar03SedanDamage0Master"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="carsRandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToCrumpledFrontSedan">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntFrontCrumpledSedan01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntFrontCrumpledSedan01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToMinivan">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntMinivan01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntMinivan01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToMinivanWide">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntMinivan01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntMinivan3Wide01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToSemi">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntSemiTruck01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntSemiTruck01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToPolice">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntPoliceCar01"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntPoliceCar01"/>
+	</block>
+	
+	<block name="cbpRockToPoliceAlarmed">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntPoliceCar01"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntPoliceCar01AlarmLocked"/>
+	</block>
+	
+	<block name="cbpRockToFireTruck">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntFireTruck01White"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntFireTruck01RandomHelper"/>
+	</block>
+	
+	<block name="cbpRockToBus">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntBusSchool"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntBusSchool"/>
+	</block>
+	
+	<block name="cbpRockToBusShort">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntBusSchoolShort"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntBusSchoolShort"/>
+	</block>
+	
+	<block name="cbpRockToBusShuttle">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntBusShuttle"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntBusShuttle"/>
+	</block>
+	
+	<block name="cbpRockToBusCity">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntBusCity"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntBusCity"/>
+	</block>
+	
+	<block name="cbpRockToAmbulance">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntAmbulanceTruck01"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntAmbulanceTruck01"/>
+	</block>
+	
+	<block name="cbpRockToTruckMoPower">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntServiceTruckMoPower"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntServiceTruckMoPower"/>
+	</block>
+	
+	<block name="cbpRockToTruckWorkingStiff">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntServiceTruckWorkingStiffTools"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntServiceTruckWorkingStiffTools"/>
+	</block>
+	
+	<block name="cbpRockToArmyTruck">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntArmyTruckOpen"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntArmyTruckRandomLootHelper"/>
+	</block>
+	
+	<block name="cbpRockToFarmTruck">
+		<property name="Extends" value="rock01"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="CustomIcon" value="cntFarmTruckOpen"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.01"/>
+		<property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+		<property name="TintColor" value="e7fa39"/>
+		<property name="DowngradeBlock" value="cntFarmTruckRandomLootHelper"/>
+	</block>  	
+					 
 	<block name="cbpRockToRubble_Mine">
 		<property name="Extends" value="cntBarrelMetalMaster"/>
 		<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
@@ -16379,7 +16782,33 @@
 		<property name="EntityDamage" value="5"/>
 	</property>
 	<property name="DowngradeBlock" value="cbphardConcreteRubble"/>
-</block>   
+</block> 
+
+	<block name="cbpRockToRubble_MineMini">
+		<property name="Extends" value="cntBarrelMetalMaster"/>
+		<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+		<property name="CustomIcon" value="rubblePileCement"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property class="Explosion">
+		<property name="ParticleIndex" value="13"/>
+		<property name="RadiusBlocks" value="0"/>
+		<property name="BlockDamage" value="0"/>
+		<property name="RadiusEntities" value="3"/>
+		<property name="EntityDamage" value="5"/>
+	</property>
+	<property name="DowngradeBlock" value="cbphardConcreteRubble"/>
+</block>
+
+	<block name="cbpPickupTruck3Wide01DoorPink">
+		<property name="Extends" value="abandonedPickupTruck3Wide01DoorWhite"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="abandonedPickupTruck3Wide01DoorWhite"/>
+		<property name="CustomIconTint" value="7F5D7A"/>
+		<property name="OnlySimpleRotations" value="false"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="TintColor" value="7F5D7A"/>
+		<property name="SortOrder2" value="0310"/>
+	</block>
 
 	<block name="cbphardConcreteRubble">
 		<property name="Extends" value="rubblePileCement"/>

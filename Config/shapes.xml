@@ -25,6 +25,26 @@
 		<property name="WaterFlow" value="T,B,W,S,E," />
 	</shape>
 	
+	<shape name="cbpWindowStoreThreeSidedFullOffset">
+		<property class="Admin"/>
+		<property name="Model" value="window_store_three_sided_full" />
+		<property name="Material" value="Mbedrock"/>
+		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value="1,0,-.95"/>
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.975" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
+	</shape>
+	
 	<shape name="cbpWindowStoreCornerFull">
 		<property class="Admin"/>
 		<property name="Material" value="Mbedrock"/>
@@ -34,6 +54,26 @@
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaterialHitpointMultiplier" value="0.001" />
 		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
+		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowStoreCornerFullOffset">
+		<property class="Admin"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Model" value="window_store_corner_full" />
+		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value="1,0,-.95"/>
 		<property name="ImposterDontBlock" value="true" />
 		<property name="UseGlobalUV" value=",DDLDDDL" />
 		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
@@ -83,6 +123,31 @@
 		<drop event="Destroy" count="0" />
 		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
 		<property name="WaterFlow" value="T,B,N,S,E," />
+	</shape>
+	
+	<shape name="cbpWindowPlateRoundedSquare4SidedHalfWidthFullOffset">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="window_plate_rounded_square_4sided_half_width_full" />
+		<!-- <property name="Place" value="TowardsPlacerInverted" /> -->
+		<property name="CustomIcon" value="shapeWindowPlateRoundedSquare4SidedHalfWidthFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ModelOffset" value="1,0,.15"/>
+		<property name="UseGlobalUV" value=",DDDDDDL" />
+		<property name="ShapeAltTexture" value="T,55,N,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":windowPlateRoundedSquare4SidedHalfWidthBroken" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
+		<property name="WaterFlow" value="T,B,W,S,E," />
 	</shape>
 		
 
