@@ -343,6 +343,11 @@
         <placeholder name="cbpPlantedMushroomHarvestRandomHelper">
             <block name="plantedMushroom3Harvest" prob=".03" randomrotation="true"/>
             <block name="air" prob=".97"/>
+           </placeholder>
+		   
+		 <placeholder name="cbpPlantedMushroom2RandomHelper">
+            <block name="plantedMushroom3Harvest" prob=".03" randomrotation="true"/>
+            <block name="air" prob=".87"/>
             <block name="treeSnowyGrassDiagonal" prob=".431" biome="snow" randomrotation="true"/>
             <block name="treeTallGrassDiagonal" prob=".431" biome="pine_forest" randomrotation="true"/>
             <block name="treeBrownGrassDiagonal" prob=".431" biome="desert" randomrotation="true"/>
@@ -1181,6 +1186,15 @@
 		<block name="cbpTarpTilePink"/>
 		<block name="cbpTarpTileArmyGreen"/>
 	</placeholder>
+	
+	 <!-- *************************************************************
+            Tinted Random Objects.
+     ************************************************************** -->
+	 <placeholder name="cbpFridgeStainlessSteelRandomLootHelper_Black">
+            <block name="cbpFridgeStainlessSteelVer2Open_Black" prob=".65"/>
+            <block name="cbpFridgeStainlessSteel_Black" prob=".35"/>
+     </placeholder>
+	 
 		
     </append>
 </blockplaceholders>

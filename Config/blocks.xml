@@ -535,6 +535,107 @@
 			<property name="WaterFlow" value="permitted"/>
 			<property name="CreativeMode" value="Dev"/>
 		</block>
+		
+		<!-- *************************************************************************
+				Bodybag and Goreblock Offsets
+		************************************************************************** -->
+		<block name="cbpBodyBagBlack_Gurney">
+			<property name="Extends" value="bodyBagBlack"/>
+			<property name="CustomIcon" value="bodyBagBlack"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,.5"/>
+		</block>
+
+		<block name="cbpBodyBagYellow_Gurney">
+			<property name="Extends" value="bodyBagYellow"/>
+			<property name="CustomIcon" value="bodyBagYellow"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,.5"/>
+		</block>
+
+		<block name="cbpBodyBagBlackFlies_Gurney">
+			<property name="Extends" value="bodyBagBlackFlies"/>
+			<property name="CustomIcon" value="bodyBagBlackFlies"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,.5"/>
+		</block>
+
+		<block name="cbpBodyBagYellowFlies_Gurney">
+			<property name="Extends" value="bodyBagYellowFlies"/>
+			<property name="CustomIcon" value="bodyBagYellowFlies"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,.5"/>
+		</block>
+		
+		<block name="cbpGoreBlockHumanCorpse_Gurney">
+			<property name="Extends" value="goreBlockHumanCorpse"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,0"/>
+		</block>
+		<block name="cbpGoreBlockHumanCorpse_Bed">
+			<property name="Extends" value="goreBlockHumanCorpse"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.15,0"/>
+		</block> 
+
+		<block name="cbpGoreBlockHumanCorpse1_Gurney">
+			<property name="Extends" value="goreBlockHumanCorpse1"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse1"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,-.3"/>
+		</block>
+		<block name="cbpGoreBlockHumanCorpse1_Bed">
+			<property name="Extends" value="goreBlockHumanCorpse1"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse1"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.15,-.3"/>
+		</block> 
+
+		<block name="cbpGoreBlockHumanCorpse2_Gurney">
+			<property name="Extends" value="goreBlockHumanCorpse2"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse2"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,-.5"/>
+		</block>
+		
+		<block name="cbpGoreBlockHumanCorpse2_Bed">
+			<property name="Extends" value="goreBlockHumanCorpse2"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse2"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.15,-.5"/>
+		</block>
+		
+		<block name="cbpGoreBlockHumanCorpse3_Gurney">
+			<property name="Extends" value="goreBlockHumanCorpse3"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse3"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.15,-.3"/>
+		</block>
+		
+		<block name="cbpGoreBlockHumanCorpse3_Bed">
+			<property name="Extends" value="goreBlockHumanCorpse3"/>
+			<property name="CustomIcon" value="goreBlockHumanCorpse3"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.1,-.3"/>
+		</block>
+
+		<block name="cbpGoreBlockHumanBones_Gurney">
+			<property name="Extends" value="goreBlockHumanBones"/>
+			<property name="CustomIcon" value="goreBlockHumanBones"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.2,-.3"/>
+		</block>
+		
+		<block name="cbpGoreBlockHumanBones_Bed">
+			<property name="Extends" value="goreBlockHumanBones"/>
+			<property name="CustomIcon" value="goreBlockHumanBones"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,.15,-.3"/>
+		</block> 					
+		
+		
 		<!-- *************************************************************************
             Delos (West World) POIs...
         ************************************************************************** -->
@@ -4466,8 +4567,144 @@
 			<property name="AllowAllRotations" value="true"/>
 			<property name="TintColor" value="B5A6B4"/>
 			<property name="SortOrder2" value="0410"/>
+		</block>   
+		
+		<!-- *************************************************************************
+				Plant House 1.25 Offset 
+		************************************************************************** -->
+		<!-- White -->
+		<block name="cbpHousePottedWhite_1.25xOffset">
+			<property name="Extends" value="plantHousePottedBlue"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="B9B9B9"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="B9B9B9"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/plantHousePottedPrefab"/>
+			<property name="SortOrder2" value="0200"/>
 		</block>
 		
+		<!-- Brown -->
+		<block name="cbpHousePottedBrown_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="736859"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="736859"/>
+			<property name="SortOrder2" value="0201"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpHousePottedRed_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="9C7E7E"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="9C7E7E"/>
+			<property name="SortOrder2" value="0202"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpHousePottedOrange_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="C7A78C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="C7A78C"/>
+			<property name="SortOrder2" value="0203"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpHousePottedYellow_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="B7B797"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="B7B797"/>
+			<property name="SortOrder2" value="0204"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpHousePottedGreen_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="95A385"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="95A385"/>
+			<property name="SortOrder2" value="0205"/>
+		</block>
+
+		<!-- Blue -->		
+		<block name="cbpPlantHousePottedBlue_1.25xOffset">
+			<property name="Extends" value="cbpHousePottedWhiteOffset"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="GndAlign" value="0"/>
+		</block>
+		
+		<!-- Purple -->
+		<block name="cbpHousePottedPurple_1.25xOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="90869C"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="90869C"/>
+			<property name="SortOrder2" value="0207"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpHousePottedGrey_1.25xOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="878787"/>
+			<property name="CanPickup" value="false"/>
+			<property name="TintColor" value="878787"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="SortOrder2" value="0208"/>
+		</block>
+
+		<!-- Black -->
+		<block name="cbpHousePottedBlack_1.25xOffset">
+			<property name="Extends" value="plantHousePottedWhite"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ModelOffset" value="0,0,1.25"/>
+			<property name="CustomIcon" value="plantHousePottedWhite"/>
+			<property name="CustomIconTint" value="464646"/>
+			<property name="CanPickup" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="TintColor" value="464646"/>
+			<property name="SortOrder2" value="0209"/>
+		</block>
+		
+		
+		
+				
 		<!-- *************************************************************************
 				Offset Bed, Painting and TV
 		************************************************************************** -->
@@ -4525,6 +4762,13 @@
 			<property name="AllowAllRotations" value="true"/>
 		</block>
 		
+		<block name="cbpCeilingFanLight_2x2">
+			<property name="Extends" value="ceilingFanLight"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="CustomIconTint" value="0acbb3"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+		</block>
+				
 		<block name="cbpStoreElectronicsBookShelfSpeaker2Left_rotate">
 			<property name="Extends" value="cntStoreElectronicsBookShelfSpeaker"/>
 			<property name="CustomIcon" value="cntStoreElectronicsBookShelfSpeaker"/>
@@ -16359,6 +16603,37 @@
 			<property name="TintColor" value="aad3ce"/>
 		</block>
 		
+		<block name="cbpFaucet02_BlackChrome">
+			<property name="Extends" value="faucet02"/>
+			<property name="CustomIcon" value="faucet02"/>
+			<property name="CustomIconTint" value="4b4b4b"/>
+			<property name="TintColor" value="4b4b4b"/>
+		</block>
+		
+		<block name="cbpFridgeStainlessSteelVer2Open_Black">
+			<property name="Extends" value="cntFridgeStainlessSteelVer2Open"/>
+			<property name="CustomIcon" value="cntFridgeStainlessSteelVer2Open"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+		</block>
+
+
+		<block name="cbpFridgeStainlessSteel_Black">
+			<property name="Extends" value="cntFridgeStainlessSteel"/>
+			<property name="CustomIcon" value="cntFridgeStainlessSteel"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="DowngradeBlock" value="cbpFridgeStainlessSteelVer2Open_Black"/>
+		</block>
+
+
+		<block name="cbpFridgeStainlessSteelRandomLootHelper_Black">
+			<property name="Extends" value="cbpFridgeStainlessSteel_Black"/>
+			<property name="CustomIcon" value="cntFridgeStainlessSteel"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+		</block>
+						
 		<!-- *************************************************************************
 				 Wall Explode Stuff
 		************************************************************************** -->
