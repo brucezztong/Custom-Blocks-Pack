@@ -947,5 +947,19 @@ cbppictureCanvas_01e,blocks,block,,,Picture Canvas 01e
 cbpbed02_rotate,blocks,block,,,Queen Bed Angled
 cbptvLargeWall3x2_rotate,blocks,block,,,TV LArge Wall 3x2 Angled
 cbppipeSmallCornerWallOffset,blocks,block,,,Pipe Small Corner Wall Offset
+cbpBinTrashRollingBlack,blocks,block,,,Rolling Trash Bin,,
+cbpBinTrashRollingPink,blocks,block,,,Rolling Trash Bin,,
+cbpBinTrashRollingWhiteEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingBrownEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingRedEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingOrangeEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingYellowEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingGreenEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingBlueEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingGreyEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingBlackEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingPinkEmpty,blocks,block,,,Rolling Trash Bin Empty,,
+cbpBinTrashRollingRandomHelper,blocks,block,,,Rolling Trash Bin Random Helper,,
+cbpPoleSquareTipCentered,shapes,Block,,,Pole Tip Centered,,
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 

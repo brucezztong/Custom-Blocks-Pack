@@ -4702,9 +4702,6 @@
 			<property name="SortOrder2" value="0209"/>
 		</block>
 		
-		
-		
-				
 		<!-- *************************************************************************
 				Offset Bed, Painting and TV
 		************************************************************************** -->
@@ -7433,6 +7430,137 @@
 			<property name="SortOrder1" value="B113"/>
 			<property name="SortOrder2" value="0400"/>
 			<property name="FilterTags" value="MC_building,SC_loot,A21_NEW"/>
+		</block>
+		
+		<!-- Black -->
+		<block name="cbpBinTrashRollingBlack">
+			<property name="Extends" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="SortOrder2" value="0408"/>
+		</block>   		
+				
+		<!-- Pink -->
+		<block name="cbpBinTrashRollingPink">
+			<property name="Extends" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="887C89"/>
+			<property name="TintColor" value="887C89"/>
+			<property name="SortOrder2" value="0408"/>
+		</block>
+		<!-- *************************************************************************
+            RollingBins: Empty Version.
+        ************************************************************************** -->
+			<!-- *** ROLLING_TRASH_BINS -->
+		<!-- White -->
+		<block name="cbpBinTrashRollingWhiteEmpty">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="cbpJunk"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/binTrashRollingPrerfab.prefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="40"/>
+			<property name="VehicleHitScale" value="999"/>
+			<property class="RepairItems">
+				<property name="resourceScrapPolymers" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="1,3"/>
+			<property name="SortOrder1" value="B113"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="FilterTags" value="MC_building,SC_loot,A21_NEW"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="cbpBinTrashRollingBrownEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="575451"/>
+			<property name="TintColor" value="575451"/>
+			<property name="SortOrder2" value="0401"/>
+		</block>
+
+		<!-- Red -->
+		<block name="cbpBinTrashRollingRedEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="615555"/>
+			<property name="TintColor" value="615555"/>
+			<property name="SortOrder2" value="0402"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="cbpBinTrashRollingOrangeEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="7A6F5D"/>
+			<property name="TintColor" value="7A6F5D"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="cbpBinTrashRollingYellowEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="7A7965"/>
+			<property name="TintColor" value="7A7965"/>
+			<property name="SortOrder2" value="0404"/>
+		</block>
+
+		<!-- Green -->
+		<block name="cbpBinTrashRollingGreenEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="586056"/>
+			<property name="TintColor" value="586056"/>
+			<property name="SortOrder2" value="0405"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="cbpBinTrashRollingBlueEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="575F60"/>
+			<property name="TintColor" value="575F60"/>
+			<property name="SortOrder2" value="0406"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="cbpBinTrashRollingGreyEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="636363"/>
+			<property name="TintColor" value="636363"/>
+			<property name="SortOrder2" value="0408"/>
+		</block>
+		
+		<!-- Black -->
+		<block name="cbpBinTrashRollingBlackEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="404040"/>
+			<property name="TintColor" value="404040"/>
+			<property name="SortOrder2" value="0408"/>
+		</block>
+		
+		<!-- Pink -->
+		<block name="cbpBinTrashRollingPinkEmpty">
+			<property name="Extends" value="cbpBinTrashRollingWhiteEmpty"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
+			<property name="CustomIconTint" value="887C89"/>
+			<property name="TintColor" value="887C89"/>
+			<property name="SortOrder2" value="0408"/>
 		</block>
 		
 		<!-- *************************************************************************
@@ -16222,15 +16350,7 @@
 			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block>
-		
-		 <block name="cbpRadiationBlockParticles"> <!-- Small blue shock: offset -->
-		<property name="Extends" value="cbpSparklyBlockLarge"/>
-		<property name="CustomIcon" value="shapeFontExclamation"/>
-		<property name="CustomIconTint" value="6BB6E8"/>
-		<property name="Model" value="ParticleEffects/RadiatedParticlesOnMesh"/>
-		<property name="ModelOffset" value="0,0,0"/>
-	</block>		
+		</block>				
 	
 	<block name="cbpMetalOnOrganicBlock"> <!-- Small blue shock: offset -->
 		<property name="Extends" value="cbpSparklyBlockLarge"/>

@@ -20,14 +20,26 @@
             Trash Rolling Random Helper
         ************************************************************** -->		
 		<placeholder name="cbpBinTrashRollingRandomHelper">
-			<block name="cntbinTrashRollingWhite" prob=".5"/>
-            <block name="cntbinTrashRollingBrown" prob=".1"/>
-			<block name="cntbinTrashRollingRed" prob=".1"/>
-			<block name="cntbinTrashRollingOrange" prob=".1"/>
-            <block name="cntbinTrashRollingYellow" prob=".1"/>
-			<block name="cntbinTrashRollingGreen" prob=".1"/>
+			<block name="cntbinTrashRollingWhite" prob=".05"/>
+            <block name="cntbinTrashRollingBrown" prob=".05"/>
+			<block name="cntbinTrashRollingRed" prob=".05"/>
+			<block name="cntbinTrashRollingOrange" prob=".05"/>
+            <block name="cntbinTrashRollingYellow" prob=".05"/>
+			<block name="cntbinTrashRollingGreen" prob=".05"/>
             <block name="cntbinTrashRollingBlue" prob=".05"/>
 			<block name="cntbinTrashRollingGrey" prob=".05"/>
+			<block name="cbpBinTrashRollingBlack" prob=".05"/>
+			<block name="cbpBinTrashRollingPink" prob=".05"/>			
+			<block name="cbpBinTrashRollingWhiteEmpty" prob=".05"/>
+            <block name="cbpBinTrashRollingBrownEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingRedEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingOrangeEmpty" prob=".05"/>
+            <block name="cbpBinTrashRollingYellowEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingGreenEmpty" prob=".05"/>
+            <block name="cbpBinTrashRollingBlueEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingGreyEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingBlackEmpty" prob=".05"/>
+			<block name="cbpBinTrashRollingPinkEmpty" prob=".05"/>
 		</placeholder>
 		
 		<!-- *************************************************************
@@ -1194,6 +1206,8 @@
             <block name="cbpFridgeStainlessSteelVer2Open_Black" prob=".65"/>
             <block name="cbpFridgeStainlessSteel_Black" prob=".35"/>
      </placeholder>
+	 
+		 
 	 
 		
     </append>
