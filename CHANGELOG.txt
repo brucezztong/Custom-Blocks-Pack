@@ -1,5 +1,11 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.2.001.0038 :
+* Added bowling ball offset.
+* Added bookcases that disappear when looted.
+* Removed random rotation of mushroom helper.
+* Stallion is making all these changes, BTW. All of these versions.
+
 A21.2.001.0037 :
 * Added Rolling Bin in Pink and Black
 * Rolling Bin random helper updated

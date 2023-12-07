@@ -674,7 +674,37 @@
 			<property name="MaterialHitpointMultiplier" value="0.1" />
 			<property name="WaterFlow" value="permitted" />
 		</shape>
-
+		
+		<!-- *************************************************************************
+            POLE SQUARE TIP CENTERED: The LEft side turned into a center piece
+        ************************************************************************** -->
+		<shape name="cbpPoleSquareTipCentered">
+		<!-- <property name="Path" value="solid" /> -->
+		<property name="Model" value="pole_square_tip_left" />
+		<property name="CustomIcon" value="shapePoleSquareTipLeft" />
+		<property name="ShapeCategories" value="Square,Poles" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ModelOffset" value=".6,0,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="LightOpacity" value="0" />
+		<property name="WaterFlow" value="permitted" />
+	</shape>
+	
+	<!-- *************************************************************************
+           Bowling ball: offset corner
+        ************************************************************************** -->
+	
+		<shape name="cbpBowlingBall_Corner">
+			<property name="Model" value="bowling_ball" />
+			<property name="CustomIcon" value="shapeBowlingBall" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E" />
+			<property name="WaterFlow" value="permitted" />
+			<property name="ModelOffset" value=".6,-.05,.6" />
+		</shape>
 
 	</append>
 

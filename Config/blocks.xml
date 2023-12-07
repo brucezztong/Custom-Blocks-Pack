@@ -11,6 +11,27 @@
 		</block>
 		
 		
+		<!-- *************************************************************************
+            Bookcases: When looted bookshelves dissappear(secret room/passage).
+        ************************************************************************** -->
+		<block name="cbpBookShelfDubTopFull01_Poof">
+			<property name="Extends" value="cntBookShelfDoubleTopFull01"/>
+			<property name="CustomIcon" value="cntBookShelfDoubleTopFull01" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>            
+
+		
+		<block name="cbpBookShelfDubBotFull01_Poof">
+			<property name="Extends" value="cntBookShelfDoubleBottomFull01"/>
+			<property name="CustomIcon" value="cntBookShelfDoubleBottomFull01" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>
+		
+		
 		
 		<!-- *************************************************************************
             ATM Machines
@@ -633,7 +654,18 @@
 			<property name="CustomIcon" value="goreBlockHumanBones"/>
 			<property name="CustomIconTint" value="0acbb3"/>
 			<property name="ModelOffset" value="0,.15,-.3"/>
-		</block> 					
+		</block> 
+
+		<shape name="cbpBowlingBall_Corner">
+			<property name="Model" value="bowling_ball" />
+			<property name="CustomIcon" value="shapeBowlingBall" />
+			<property name="ShapeCategories" value="Deco" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ShapeAltTexture" value="T,B,55,W,S,E" />
+			<property name="WaterFlow" value="permitted" />
+			<property name="ModelOffset" value=".6,-.05,.6" />
+		</shape>
 		
 		
 		<!-- *************************************************************************
@@ -685,7 +717,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
 			<property name="DisplayInfo" value="Name"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="FilterTags" value="MC_outdoor,SC_crops"/>
 		</block>
 		
@@ -696,7 +728,7 @@
 			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
 			<property name="DisplayInfo" value="Name"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="FilterTags" value="MC_outdoor,SC_crops"/>
 		</block>
 		<!-- *************************************************************************
