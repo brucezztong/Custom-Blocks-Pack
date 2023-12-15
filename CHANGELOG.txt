@@ -1,5 +1,8 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.2.001.0039 :
+* Missing icon fixed.
+
 A21.2.001.0038 :
 * Added bowling ball offset.
 * Added bookcases that disappear when looted.

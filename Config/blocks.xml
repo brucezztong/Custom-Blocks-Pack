@@ -7489,6 +7489,7 @@
 		<block name="cbpBinTrashRollingWhiteEmpty">
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="cbpJunk"/>
+			<property name="CustomIcon" value="cntbinTrashRollingWhite"/>
 			<property name="CustomIconTint" value="808080"/>
 			<property name="TintColor" value="808080"/>
 			<property name="Material" value="Mplastics"/>
