@@ -4,8 +4,8 @@
     <Author value="MPLogue,Pille,Stallionsden,ZZTong" />
     <Description value="Adds custom block definitions and supporting configurations. (Version A21.2.001)" />
     <DisplayName value="Custom-Blocks-Pack" />
-    <Version value="21.2.001.0039" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
-    <!-- Build Date: 12/15/2023 -->
+    <Version value="21.2.001.0040" />  <!-- [TFP-Major.TFP-Minor.CBP-Version.CBP-Build] -->
+    <!-- Build Date: 12/20/2023 -->
     <Website value="" />
     <!-- Dependencies: None -->
 </xml>

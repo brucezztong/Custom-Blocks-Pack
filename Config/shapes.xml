@@ -705,6 +705,22 @@
 			<property name="WaterFlow" value="permitted" />
 			<property name="ModelOffset" value=".6,-.05,.6" />
 		</shape>
+		
+		<!-- *************************************************************************
+           Billboard Sheet: Stronger then Bedrock
+        ************************************************************************** -->
+		
+		<shape name="cbpBillboard">
+			<!-- <property name="Path" value="solid" /> -->
+			<property name="Material" value="McbpSheet"/>
+			<property name="Model" value="billboard" />
+			<property name="CustomIcon" value="shapeBillboard" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="ShapeCategories" value="Square" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="MaterialHitpointMultiplier" value="0.05" />
+			<property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+		</shape>
 
 	</append>
 

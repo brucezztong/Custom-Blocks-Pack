@@ -775,6 +775,32 @@
 			<property name="Explosion.ParticleIndex" value="15"/>
 			<property name="CustomIcon" value="cntBarrelGasSingle45"/>
 		</block>
+		
+		<block name="cbpMetalPipeStraight_explode">
+			<property name="Extends" value="metalPipeStraight"/>
+			<property name="CustomIcon" value="metalPipeStraight" />
+			<property name="CustomIconTint" value="5F4D46"/>
+			<property name="ItemTypeIcon" value="fire"/>
+			<property name="Class" value="CarExplodeLoot"/>
+			<property name="LootList" value="playerStorage"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="18"/>
+				<property name="RadiusBlocks" value="4"/>
+				<property name="BlockDamage" value="1000"/>
+				<property name="RadiusEntities" value="3"/>
+				<property name="EntityDamage" value="250"/>
+			</property>
+			<property name="Material" value="MFuelBarrelMetal"/>
+		</block>
+		
+		<block name="cbpBarrelGasQuadA">
+			<property name="Extends" value="cbpBarrelMetalMasterEmpty"/>
+			<property name="Explosion.ParticleIndex" value="16"/>
+			<property name="CustomIcon" value="cntBarrelGasQuadA"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Industrial/barrelGasQuadAPrefab"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
 		<!-- *************************************************************************
             Landmine Helpers
         ************************************************************************** -->
