@@ -1041,10 +1041,12 @@ The air version of the helpers has a 50% chance of placing an air block.
 ## Contributors
 The following persons contributed to this modlet:
 
-**Pille** - Contributed the Super Brush tool/item.
-
 **MP Logue** - Contributed a number of interesting blocks with special effects
 and blocks that assist with structural integrity.
+
+**Pille** - Contributed the Super Brush tool/item.
+
+**Robfly** - Contributed game events.
 
 **Stallionsden** - Collaborated on various loot settings, inspired Landmine,
 Vending Machine and ATM blocks, contributed the Mushroom Helper. Then added

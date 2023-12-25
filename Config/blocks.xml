@@ -409,7 +409,7 @@
 			<property name="Extends" value="decoEntityClothMaster"/>
 			<property name="CustomIcon" value="cntBookPile01"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookPile1Prefab"/>
 			<property name="ModelOffset" value="0,0,0"/>
 			<property name="GndAlign" value="1"/>
@@ -422,7 +422,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile02"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookPile2Prefab"/>
 			<property name="SortOrder2" value="0001"/>
 		</block>
@@ -430,7 +430,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile03"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookPile3Prefab"/>
 			<property name="SortOrder2" value="0002"/>
 		</block>
@@ -438,7 +438,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile04"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookPile4Prefab"/>
 			<property name="SortOrder2" value="0003"/>
 		</block>
@@ -446,7 +446,7 @@
 			<property name="Extends" value="cbpBookPile01"/>
 			<property name="CustomIcon" value="cntBookPile05"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookRiverofAshPrefab"/>
 			<property name="SortOrder2" value="0004"/>
 		</block>
@@ -454,7 +454,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile06"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookLongRoadPrefab"/>
 			<property name="SortOrder2" value="0005"/>
 		</block>
@@ -462,7 +462,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile07"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookWatercolorPrefab"/>
 			<property name="SortOrder2" value="0006"/>
 		</block>
@@ -470,7 +470,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile08"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookScarletJournalsPrefab"/>
 			<property name="SortOrder2" value="0007"/>
 		</block>
@@ -478,7 +478,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile09"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookInvisibleKillerPrefab"/>
 			<property name="SortOrder2" value="0008"/>
 		</block>
@@ -486,7 +486,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile10"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookSpearHunterPrefab"/>
 			<property name="SortOrder2" value="0009"/>
 		</block>
@@ -494,7 +494,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile11"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookAftermathPrefab"/>
 			<property name="SortOrder2" value="0010"/>
 		</block>
@@ -502,14 +502,14 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile12"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="SortOrder2" value="0011"/>
 		</block>
 		<block name="cbpBookPile13">
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile13"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookAuthorizedPersonnelPrefab"/>
 			<property name="SortOrder2" value="0012"/>
 		</block>
@@ -517,7 +517,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile14"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookTimeMattersPrefab"/>
 			<property name="SortOrder2" value="0013"/>
 		</block>
@@ -525,7 +525,7 @@
 			<property name="Extends" value="cbpBookPile05"/>
 			<property name="CustomIcon" value="cntBookPile15"/>
 			<property name="CustomIconTint" value="6BB6E8"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
+			<property name="PlaceAsRandomRotation" value="false"/>
 			<property name="Model" value="Entities/Commercial/bookSocialistGuidePrefab"/>
 			<property name="SortOrder2" value="0014"/>
 		</block>
@@ -3901,6 +3901,21 @@
 			<property name="ModelOffset" value="0,0.5,0.4"/>
 			<property name="SortOrder1" value="B551"/>
 			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<block name="cbpClimableChain">
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="Class" value="Ladder"/>
+			<property name="CustomIcon" value="decoHoistChain"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Material" value="Mmetal_chains"/>
+			<property name="Model" value="Entities/Industrial/hoistChainPrefab"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+			<property name="SortOrder1" value="B551"/>
+			<property name="SortOrder2" value="0000"/>
 		</block>
 		
 		<!-- *** CHERRY_BLOSSOM -->
@@ -12964,6 +12979,28 @@
 			<property name="Class" value="Ladder"/>
 			<property name="WaterFlow" value="permitted"/>
 		</block>
+		<block name="cbpHardAir_Destruct">  <!--  Invisible block that blows up -->    
+        <property name="Class" value="CarExplodeLoot"/>
+        <property name="LootList" value=""/>
+        <property class="Explosion">
+            <property name="ParticleIndex" value="12"/>
+            <property name="RadiusBlocks" value="1"/>
+            <property name="BlockDamage" value="800"/>
+            <property name="RadiusEntities" value="1"/>
+            <property name="EntityDamage" value="1"/>
+        </property>
+        <property name="CustomIcon" value="shapeLadderRound"/>
+			<property name="CustomIconTint" value="32455E"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+		</block>
 		<block name="cbpHardAirTallx20">
 			<property name="CustomIcon" value="shapeCube"/>
 			<property name="CustomIconTint" value="32455E"/>
@@ -12992,6 +13029,24 @@
 			<drop event="Destroy" count="0"/>
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 		</block>
+		<block name="cbpHardAir_SecretLader">  <!--  Invisible block that downgrades to a ladder -->    
+        <property name="Class" value="TrapDoor"/>
+        <property name="TriggerDelay" value="0.25"/>
+        <property name="TriggerSound" value="trapCatwalkMetalTrigger"/>
+        <property name="CustomIcon" value="shapeLadderRound"/>
+        <property name="CustomIconTint" value="32455E"/>
+        <property name="Material" value="Mcloth"/>
+        <property name="Shape" value="BillboardPlant"/>
+        <property name="Mesh" value="grass"/>
+        <property name="Texture" value="1"/>
+        <property name="StabilitySupport" value="true"/>
+        <property name="ImposterExclude" value="true"/>
+        <property name="Collide" value=""/>
+        <drop event="Destroy" count="0"/>
+        <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+        <property name="DowngradeBlock" value="ladderMetal"/>
+        <property name="ModelOffset" value="0,0,0"/>
+    </block>
 		<block name="cbpFastCollapseSheet">
 			<property name="CreativeMode" value="Dev"/>
 			<property name="CustomIcon" value="metalCatwalk"/>
@@ -13234,12 +13289,12 @@
 			<property name="Extends" value="cbpHardAirDark"/>
 			<property name="BuffsWhenWalkedOn" value="cbpGreyAir"/>
 			<property name="WaterFlow" value="permitted"/>
-		</block>
+		</block>                                 
 		<block name="cbpHardAirRadiation">
 			<property name="Extends" value="cbpHardAirDark"/>
 			<property name="BuffsWhenWalkedOn" value="cbpRadiationAir"/>
 			<property name="WaterFlow" value="permitted"/>
-		</block>
+		</block> 		
 		<block name="cbpHardAirInfected">
 			<property name="Extends" value="cbpHardAirDark"/>
 			<property name="BuffsWhenWalkedOn" value="cbpInfectedAir"/>
@@ -17299,30 +17354,47 @@
 	</block>
 	
 	<block name="cbpPipeFireHazardBlackOffset3">
-    <property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
-    <property name="CreativeMode" value="Dev"/>
-    <property name="Class" value="Hazard" />
-	<property name="CustomIcon" value="pipeSmall1x1"/>
-    <property name="CustomIconTint" value="6BB6E8"/>
-    <property name="ParticleName" value="flame_hazard" />
-    <property name="ParticleOffset" value="-1.1,2,0.5"/>
-    <property name="DamageBuffs" value="buffBurningHazardPlayer" />
-    <property name="DamageOffset" value="0,0,0" />
-    <property name="DamageSize" value="2,1,1" />
-    <property name="SecondaryBuffs" value="MPL_HardAirDark" />
-    <property name="SecondaryOffset" value="0.5,2,0" />
-    <property name="SecondarySize" value="2,2.25,0.25" />
-    <property name="StartSound" value="flametrap_start" />
-    <property name="StopSound" value="flametrap_end" />
-    <property name="ItemTypeIcon" value="fire"/>
-    <property name="Material" value="MrConcrete"/>
-    <property name="Shape" value="ModelEntity"/>
-    <property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
-    <property name="ModelOffset" value="-1.1,2.5,0"/>
-    <property name="MultiBlockDim" value="2,1,1"/>
-    <property name="SortOrder1" value="B750"/>
-    <property name="SortOrder2" value="0000"/>
-</block>   		
+		<property name="Extends" value="pipeSmallBroke" param1="RepairItems"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="Hazard" />
+		<property name="CustomIcon" value="pipeSmall1x1"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ParticleName" value="flame_hazard" />
+		<property name="ParticleOffset" value="-1.1,2,0.5"/>
+		<property name="DamageBuffs" value="buffBurningHazardPlayer" />
+		<property name="DamageOffset" value="0,0,0" />
+		<property name="DamageSize" value="2,1,1" />
+		<property name="SecondaryBuffs" value="MPL_HardAirDark" />
+		<property name="SecondaryOffset" value="0.5,2,0" />
+		<property name="SecondarySize" value="2,2.25,0.25" />
+		<property name="StartSound" value="flametrap_start" />
+		<property name="StopSound" value="flametrap_end" />
+		<property name="ItemTypeIcon" value="fire"/>
+		<property name="Material" value="MrConcrete"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Industrial/pipeHazardPrefab"/>
+		<property name="ModelOffset" value="-1.1,2.5,0"/>
+		<property name="MultiBlockDim" value="2,1,1"/>
+		<property name="SortOrder1" value="B750"/>
+		<property name="SortOrder2" value="0000"/>
+	</block> 
+
+		<!-- *************************************************************************
+           Billboard Sheet: Stronger then Bedrock
+        ************************************************************************** -->
+		
+	<block name="cbpBillboard">
+        <property name="CustomIcon" value="shapeBillboard"/>
+        <property name="CustomIconTint" value="6BB6E8"/>
+        <property name="Material" value="McbpSheet"/>
+        <property name="Shape" value="New"/>
+		<property name="Model" value="billboard" />
+        <property name="Texture" value="226"/>
+        <property name="StabilitySupport" value="true"/>
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+        <property name="Stacknumber" value="500"/>
+		<property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+    </block>
 	
 		<!-- ************************************************************************* 
             CUSTOM TREES WITH ADVANCED ROTATION  that do not cause NRE's
@@ -17736,6 +17808,1477 @@ that are planted by players, so it is a nice bonus.
 		<property name="AllowAllRotations" value="true"/>
 		<property name="OnlySimpleRotations" value="true" rotatemax="7"/> 
 	</append>
-	
-	
+		<!-- *************************************************************************
+            GAMEEVENTS: SOME COOL THINGS STANDING ON BLOCKS CAN DO
+		************************************************************************** -->
+		<!-- ROBBERY EASY -->
+	<!-- INVISIBLE -->
+	<append xpath="/blocks">
+        <block name="cbpSpawn_Robbery_Trap">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Trap"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Trap">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Robbery_Alarm">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_NA"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery" />
+        </block>
+        <block name="cbpSpawned_Robbery_NA">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Robbery_Plate">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Plate_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Plate_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Robbery_Cube">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Cube_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery" />
+        </block>  	
+        <block name="cbpSpawned_Robbery_Cube_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery" />
+        </block> 
+        <!-- ROBBERY EASY -->
+        <!-- ROBBERY MEDIUM -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Robbery_Trap_Med">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Trap_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_medium" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Trap_Med">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>   
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_medium" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Robbery_Alarm_Med">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_NA_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_medium" />
+        </block>
+        <block name="cbpSpawned_Robbery_NA_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_medium" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Robbery_Plate_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Plate_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_medium" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Plate_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_medium" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Robbery_Cube_Med">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Cube_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_medium" />
+        </block>  	
+        <block name="cbpSpawned_Robbery_Cube_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_medium" />
+        </block> 
+        <!-- ROBBERY MEDIUM -->
+        <!-- ROBBERY HARD -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Robbery_Trap_Hard">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Trap_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_hard" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Trap_Hard">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>   
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_hard" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Alarm_Hard">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_NA_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_hard" />
+        </block>
+        <block name="cbpSpawned_NA_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_hard" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Robbery_Plate_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Plate_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_hard" />
+        </block> 
+        <block name="cbpSpawned_Robbery_Plate_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_hard" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Robbery_Cube_Hard">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Robbery_Cube_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_robbery_hard" />
+        </block>  	
+        <block name="cbpSpawned_Robbery_Cube_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_robbery_hard" />
+        </block> 
+        <!-- ROBBERY HARD -->
+        <!-- RIOT EASY -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Riot_Trap">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Trap"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot" />
+        </block> 
+        <block name="cbpSpawned_Riot_Trap">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Riot_Alarm">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_NA"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot" />
+        </block>
+        <block name="cbpSpawned_Riot_NA">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Riot_Plate">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Plate_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot" />
+        </block> 
+        <block name="cbpSpawned_Riot_Plate_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Riot_Cube">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Cube_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot" />
+        </block>  	
+        <block name="cbpSpawned_Riot_Cube_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot" />
+        </block> 
+        <!-- ROBBERY EASY -->
+        <!-- ROBBERY MEDIUM -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Riot_Trap_Med">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Trap_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_medium" />
+        </block> 
+        <block name="cbpSpawned_Riot_Trap_Med">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>   
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_medium" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Riot_Alarm_Med">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_NA_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_medium" />
+        </block>
+        <block name="cbpSpawned_Riot_NA_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_medium" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Riot_Plate_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Plate_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_medium" />
+        </block> 
+        <block name="cbpSpawned_Riot_Plate_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_medium" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Riot_Cube_Med">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Cube_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_medium" />
+        </block>  	
+        <block name="cbpSpawned_Riot_Cube_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_medium" />
+        </block> 
+        <!-- ROBBERY MEDIUM -->
+        <!-- ROBBERY HARD -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Riot_Trap_Hard">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Trap_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_hard" />
+        </block> 
+        <block name="cbpSpawned_Riot_Trap_Hard">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_hard" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Riot_Alarm_Hard">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_NA_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_hard" />
+        </block>
+        <block name="cbpSpawned_Riot_NA_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_hard" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Riot_Plate_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Plate_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_hard" />
+        </block> 
+        <block name="cbpSpawned_Riot_Plate_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_hard" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Riot_Cube_Hard">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Riot_Cube_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_riot_hard" />
+        </block>  	
+        <block name="cbpSpawned_Riot_Cube_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_riot_hard" />
+        </block> 
+        <!-- RIOT HARD -->
+        <!-- FARM EASY -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Farm_Trap">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Trap"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm" />
+        </block> 
+        <block name="cbpSpawned_Farm_Trap">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_farm_Alarm">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_farm_NA"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm" />
+        </block>
+        <block name="cbpSpawned_farm_NA">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Farm_Plate">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Plate_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm" />
+        </block> 
+        <block name="cbpSpawned_Farm_Plate_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Farm_Cube">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Cube_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm" />
+        </block>  	
+        <block name="cbpSpawned_Farm_Cube_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm" />
+        </block> 
+        <!-- FARM EASY -->
+        <!-- FARM MEDIUM -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Farm_Trap_Med">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Trap_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_medium" />
+        </block> 
+        <block name="cbpSpawned_Farm_Trap_Med">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>   
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_medium" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Farm_Alarm_Med">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_NA_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_medium" />
+        </block>
+        <block name="cbpSpawned_Farm_NA_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_medium" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Farm_Plate_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Plate_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_medium" />
+        </block> 
+        <block name="cbpSpawned_Farm_Plate_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_medium" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Farm_Cube_Med">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Cube_NS_Med"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_medium" />
+        </block>  	
+        <block name="cbpSpawned_Farm_Cube_NS_Med">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_medium" />
+        </block> 
+        <!-- FARM MEDIUM -->
+        <!-- FARM HARD -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Farm_Trap_Hard">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Trap_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_hard" />
+        </block> 
+        <block name="cbpSpawned_Farm_Trap_Hard">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_hard" />
+        </block>
+        <!-- BILLBOARD -->
+        <block name="cbpSpawn_Farm_Alarm_Hard">
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_NA_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_hard" />
+        </block>
+        <block name="cbpSpawned_Farm_NA_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeBillboard"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="Material" value="Mconcrete"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="billboard" />
+            <property name="Texture" value="226"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Stacknumber" value="500"/>
+            <property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_hard" />
+        </block>
+        <!-- PLATE -->
+         <block name="cbpSpawn_Farm_Plate_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIcon" value="shapePlate"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Texture" value="226"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="Group" value="Building"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Plate_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_hard" />
+        </block> 
+        <block name="cbpSpawned_Farm_Plate_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="plate"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_hard" />
+        </block>
+        <!-- CUBE --> 
+        <block name="cbpSpawn_Farm_Cube_Hard">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Farm_Cube_NS_Hard"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_farm_hard" />
+        </block>  	
+        <block name="cbpSpawned_Farm_Cube_NS_Hard">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_farm_hard" />
+        </block> 
+        <!-- FARM HARD -->
+        <!-- DEMO CUBE -->	
+        <block name="cbpSpawn_Trap_Demo">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Trap_Demo_NS"/>
+            <property name="DowngradeEvent" value="spawn_zombies_sound_2_2" />
+        </block>  	
+        <block name="cbpSpawned_Trap_Demo_NS">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="DowngradeEvent" value="stop_spawn_zombies_sound_2_2" />
+        </block>
+        <!-- DEMO CUBE --> 
+        <!-- JUMP SCARE -->
+        <!-- INVISIBLE -->
+        <block name="cbpSpawn_Jump_Scare">  <!-- Air block  -->
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="CustomIconTint" value="ff00f5"/>
+            <property name="Collide" value="movement"/>        
+            <property name="DowngradeBlock" value="cbpSpawned_Jump_Scare"/>
+            <property name="DowngradeEvent" value="spawn_scare_sound" />
+        </block> 
+        <block name="cbpSpawned_Jump_Scare">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_scare_sound" />
+        </block> 	    	    	  	
+        <!-- DANCE -->
+        <block name="cbpSpawn_Dance">  
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>
+            <property name="TriggerSound" value="trapWoodTrigger"/>
+            <property name="BuffsWhenWalkedOn" value="twitch_buffDance"/>
+            <property name="Collide" value="movement"/>  
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Dance"/>        
+            <property name="DowngradeEvent" value="spawn_dance_off_sound" />        <!-- vote_dance_off, test_action_dance_off, action_dance_off, -->
+          </block>    	  
+          <block name="cbpSpawned_Dance">
+            <property name="Extends" value="cbpHardAir"/>
+            <property name="CustomIcon" value="shapePlate"/> 
+            <property name="Class" value="TrapDoor"/>
+            <property name="TriggerDelay" value="0.25"/>  
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DowngradeEvent" value="stop_spawn_dance_off_sound" />
+        </block>	
+        <!-- BUFF BLOCKS -->
+            <!-- BOMB BLITZ -->
+            <block name="cbpBombBlitz">  <!-- Air block  -->
+                <property name="CustomIcon" value="shapeCube"/>
+                <property name="CustomIconTint" value="6BB6E8"/>
+                <property name="Collide" value="movement"/>  
+                <property name="BuffsWhenWalkedOn" value="twitch_explode"/>
+                <property name="Material" value="Mbedrock"/>
+                <property name="Shape" value="BillboardPlant"/>
+                <property name="Mesh" value="grass"/>
+                <property name="Texture" value="1"/>
+                <property name="StabilitySupport" value="true"/>
+                <property name="ImposterExclude" value="true"/>
+                <property name="Collide" value=""/>
+                <property name="WaterFlow" value="permitted"/>
+                <drop event="Destroy" count="0"/>
+                <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+                <property name="ModelOffset" value="0,0,0"/>
+          </block>  	 
+          <block name="cbpBlind">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffBlind"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpNoStealth">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffNoStealth"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>  	   	  
+          <block name="cbpRadiation">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="buffTwitchRadiation"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpShockSlowdown">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_shock_slowdown"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpShocked">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="buffTwitchShocked"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpEnemyBurn">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_enemyburn"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpEnemyRad">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_enemyrad"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpEnemyShock">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_enemyshock"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>     
+          <block name="cbpAutoPull">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffAutoPull"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpClumsyRunner">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffClumsyRunner"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpSillySounds">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffSillySounds"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpCelebrate">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffCelebrate"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpConfused">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffConfused"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpHeadshotOnly">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffHeadshotOnly"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpDistort">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffDistort"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpTrippy">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffTrippy"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>
+          <block name="cbpBlur">  <!-- Air block  -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Collide" value="movement"/>  
+            <property name="BuffsWhenWalkedOn" value="twitch_buffBlur"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+          </block>	
+	</append>
 </blocks>

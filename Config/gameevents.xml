@@ -1,0 +1,836 @@
+<CBP>
+	<append xpath="/gameevents">
+	<!-- ROBBERY -->
+	<!-- EASY -->
+	<action_sequence name="spawn_zombies_sound_robbery">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCop" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_robbery">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- EASY -->
+	<!-- MEDIUM -->
+	<action_sequence name="spawn_zombies_sound_robbery_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_robbery_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- MEDIUM -->
+	<!-- HARD -->
+	<action_sequence name="spawn_zombies_sound_robbery_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopRadiated" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="4" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="8"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_robbery_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- HARD -->
+	<!-- RIOT -->
+	<!-- EASY -->
+	<action_sequence name="spawn_zombies_sound_riot">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalBoar" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="3" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+												   
+		<action class="SpawnEntity">
+			<property name="entity_group" value="SleeperGSList" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_riot">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- EASY -->
+	<!-- MEDIUM -->
+	<action_sequence name="spawn_zombies_sound_riot_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalBoar" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="4" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>                            
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="ZombieBadassGSHorde" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_riot_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- MEDIUM -->
+	<!-- HARD -->
+	<action_sequence name="spawn_zombies_sound_riot_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieVultureRadiated" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="8" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="ZombieSpecialInfectedHorde" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_riot_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- HARD -->
+	<!-- FARM -->
+	<!-- FARM -->
+	<!-- EASY -->
+	<action_sequence name="spawn_zombies_sound_farm">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMoe" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFemaleFat" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalRabbit" />
+			<property name="spawn_count" value="1"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalChicken" />
+			<property name="spawn_count" value="1"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_farm">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- EASY -->
+	<!-- MEDIUM -->
+	<action_sequence name="spawn_zombies_sound_farm_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMoeFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFemaleFatFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalCoyote" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieVulture" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalSnake" />
+			<property name="spawn_count" value="2"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_farm_medium">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- MEDIUM -->
+	<!-- HARD -->
+	<action_sequence name="spawn_zombies_sound_farm_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieMoeRadiated" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFemaleFatRadiated" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="6"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieBear" />
+			<property name="spawn_count" value="1"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalDireWolf" />
+			<property name="spawn_count" value="3"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_farm_hard">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence>
+	<!-- HARD -->
+	<!-- DEMO -->
+	<action_sequence name="spawn_zombies_sound_2_2">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="demolitionzexplodewarning" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="0" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_2_2">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="demolitionz_beep,.5,.9" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence> 
+	
+	<!-- <action_sequence name="spawn_zombies_sound_2_2">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		 <action class="PlaySound">
+			 <property name="sound" value="demolitionzexplodewarning,demolitionz_beep,.5,.9,demolitionz_beep,.5,.9,demolitionz_beep,.5,.9,demolitionz_beep,.5,.9,demolitionz_beep,.5,.9,demolitionz_beep,.5,.9" /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action> 
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_zombies_sound_2_2">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="demolitionz_beep,.5,.9" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence> -->
+	
+	<!-- JUMP SCARE -->
+	 <action_sequence name="spawn_scare_sound">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_jumpscare" />
+			<property name="behind_player" value="true" />
+			<property name="can_disable" value="false" />
+			</action>
+		<!-- <action class="PlaySound">
+			 <property name="sound" value="twitch_jumpscare" param1="sounds"/> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action>           -->
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_scare_sound">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="twitch_jumpscare" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence> 
+	<!-- DANCE -->
+	 <action_sequence name="spawn_dance_off_sound">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" />
+		</requirement>
+		
+		<action class="PlaySound">
+			<property name="sound" value="twitch_bobble" />     <!-- vote_dance_off, test_action_dance_off, action_dance_off, -->
+			<property name="behind_player" value="true" />
+			<property name="can_disable" value="false" />
+			</action>
+		<!-- <action class="PlaySound">
+			 <property name="sound" value="twitch_buffDance" param1="sounds"/> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
+		 </action>           -->
+
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="2" />
+			<property name="phase" value="1" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="animalZombieDog" />
+			<property name="spawn_count" value="4"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="min_distance" value="10" />
+			<property name="max_distance" value="20" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+	</action_sequence>
+	
+	<action_sequence name="stop_spawn_dance_off_sound">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="twitch_bobble" /> 
+			 <property name="phase" value="0" /> 
+		 </action> 
+
+	</action_sequence> 
+	
+ </append>	
+
+</CBP>
+
+

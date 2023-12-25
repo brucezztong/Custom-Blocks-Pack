@@ -964,8 +964,104 @@ cbpPoleSquareTipCentered,shapes,Block,,,Pole Tip Centered,,
 cbpBookShelfDubTopFull01_Poof,shapes,Block,,,Bookcase,,
 cbpBookShelfDubBotFull01_Poof,shapes,Block,,,Bookcase,,
 cbpBowlingBall_Corner,shapes,Block,,,Bowling Ball corner,,
-cbpBillboard,shapes,Block,,,Billboard Strong,,
+cbpBillboard,blocks,block,,,Billboard Strong,,
 cbpMetalPipeStraight_explode,shapes,Block,,,Metal Pipe Straight Explode,,
 cbpBarrelGasQuadA,shapes,Block,,,Barrel Gas Quad A,,
+cbpSpawn_Robbery_Trap,blocks,Block,,,Spawn Robbery Air Trap
+cbpSpawned_Robbery_Trap,blocks,Block,,,Spawned Robbery Air Trap
+cbpSpawn_Robbery_Alarm,blocks,Block,,,Spawn Robbery Trap Plate
+cbpSpawned_Robbery_NA,blocks,Block,,,Spawned Robbery Trap Plate
+cbpSpawn_Robbery_Plate,blocks,Block,,,Spawn Robbery Trap Plate
+cbpSpawned_Robbery_Plate_NS,blocks,Block,,,Spawned Robbery Trap Plate 
+cbpSpawn_Robbery_Cube,blocks,Block,,,Spawn Robbery Trap Cube
+cbpSpawned_Robbery_Cube_NS,blocks,Block,,,Spawned Robbery Trap Cube
+cbpSpawn_Robbery_Trap_Med,blocks,Block,,,Spawn Robbery Air Trap Med
+cbpSpawned_Robbery_Trap_Med,blocks,Block,,,Spawned Robbery Air Trap Med
+cbpSpawn_Robbery_Alarm_Med,blocks,Block,,,Spawn Robbery Trap Plate Med
+cbpSpawned_Robbery_NA_Med,blocks,Block,,,Spawned Robbery Trap Plate Med
+cbpSpawn_Robbery_Plate_Med,blocks,Block,,,Spawn Robbery Trap Plate Med
+cbpSpawned_Robbery_Plate_NS_Med,blocks,Block,,,Spawned Robbery Trap Plate Med 
+cbpSpawn_Robbery_Cube_Med,blocks,Block,,,Spawn Robbery Trap Cube Med
+cbpSpawned_Robbery_Cube_NS_Med,blocks,Block,,,Spawned Robbery Trap Cube Med 
+cbpSpawn_Robbery_Trap_Hard,blocks,Block,,,Spawn Robbery Air Trap Hard
+cbpSpawned_Robbery_Trap_Hard,blocks,Block,,,Spawned Robbery Air Trap Hard
+cbpSpawn_Robbery_Alarm_Hard,blocks,Block,,,Spawn Robbery Trap Plate Hard
+cbpSpawned_Robbery_NA_Hard,blocks,Block,,,Spawned Robbery Trap Plate Hard
+cbpSpawn_Robbery_Plate_Hard,blocks,Block,,,Spawn Robbery Trap Plate Hard
+cbpSpawned_Robbery_Plate_NS_Hard,blocks,Block,,,Spawned Robbery Trap Plate Hard 
+cbpSpawn_Robbery_Cube_Hard,blocks,Block,,,Spawn Robbery Trap Cube Hard
+cbpSpawned_Robbery_Cube_NS_Hard,blocks,Block,,,Spawned Robbery Trap Cube Hard
+cbpSpawn_Riot_Trap,blocks,Block,,,Spawn Riot Air Trap
+cbpSpawned_Riot_Trap,blocks,Block,,,Spawned Riot Air Trap
+cbpSpawn_Riot_Alarm,blocks,Block,,,Spawn Riot Trap Plate
+cbpSpawned_Riot_NA,blocks,Block,,,Spawned Riot Trap Plate
+cbpSpawn_Riot_Plate,blocks,Block,,,Spawn Riot Trap Plate
+cbpSpawned_Riot_Plate_NS,blocks,Block,,,Spawned Riot Trap Plate 
+cbpSpawn_Riot_Cube,blocks,Block,,,Spawn Riot Trap Cube
+cbpSpawned_Riot_Cube_NS,blocks,Block,,,Spawned Riot Trap Cube
+cbpSpawn_Riot_Trap_Med,blocks,Block,,,Spawn Riot Air Trap Med
+cbpSpawned_Riot_Trap_Med,blocks,Block,,,Spawned Riot Air Trap Med
+cbpSpawn_Riot_Alarm_Med,blocks,Block,,,Spawn Riot Trap Plate Med
+cbpSpawned_Riot_NA_Med,blocks,Block,,,Spawned Riot Trap Plate Med
+cbpSpawn_Riot_Plate_Med,blocks,Block,,,Spawn Riot Trap Plate Med
+cbpSpawned_Riot_Plate_NS_Med,blocks,Block,,,Spawned Riot Trap Plate Med 
+cbpSpawn_Riot_Cube_Med,blocks,Block,,,Spawn Riot Trap Cube Med
+cbpSpawned_Riot_Cube_NS_Med,blocks,Block,,,Spawned Riot Trap Cube Med 
+cbpSpawn_Riot_Trap_Hard,blocks,Block,,,Spawn Riot Air Trap Hard
+cbpSpawned_Riot_Trap_Hard,blocks,Block,,,Spawned Riot Air Trap Hard
+cbpSpawn_Riot_Alarm_Hard,blocks,Block,,,Spawn Riot Trap Plate Hard
+cbpSpawned_Riot_NA_Hard,blocks,Block,,,Spawned Riot Trap Plate Hard
+cbpSpawn_Riot_Plate_Hard,blocks,Block,,,Spawn Riot Trap Plate Hard
+cbpSpawned_Riot_Plate_NS_Hard,blocks,Block,,,Spawned Riot Trap Plate Hard 
+cbpSpawn_Riot_Cube_Hard,blocks,Block,,,Spawn Riot Trap Cube Hard
+cbpSpawned_Riot_Cube_NS_Hard,blocks,Block,,,Spawned Riot Trap Cube Hard
+cbpSpawn_Farm_Trap,blocks,Block,,,Spawn Farm Air Trap
+cbpSpawned_Farm_Trap,blocks,Block,,,Spawned Farm Air Trap
+cbpSpawn_Farm_Alarm,blocks,Block,,,Spawn Farm Trap Plate
+cbpSpawned_Farm_NA,blocks,Block,,,Spawned Farm Trap Plate
+cbpSpawn_Farm_Plate,blocks,Block,,,Spawn Farm Trap Plate
+cbpSpawned_Farm_Plate_NS,blocks,Block,,,Spawned Farm Trap Plate 
+cbpSpawn_Farm_Cube,blocks,Block,,,Spawn Farm Trap Cube
+cbpSpawned_Farm_Cube_NS,blocks,Block,,,Spawned Farm Trap Cube
+cbpSpawn_Farm_Trap_Med,blocks,Block,,,Spawn Farm Air Trap Med
+cbpSpawned_Farm_Trap_Med,blocks,Block,,,Spawned Farm Air Trap Med
+cbpSpawn_Farm_Alarm_Med,blocks,Block,,,Spawn Farm Trap Plate Med
+cbpSpawned_Farm_NA_Med,blocks,Block,,,Spawned Farm Trap Plate Med
+cbpSpawn_Farm_Plate_Med,blocks,Block,,,Spawn Farm Trap Plate Med
+cbpSpawned_Farm_Plate_NS_Med,blocks,Block,,,Spawned Farm Trap Plate Med 
+cbpSpawn_Farm_Cube_Med,blocks,Block,,,Spawn Farm Trap Cube Med
+cbpSpawned_Farm_Cube_NS_Med,blocks,Block,,,Spawned Farm Trap Cube Med 
+cbpSpawn_Farm_Trap_Hard,blocks,Block,,,Spawn Farm Air Trap Hard
+cbpSpawned_Farm_Trap_Hard,blocks,Block,,,Spawned Farm Air Trap Hard
+cbpSpawn_Farm_Alarm_Hard,blocks,Block,,,Spawn Farm Trap Plate Hard
+cbpSpawned_Farm_NA_Hard,blocks,Block,,,Spawned Farm Trap Plate Hard
+cbpSpawn_Farm_Plate_Hard,blocks,Block,,,Spawn Farm Trap Plate Hard
+cbpSpawned_Farm_Plate_NS_Hard,blocks,Block,,,Spawned Farm Trap Plate Hard 
+cbpSpawn_Farm_Cube_Hard,blocks,Block,,,Spawn Farm Trap Cube Hard
+cbpSpawned_Farm_Cube_NS_Hard,blocks,Block,,,Spawned Farm Trap Cube Hard
+cbpSpawn_Trap_Demo,blocks,Block,,,Spawn Trap Demo Cube
+cbpSpawned_Trap_Demo_NS,blocks,Block,,,Spawned Trap Demo Cube
+cbpSpawn_Jump_Scare,blocks,Block,,,Spawn Jump Scare
+cbpSpawned_Jump_Scare,blocks,Block,,,Spawned Jump Scare
+cbpSpawn_Dance,blocks,Block,,,Spawn Dance Cube
+cbpSpawned_Dance,blocks,Block,,,Spawned Dance Cube
+cbpBombBlitz,blocks,Block,,,Bomb Blitz Buffed Block
+cbpBlind,blocks,Block,,,Blind Buffed Block
+cbpNoStealth,blocks,Block,,,No Stealth Buffed Block
+cbpRadiation,blocks,Block,,,Radiation Buffed Block
+cbpShockSlowdown,blocks,Block,,,Shock Slowdown Buffed Block
+cbpShocked,blocks,Block,,,Shocked Buffed Block
+cbpEnemyBurn,blocks,Block,,,Enemy Burn Buffed Block
+cbpEnemyRad,blocks,Block,,,Enemy Rad Buffed Block
+cbpEnemyShock,blocks,Block,,,Enemy Shock Buffed Block  
+cbpAutoPull,blocks,Block,,,Auto Pull Buffed Block
+cbpClumsyRunner,blocks,Block,,,Clumsy Runner Buffed Block
+cbpSillySounds,blocks,Block,,,Silly Sounds Buffed Block
+cbpCelebrate,blocks,Block,,,Celebrate Buffed Block
+cbpConfused,blocks,Block,,,Confused Buffed Block
+cbpHeadshotOnly,blocks,Block,,,Headshot Only Buffed Block
+cbpDistort,blocks,Block,,,Distort Buffed Block
+cbpTrippy,blocks,Block,,,Trippy Buffed Block
+cbpBlur,blocks,Block,,,Blur Buffed Block
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 
