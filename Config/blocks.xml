@@ -18,7 +18,7 @@
 			<property name="Extends" value="cntBookShelfDoubleTopFull01"/>
 			<property name="CustomIcon" value="cntBookShelfDoubleTopFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>            
 
@@ -27,12 +27,46 @@
 			<property name="Extends" value="cntBookShelfDoubleBottomFull01"/>
 			<property name="CustomIcon" value="cntBookShelfDoubleBottomFull01" />
 			<property name="CustomIconTint" value="a4ffb7"/>
-			<property name="LootList" value="cbpBookcaseNoBooks"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
 			<property name="DowngradeBlock" value="cbpHardAir"/>
 		</block>
 		
+		<block name="cbpBookShelfSingleBottomPoof">
+			<property name="Extends" value="cntBookShelfSingleBottomFull01"/>
+			<property name="CustomIcon" value="cntBookShelfSingleBottomFull01" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="Material" value="Mfurniture"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>
 		
+		<block name="cbpBookShelfSingleTopPoof">
+			<property name="Extends" value="cntBookShelfSingleBottomFull01"/>
+			<property name="CustomIcon" value="cntBookShelfSingleTopFull01" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="Material" value="Mfurniture"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>
 		
+		<block name="cbpBookcasePoof">
+			<property name="Extends" value="cntBookcaseFull"/>
+			<property name="CustomIcon" value="cntBookcaseFull" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="Material" value="Mfurniture"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>
+		
+		<block name="cbpBookcaseCornerPoof">
+			<property name="Extends" value="cntBookcaseCornerFull"/>
+			<property name="CustomIcon" value="cntBookcaseCornerFull" />
+			<property name="CustomIconTint" value="a4ffb7"/>
+			<property name="Material" value="Mfurniture"/>
+			<property name="LootList" value="cbpBookcaseNoBooks2"/>
+			<property name="DowngradeBlock" value="cbpHardAir"/>
+		</block>
+						
 		<!-- *************************************************************************
             ATM Machines
         ************************************************************************** -->
@@ -3918,7 +3952,51 @@
 			<property name="SortOrder2" value="0000"/>
 		</block>
 		
-		<!-- *** CHERRY_BLOSSOM -->
+		<!-- *************************************************************************
+            CANDELABRA_LIGHTS OFFSET
+        ************************************************************************** -->			
+		<block name="cbpCandelabraLightOffset">
+			<property name="Extends" value="decoEntityMetalMaster" param1="RepairItems"/>
+			<property name="CustomIcon" value="candelabraLight"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Model" value="Entities/Furniture/candelabraPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,.5,.45"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="83"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="TakeDelay" value="-1"/>
+			<property class="RepairItems">
+				<property name="resourceScrapBrass" value="50"/>
+			</property>
+			<dropextendsoff/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="15,25" tag="salvageHarvest"/>
+			<drop event="Destroy" name="candle" count="1,3"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1600"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+
+		<block name="cbpCandelabraLightSmallOffset">
+			<property name="Extends" value="cbpCandelabraLightOffset"/>
+			<property name="CustomIcon" value="candelabraLightSmall"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="Entities/Furniture/candelabraSmallPrefab"/>
+			<property name="ModelOffset" value="0,.5,.2"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1601"/>
+		</block>
+		<!-- *************************************************************************
+            CHERRY_BLOSSOM OFFSET
+        ************************************************************************** -->
 		<!-- White -->
 		<block name="cbpCherryBlossomWhite">
 			<property name="Extends" value="treePlant02"/>
@@ -16866,7 +16944,8 @@
 			<property name="CustomIcon" value="cntFridgeStainlessSteel"/>
 			<property name="CustomIconTint" value="808080"/>
 			<property name="TintColor" value="808080"/>
-		</block>
+		</block> 
+		
 						
 		<!-- *************************************************************************
 				 Wall Explode Stuff
@@ -18940,36 +19019,39 @@ that are planted by players, so it is a nice bonus.
             <property name="CreativeMode" value="Dev"/>
             <property name="DowngradeEvent" value="stop_spawn_scare_sound" />
         </block> 	    	    	  	
-        <!-- DANCE -->
-        <block name="cbpSpawn_Dance">  
+       <!-- Dance CUBE -->	
+        <block name="cbpSpawn_Dance">
+            <property name="Extends" value="concreteNoUpgradeMaster"/>
             <property name="CustomIcon" value="shapeCube"/>
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="Class" value="TrapDoor"/>
             <property name="TriggerDelay" value="0.25"/>
-            <property name="TriggerSound" value="trapWoodTrigger"/>
-            <property name="BuffsWhenWalkedOn" value="twitch_buffDance"/>
-            <property name="Collide" value="movement"/>  
-            <property name="Material" value="Mbedrock"/>
-            <property name="Shape" value="BillboardPlant"/>
-            <property name="Mesh" value="grass"/>
-            <property name="Texture" value="1"/>
-            <property name="StabilitySupport" value="true"/>
-            <property name="ImposterExclude" value="true"/>
-            <property name="Collide" value=""/>
-            <property name="WaterFlow" value="permitted"/>
-            <drop event="Destroy" count="0"/>
-            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-            <property name="ModelOffset" value="0,0,0"/>
-            <property name="DowngradeBlock" value="cbpSpawned_Dance"/>        
-            <property name="DowngradeEvent" value="spawn_dance_off_sound" />        <!-- vote_dance_off, test_action_dance_off, action_dance_off, -->
-          </block>    	  
-          <block name="cbpSpawned_Dance">
-            <property name="Extends" value="cbpHardAir"/>
-            <property name="CustomIcon" value="shapePlate"/> 
-            <property name="Class" value="TrapDoor"/>
-            <property name="TriggerDelay" value="0.25"/>  
+            <property name="TriggerSound" value="trapConcTrigger"/>
+            <property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
+            <property name="ImposterExchange" value="imposterBlock" param1="86"/>
+            <property name="LightOpacity" value="3"/>
+            <property name="Path" value="solid"/>
+            <property name="DestroyFX" value="impact_organic_on_metal,trapConcDestroy"/>
+            <drop event="Fall" count="0" prob="0"/>
+            <property name="ShowModelOnFall" value="true"/>
+            <property name="SortOrder1" value="B754"/>
+            <property name="SortOrder2" value="0020"/>
+            <property name="Group" value="Building"/>
+            <property name="FilterTags" value="MC_building,SC_traps,A21_NEW"/>
+            <property name="DowngradeBlock" value="cbpSpawned_Dance"/>
+            <property name="DowngradeEvent" value="spawn_dance_off_sound" />
+        </block>  	
+        <block name="cbpSpawned_Dance">
+            <property name="Extends" value="woodWeakNoUpgradeMaster"/>
+            <property name="CustomIcon" value="shapeCube"/> 
             <property name="CustomIconTint" value="6BB6E8"/>
             <property name="CreativeMode" value="Dev"/>
+            <property name="Shape" value="New"/>
+            <property name="Model" value="cube"/>
+            <property name="Texture" value="226"/>
             <property name="DowngradeEvent" value="stop_spawn_dance_off_sound" />
         </block>	
         <!-- BUFF BLOCKS -->

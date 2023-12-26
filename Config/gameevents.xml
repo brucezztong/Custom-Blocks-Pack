@@ -727,35 +727,7 @@
 			<property name="behind_player" value="true" />
 			<property name="can_disable" value="false" />
 			</action>
-		<!-- <action class="PlaySound">
-			 <property name="sound" value="twitch_jumpscare" param1="sounds"/> 
-			 <property name="phase" value="0" /> 
-			 <property name="loop_duration" value="3" />
-		 </action>           -->
-
-		<action class="SpawnEntity">
-			<property name="entity_names" value="zombieFatCopFeral" />
-			<property name="single_choice" value="true" />
-			<property name="spawn_count" value="2" />
-			<property name="phase" value="1" />
-			<property name="add_to_group" value="zombies" />
-			<property name="safe_spawn" value="true" />
-			<property name="min_distance" value="10" />
-			<property name="max_distance" value="20" />
-			<property name="spawn_type" value="WanderingHorde" />
-		</action>
-
-		<action class="SpawnEntity">
-			<property name="entity_group" value="animalZombieDog" />
-			<property name="spawn_count" value="4"  />
-			<property name="air_spawn" value="false" />
-			<property name="add_to_group" value="zombies" />
-			<property name="safe_spawn" value="true" />
-			<property name="min_distance" value="10" />
-			<property name="max_distance" value="20" />
-			<property name="spawn_type" value="WanderingHorde" />
-		</action>
-
+		
 	</action_sequence>
 	
 	<action_sequence name="stop_spawn_scare_sound">
@@ -782,45 +754,27 @@
 		</requirement>
 		
 		<action class="PlaySound">
-			<property name="sound" value="twitch_bobble" />     <!-- vote_dance_off, test_action_dance_off, action_dance_off, -->
-			<property name="behind_player" value="true" />
+			<!--<property name="sound" value="twitch_bobble" /> -->
+			 <property name="sound" value="twitch_buffDance" /> 
+			<property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" />
 			<property name="can_disable" value="false" />
 			</action>
-		<!-- <action class="PlaySound">
-			 <property name="sound" value="twitch_buffDance" param1="sounds"/> 
-			 <property name="phase" value="0" /> 
-			 <property name="loop_duration" value="3" />
-		 </action>           -->
-
-		<action class="SpawnEntity">
-			<property name="entity_names" value="zombieFatCopFeral" />
-			<property name="single_choice" value="true" />
-			<property name="spawn_count" value="2" />
-			<property name="phase" value="1" />
-			<property name="add_to_group" value="zombies" />
-			<property name="safe_spawn" value="true" />
-			<property name="min_distance" value="10" />
-			<property name="max_distance" value="20" />
-			<property name="spawn_type" value="WanderingHorde" />
+			
+		<action class="SetEventFlag">
+			<property name="event_flag" value="Dancing" />
+			<property name="enable" value="true" />
+			<property name="min_duration" value="20" />
+			<property name="max_duration" value="40" />
+			<property name="phase" value="2" />
 		</action>
-
-		<action class="SpawnEntity">
-			<property name="entity_group" value="animalZombieDog" />
-			<property name="spawn_count" value="4"  />
-			<property name="air_spawn" value="false" />
-			<property name="add_to_group" value="zombies" />
-			<property name="safe_spawn" value="true" />
-			<property name="min_distance" value="10" />
-			<property name="max_distance" value="20" />
-			<property name="spawn_type" value="WanderingHorde" />
-		</action>
-
+		
 	</action_sequence>
 	
 	<action_sequence name="stop_spawn_dance_off_sound">
 		<property name="action_type" value="Game" />
 		<property name="target_type" value="Block" />
-		<property name="allow_while_dead" value="false" />
+		<property name="allow_while_dead" value="false" /> 		
 		
 		<action class="PlaySound">
 			 <property name="sound" value="twitch_bobble" /> 

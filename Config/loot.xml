@@ -108,7 +108,26 @@
             <item name="resourceLockPick" prob="0.1" count="1,4"/>
             <item group="dyes" prob="0.1" count="1"/>
             <item name="armorSantaHat" prob="0.1" count="1"/>
+        </lootcontainer> 
+		
+		<lootcontainer name="cbpBookcaseNoBooks2" count="1" size="6,2" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="resourcePaper" prob="1" count="1,10"/>
+            <item name="resourcePaper" prob="0.4" count="10,20"/>
+            <item name="resourceLeather" prob="0.8" count="1"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1"/>
+            <item name="resourceScrapBrass" prob="0.6" count="1,2"/>
+            <item name="oldCash" prob="0.4" count="1,5"/>
+            <item name="resourceBrokenGlass" prob="0.2" count="1,2"/>
+            <item name="resourceGlue" prob="0.2" count="1"/>
+            <item name="resourceFeather" prob="0.2" count="1"/>
+            <item name="resourceBone" prob="0.2" count="1,2"/>
+            <item name="candle" prob="0.2" count="1,2"/>
+            <item name="resourceLockPick" prob="0.1" count="1,4"/>
+            <item group="dyes" prob="0.1" count="1"/>
+            <item name="armorSantaHat" prob="0.1" count="1"/>
         </lootcontainer>
+		
 
 		<!-- **********************************************************
             Clothing; Low Level Loot
