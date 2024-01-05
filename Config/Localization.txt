@@ -1067,8 +1067,17 @@ cbpHeadshotOnly,blocks,Block,,,Headshot Only Buffed Block
 cbpDistort,blocks,Block,,,Distort Buffed Block
 cbpTrippy,blocks,Block,,,Trippy Buffed Block
 cbpBlur,blocks,Block,,,Blur Buffed Block
+cbpSpawn_Trap_1_1,blocks,Block,,,Spawn Trap Cop Alarm
+cbpSpawn_Trap_1_2,blocks,Block,,,Spawn Trap Cop Alarm Land Mine
+cbpSpawn_Trap_1_3,blocks,Block,,,Spawn Trap No stealth sound Land Mine
+cbpSpawn_Trap_1_4,blocks,Block,,,Spawn dog x2 Trap Jumpscare sound
+cbpSpawn_Trap_1_5,blocks,Block,,,Spawn Grace Trap Jumpscare sound
+cbpSpawned_Trap_Blank,blocks,Block,,,Spawned Trap Blank
 cbpCandelabraLightOffset,blocks,Block,,,Candelabra Light Offset
 cbpCandelabraLightSmallOffset,blocks,Block,,,Candelabra Light Small Offset
-cbpConcreteNukeCube,blocks,Block,,,Concrete Nuke Cube
+cbpWineBottleHalfBlockOffset,blocks,Block,,,Wine Bottle Half Block Offset
+cbpWineBottleCornerHalfBlockOffset,blocks,Block,,,Wine Bottle Half Block Corner Offset
+cbpWineBottleOffset,blocks,Block,,,Wine Bottle Half Offset
+cbpWineBottleCornerOffset,blocks,Block,,,Wine Bottle Corner Offset
 loadingCustomBlocksPack,UI,Loading Screen,x,,The Custom Block Pack contains XML definitions for custom blocks used by multiple POI developers.,,,,,,,,,,,,,
 loadingCustomBlocksPack_title,UI,Loading Screen,x,,Custom Block Pack,,,,,,,, 

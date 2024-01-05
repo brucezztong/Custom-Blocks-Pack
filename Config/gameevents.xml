@@ -783,6 +783,91 @@
 
 	</action_sequence> 
 	
+	<action_sequence name="spanwn_zombies_sound_1_1">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+	
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LTE" />
+			<property name="value" value="80" param1="oddsfire" /> 
+		</requirement>
+	
+		 <action class="PlaySound">
+			 <property name="sound" value="caralarm1_lp" param1="trapsound"  /> 
+			 <property name="phase" value="0" /> 
+			 <property name="loop_duration" value="3" param1="loopsound" />
+		 </action> 
+		 
+		<action class="SpawnEntity">
+			<property name="entity_names" value="zombieFatCopFeral" param1="zombiename" />
+			<property name="single_choice" value="true" />
+			<property name="spawn_count" value="1" param1="zombiecount"  />
+			<property name="phase" value="2" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+
+		<action class="SpawnEntity">
+			<property name="entity_group" value="ZombiePoliceCarHorde" param1="groupname" />
+			<property name="spawn_count" value="4" param1="groupcount"  />
+			<property name="air_spawn" value="false" />
+			<property name="add_to_group" value="zombies" />
+			<property name="safe_spawn" value="true" />
+			<property name="spawn_type" value="WanderingHorde" />
+		</action>
+		
+	</action_sequence>
+	
+	<action_sequence name="stop_spanwn_zombies_sound_1_1">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		<property name="allow_while_dead" value="false" />
+		
+		<action class="PlaySound">
+			 <property name="sound" value="caralarm1_dying" param1="trapsoundend" /> 
+			 <property name="phase" value="1" /> 
+		 </action> 
+	</action_sequence>
+	
+	<action_sequence name="dz_cop_car_event" template="spanwn_zombies_sound_1_1">
+		<variable name="oddsfire" value="100" /> <!-- odds out of 100 of event happening (0 - 100) -->
+		<variable name="trapsound" value="caralarm1_lp" />
+		<variable name="loopsound" value="6" />
+		<variable name="zombiename" value="zombieFatCopFeral" />
+		<variable name="zombiecount" value="1" />
+		<variable name="groupname" value="ZombiePoliceCarHorde" /> <!-- gamestage spawner name -->
+	</action_sequence>
+	
+	<action_sequence name="dz_zombie_event" template="spanwn_zombies_sound_1_1">
+		<variable name="oddsfire" value="100" /> 
+		<variable name="trapsound" value="twitch_nostealth" />
+		<variable name="loopsound" value="1" />
+		<variable name="zombiename" value="zombieDemolition" />
+		<variable name="zombiecount" value="1" />
+		<variable name="groupname" value="ZombiePoliceCarHorde" />
+	</action_sequence>
+	
+	<action_sequence name="dz_dog_event" template="spanwn_zombies_sound_1_1">
+		<variable name="oddsfire" value="100" /> 
+		<variable name="trapsound" value="twitch_jumpscare" />
+		<variable name="loopsound" value="1" />
+		<variable name="zombiename" value="animalZombieDog" />
+		<variable name="zombiecount" value="2" />
+		<variable name="groupname" value="ZombiePoliceCarHorde" />
+	</action_sequence>
+	
+	<action_sequence name="dz_grace_event" template="spanwn_zombies_sound_1_1">
+		<variable name="oddsfire" value="100" /> 
+		<variable name="trapsound" value="twitch_jumpscare" />
+		<variable name="loopsound" value="1" />
+		<variable name="zombiename" value="animalBossGrace" />
+		<variable name="zombiecount" value="1" />
+		<variable name="groupname" value="ZombiePoliceCarHorde" />
+	</action_sequence>
+	
  </append>	
 
 </CBP>

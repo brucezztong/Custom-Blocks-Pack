@@ -3952,6 +3952,68 @@
 			<property name="SortOrder2" value="0000"/>
 		</block>
 		
+		<block name="cbpWineBottleHalfBlockOffset">
+			<property name="Material" value="Mglass"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/wineBottlePrefab"/>
+			<property name="ModelOffset" value="0,-.9,-.08"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="decoWineBottle"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<drop event="Destroy" name="resourceBrokenGlass" count="1"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="SortOrder1" value="B427"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+
+		<block name="cbpWineBottleCornerHalfBlockOffset">
+			<property name="Extends" value="decoWineBottle"/>
+			<property name="Model" value="Entities/Commercial/wineBottleCornerPrefab"/>
+			<property name="ModelOffset" value="0,-.9,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="decoWineBottleCorner"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="B427"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		
+		<block name="cbpWineBottleOffset">
+			<property name="Material" value="Mglass"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/wineBottlePrefab"/>
+			<property name="ModelOffset" value="0,-.4,-.08"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="decoWineBottle"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<drop event="Destroy" name="resourceBrokenGlass" count="1"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="SortOrder1" value="B427"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+
+		<block name="cbpWineBottleCornerOffset">
+			<property name="Extends" value="decoWineBottle"/>
+			<property name="Model" value="Entities/Commercial/wineBottleCornerPrefab"/>
+			<property name="ModelOffset" value="0,-.4,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="CustomIcon" value="decoWineBottleCorner"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="SortOrder1" value="B427"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		
 		<!-- *************************************************************************
             CANDELABRA_LIGHTS OFFSET
         ************************************************************************** -->			
@@ -19361,6 +19423,113 @@ that are planted by players, so it is a nice bonus.
             <drop event="Destroy" count="0"/>
             <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
             <property name="ModelOffset" value="0,0,0"/>
-          </block>	
+          </block>
+		
+			<!-- Downgrade spawn block  -->
+	<block name="cbpSpawn_Trap_1_1"> <!-- car alarm sound , cop and zombie spawn -->
+		<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.25"/>
+		<property name="TriggerSound" value="trapWoodTrigger"/>
+		<property name="CustomIcon" value="shapePlate"/>
+		<property name="Texture" value="302"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="plate"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="Path" value="solid"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="ShowModelOnFall" value="true"/>
+		<property name="Group" value="Building"/>
+		<property name="DowngradeBlock" value="cbpSpawned_Trap_Blank"/>
+		<property name="DowngradeEvent" value="dz_cop_car_event" />
+	</block>
+	
+
+		<block name="cbpSpawned_Trap_Blank">
+			<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+			<property name="CustomIcon" value="shapePlate"/> <property name="CustomIconTint" value="250, 190, 5"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="plate"/>
+			<property name="Texture" value="302"/>
+			<property name="PassThroughDamage" value="false"/>
+		</block>
+
+	  <block name="cbpSpawn_Trap_1_2"> <!-- car alarm sound , cop and zombie spawn with block change to land mine -->
+		<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.25"/>
+		<property name="TriggerSound" value="trapWoodTrigger"/>
+		<property name="CustomIcon" value="shapePlate"/>
+		<property name="Texture" value="302"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="plate"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="Path" value="solid"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="ShowModelOnFall" value="true"/>
+		<property name="Group" value="Building"/>
+		<property name="DowngradeBlock" value="mineCandyTinTwitch"/>
+		<property name="DowngradeEvent" value="dz_cop_car_event" />
+	</block>
+	
+	<block name="cbpSpawn_Trap_1_3"> <!-- zombie spawns , change to land mine -->
+		<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.25"/>
+		<property name="TriggerSound" value="trapWoodTrigger"/>
+		<property name="CustomIcon" value="shapePlate"/>
+		<property name="Texture" value="302"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="plate"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="Path" value="solid"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="ShowModelOnFall" value="true"/>
+		<property name="Group" value="Building"/>
+		<property name="DowngradeBlock" value="mineCandyTinTwitch"/>
+		<property name="DowngradeEvent" value="dz_zombie_event" />
+	</block>
+	
+	<block name="cbpSpawn_Trap_1_4"> <!-- 2xdogs and zombie spawn -->
+		<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.25"/>
+		<property name="TriggerSound" value="trapWoodTrigger"/>
+		<property name="CustomIcon" value="shapePlate"/>
+		<property name="Texture" value="302"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="plate"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="Path" value="solid"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="ShowModelOnFall" value="true"/>
+		<property name="Group" value="Building"/>
+		<property name="DowngradeBlock" value="cbpSpawned_Trap_Blank"/>
+		<property name="DowngradeEvent" value="dz_dog_event" />
+	</block>
+	
+	<block name="cbpSpawn_Trap_1_5"> <!-- gracie and animals spawn -->
+		<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+		<property name="Class" value="TrapDoor"/>
+		<property name="TriggerDelay" value="0.25"/>
+		<property name="TriggerSound" value="trapWoodTrigger"/>
+		<property name="CustomIcon" value="shapePlate"/>
+		<property name="Texture" value="302"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="plate"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="Path" value="solid"/>
+		<property name="DestroyFX" value="impact_organic_on_metal,trapWoodDestroy"/>
+		<drop event="Fall" count="0" prob="0"/>
+		<property name="ShowModelOnFall" value="true"/>
+		<property name="Group" value="Building"/>
+		<property name="DowngradeBlock" value="cbpSpawned_Trap_Blank"/>
+		<property name="DowngradeEvent" value="dz_grace_event" />
+	</block>
 	</append>
 </blocks>
