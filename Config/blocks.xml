@@ -10,6 +10,82 @@
 			<property name="CanMobsSpawnOn" value="false"/>
 		</block>
 		
+		<block name="cbpTerrOre">
+		<property name="CanMobsSpawnOn" value="true"/>
+		<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="DisplayType" value="blockTerrain"/>
+		<property name="CustomIcon" value="terrOreOilDeposit" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Map.Color" value="230,180,120"/>
+		<property name="Material" value="cbpRockSolid"/>
+		<property name="Shape" value="Terrain"/>
+		<property name="Mesh" value="terrain"/>
+		<property name="Texture" value="440"/>
+		<property name="ImposterExclude" value="true"/>
+		<property name="LPHardnessScale" value="2"/>
+		<drop event="Harvest" name="resourceOilShale" count="50" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceOilShale" count="50" prob="0.4" stick_chance="0"/>
+		<property name="SortOrder1" value="0000"/>
+		<property name="SortOrder2" value="1150"/>
+		<property name="Tags" value="ore,deepOre"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+	</block>
+
+	<block name="cbpTerrOreCoal">
+		<property name="CanMobsSpawnOn" value="true"/>
+		<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="DisplayType" value="blockTerrain"/>
+		<property name="CustomIcon" value="terrOreCoal" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Map.Color" value="0,0,0"/>
+		<property name="Material" value="cbpRockSolid"/>
+		<property name="Shape" value="Terrain"/>
+		<property name="Mesh" value="terrain"/>
+		<property name="Texture" value="34"/>
+		<property name="ImposterExclude" value="true"/>
+		<drop event="Harvest" name="resourceCoal" count="50" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceCoal" count="50" tag="coalHarvest"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="resourceCoal" count="50" prob="0.4" stick_chance="0"/>
+		<property name="SortOrder1" value="0000"/>
+		<property name="SortOrder2" value="1050"/>
+		<property name="Tags" value="ore,deepOre,coalBurnedDmg"/>
+		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+	</block>
+	
+		<!-- *************************************************************************
+            GROUNDALIGN REMOVED: When needed some blocks require the grdalign to be removed.
+        ************************************************************************** -->
+	<block name="cbpMattressFlat">
+		<property name="CustomIcon" value="mattressFlatThin"/>
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="Material" value="Mfurniture"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Model" value="Entities/Furniture/mattressFlatPrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="0"/>
+		<property name="WaterFlow" value="permitted"/>
+		<property name="Texture" value="282"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="FuelValue" value="12"/>
+		<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		<property name="FallDamage" value=".6"/>
+		<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<property name="SortOrder1" value="B434"/>
+		<property name="SortOrder2" value="0006"/>
+		<property name="FilterTags" value="MC_building,SC_decor"/>
+	</block>
+		
 		
 		<!-- *************************************************************************
             Bookcases: When looted bookshelves dissappear(secret room/passage).

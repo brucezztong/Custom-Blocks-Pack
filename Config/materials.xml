@@ -12,5 +12,18 @@
 			<property name="MaxDamage" value="99000"/>
 			<property name="Experience" value="6"/>
 		</material>
+		
+		<material id="cbpRockSolid">
+		<property name="damage_category" value="stone"/>
+		<property name="surface_category" value="stone"/>
+		<property name="Hardness" type="float" value="10000"/>
+		<property name="fertile_level" value="0"/>
+		<property name="stepsound" value="stone"/>
+		<property name="stability_glue" value="120"/>
+		<property name="Mass" type="int" value="10"/>
+		<property name="MaxDamage" value="50000"/>
+		<property name="Experience" value="2"/>
+		<property name="CanDestroy" value="false" />
+	  </material>
 </append>   
 </CBP>
