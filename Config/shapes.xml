@@ -171,6 +171,27 @@
 			<drop event="Destroy" count="0" />
 		</shape>
 		
+		<shape name="cbpWindowStoreOneSidedFullNWL">
+		<property name="Model" value="window_store_one_sided_full" />
+		<property name="CustomIcon" value="shapeWindowStoreOneSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="WaterFlow" value="permitted"/>
+		<property name="UseGlobalUV" value=",DDLDDDL" />
+		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":windowStoreOneSidedBroken" />
+		<drop event="Destroy" count="0" />
+	</shape>	
+		
 		<!-- *************************************************************************
             SINK: Farm Sink used in the creation of a farm sink.
         ************************************************************************** -->
