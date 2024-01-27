@@ -149,6 +149,20 @@
 		<property name="WaterClipPlane" value="0, 0, 1, -0.9499999" />
 		<property name="WaterFlow" value="T,B,W,S,E," />
 	</shape>
+	
+		<shape name="cbpCubeHalfConfessionalOffset">
+			<property name="Path" value="solid" />
+			<property name="Model" value="cube_half_centered_confessional" />
+			<property name="CustomIcon" value="shapeCubeHalfCenteredConfessional" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ModelOffset" value="1,0,0.75"/>
+			<property name="ShapeCategories" value="Deco" />
+			<property name="ImposterExclude" value="true" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="Collide" value="movement,melee,rocket" />
+			<property name="LightOpacity" value="0" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
 		
 
 		<!-- *************************************************************************

@@ -17,6 +17,32 @@
         </placeholder>
 		
 		<!-- *************************************************************
+            Sleeper Random Helper
+        ************************************************************** -->
+		 <placeholder name="cbpSleeperRandom">
+			<block name="sleeperSit" prob=".15"/>
+			<block name="sleeperBack" prob=".15"/>
+			<block name="sleeperSideLeft" prob=".15"/>
+			<block name="sleeperSideRight" prob=".15"/>
+			<block name="sleeperStomach" prob=".15"/>
+			<block name="sleeperIdle" prob=".15"/>
+			<block name="sleeperCrawlerOnly" prob=".10"/>
+		</placeholder>  		
+					
+		<!-- *************************************************************
+            InfestedSleeper Random Helper
+        ************************************************************** -->
+		<placeholder name="cbpInfestedSleeperRandom">
+			<block name="infestedSleeperSit" prob=".15"/>
+			<block name="infestedSleeperBack" prob=".15"/>
+			<block name="infestedSleeperSideLeft" prob=".15"/>
+			<block name="infestedSleeperSideRight" prob=".15"/>
+			<block name="infestedSleeperStomach" prob=".15"/>
+			<block name="infestedSleeperIdle" prob=".15"/>
+			<block name="infestedSleeperCrawlerOnly" prob=".10"/>
+		</placeholder>
+		
+		<!-- *************************************************************
             Trash Rolling Random Helper
         ************************************************************** -->		
 		<placeholder name="cbpBinTrashRollingRandomHelper">

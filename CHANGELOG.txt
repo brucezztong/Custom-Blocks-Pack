@@ -1,5 +1,9 @@
 CHANGE LOG / RELEASE NOTES: (Newest to Oldest)
 
+A21.2.001.0046 :
+* Added Zombie Random Helpers
+* Added cube half confessionaloffsets
+
 A21.2.001.0045 :
 * Added a waterproof window.
 

@@ -5865,6 +5865,55 @@
 		</block>
 		
 		<!-- ************************************************************************* 
+            Random Sleeper Blocks...
+        ************************************************************************** -->
+		
+		<block name="cbpSleeperRandomHelper">
+			<property name="Class" value="Sleeper"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="sleeperSit"/>
+			<property name="CustomIconTint" value="7E4A6D"/>
+			<property name="DescriptionKey" value="sleeperGroupDesc"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSitPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Pose" value="0"/>
+			<property name="LookIdentity" value="0,0,1"/> <!-- this "sleeper pose" is looking in a certain direction
+			In rot 0 (usually facing north),
+			view direction 0,0,1 = north; 0,0,-1 = south; -1,0,0 = west, 1,0,0 = east -->
+			<property name="SortOrder1" value="LD02"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperSleeper"/>
+		</block>
+		
+		<!-- ************************************************************************* 
+            Random Infested Sleeper Blocks...
+        ************************************************************************** -->
+		
+		<!-- *** INFESTED_SLEEPER_BLOCKS -->
+		<block name="cbpInfestedSleeperRandomHelper">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Sleeper"/>
+			<property name="CustomIcon" value="sleeperSit"/>
+			<property name="CustomIconTint" value="8D2427"/>
+			<property name="DescriptionKey" value="sleeperGroupDesc"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSitInfestedPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Pose" value="0"/>
+			<property name="LookIdentity" value="0,0,1"/> <!-- this "sleeper pose" is looking in a certain direction
+			In rot 0 (usually facing north),
+			view direction 0,0,1 = north; 0,0,-1 = south; -1,0,0 = west, 1,0,0 = east -->
+			<property name="SpawnMode" value="Infested"/>
+			<property name="SortOrder1" value="LD03"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_helpers,SC_helperSleeper,A21_NEW"/>
+		</block>
+		
+				
+		<!-- ************************************************************************* 
             Offset Trash Bags...
         ************************************************************************** -->
 		<block name="cbpTrashPile06Offset">
@@ -11224,8 +11273,8 @@
 			<property name="CustomIcon" value="treeStump"/>
 			<property name="PlaceAsRandomRotation" value="true"/>
 			<property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
-		</block>
-		
+		</block>		
+			
 		<!-- *************************************************************************
             Potted Plant Helpers
         ************************************************************************** -->
