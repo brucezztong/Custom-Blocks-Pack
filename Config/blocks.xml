@@ -3828,6 +3828,37 @@
 			<property name="ModelOffset" value="-0.3,0.5,0.0"/>
 		</block>
 		
+		<block name="cbpTrafficLightOffset">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="Light"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="DescriptionKey" value="cbpTrafficLightOffsetDesc"/>
+			<property name="CustomIcon" value="signTrafficLight"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/StreetSigns/trafficLightPrefab"/>
+			<property name="ModelOffset" value="-0.3,0,-.4"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="VehicleHitScale" value="8"/>
+			<drop event="Destroy" name="resourceScrapIron" count="5,15"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="3000"/>
+			<property name="FilterTags" value="MC_outdoor,SC_signs"/>
+		</block>
+						
 		<block name="cbpOffsetStainedGlassPlate">
 			<property name="CustomIcon" value="glassBusinessPlate"/>
 			<property name="CustomIconTint" value="99FF00"/>
