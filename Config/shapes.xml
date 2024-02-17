@@ -11,6 +11,7 @@
 		<property name="Model" value="window_store_three_sided_full" />
 		<property name="Material" value="Mbedrock"/>
 		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Windows" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaterialHitpointMultiplier" value="0.001" />
@@ -30,6 +31,7 @@
 		<property name="Model" value="window_store_three_sided_full" />
 		<property name="Material" value="Mbedrock"/>
 		<property name="CustomIcon" value="shapeWindowStoreThreeSidedFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Windows" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaterialHitpointMultiplier" value="0.001" />
@@ -50,6 +52,7 @@
 		<property name="Material" value="Mbedrock"/>
 		<property name="Model" value="window_store_corner_full" />
 		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Windows" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaterialHitpointMultiplier" value="0.001" />
@@ -69,6 +72,7 @@
 		<property name="Material" value="Mbedrock"/>
 		<property name="Model" value="window_store_corner_full" />
 		<property name="CustomIcon" value="shapeWindowStoreCornerFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Windows" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaterialHitpointMultiplier" value="0.001" />
@@ -83,6 +87,28 @@
 		<property name="WaterClipPlane" value="0, 0, 1, -0.9749999" />
 		<property name="WaterFlow" value="T,B,N,S,E," />
 	</shape>
+	
+	<shape name="cbpWindow_01_offset">
+        <property name="Model" value="window_01" />
+		<property name="CustomIcon" value="shapeWindow01" />
+		<property name="CustomIconTint" value="6BB6E8"/>
+		<property name="ShapeCategories" value="Basic,Windows" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="ModelOffset" value="1,0,0.53"/>
+		<property name="MaterialHitpointMultiplier" value="0.001" />
+		<property name="ImposterExchange" value="imposterPlate" />
+		<property name="UseGlobalUV" value=",GGGGGLL" />
+		<property name="ShapeAltTexture" value="T,B,N,W,S,E,285" />
+		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
+		<property name="CopyPaintOnDowngrade" value="T,B,N,W,S,E" />
+		<property class="UpgradeBlock">
+			<property name="ItemCount" value="10000" /> <!-- Needed for material upgrade due to MaterialHitpointMultiplier -->
+		</property>
+		<property name="DowngradeBlock" value=":window01Broken" />
+		<drop event="Destroy" count="0" />
+		<property name="WaterClipPlane" value="0, 0, 1, -0.4999999" />
+		<property name="WaterFlow" value="permitted" />
+	</shape>
 		
 		<!-- BULLETPROOF -->
 		<shape name="cbpWindowStoreThreeSidedBulletproofFull" tag="Bulletproof">
@@ -93,6 +119,7 @@
 			<property name="Material" value="Mbedrock"/>
 			<!-- <property name="Place" value="TowardsPlacerInverted" /> -->
 			<property name="CustomIcon" value="shapeWindowStoreThreeSidedBulletproofFull" />
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="ShapeCategories" value="Windows" />
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="ImposterExclude" value="true" />
@@ -112,6 +139,7 @@
 		<property name="Material" value="Mbedrock"/>
 		<property name="Model" value="window_store_corner_full" />
 		<property name="CustomIcon" value="shapeWindowStoreCornerBulletproofFull" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Windows" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="ImposterExclude" value="true" />
@@ -173,6 +201,7 @@
 			<property name="ShapeMenu" value="false" />
 			<property name="Model" value="window_store_four_sided_full" />
 			<property name="CustomIcon" value="shapeWindowStoreFourSidedBulletproofFull" />
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="ShapeCategories" value="Windows" />
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="ImposterExclude" value="true" />
@@ -215,6 +244,7 @@
         <property name="Model" value="counter_half_hollow_top_offset" />
         <property name="Place" value="TowardsPlacerInverted" />
         <property name="CustomIcon" value="shapeCounterHalfHollowTopOffset" />
+		<property name="CustomIconTint" value="6BB6E8"/>
         <property name="ShapeCategories" value="Deco" />
         <property name="ImposterExchange" value="imposterBlock" />
         <property name="ShapeAltTexture" value="312,312,312,312,312,312,312" />
@@ -717,6 +747,7 @@
 		<!-- <property name="Path" value="solid" /> -->
 		<property name="Model" value="pole_square_tip_left" />
 		<property name="CustomIcon" value="shapePoleSquareTipLeft" />
+		<property name="CustomIconTint" value="6BB6E8"/>
 		<property name="ShapeCategories" value="Square,Poles" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="ImposterExclude" value="true" />
@@ -733,6 +764,7 @@
 		<shape name="cbpBowlingBall_Corner">
 			<property name="Model" value="bowling_ball" />
 			<property name="CustomIcon" value="shapeBowlingBall" />
+			<property name="CustomIconTint" value="6BB6E8"/>
 			<property name="ShapeCategories" value="Deco" />
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 			<property name="UseGlobalUV" value="Local" />
