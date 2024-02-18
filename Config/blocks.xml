@@ -764,18 +764,21 @@
 			<property name="CustomIcon" value="goreBlockHumanBones"/>
 			<property name="CustomIconTint" value="0acbb3"/>
 			<property name="ModelOffset" value="0,.15,-.3"/>
-		</block> 
-
-		<shape name="cbpBowlingBall_Corner">
-			<property name="Model" value="bowling_ball" />
-			<property name="CustomIcon" value="shapeBowlingBall" />
-			<property name="ShapeCategories" value="Deco" />
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-			<property name="UseGlobalUV" value="Local" />
-			<property name="ShapeAltTexture" value="T,B,55,W,S,E" />
-			<property name="WaterFlow" value="permitted" />
-			<property name="ModelOffset" value=".6,-.05,.6" />
-		</shape>
+		</block> 	
+		
+		<block name="cbpCandleTableLightOffset">
+			<property name="Extends" value="candleWallLight"/>
+			<property name="CustomIcon" value="candleTableLight"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Model" value="Entities/Lighting/candle_tablePrefab"/>
+			<property name="ModelOffset" value=".45,.5,.45"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="3201"/>
+			<property name="Group" value="Building,advBuilding"/>
+		</block>
 		
 		
 		<!-- *************************************************************************
