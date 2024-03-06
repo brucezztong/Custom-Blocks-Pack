@@ -780,7 +780,102 @@
 			<property name="Group" value="Building,advBuilding"/>
 		</block>
 		
+		<!-- White -->
+		<block name="cbpFlashlightDecorWhiteOffset">
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIconTint" value="ABABA4"/>
+			<property name="TintColor" value="ABABA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Mmetal_thin"/>
+	        <property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02Prefab"/>
+			<property name="ModelOffset" value="0,0.5,-1.1"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.7"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="IgnoreLightsOff" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1300"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+				
+		<block name="cbpFlashlightSideCenteredDecorWhiteOffset">
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIconTint" value="ABABA4"/>
+			<property name="TintColor" value="ABABA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Mmetal_thin"/>
+	        <property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="ModelOffset" value="0,0.5,-1.1"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.7"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="IgnoreLightsOff" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1320"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+				
+		<block name="cbpFlashlightCornerDecorWhiteOffset">
+			<property name="Class" value="Light"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIconTint" value="ABABA4"/>
+			<property name="TintColor" value="ABABA4"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="ItemTypeIcon" value="triangle"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Material" value="Mmetal_thin"/>
+	        <property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="ModelOffset" value="0,0.5,-1.1"/>
+			<property name="GndAlign" value="0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.7"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="IgnoreLightsOff" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1340"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
 		
+		<block name="cbpGlassBulletproofPlate">
+			<property name="CustomIcon" value="glassBulletproofPlate"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Extends" value="glassBulletproofMaster"/>
+			<property name="Model" value="plate_glass"/>
+			<property name="ImposterExchange" value="imposterPlate" param1="170"/> <!-- ShadowColor -->
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="SortOrder1" value="B351"/>
+			<property name="SortOrder2" value="0301"/>
+			<property name="Group" value="Building,advBuilding"/>
+		</block>
+						
+			
 		<!-- *************************************************************************
             Delos (West World) POIs...
         ************************************************************************** -->
@@ -3848,7 +3943,6 @@
 			<property name="WaterFlow" value="permitted"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="LODCullScale" value="0.5"/>
-			<property name="WaterFlow" value="permitted"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="OnlySimpleRotations" value="false"/>
@@ -5025,6 +5119,16 @@
 			<property name="SortOrder2" value="0209"/>
 		</block>
 		
+		<block name="cbpPlantShrub">
+			<property name="Extends" value="plantHedge"/>
+			<property name="Model" value="Entities/Plants/plantShrubPrefab"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="melee"/>
+			<property name="SortOrder1" value="B900"/>
+			<property name="SortOrder2" value="0008"/>
+			<property name="Tags" value="twitchReplace"/>
+		</block>
+				
 		<!-- *************************************************************************
 				Offset Bed, Painting and TV
 		************************************************************************** -->
@@ -13619,40 +13723,7 @@
 			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
 			<property name="WaterFlow" value="permitted"/>
 		</block>
-		<!-- ************************************************************************* 
-           CUSTOM BOULDER: can be used as a building block - 1x1x1 with stability support 
-        ************************************************************************** -->
-		<block name="cbpBoulderBuildingBlock">
-			<!-- Boulder Building Block with Random Rotation -->
-			<property name="CustomIcon" value="rockResource"/>
-			<property name="CustomIconTint" value="ff1a36"/>
-			<property name="CreativeMode" value="Dev"/>
-			<property name="DisplayType" value="blockHardenedMulti"/>
-			<property name="Map.Color" value="120,120,120"/>
-			<property name="IndexName" value="quest_stone_boulder"/>
-			<property name="Material" value="Mstone_shapes"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
-			<property name="ModelOffset" value="0,0,0"/>
-			<property name="MultiBlockDim" value="1,1,1"/>
-			<property name="PlaceAsRandomRotation" value="true"/>
-			<property name="AllowAllRotations" value="true"/>
-			<property name="OnlySimpleRotations" value="false"/>
-			<property name="ImposterDontBlock" value="true"/>
-			<property name="WaterFlow" value="permitted"/>
-			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-			<property name="BigDecorationRadius" value="3"/>
-			<property name="IsDistantDecoration" value="false"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="StabilitySupport" value="true"/>
-			<property name="PassThroughDamage" value="true"/>
-			<drop event="Harvest" name="resourceRockSmall" count="22" tag="oreWoodHarvest"/>
-			<drop event="Destroy" count="0"/>
-			<property name="DowngradeBlock" value="rockResourceBroke1"/>
-			<property name="SortOrder1" value="B275"/>
-			<property name="SortOrder2" value="0000"/>
-			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
-		</block>
+		
 		<!-- ************************************************************************* 
            WEAPON/TOOLS/VEHICLE/DRONE DECOR BLOCKS
         ************************************************************************** -->
