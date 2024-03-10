@@ -6081,6 +6081,14 @@
 			<property name="SortOrder2" value="0008"/>
 		</block>
 		
+		<block name="cbpTrashPileRandomHelper">
+			<property name="Extends" value="cntTrashPile01"/>
+			<property name="CustomIcon" value="cntTrashPile01"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Model" value="@:Entities/LootContainers/trashPileDPrefab.prefab"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+				
 		<!-- ************************************************************************* 
             Offset Shower Handle...  To Use As A Door Handle ETC
         ************************************************************************** -->
@@ -17766,6 +17774,1404 @@
         <property name="Stacknumber" value="500"/>
 		<property name="WaterClipPlane" value="0, 0, 1, -0.02556557" />
     </block>
+	
+	<!-- *************************************************************************
+            Invisible Loot: Hit the switch to reveal the loot.
+        ************************************************************************** -->		
+		<!-- CRATES -->
+		<block name="cbpSwitchShamway"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="LootList" value=""/>
+			<property name="DowngradeBlock" value="cntShippingCrateShamway"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchShamwayHelper">
+			<property name="Extends" value="cbpSwitchShamway" />
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="LootList" value=""/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_ShamwayPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>			
+		</block>
+		
+		<block name="cbpSwitchLab"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateLabEquipment"/>		
+		</block>
+		
+		<block name="cbpSwitchLabHelper">
+			<property name="Extends" value="cbpSwitchLab"/>
+			<property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_PopNPillsPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchBookstore"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateBookstore"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateBookstore"/>		
+		</block>
+		
+		<block name="cbpSwitchBookstoreHelper">
+			<property name="Extends" value="cbpSwitchBookstore" />
+			<property name="CustomIcon" value="cntShippingCrateBookstore"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_CrackABookPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchCarParts"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateCarParts"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateCarParts"/>		
+		</block>
+		
+		<block name="cbpSwitchCarPartsHelper">
+			<property name="Extends" value="cbpSwitchCarParts"/>
+			<property name="CustomIcon" value="cntShippingCrateCarParts"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_PassNGasPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchShotgunMessiah"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateShotgunMessiah"/>		
+		</block>
+		
+		<block name="cbpSwitchShotgunMessiahHelper">
+			<property name="Extends" value="cbpSwitchShotgunMessiah" />
+			<property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_ShotgunPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchWorkingStiffs"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateWorkingStiffs"/>		
+		</block>
+		
+		<block name="cbpSwitchWorkingStiffsHelper">
+			<property name="Extends" value="cbpSwitchWorkingStiffs" />
+			<property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_WorkingStiffsPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchSavageCountry"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateSavageCountry"/>		
+		</block>
+		
+		<block name="cbpSwitchSavageCountryHelper">
+			<property name="Extends" value="cbpSwitchSavageCountry" />
+			<property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_SavagePrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchMoPower"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateMoPowerElectronics"/>		
+		</block>
+		
+		<block name="cbpSwitchMoPowerHelper">
+			<property name="Extends" value="cbpSwitchMoPower" />
+			<property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_store_MoPowerPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchConstructionSupplies"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateConstructionSupplies"/>		
+		</block>
+		
+			<block name="cbpSwitchConstructionSuppliesHelper">
+				<property name="Extends" value="cbpSwitchConstructionSupplies" />
+				<property name="CustomIcon" value="cntShippingCrateHero"/>
+				<property name="CustomIconTint" value="6BB6E8"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+				<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_storePrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			</block>
+			
+		<block name="cbpSwitchHero"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntShippingCrateHero"/>		
+		</block>	
+		
+		<block name="cbpSwitchHeroHelper">
+			<property name="Extends" value="cbpSwitchHero" />
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_storePrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+
+		<block name="cbpSwitchStoreCratesRandom"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchShamway"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntStoreCratesRandomLootHelper"/>		
+		</block>	
+		
+		<block name="cbpSwitchStoreCratesRandomHelper">
+			<property name="Extends" value="cbpSwitchStoreCratesRandom" />
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot,SC_treasureRoom"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_storePrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<!-- CRATES -->
+		<!-- CHESTS -->
+		<block name="cbpSwitchChestT1"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntLootChestHeroInsecureT1"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="GndAlign" value="0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntLootChestHeroInsecureT1"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>	
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT1Helper">
+			<property name="Extends" value="cbpSwitchChestT1" />
+			<property name="CustomIcon" value="cntLootChestHeroInsecureT1"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/tier1LootChestPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT2"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchChestT1"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntLootChestHeroInsecureT2"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntLootChestHeroInsecureT2"/>	
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT2Helper">
+			<property name="Extends" value="cbpSwitchChestT2" />
+			<property name="CustomIcon" value="cntLootChestHeroInsecureT2"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/tier2LootChestPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT3"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchChestT1"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntLootChestHero"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntLootChestHero"/>	
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT3Helper">
+			<property name="Extends" value="cbpSwitchChestT3" />
+			<property name="CustomIcon" value="cntLootChestHero"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/tier3LootChestPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT4"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchChestT1"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntHardenedChestSecure"/>	
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT4Helper">
+			<property name="Extends" value="cbpSwitchChestT4" />
+			<property name="CustomIcon" value="cntHardenedChestSecure"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/tier4LootChestPrefab.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+		</block>
+		
+		<block name="cbpSwitchChestT5"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntHardenedChestSecureT5"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>				
+		</block>
+		
+		<block name="cbpSwitchChestT5Helper">
+			<property name="Extends" value="cbpSwitchChestT5" />
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name=" StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>			
+		</block>
+		<!-- CHESTS -->
+		<!-- WEAPON BAGS -->
+		<block name="cbpSwitchWeaponBagSmall"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntWeaponsBagSmall"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntWeaponsBagSmall"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchWeaponBagSmallHelper">
+			<property name="Extends" value="cbpSwitchWeaponBagSmall" />
+			<property name="CustomIcon" value="cntWeaponsBagSmall"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_smallPrefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchWeaponBagLarge"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchWeaponBagSmall"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntWeaponsBagLarge"/>		
+		</block>	
+
+		<block name="cbpSwitchWeaponBagLargeHelper">
+			<property name="Extends" value="cbpSwitchWeaponBagLarge" />
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+		</block>
+		<!-- WEAPON BAGS -->
+		<!-- MUNITIONS -->
+		<block name="cbpSwitchMunitionsArmy"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMunitionsBoxArmy"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchMunitionsArmyHelper">
+			<property name="Extends" value="cbpSwitchMunitionsArmy" />
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/munitionsBox_01Prefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchMunitionsRed"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchMunitionsArmy"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="B55950"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMunitionsBoxRed"/>		
+		</block>
+		
+		<block name="cbpSwitchMunitionsRedHelper">
+			<property name="Extends" value="cbpSwitchMunitionsRed" />
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="B55950"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/munitionsBox_01Prefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchMunitionsOrange"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchMunitionsArmy"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="8A6C36"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMunitionsBoxOrange"/>		
+		</block>
+		
+		<block name="cbpSwitchMunitionsOrangeHelper">
+			<property name="Extends" value="cbpSwitchMunitionsOrange" />
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="8A6C36"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/munitionsBox_01Prefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchMunitionsGreen"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchMunitionsArmy"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="4A6F46"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMunitionsBoxGreen"/>		
+		</block>
+		
+		<block name="cbpSwitchMunitionsGreenHelper">
+			<property name="Extends" value="cbpSwitchMunitionsGreen" />
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="4A6F46"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/munitionsBox_01Prefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchMunitionsBlue"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchMunitionsArmy"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="4D5C7A"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMunitionsBoxBlue"/>		
+		</block>	
+
+		<block name="cbpSwitchMunitionsBlueHelper">
+			<property name="Extends" value="cbpSwitchMunitionsBlue" />
+			<property name="CustomIcon" value="cntMunitionsBoxArmy"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="4D5C7A"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/munitionsBox_01Prefab.prefab"/>
+		</block>
+		<!-- MUNITIONS -->
+		<!-- AMMO PILES -->
+		<block name="cbpSwitchAmmoPileSmall"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntAmmoPileSmall"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchAmmoPileSmallHelper">
+			<property name="Extends" value="cbpSwitchAmmoPileSmall" />
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/AmmoPiles_SmallPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchAmmoPileMedium"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchAmmoPileSmall"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntAmmoPileMedium"/>	
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchAmmoPileMediumHelper">
+			<property name="Extends" value="cbpSwitchAmmoPileMedium" />
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/AmmoPiles_MediumPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchAmmoPileLarge"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchAmmoPileSmall"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntAmmoPileLarge"/>	
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>	
+
+		<block name="cbpSwitchAmmoPileLargeHelper">
+			<property name="Extends" value="cbpSwitchAmmoPileLarge" />
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/AmmoPiles_LargePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		<!-- AMMO PILES -->
+		<!-- MILITARY PILES -->
+		<block name="cbpSwitchMilitaryA"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMilitaryGoodsA"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="ModelOffset" value="0.5,0,0.5"/>
+			<property name="GndAlign" value="1"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="LootList" value=""/>
+			<property name="DowngradeBlock" value="cntMilitaryGoodsA"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchMilitaryAHelper">
+			<property name="Extends" value="cbpSwitchMilitaryA" />
+			<property name="CustomIcon" value="cntMilitaryGoodsA"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="LootList" value=""/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="Model" value="Entities/Commercial/militaryGoodsAPrefab"/>
+			<property name="ModelOffset" value="0.5,0,0.5"/>
+			<property name="GndAlign" value="1"/>
+		</block>
+		
+		<block name="cbpSwitchMilitaryB"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMilitaryGoodsB"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="LootList" value=""/>
+			<property name="DowngradeBlock" value="cntMilitaryGoodsB"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>		
+		
+		<block name="cbpSwitchMilitaryBHelper">
+			<property name="Extends" value="cbpSwitchMilitaryB" />
+			<property name="CustomIcon" value="cntMilitaryGoodsB"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="LootList" value=""/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/militaryGoodsBPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchMilitaryC"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMilitaryGoodsC"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="LootList" value=""/>
+			<property name="DowngradeBlock" value="cntMilitaryGoodsC"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchMilitaryCHelper">
+			<property name="Extends" value="cbpSwitchMilitaryC" />
+			<property name="CustomIcon" value="cntMilitaryGoodsC"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="LootList" value=""/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/militaryGoodsCPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchMilitaryD"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMilitaryGoodsD"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMilitaryGoodsD"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchMilitaryDHelper">
+			<property name="Extends" value="cbpSwitchMilitaryD" />
+			<property name="CustomIcon" value="cntMilitaryGoodsD"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/militaryGoodsDPrefab"/>	
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		<!-- MILITARY PILES -->
+		<!-- CHEM PILES -->
+		<block name="cbpSwitchChemSmall"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntChemPileSmall"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntChemPileSmall"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+				
+		<block name="cbpSwitchChemSmallHelper">
+			<property name="Extends" value="cbpSwitchChemSmall" />
+			<property name="CustomIcon" value="cntChemPileSmall"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/ChemSetBPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchChemMedium"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchChemSmall"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntChemPileMedium"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntChemPileMedium"/>	
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchChemMediumHelper">
+			<property name="Extends" value="cbpSwitchChemMedium" />
+			<property name="CustomIcon" value="cntChemPileMedium"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/ChemSetCPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="cbpSwitchChemLarge"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchChemSmall"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntChemPileLarge"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntChemPileLarge"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>		
+		
+		<block name="cbpSwitchChemLargeHelper">
+			<property name="Extends" value="cbpSwitchChemLarge" />
+			<property name="CustomIcon" value="cntChemPileLarge"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Crafting/ChemSetDPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		<!-- CHEM PILES -->
+		<!-- MED PILES -->
+		<block name="cbpSwitchMedicB"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntMedicLootPileB"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntMedicLootPileB"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchMedicBHelper">
+			<property name="Extends" value="cbpSwitchMedicB" />
+			<property name="CustomIcon" value="cntMedicLootPileB"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/medic_loot_pile_BPrefab.prefab"/>
+		</block>
+		<!-- MED PILES -->
+		<!-- FOOD PILES -->
+		<block name="cbpSwitchFoodLarge"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntFoodPileLarge"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntFoodPileLarge"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		
+		<block name="cbpSwitchFoodLargeHelper">
+			<property name="Extends" value="cbpSwitchFoodLarge" />
+			<property name="CustomIcon" value="cntFoodPileMedium"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/foodClutterPileMediumPrefab.prefab"/>
+		</block>
+		<!-- FOOD PILES -->
+		<!-- WALL/DESK SAFES -->
+		<block name="cbpSwitchWallSafe"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntWallSafe"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntWallSafe"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>		
+		
+		<block name="cbpSwitchWallSafeHelper">
+			<property name="Extends" value="cbpSwitchWallSafe" />
+			<property name="CustomIcon" value="cntWallSafe"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeMetalWallClosePrefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchDeskSafe"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntDeskSafe"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntDeskSafe"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchDeskSafeHelper">
+			<property name="Extends" value="cbpSwitchDeskSafe" />
+			<property name="CustomIcon" value="cntDeskSafe"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeMetalDeskClosePrefab.prefab"/>
+		</block>
+		<!-- WALL/DESK SAFES -->
+		<!-- GUN SAFES -->
+		<block name="cbpSwitchGunSafeWhite"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="FFFFFF"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperWhite"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeWhiteHelper">
+			<property name="Extends" value="cbpSwitchGunSafeWhite" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="FFFFFF"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeBrown"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="996633"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperBrown"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeBrownHelper">
+			<property name="Extends" value="cbpSwitchGunSafeBrown" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="996633"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeRed"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="FF0000"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperRed"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafeRedHelper">
+			<property name="Extends" value="cbpSwitchGunSafeRed" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="FF0000"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeOrange"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="FF9933"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperOrange"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafeOrangeHelper">
+			<property name="Extends" value="cbpSwitchGunSafeOrange" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="FF9933"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeYellow"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="FFFF00"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperYellow"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafeYellowHelper">
+			<property name="Extends" value="cbpSwitchGunSafeYellow" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="FFFF00"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeGreen"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="00FF00"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperGreen"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafeGreenHelper">
+			<property name="Extends" value="cbpSwitchGunSafeGreen" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="00FF00"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeBlue"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="0000FF"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperBlue"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeBlueHelper">
+			<property name="Extends" value="cbpSwitchGunSafeBlue" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="0000FF"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafePurple"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="6600CC"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperPurple"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafePurpleHelper">
+			<property name="Extends" value="cbpSwitchGunSafePurple" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="6600CC"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeGrey"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperGrey"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeGreyHelper">
+			<property name="Extends" value="cbpSwitchGunSafeGrey" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafeBlack"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="000000"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperBlack"/>				
+		</block>
+		
+		<block name="cbpSwitchGunSafeBlackHelper">
+			<property name="Extends" value="cbpSwitchGunSafeBlack" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="000000"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>			
+		</block>
+		
+		<block name="cbpSwitchGunSafePink"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperPink"/>
+		</block>
+		
+		<block name="cbpSwitchGunSafePinkHelper">
+			<property name="Extends" value="cbpSwitchGunSafePink" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="FF00FF"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>
+		</block>
+		
+		<block name="cbpSwitchGunSafeArmyGreen"> <!-- Find the switch to reveal the loot -->
+			<property name="Extends" value="cbpSwitchGunSafeWhite"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="TintColor" value="666633"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunSafeRandomLootHelperArmyGreen"/>	
+		</block>	
+
+		<block name="cbpSwitchGunSafeArmyGreenHelper">
+			<property name="Extends" value="cbpSwitchGunSafeArmyGreen" />
+			<property name="CustomIcon" value="cntGunSafeOpenWhite"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="TintColor" value="666633"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="GndAlign" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/safeGunLargeFullPrefab.prefab"/>
+		</block>
+		<!-- GUN SAFES -->
+		<!-- GUN RACKS -->
+		<block name="cbpSwitchGunRackSmall"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunRackSmallMagazines"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunRackSmallRandomLootHelper"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchGunRackSmallHelper">
+			<property name="Extends" value="cbpSwitchGunRackSmall" />
+			<property name="CustomIcon" value="cntGunRackSmallMagazines"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/gunrackWallMagPrefab"/>
+		</block>
+		
+		<block name="cbpSwitchGunRackLarge"> <!-- Find the switch to reveal the loot -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntGunRackLargeGuns02"/>
+			<property name="CustomIconTint" value="776A76"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="BillboardPlant"/>
+			<property name="Mesh" value="grass"/>
+			<property name="Texture" value="1"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value=""/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="DowngradeBlock" value="cntGunRackLargeRandomLootHelper"/>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>			
+		</block>
+		
+		<block name="cbpSwitchGunRackLargeHelper">
+			<property name="Extends" value="cbpSwitchGunRackLarge" />
+			<property name="CustomIcon" value="cntGunRackLargeGuns02"/>
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/gunrackWallGunsBPrefab"/>
+		</block>
 	
 		<!-- ************************************************************************* 
             CUSTOM TREES WITH ADVANCED ROTATION  that do not cause NRE's

@@ -68,6 +68,18 @@
 			<block name="cbpBinTrashRollingPinkEmpty" prob=".05"/>
 		</placeholder>
 		
+		<placeholder name="cbpTrashPileRandomHelper">
+			<block name="cntTrashPile01" prob=".15"/>
+			<block name="cntTrashPile02" prob=".15"/>
+			<block name="cntTrashPile03" prob=".15"/>
+			<block name="cntTrashPile04" prob=".15"/>
+			<block name="cntTrashPile05" prob=".15"/>
+			<block name="cntTrashPile06" prob=".15"/>
+			<block name="cntTrashPile07" prob=".10"/>
+			<block name="cntTrashPile08" prob=".15"/>
+			<block name="cntTrashPile09" prob=".10"/>
+		</placeholder>
+		
 		<!-- *************************************************************
             Loot Random Helper: In place for wasteland,forest,desert,street,house lootrandomhelper
         ************************************************************** -->		
@@ -1233,7 +1245,226 @@
             <block name="cbpFridgeStainlessSteel_Black" prob=".35"/>
      </placeholder>
 	 
-		 
+		 <!-- *************************************************************
+         Invisible Loot Random Helper: hit the switch to reveal the loot
+        ************************************************************** -->
+		<!-- CRATES -->
+		<placeholder name="cbpSwitchShamwayHelper">
+		<block name="cbpSwitchShamway" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchLabHelper">
+		<block name="cbpSwitchLab" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchBookstoreHelper">
+		<block name="cbpSwitchBookstore" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchCarPartsHelper">
+		<block name="cbpSwitchCarParts" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchShotgunMessiahHelper">
+		<block name="cbpSwitchShotgunMessiah" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchWorkingStiffsHelper">
+		<block name="cbpSwitchWorkingStiffs" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchSavageCountryHelper">
+		<block name="cbpSwitchSavageCountry" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMoPowerHelper">
+		<block name="cbpSwitchMoPower" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchConstructionSuppliesHelper">
+		<block name="cbpSwitchConstructionSupplies" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchHeroHelper">
+		<block name="cbpSwitchHero" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchStoreCratesRandomHelper">
+		<block name="cbpSwitchStoreCratesRandom" prob="1"/>
+		</placeholder>
+		<!-- CRATES -->
+		<!-- CHEST -->
+		<placeholder name="cbpSwitchChestT1Helper">
+		<block name="cbpSwitchChestT1" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchChestT2Helper">
+		<block name="cbpSwitchChestT2" prob="1"/>
+		</placeholder>
+	
+		<placeholder name="cbpSwitchChestT3Helper">
+		<block name="cbpSwitchChestT3" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchChestT4Helper">
+		<block name="cbpSwitchChestT4" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchChestT5Helper">
+		<block name="cbpSwitchChestT5" prob="1"/>
+		</placeholder>
+		
+		<!-- WEAPON BAGS -->
+		
+		<placeholder name="cbpSwitchWeaponBagSmallHelper">
+		<block name="cbpSwitchWeaponBagSmall" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchWeaponBagLargeHelper">
+		<block name="cbpSwitchWeaponBagLarge" prob="1"/>
+		</placeholder>
+		<!-- WEAPON BAGS -->
+		<!-- MUNITIONS -->
+		<placeholder name="cbpSwitchMunitionsArmyHelper">
+		<block name="cbpSwitchMunitionsArmy" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMunitionsRedHelper">
+		<block name="cbpSwitchMunitionsRed" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMunitionsOrangeHelper">
+		<block name="cbpSwitchMunitionsOrange" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMunitionsGreenHelper">
+		<block name="cbpSwitchMunitionsGreen" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMunitionsBlueHelper">
+		<block name="cbpSwitchMunitionsBlue" prob="1"/>
+		</placeholder>
+		<!-- MUNITIONS -->
+		<!-- AMMO PILES -->
+		<placeholder name="cbpSwitchAmmoPileSmallHelper">
+		<block name="cbpSwitchAmmoPileSmall" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchAmmoPileMediumHelper">
+		<block name="cbpSwitchAmmoPileMedium" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchAmmoPileLargeHelper">
+		<block name="cbpSwitchAmmoPileLarge" prob="1"/>
+		</placeholder>		
+		<!-- AMMO PILES -->
+		<!-- MILITARY PILES -->
+		<placeholder name="cbpSwitchMilitaryAHelper">
+		<block name="cbpSwitchMilitaryA" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMilitaryBHelper">
+		<block name="cbpSwitchMilitaryB" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMilitaryCHelper">
+		<block name="cbpSwitchMilitaryC" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchMilitaryDHelper">
+		<block name="cbpSwitchMilitaryD" prob="1"/>
+		</placeholder>
+		<!-- MILITARY PILES -->
+		<!-- CHEM PILES -->
+		<placeholder name="cbpSwitchChemSmallHelper">
+		<block name="cbpSwitchChemSmall" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchChemMediumHelper">
+		<block name="cbpSwitchChemMedium" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchChemLargeHelper">
+		<block name="cbpSwitchChemLarge" prob="1"/>
+		</placeholder>
+		<!-- CHEM PILES -->
+		<!-- MED PILES -->
+		<placeholder name="cbpSwitchMedicBHelper">
+		<block name="cbpSwitchMedicB" prob="1"/>
+		</placeholder>
+		<!-- MED PILES -->
+		<!-- FOOD PILES -->
+		<placeholder name="cbpSwitchFoodLargeHelper">
+		<block name="cbpSwitchFoodLarge" prob="1"/>
+		</placeholder>
+		<!-- FOOD PILES -->
+		<!-- WALL/DESK SAFES -->
+		<placeholder name="cbpSwitchWallSafeHelper">
+		<block name="cbpSwitchWallSafe" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchDeskSafeHelper">
+		<block name="cbpSwitchDeskSafe" prob="1"/>
+		</placeholder>
+		<!-- WALL/DESK SAFES -->
+		<!-- GUN SAFES -->
+		<placeholder name="cbpSwitchGunSafeWhiteHelper">
+		<block name="cbpSwitchGunSafeWhite" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeBrownHelper">
+		<block name="cbpSwitchGunSafeBrown" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeRedHelper">
+		<block name="cbpSwitchGunSafeRed" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeOrangeHelper">
+		<block name="cbpSwitchGunSafeOrange" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeYellowHelper">
+		<block name="cbpSwitchGunSafeYellow" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeGreenHelper">
+		<block name="cbpSwitchGunSafeGreen" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeBlueHelper">
+		<block name="cbpSwitchGunSafeBlue" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafePurpleHelper">
+		<block name="cbpSwitchGunSafePurple" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeGreyHelper">
+		<block name="cbpSwitchGunSafeGrey" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeBlackHelper">
+		<block name="cbpSwitchGunSafeBlack" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafePinkHelper">
+		<block name="cbpSwitchGunSafePink" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunSafeArmyGreenHelper">
+		<block name="cbpSwitchGunSafeArmyGreen" prob="1"/>
+		</placeholder>
+		<!-- GUN SAFES -->
+		<!-- GUN RACKS -->
+		<placeholder name="cbpSwitchGunRackSmallHelper">
+		<block name="cbpSwitchGunRackSmall" prob="1"/>
+		</placeholder>
+		
+		<placeholder name="cbpSwitchGunRackLargeHelper">
+		<block name="cbpSwitchGunRackLarge" prob="1"/>
+		</placeholder>
+		<!-- GUN RACKS -->		 
 	 
 		
     </append>
