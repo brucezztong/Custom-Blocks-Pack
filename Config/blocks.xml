@@ -17703,23 +17703,8 @@
 		<property name="TintColor" value="e7fa39"/>
 		<property name="CustomIcon" value="rubblePileCement"/>
 		<property name="CustomIconTint" value="6BB6E8"/>
-				<property name="Material" value="MrConcrete"/>
-	</block>
-	
-	<block name="cbpOnFireOffset"> 
-		<property name="Extends" value="cbpFireBlockZomLeft"/>
-		<property name="CustomIcon" value="shapeFontExclamation"/>
-		<property name="CustomIconTint" value="6BB6E8"/>
-		<property name="Model" value="ParticleEffects/p_onFire"/>
-		<property name="ModelOffset" value="0,-.5,0"/>
-	</block>
-
-	<block name="cbpOnFire"> 
-		<property name="Extends" value="cbpOnFireOffset"/>
-		<property name="CustomIcon" value="shapeFontExclamation"/>
-		<property name="CustomIconTint" value="6BB6E8"/>
-		<property name="ModelOffset" value="0,0,0"/>
-	</block>
+		<property name="Material" value="MrConcrete"/>
+	</block>	
 	
 	<block name="cbplooseCorrugatedMetalTrapSheet">
     <property name="Extends" value="looseCorrugatedMetalTrapCube"/>
