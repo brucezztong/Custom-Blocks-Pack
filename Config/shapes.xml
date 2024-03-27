@@ -223,7 +223,6 @@
 		<property name="MaterialHitpointMultiplier" value="0.001" />
 		<property name="ImposterExclude" value="true" />
 		<property name="ImposterDontBlock" value="true" />
-		<property name="WaterFlow" value="permitted"/>
 		<property name="UseGlobalUV" value=",DDLDDDL" />
 		<property name="ShapeAltTexture" value="T,B,55,W,S,E,285" />
 		<property name="DowngradeFX" value="impact_stone_on_glass,glassdestroy" />
@@ -737,6 +736,22 @@
 			<property name="UseGlobalUV" value="L,L,D,D,D,D"/>
 			<property name="ImposterExchange" value="imposterPlateLOD" param1="2"/>
 			<property name="MaterialHitpointMultiplier" value="0.1" />
+			<property name="WaterFlow" value="permitted" />
+		</shape>
+		
+		<shape name="cbpPillar50Plate">
+			<!-- <property name="Path" value="solid" /> -->
+			<property name="Model" value="pillar50_plate" />
+			<property name="CustomIcon" value="shapepillar50Plate" />
+			<property name="CustomIconTint" value="6BB6E8"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="ModelOffset" value="0.75,0,0.75" />
+			<property name="ShapeCategories" value="Round" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="ImposterDontBlock" value="true" />
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" />
 			<property name="WaterFlow" value="permitted" />
 		</shape>
 		
